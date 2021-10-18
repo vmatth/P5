@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/vini/P5/build
 include spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_TrajectoryAction.dir/progress.make
 
 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_TrajectoryAction:
-	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py spot_msgs /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryAction.msg std_msgs/Duration:spot_msgs/TrajectoryActionResult:spot_msgs/TrajectoryFeedback:spot_msgs/TrajectoryGoal:spot_msgs/TrajectoryActionGoal:geometry_msgs/PoseStamped:actionlib_msgs/GoalID:std_msgs/Header:geometry_msgs/Pose:actionlib_msgs/GoalStatus:spot_msgs/TrajectoryResult:geometry_msgs/Point:spot_msgs/TrajectoryActionFeedback:geometry_msgs/Quaternion
+	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py spot_msgs /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryAction.msg spot_msgs/TrajectoryActionResult:geometry_msgs/Pose:std_msgs/Header:geometry_msgs/Quaternion:actionlib_msgs/GoalID:spot_msgs/TrajectoryActionFeedback:geometry_msgs/PoseStamped:spot_msgs/TrajectoryGoal:spot_msgs/TrajectoryFeedback:actionlib_msgs/GoalStatus:geometry_msgs/Point:spot_msgs/TrajectoryResult:std_msgs/Duration:spot_msgs/TrajectoryActionGoal
 
 _spot_msgs_generate_messages_check_deps_TrajectoryAction: spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_TrajectoryAction
 _spot_msgs_generate_messages_check_deps_TrajectoryAction: spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_TrajectoryAction.dir/build.make

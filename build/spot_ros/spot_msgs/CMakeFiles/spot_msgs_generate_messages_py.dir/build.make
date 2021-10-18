@@ -109,23 +109,23 @@ spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_py: /home/vini/P5/deve
 
 /home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_EStopStateArray.py: /opt/ros/melodic/lib/genpy/genmsg_py.py
 /home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_EStopStateArray.py: /home/vini/P5/src/spot_ros/spot_msgs/msg/EStopStateArray.msg
-/home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_EStopStateArray.py: /home/vini/P5/src/spot_ros/spot_msgs/msg/EStopState.msg
 /home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_EStopStateArray.py: /opt/ros/melodic/share/std_msgs/msg/Header.msg
+/home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_EStopStateArray.py: /home/vini/P5/src/spot_ros/spot_msgs/msg/EStopState.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Python from MSG spot_msgs/EStopStateArray"
 	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/vini/P5/src/spot_ros/spot_msgs/msg/EStopStateArray.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg
 
 /home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_FootStateArray.py: /opt/ros/melodic/lib/genpy/genmsg_py.py
 /home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_FootStateArray.py: /home/vini/P5/src/spot_ros/spot_msgs/msg/FootStateArray.msg
-/home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_FootStateArray.py: /opt/ros/melodic/share/geometry_msgs/msg/Point.msg
 /home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_FootStateArray.py: /home/vini/P5/src/spot_ros/spot_msgs/msg/FootState.msg
+/home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_FootStateArray.py: /opt/ros/melodic/share/geometry_msgs/msg/Point.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating Python from MSG spot_msgs/FootStateArray"
 	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/vini/P5/src/spot_ros/spot_msgs/msg/FootStateArray.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg
 
 /home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_LeaseArray.py: /opt/ros/melodic/lib/genpy/genmsg_py.py
 /home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_LeaseArray.py: /home/vini/P5/src/spot_ros/spot_msgs/msg/LeaseArray.msg
+/home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_LeaseArray.py: /home/vini/P5/src/spot_ros/spot_msgs/msg/Lease.msg
 /home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_LeaseArray.py: /home/vini/P5/src/spot_ros/spot_msgs/msg/LeaseOwner.msg
 /home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_LeaseArray.py: /home/vini/P5/src/spot_ros/spot_msgs/msg/LeaseResource.msg
-/home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_LeaseArray.py: /home/vini/P5/src/spot_ros/spot_msgs/msg/Lease.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating Python from MSG spot_msgs/LeaseArray"
 	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/vini/P5/src/spot_ros/spot_msgs/msg/LeaseArray.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg
 
@@ -142,9 +142,9 @@ spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_py: /home/vini/P5/deve
 
 /home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_MobilityParams.py: /opt/ros/melodic/lib/genpy/genmsg_py.py
 /home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_MobilityParams.py: /home/vini/P5/src/spot_ros/spot_msgs/msg/MobilityParams.msg
-/home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_MobilityParams.py: /opt/ros/melodic/share/geometry_msgs/msg/Point.msg
-/home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_MobilityParams.py: /opt/ros/melodic/share/geometry_msgs/msg/Pose.msg
 /home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_MobilityParams.py: /opt/ros/melodic/share/geometry_msgs/msg/Quaternion.msg
+/home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_MobilityParams.py: /opt/ros/melodic/share/geometry_msgs/msg/Pose.msg
+/home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_MobilityParams.py: /opt/ros/melodic/share/geometry_msgs/msg/Point.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Generating Python from MSG spot_msgs/MobilityParams"
 	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/vini/P5/src/spot_ros/spot_msgs/msg/MobilityParams.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg
 
@@ -167,8 +167,8 @@ spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_py: /home/vini/P5/deve
 
 /home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_BehaviorFaultState.py: /opt/ros/melodic/lib/genpy/genmsg_py.py
 /home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_BehaviorFaultState.py: /home/vini/P5/src/spot_ros/spot_msgs/msg/BehaviorFaultState.msg
-/home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_BehaviorFaultState.py: /home/vini/P5/src/spot_ros/spot_msgs/msg/BehaviorFault.msg
 /home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_BehaviorFaultState.py: /opt/ros/melodic/share/std_msgs/msg/Header.msg
+/home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_BehaviorFaultState.py: /home/vini/P5/src/spot_ros/spot_msgs/msg/BehaviorFault.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Generating Python from MSG spot_msgs/BehaviorFaultState"
 	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/vini/P5/src/spot_ros/spot_msgs/msg/BehaviorFaultState.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg
 
@@ -196,8 +196,8 @@ spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_py: /home/vini/P5/deve
 
 /home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_LeaseResource.py: /opt/ros/melodic/lib/genpy/genmsg_py.py
 /home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_LeaseResource.py: /home/vini/P5/src/spot_ros/spot_msgs/msg/LeaseResource.msg
-/home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_LeaseResource.py: /home/vini/P5/src/spot_ros/spot_msgs/msg/LeaseOwner.msg
 /home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_LeaseResource.py: /home/vini/P5/src/spot_ros/spot_msgs/msg/Lease.msg
+/home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_LeaseResource.py: /home/vini/P5/src/spot_ros/spot_msgs/msg/LeaseOwner.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Generating Python from MSG spot_msgs/LeaseResource"
 	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/vini/P5/src/spot_ros/spot_msgs/msg/LeaseResource.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg
 
@@ -209,37 +209,37 @@ spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_py: /home/vini/P5/deve
 
 /home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_SystemFaultState.py: /opt/ros/melodic/lib/genpy/genmsg_py.py
 /home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_SystemFaultState.py: /home/vini/P5/src/spot_ros/spot_msgs/msg/SystemFaultState.msg
-/home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_SystemFaultState.py: /home/vini/P5/src/spot_ros/spot_msgs/msg/SystemFault.msg
 /home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_SystemFaultState.py: /opt/ros/melodic/share/std_msgs/msg/Header.msg
+/home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_SystemFaultState.py: /home/vini/P5/src/spot_ros/spot_msgs/msg/SystemFault.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Generating Python from MSG spot_msgs/SystemFaultState"
 	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/vini/P5/src/spot_ros/spot_msgs/msg/SystemFaultState.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg
 
 /home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_NavigateToAction.py: /opt/ros/melodic/lib/genpy/genmsg_py.py
 /home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_NavigateToAction.py: /home/vini/P5/devel/share/spot_msgs/msg/NavigateToAction.msg
-/home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_NavigateToAction.py: /home/vini/P5/devel/share/spot_msgs/msg/NavigateToActionResult.msg
-/home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_NavigateToAction.py: /home/vini/P5/devel/share/spot_msgs/msg/NavigateToGoal.msg
-/home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_NavigateToAction.py: /home/vini/P5/devel/share/spot_msgs/msg/NavigateToActionGoal.msg
-/home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_NavigateToAction.py: /opt/ros/melodic/share/actionlib_msgs/msg/GoalID.msg
-/home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_NavigateToAction.py: /home/vini/P5/devel/share/spot_msgs/msg/NavigateToActionFeedback.msg
 /home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_NavigateToAction.py: /opt/ros/melodic/share/std_msgs/msg/Header.msg
-/home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_NavigateToAction.py: /opt/ros/melodic/share/actionlib_msgs/msg/GoalStatus.msg
+/home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_NavigateToAction.py: /opt/ros/melodic/share/actionlib_msgs/msg/GoalID.msg
 /home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_NavigateToAction.py: /home/vini/P5/devel/share/spot_msgs/msg/NavigateToResult.msg
+/home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_NavigateToAction.py: /home/vini/P5/devel/share/spot_msgs/msg/NavigateToActionGoal.msg
+/home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_NavigateToAction.py: /home/vini/P5/devel/share/spot_msgs/msg/NavigateToGoal.msg
 /home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_NavigateToAction.py: /home/vini/P5/devel/share/spot_msgs/msg/NavigateToFeedback.msg
+/home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_NavigateToAction.py: /home/vini/P5/devel/share/spot_msgs/msg/NavigateToActionResult.msg
+/home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_NavigateToAction.py: /opt/ros/melodic/share/actionlib_msgs/msg/GoalStatus.msg
+/home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_NavigateToAction.py: /home/vini/P5/devel/share/spot_msgs/msg/NavigateToActionFeedback.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Generating Python from MSG spot_msgs/NavigateToAction"
 	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/vini/P5/devel/share/spot_msgs/msg/NavigateToAction.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg
 
 /home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_NavigateToActionGoal.py: /opt/ros/melodic/lib/genpy/genmsg_py.py
 /home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_NavigateToActionGoal.py: /home/vini/P5/devel/share/spot_msgs/msg/NavigateToActionGoal.msg
-/home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_NavigateToActionGoal.py: /opt/ros/melodic/share/actionlib_msgs/msg/GoalID.msg
 /home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_NavigateToActionGoal.py: /opt/ros/melodic/share/std_msgs/msg/Header.msg
+/home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_NavigateToActionGoal.py: /opt/ros/melodic/share/actionlib_msgs/msg/GoalID.msg
 /home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_NavigateToActionGoal.py: /home/vini/P5/devel/share/spot_msgs/msg/NavigateToGoal.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Generating Python from MSG spot_msgs/NavigateToActionGoal"
 	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/vini/P5/devel/share/spot_msgs/msg/NavigateToActionGoal.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg
 
 /home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_NavigateToActionResult.py: /opt/ros/melodic/lib/genpy/genmsg_py.py
 /home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_NavigateToActionResult.py: /home/vini/P5/devel/share/spot_msgs/msg/NavigateToActionResult.msg
-/home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_NavigateToActionResult.py: /opt/ros/melodic/share/actionlib_msgs/msg/GoalID.msg
 /home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_NavigateToActionResult.py: /opt/ros/melodic/share/std_msgs/msg/Header.msg
+/home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_NavigateToActionResult.py: /opt/ros/melodic/share/actionlib_msgs/msg/GoalID.msg
 /home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_NavigateToActionResult.py: /opt/ros/melodic/share/actionlib_msgs/msg/GoalStatus.msg
 /home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_NavigateToActionResult.py: /home/vini/P5/devel/share/spot_msgs/msg/NavigateToResult.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Generating Python from MSG spot_msgs/NavigateToActionResult"
@@ -247,9 +247,9 @@ spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_py: /home/vini/P5/deve
 
 /home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_NavigateToActionFeedback.py: /opt/ros/melodic/lib/genpy/genmsg_py.py
 /home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_NavigateToActionFeedback.py: /home/vini/P5/devel/share/spot_msgs/msg/NavigateToActionFeedback.msg
-/home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_NavigateToActionFeedback.py: /opt/ros/melodic/share/actionlib_msgs/msg/GoalID.msg
-/home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_NavigateToActionFeedback.py: /home/vini/P5/devel/share/spot_msgs/msg/NavigateToFeedback.msg
 /home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_NavigateToActionFeedback.py: /opt/ros/melodic/share/std_msgs/msg/Header.msg
+/home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_NavigateToActionFeedback.py: /home/vini/P5/devel/share/spot_msgs/msg/NavigateToFeedback.msg
+/home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_NavigateToActionFeedback.py: /opt/ros/melodic/share/actionlib_msgs/msg/GoalID.msg
 /home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_NavigateToActionFeedback.py: /opt/ros/melodic/share/actionlib_msgs/msg/GoalStatus.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Generating Python from MSG spot_msgs/NavigateToActionFeedback"
 	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/vini/P5/devel/share/spot_msgs/msg/NavigateToActionFeedback.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg
@@ -271,49 +271,49 @@ spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_py: /home/vini/P5/deve
 
 /home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_TrajectoryAction.py: /opt/ros/melodic/lib/genpy/genmsg_py.py
 /home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_TrajectoryAction.py: /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryAction.msg
-/home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_TrajectoryAction.py: /opt/ros/melodic/share/std_msgs/msg/Duration.msg
 /home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_TrajectoryAction.py: /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryActionResult.msg
-/home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_TrajectoryAction.py: /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryFeedback.msg
-/home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_TrajectoryAction.py: /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryGoal.msg
-/home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_TrajectoryAction.py: /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryActionGoal.msg
-/home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_TrajectoryAction.py: /opt/ros/melodic/share/geometry_msgs/msg/PoseStamped.msg
-/home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_TrajectoryAction.py: /opt/ros/melodic/share/actionlib_msgs/msg/GoalID.msg
-/home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_TrajectoryAction.py: /opt/ros/melodic/share/std_msgs/msg/Header.msg
 /home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_TrajectoryAction.py: /opt/ros/melodic/share/geometry_msgs/msg/Pose.msg
-/home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_TrajectoryAction.py: /opt/ros/melodic/share/actionlib_msgs/msg/GoalStatus.msg
-/home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_TrajectoryAction.py: /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryResult.msg
-/home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_TrajectoryAction.py: /opt/ros/melodic/share/geometry_msgs/msg/Point.msg
-/home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_TrajectoryAction.py: /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryActionFeedback.msg
+/home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_TrajectoryAction.py: /opt/ros/melodic/share/std_msgs/msg/Header.msg
 /home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_TrajectoryAction.py: /opt/ros/melodic/share/geometry_msgs/msg/Quaternion.msg
+/home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_TrajectoryAction.py: /opt/ros/melodic/share/actionlib_msgs/msg/GoalID.msg
+/home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_TrajectoryAction.py: /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryActionFeedback.msg
+/home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_TrajectoryAction.py: /opt/ros/melodic/share/geometry_msgs/msg/PoseStamped.msg
+/home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_TrajectoryAction.py: /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryGoal.msg
+/home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_TrajectoryAction.py: /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryFeedback.msg
+/home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_TrajectoryAction.py: /opt/ros/melodic/share/actionlib_msgs/msg/GoalStatus.msg
+/home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_TrajectoryAction.py: /opt/ros/melodic/share/geometry_msgs/msg/Point.msg
+/home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_TrajectoryAction.py: /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryResult.msg
+/home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_TrajectoryAction.py: /opt/ros/melodic/share/std_msgs/msg/Duration.msg
+/home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_TrajectoryAction.py: /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryActionGoal.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Generating Python from MSG spot_msgs/TrajectoryAction"
 	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryAction.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg
 
 /home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_TrajectoryActionGoal.py: /opt/ros/melodic/lib/genpy/genmsg_py.py
 /home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_TrajectoryActionGoal.py: /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryActionGoal.msg
-/home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_TrajectoryActionGoal.py: /opt/ros/melodic/share/std_msgs/msg/Duration.msg
-/home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_TrajectoryActionGoal.py: /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryGoal.msg
-/home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_TrajectoryActionGoal.py: /opt/ros/melodic/share/geometry_msgs/msg/PoseStamped.msg
-/home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_TrajectoryActionGoal.py: /opt/ros/melodic/share/actionlib_msgs/msg/GoalID.msg
-/home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_TrajectoryActionGoal.py: /opt/ros/melodic/share/std_msgs/msg/Header.msg
 /home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_TrajectoryActionGoal.py: /opt/ros/melodic/share/geometry_msgs/msg/Pose.msg
+/home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_TrajectoryActionGoal.py: /opt/ros/melodic/share/std_msgs/msg/Header.msg
+/home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_TrajectoryActionGoal.py: /opt/ros/melodic/share/actionlib_msgs/msg/GoalID.msg
+/home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_TrajectoryActionGoal.py: /opt/ros/melodic/share/geometry_msgs/msg/PoseStamped.msg
+/home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_TrajectoryActionGoal.py: /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryGoal.msg
 /home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_TrajectoryActionGoal.py: /opt/ros/melodic/share/geometry_msgs/msg/Point.msg
+/home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_TrajectoryActionGoal.py: /opt/ros/melodic/share/std_msgs/msg/Duration.msg
 /home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_TrajectoryActionGoal.py: /opt/ros/melodic/share/geometry_msgs/msg/Quaternion.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Generating Python from MSG spot_msgs/TrajectoryActionGoal"
 	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryActionGoal.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg
 
 /home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_TrajectoryActionResult.py: /opt/ros/melodic/lib/genpy/genmsg_py.py
 /home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_TrajectoryActionResult.py: /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryActionResult.msg
-/home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_TrajectoryActionResult.py: /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryResult.msg
-/home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_TrajectoryActionResult.py: /opt/ros/melodic/share/actionlib_msgs/msg/GoalID.msg
 /home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_TrajectoryActionResult.py: /opt/ros/melodic/share/std_msgs/msg/Header.msg
+/home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_TrajectoryActionResult.py: /opt/ros/melodic/share/actionlib_msgs/msg/GoalID.msg
 /home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_TrajectoryActionResult.py: /opt/ros/melodic/share/actionlib_msgs/msg/GoalStatus.msg
+/home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_TrajectoryActionResult.py: /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryResult.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Generating Python from MSG spot_msgs/TrajectoryActionResult"
 	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryActionResult.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg
 
 /home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_TrajectoryActionFeedback.py: /opt/ros/melodic/lib/genpy/genmsg_py.py
 /home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_TrajectoryActionFeedback.py: /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryActionFeedback.msg
-/home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_TrajectoryActionFeedback.py: /opt/ros/melodic/share/actionlib_msgs/msg/GoalID.msg
 /home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_TrajectoryActionFeedback.py: /opt/ros/melodic/share/std_msgs/msg/Header.msg
+/home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_TrajectoryActionFeedback.py: /opt/ros/melodic/share/actionlib_msgs/msg/GoalID.msg
 /home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_TrajectoryActionFeedback.py: /opt/ros/melodic/share/actionlib_msgs/msg/GoalStatus.msg
 /home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_TrajectoryActionFeedback.py: /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryFeedback.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Generating Python from MSG spot_msgs/TrajectoryActionFeedback"
@@ -321,11 +321,11 @@ spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_py: /home/vini/P5/deve
 
 /home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_TrajectoryGoal.py: /opt/ros/melodic/lib/genpy/genmsg_py.py
 /home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_TrajectoryGoal.py: /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryGoal.msg
-/home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_TrajectoryGoal.py: /opt/ros/melodic/share/std_msgs/msg/Duration.msg
-/home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_TrajectoryGoal.py: /opt/ros/melodic/share/geometry_msgs/msg/PoseStamped.msg
-/home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_TrajectoryGoal.py: /opt/ros/melodic/share/std_msgs/msg/Header.msg
 /home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_TrajectoryGoal.py: /opt/ros/melodic/share/geometry_msgs/msg/Pose.msg
+/home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_TrajectoryGoal.py: /opt/ros/melodic/share/std_msgs/msg/Header.msg
+/home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_TrajectoryGoal.py: /opt/ros/melodic/share/geometry_msgs/msg/PoseStamped.msg
 /home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_TrajectoryGoal.py: /opt/ros/melodic/share/geometry_msgs/msg/Point.msg
+/home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_TrajectoryGoal.py: /opt/ros/melodic/share/std_msgs/msg/Duration.msg
 /home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg/_TrajectoryGoal.py: /opt/ros/melodic/share/geometry_msgs/msg/Quaternion.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Generating Python from MSG spot_msgs/TrajectoryGoal"
 	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryGoal.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/msg
@@ -352,8 +352,8 @@ spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_py: /home/vini/P5/deve
 
 /home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/srv/_SetVelocity.py: /opt/ros/melodic/lib/genpy/gensrv_py.py
 /home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/srv/_SetVelocity.py: /home/vini/P5/src/spot_ros/spot_msgs/srv/SetVelocity.srv
-/home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/srv/_SetVelocity.py: /opt/ros/melodic/share/geometry_msgs/msg/Vector3.msg
 /home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/srv/_SetVelocity.py: /opt/ros/melodic/share/geometry_msgs/msg/Twist.msg
+/home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/srv/_SetVelocity.py: /opt/ros/melodic/share/geometry_msgs/msg/Vector3.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Generating Python code from SRV spot_msgs/SetVelocity"
 	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/vini/P5/src/spot_ros/spot_msgs/srv/SetVelocity.srv -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/lib/python3/dist-packages/spot_msgs/srv
 

@@ -108,23 +108,23 @@ spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_eus: /home/vini/P5/dev
 
 /home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/EStopStateArray.l: /opt/ros/melodic/lib/geneus/gen_eus.py
 /home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/EStopStateArray.l: /home/vini/P5/src/spot_ros/spot_msgs/msg/EStopStateArray.msg
-/home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/EStopStateArray.l: /home/vini/P5/src/spot_ros/spot_msgs/msg/EStopState.msg
 /home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/EStopStateArray.l: /opt/ros/melodic/share/std_msgs/msg/Header.msg
+/home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/EStopStateArray.l: /home/vini/P5/src/spot_ros/spot_msgs/msg/EStopState.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating EusLisp code from spot_msgs/EStopStateArray.msg"
 	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/vini/P5/src/spot_ros/spot_msgs/msg/EStopStateArray.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/roseus/ros/spot_msgs/msg
 
 /home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/FootStateArray.l: /opt/ros/melodic/lib/geneus/gen_eus.py
 /home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/FootStateArray.l: /home/vini/P5/src/spot_ros/spot_msgs/msg/FootStateArray.msg
-/home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/FootStateArray.l: /opt/ros/melodic/share/geometry_msgs/msg/Point.msg
 /home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/FootStateArray.l: /home/vini/P5/src/spot_ros/spot_msgs/msg/FootState.msg
+/home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/FootStateArray.l: /opt/ros/melodic/share/geometry_msgs/msg/Point.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating EusLisp code from spot_msgs/FootStateArray.msg"
 	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/vini/P5/src/spot_ros/spot_msgs/msg/FootStateArray.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/roseus/ros/spot_msgs/msg
 
 /home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/LeaseArray.l: /opt/ros/melodic/lib/geneus/gen_eus.py
 /home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/LeaseArray.l: /home/vini/P5/src/spot_ros/spot_msgs/msg/LeaseArray.msg
+/home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/LeaseArray.l: /home/vini/P5/src/spot_ros/spot_msgs/msg/Lease.msg
 /home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/LeaseArray.l: /home/vini/P5/src/spot_ros/spot_msgs/msg/LeaseOwner.msg
 /home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/LeaseArray.l: /home/vini/P5/src/spot_ros/spot_msgs/msg/LeaseResource.msg
-/home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/LeaseArray.l: /home/vini/P5/src/spot_ros/spot_msgs/msg/Lease.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating EusLisp code from spot_msgs/LeaseArray.msg"
 	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/vini/P5/src/spot_ros/spot_msgs/msg/LeaseArray.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/roseus/ros/spot_msgs/msg
 
@@ -141,9 +141,9 @@ spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_eus: /home/vini/P5/dev
 
 /home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/MobilityParams.l: /opt/ros/melodic/lib/geneus/gen_eus.py
 /home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/MobilityParams.l: /home/vini/P5/src/spot_ros/spot_msgs/msg/MobilityParams.msg
-/home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/MobilityParams.l: /opt/ros/melodic/share/geometry_msgs/msg/Point.msg
-/home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/MobilityParams.l: /opt/ros/melodic/share/geometry_msgs/msg/Pose.msg
 /home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/MobilityParams.l: /opt/ros/melodic/share/geometry_msgs/msg/Quaternion.msg
+/home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/MobilityParams.l: /opt/ros/melodic/share/geometry_msgs/msg/Pose.msg
+/home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/MobilityParams.l: /opt/ros/melodic/share/geometry_msgs/msg/Point.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Generating EusLisp code from spot_msgs/MobilityParams.msg"
 	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/vini/P5/src/spot_ros/spot_msgs/msg/MobilityParams.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/roseus/ros/spot_msgs/msg
 
@@ -166,8 +166,8 @@ spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_eus: /home/vini/P5/dev
 
 /home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/BehaviorFaultState.l: /opt/ros/melodic/lib/geneus/gen_eus.py
 /home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/BehaviorFaultState.l: /home/vini/P5/src/spot_ros/spot_msgs/msg/BehaviorFaultState.msg
-/home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/BehaviorFaultState.l: /home/vini/P5/src/spot_ros/spot_msgs/msg/BehaviorFault.msg
 /home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/BehaviorFaultState.l: /opt/ros/melodic/share/std_msgs/msg/Header.msg
+/home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/BehaviorFaultState.l: /home/vini/P5/src/spot_ros/spot_msgs/msg/BehaviorFault.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Generating EusLisp code from spot_msgs/BehaviorFaultState.msg"
 	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/vini/P5/src/spot_ros/spot_msgs/msg/BehaviorFaultState.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/roseus/ros/spot_msgs/msg
 
@@ -195,8 +195,8 @@ spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_eus: /home/vini/P5/dev
 
 /home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/LeaseResource.l: /opt/ros/melodic/lib/geneus/gen_eus.py
 /home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/LeaseResource.l: /home/vini/P5/src/spot_ros/spot_msgs/msg/LeaseResource.msg
-/home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/LeaseResource.l: /home/vini/P5/src/spot_ros/spot_msgs/msg/LeaseOwner.msg
 /home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/LeaseResource.l: /home/vini/P5/src/spot_ros/spot_msgs/msg/Lease.msg
+/home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/LeaseResource.l: /home/vini/P5/src/spot_ros/spot_msgs/msg/LeaseOwner.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Generating EusLisp code from spot_msgs/LeaseResource.msg"
 	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/vini/P5/src/spot_ros/spot_msgs/msg/LeaseResource.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/roseus/ros/spot_msgs/msg
 
@@ -208,37 +208,37 @@ spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_eus: /home/vini/P5/dev
 
 /home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/SystemFaultState.l: /opt/ros/melodic/lib/geneus/gen_eus.py
 /home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/SystemFaultState.l: /home/vini/P5/src/spot_ros/spot_msgs/msg/SystemFaultState.msg
-/home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/SystemFaultState.l: /home/vini/P5/src/spot_ros/spot_msgs/msg/SystemFault.msg
 /home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/SystemFaultState.l: /opt/ros/melodic/share/std_msgs/msg/Header.msg
+/home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/SystemFaultState.l: /home/vini/P5/src/spot_ros/spot_msgs/msg/SystemFault.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Generating EusLisp code from spot_msgs/SystemFaultState.msg"
 	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/vini/P5/src/spot_ros/spot_msgs/msg/SystemFaultState.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/roseus/ros/spot_msgs/msg
 
 /home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/NavigateToAction.l: /opt/ros/melodic/lib/geneus/gen_eus.py
 /home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/NavigateToAction.l: /home/vini/P5/devel/share/spot_msgs/msg/NavigateToAction.msg
-/home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/NavigateToAction.l: /home/vini/P5/devel/share/spot_msgs/msg/NavigateToActionResult.msg
-/home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/NavigateToAction.l: /home/vini/P5/devel/share/spot_msgs/msg/NavigateToGoal.msg
-/home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/NavigateToAction.l: /home/vini/P5/devel/share/spot_msgs/msg/NavigateToActionGoal.msg
-/home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/NavigateToAction.l: /opt/ros/melodic/share/actionlib_msgs/msg/GoalID.msg
-/home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/NavigateToAction.l: /home/vini/P5/devel/share/spot_msgs/msg/NavigateToActionFeedback.msg
 /home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/NavigateToAction.l: /opt/ros/melodic/share/std_msgs/msg/Header.msg
-/home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/NavigateToAction.l: /opt/ros/melodic/share/actionlib_msgs/msg/GoalStatus.msg
+/home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/NavigateToAction.l: /opt/ros/melodic/share/actionlib_msgs/msg/GoalID.msg
 /home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/NavigateToAction.l: /home/vini/P5/devel/share/spot_msgs/msg/NavigateToResult.msg
+/home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/NavigateToAction.l: /home/vini/P5/devel/share/spot_msgs/msg/NavigateToActionGoal.msg
+/home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/NavigateToAction.l: /home/vini/P5/devel/share/spot_msgs/msg/NavigateToGoal.msg
 /home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/NavigateToAction.l: /home/vini/P5/devel/share/spot_msgs/msg/NavigateToFeedback.msg
+/home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/NavigateToAction.l: /home/vini/P5/devel/share/spot_msgs/msg/NavigateToActionResult.msg
+/home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/NavigateToAction.l: /opt/ros/melodic/share/actionlib_msgs/msg/GoalStatus.msg
+/home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/NavigateToAction.l: /home/vini/P5/devel/share/spot_msgs/msg/NavigateToActionFeedback.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Generating EusLisp code from spot_msgs/NavigateToAction.msg"
 	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/vini/P5/devel/share/spot_msgs/msg/NavigateToAction.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/roseus/ros/spot_msgs/msg
 
 /home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/NavigateToActionGoal.l: /opt/ros/melodic/lib/geneus/gen_eus.py
 /home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/NavigateToActionGoal.l: /home/vini/P5/devel/share/spot_msgs/msg/NavigateToActionGoal.msg
-/home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/NavigateToActionGoal.l: /opt/ros/melodic/share/actionlib_msgs/msg/GoalID.msg
 /home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/NavigateToActionGoal.l: /opt/ros/melodic/share/std_msgs/msg/Header.msg
+/home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/NavigateToActionGoal.l: /opt/ros/melodic/share/actionlib_msgs/msg/GoalID.msg
 /home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/NavigateToActionGoal.l: /home/vini/P5/devel/share/spot_msgs/msg/NavigateToGoal.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Generating EusLisp code from spot_msgs/NavigateToActionGoal.msg"
 	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/vini/P5/devel/share/spot_msgs/msg/NavigateToActionGoal.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/roseus/ros/spot_msgs/msg
 
 /home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/NavigateToActionResult.l: /opt/ros/melodic/lib/geneus/gen_eus.py
 /home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/NavigateToActionResult.l: /home/vini/P5/devel/share/spot_msgs/msg/NavigateToActionResult.msg
-/home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/NavigateToActionResult.l: /opt/ros/melodic/share/actionlib_msgs/msg/GoalID.msg
 /home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/NavigateToActionResult.l: /opt/ros/melodic/share/std_msgs/msg/Header.msg
+/home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/NavigateToActionResult.l: /opt/ros/melodic/share/actionlib_msgs/msg/GoalID.msg
 /home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/NavigateToActionResult.l: /opt/ros/melodic/share/actionlib_msgs/msg/GoalStatus.msg
 /home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/NavigateToActionResult.l: /home/vini/P5/devel/share/spot_msgs/msg/NavigateToResult.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Generating EusLisp code from spot_msgs/NavigateToActionResult.msg"
@@ -246,9 +246,9 @@ spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_eus: /home/vini/P5/dev
 
 /home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/NavigateToActionFeedback.l: /opt/ros/melodic/lib/geneus/gen_eus.py
 /home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/NavigateToActionFeedback.l: /home/vini/P5/devel/share/spot_msgs/msg/NavigateToActionFeedback.msg
-/home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/NavigateToActionFeedback.l: /opt/ros/melodic/share/actionlib_msgs/msg/GoalID.msg
-/home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/NavigateToActionFeedback.l: /home/vini/P5/devel/share/spot_msgs/msg/NavigateToFeedback.msg
 /home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/NavigateToActionFeedback.l: /opt/ros/melodic/share/std_msgs/msg/Header.msg
+/home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/NavigateToActionFeedback.l: /home/vini/P5/devel/share/spot_msgs/msg/NavigateToFeedback.msg
+/home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/NavigateToActionFeedback.l: /opt/ros/melodic/share/actionlib_msgs/msg/GoalID.msg
 /home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/NavigateToActionFeedback.l: /opt/ros/melodic/share/actionlib_msgs/msg/GoalStatus.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Generating EusLisp code from spot_msgs/NavigateToActionFeedback.msg"
 	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/vini/P5/devel/share/spot_msgs/msg/NavigateToActionFeedback.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/roseus/ros/spot_msgs/msg
@@ -270,49 +270,49 @@ spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_eus: /home/vini/P5/dev
 
 /home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/TrajectoryAction.l: /opt/ros/melodic/lib/geneus/gen_eus.py
 /home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/TrajectoryAction.l: /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryAction.msg
-/home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/TrajectoryAction.l: /opt/ros/melodic/share/std_msgs/msg/Duration.msg
 /home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/TrajectoryAction.l: /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryActionResult.msg
-/home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/TrajectoryAction.l: /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryFeedback.msg
-/home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/TrajectoryAction.l: /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryGoal.msg
-/home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/TrajectoryAction.l: /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryActionGoal.msg
-/home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/TrajectoryAction.l: /opt/ros/melodic/share/geometry_msgs/msg/PoseStamped.msg
-/home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/TrajectoryAction.l: /opt/ros/melodic/share/actionlib_msgs/msg/GoalID.msg
-/home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/TrajectoryAction.l: /opt/ros/melodic/share/std_msgs/msg/Header.msg
 /home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/TrajectoryAction.l: /opt/ros/melodic/share/geometry_msgs/msg/Pose.msg
-/home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/TrajectoryAction.l: /opt/ros/melodic/share/actionlib_msgs/msg/GoalStatus.msg
-/home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/TrajectoryAction.l: /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryResult.msg
-/home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/TrajectoryAction.l: /opt/ros/melodic/share/geometry_msgs/msg/Point.msg
-/home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/TrajectoryAction.l: /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryActionFeedback.msg
+/home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/TrajectoryAction.l: /opt/ros/melodic/share/std_msgs/msg/Header.msg
 /home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/TrajectoryAction.l: /opt/ros/melodic/share/geometry_msgs/msg/Quaternion.msg
+/home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/TrajectoryAction.l: /opt/ros/melodic/share/actionlib_msgs/msg/GoalID.msg
+/home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/TrajectoryAction.l: /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryActionFeedback.msg
+/home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/TrajectoryAction.l: /opt/ros/melodic/share/geometry_msgs/msg/PoseStamped.msg
+/home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/TrajectoryAction.l: /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryGoal.msg
+/home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/TrajectoryAction.l: /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryFeedback.msg
+/home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/TrajectoryAction.l: /opt/ros/melodic/share/actionlib_msgs/msg/GoalStatus.msg
+/home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/TrajectoryAction.l: /opt/ros/melodic/share/geometry_msgs/msg/Point.msg
+/home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/TrajectoryAction.l: /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryResult.msg
+/home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/TrajectoryAction.l: /opt/ros/melodic/share/std_msgs/msg/Duration.msg
+/home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/TrajectoryAction.l: /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryActionGoal.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Generating EusLisp code from spot_msgs/TrajectoryAction.msg"
 	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryAction.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/roseus/ros/spot_msgs/msg
 
 /home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/TrajectoryActionGoal.l: /opt/ros/melodic/lib/geneus/gen_eus.py
 /home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/TrajectoryActionGoal.l: /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryActionGoal.msg
-/home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/TrajectoryActionGoal.l: /opt/ros/melodic/share/std_msgs/msg/Duration.msg
-/home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/TrajectoryActionGoal.l: /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryGoal.msg
-/home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/TrajectoryActionGoal.l: /opt/ros/melodic/share/geometry_msgs/msg/PoseStamped.msg
-/home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/TrajectoryActionGoal.l: /opt/ros/melodic/share/actionlib_msgs/msg/GoalID.msg
-/home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/TrajectoryActionGoal.l: /opt/ros/melodic/share/std_msgs/msg/Header.msg
 /home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/TrajectoryActionGoal.l: /opt/ros/melodic/share/geometry_msgs/msg/Pose.msg
+/home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/TrajectoryActionGoal.l: /opt/ros/melodic/share/std_msgs/msg/Header.msg
+/home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/TrajectoryActionGoal.l: /opt/ros/melodic/share/actionlib_msgs/msg/GoalID.msg
+/home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/TrajectoryActionGoal.l: /opt/ros/melodic/share/geometry_msgs/msg/PoseStamped.msg
+/home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/TrajectoryActionGoal.l: /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryGoal.msg
 /home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/TrajectoryActionGoal.l: /opt/ros/melodic/share/geometry_msgs/msg/Point.msg
+/home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/TrajectoryActionGoal.l: /opt/ros/melodic/share/std_msgs/msg/Duration.msg
 /home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/TrajectoryActionGoal.l: /opt/ros/melodic/share/geometry_msgs/msg/Quaternion.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Generating EusLisp code from spot_msgs/TrajectoryActionGoal.msg"
 	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryActionGoal.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/roseus/ros/spot_msgs/msg
 
 /home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/TrajectoryActionResult.l: /opt/ros/melodic/lib/geneus/gen_eus.py
 /home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/TrajectoryActionResult.l: /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryActionResult.msg
-/home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/TrajectoryActionResult.l: /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryResult.msg
-/home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/TrajectoryActionResult.l: /opt/ros/melodic/share/actionlib_msgs/msg/GoalID.msg
 /home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/TrajectoryActionResult.l: /opt/ros/melodic/share/std_msgs/msg/Header.msg
+/home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/TrajectoryActionResult.l: /opt/ros/melodic/share/actionlib_msgs/msg/GoalID.msg
 /home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/TrajectoryActionResult.l: /opt/ros/melodic/share/actionlib_msgs/msg/GoalStatus.msg
+/home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/TrajectoryActionResult.l: /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryResult.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Generating EusLisp code from spot_msgs/TrajectoryActionResult.msg"
 	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryActionResult.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/roseus/ros/spot_msgs/msg
 
 /home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/TrajectoryActionFeedback.l: /opt/ros/melodic/lib/geneus/gen_eus.py
 /home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/TrajectoryActionFeedback.l: /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryActionFeedback.msg
-/home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/TrajectoryActionFeedback.l: /opt/ros/melodic/share/actionlib_msgs/msg/GoalID.msg
 /home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/TrajectoryActionFeedback.l: /opt/ros/melodic/share/std_msgs/msg/Header.msg
+/home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/TrajectoryActionFeedback.l: /opt/ros/melodic/share/actionlib_msgs/msg/GoalID.msg
 /home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/TrajectoryActionFeedback.l: /opt/ros/melodic/share/actionlib_msgs/msg/GoalStatus.msg
 /home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/TrajectoryActionFeedback.l: /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryFeedback.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Generating EusLisp code from spot_msgs/TrajectoryActionFeedback.msg"
@@ -320,11 +320,11 @@ spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_eus: /home/vini/P5/dev
 
 /home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/TrajectoryGoal.l: /opt/ros/melodic/lib/geneus/gen_eus.py
 /home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/TrajectoryGoal.l: /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryGoal.msg
-/home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/TrajectoryGoal.l: /opt/ros/melodic/share/std_msgs/msg/Duration.msg
-/home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/TrajectoryGoal.l: /opt/ros/melodic/share/geometry_msgs/msg/PoseStamped.msg
-/home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/TrajectoryGoal.l: /opt/ros/melodic/share/std_msgs/msg/Header.msg
 /home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/TrajectoryGoal.l: /opt/ros/melodic/share/geometry_msgs/msg/Pose.msg
+/home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/TrajectoryGoal.l: /opt/ros/melodic/share/std_msgs/msg/Header.msg
+/home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/TrajectoryGoal.l: /opt/ros/melodic/share/geometry_msgs/msg/PoseStamped.msg
 /home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/TrajectoryGoal.l: /opt/ros/melodic/share/geometry_msgs/msg/Point.msg
+/home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/TrajectoryGoal.l: /opt/ros/melodic/share/std_msgs/msg/Duration.msg
 /home/vini/P5/devel/share/roseus/ros/spot_msgs/msg/TrajectoryGoal.l: /opt/ros/melodic/share/geometry_msgs/msg/Quaternion.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Generating EusLisp code from spot_msgs/TrajectoryGoal.msg"
 	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryGoal.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/roseus/ros/spot_msgs/msg
@@ -351,8 +351,8 @@ spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_eus: /home/vini/P5/dev
 
 /home/vini/P5/devel/share/roseus/ros/spot_msgs/srv/SetVelocity.l: /opt/ros/melodic/lib/geneus/gen_eus.py
 /home/vini/P5/devel/share/roseus/ros/spot_msgs/srv/SetVelocity.l: /home/vini/P5/src/spot_ros/spot_msgs/srv/SetVelocity.srv
-/home/vini/P5/devel/share/roseus/ros/spot_msgs/srv/SetVelocity.l: /opt/ros/melodic/share/geometry_msgs/msg/Vector3.msg
 /home/vini/P5/devel/share/roseus/ros/spot_msgs/srv/SetVelocity.l: /opt/ros/melodic/share/geometry_msgs/msg/Twist.msg
+/home/vini/P5/devel/share/roseus/ros/spot_msgs/srv/SetVelocity.l: /opt/ros/melodic/share/geometry_msgs/msg/Vector3.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Generating EusLisp code from spot_msgs/SetVelocity.srv"
 	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/vini/P5/src/spot_ros/spot_msgs/srv/SetVelocity.srv -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/roseus/ros/spot_msgs/srv
 

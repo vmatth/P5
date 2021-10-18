@@ -109,25 +109,25 @@ spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_cpp: /home/vini/P5/dev
 
 /home/vini/P5/devel/include/spot_msgs/EStopStateArray.h: /opt/ros/melodic/lib/gencpp/gen_cpp.py
 /home/vini/P5/devel/include/spot_msgs/EStopStateArray.h: /home/vini/P5/src/spot_ros/spot_msgs/msg/EStopStateArray.msg
-/home/vini/P5/devel/include/spot_msgs/EStopStateArray.h: /home/vini/P5/src/spot_ros/spot_msgs/msg/EStopState.msg
 /home/vini/P5/devel/include/spot_msgs/EStopStateArray.h: /opt/ros/melodic/share/std_msgs/msg/Header.msg
+/home/vini/P5/devel/include/spot_msgs/EStopStateArray.h: /home/vini/P5/src/spot_ros/spot_msgs/msg/EStopState.msg
 /home/vini/P5/devel/include/spot_msgs/EStopStateArray.h: /opt/ros/melodic/share/gencpp/msg.h.template
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating C++ code from spot_msgs/EStopStateArray.msg"
 	cd /home/vini/P5/src/spot_ros/spot_msgs && /home/vini/P5/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/vini/P5/src/spot_ros/spot_msgs/msg/EStopStateArray.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/include/spot_msgs -e /opt/ros/melodic/share/gencpp/cmake/..
 
 /home/vini/P5/devel/include/spot_msgs/FootStateArray.h: /opt/ros/melodic/lib/gencpp/gen_cpp.py
 /home/vini/P5/devel/include/spot_msgs/FootStateArray.h: /home/vini/P5/src/spot_ros/spot_msgs/msg/FootStateArray.msg
-/home/vini/P5/devel/include/spot_msgs/FootStateArray.h: /opt/ros/melodic/share/geometry_msgs/msg/Point.msg
 /home/vini/P5/devel/include/spot_msgs/FootStateArray.h: /home/vini/P5/src/spot_ros/spot_msgs/msg/FootState.msg
+/home/vini/P5/devel/include/spot_msgs/FootStateArray.h: /opt/ros/melodic/share/geometry_msgs/msg/Point.msg
 /home/vini/P5/devel/include/spot_msgs/FootStateArray.h: /opt/ros/melodic/share/gencpp/msg.h.template
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating C++ code from spot_msgs/FootStateArray.msg"
 	cd /home/vini/P5/src/spot_ros/spot_msgs && /home/vini/P5/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/vini/P5/src/spot_ros/spot_msgs/msg/FootStateArray.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/include/spot_msgs -e /opt/ros/melodic/share/gencpp/cmake/..
 
 /home/vini/P5/devel/include/spot_msgs/LeaseArray.h: /opt/ros/melodic/lib/gencpp/gen_cpp.py
 /home/vini/P5/devel/include/spot_msgs/LeaseArray.h: /home/vini/P5/src/spot_ros/spot_msgs/msg/LeaseArray.msg
+/home/vini/P5/devel/include/spot_msgs/LeaseArray.h: /home/vini/P5/src/spot_ros/spot_msgs/msg/Lease.msg
 /home/vini/P5/devel/include/spot_msgs/LeaseArray.h: /home/vini/P5/src/spot_ros/spot_msgs/msg/LeaseOwner.msg
 /home/vini/P5/devel/include/spot_msgs/LeaseArray.h: /home/vini/P5/src/spot_ros/spot_msgs/msg/LeaseResource.msg
-/home/vini/P5/devel/include/spot_msgs/LeaseArray.h: /home/vini/P5/src/spot_ros/spot_msgs/msg/Lease.msg
 /home/vini/P5/devel/include/spot_msgs/LeaseArray.h: /opt/ros/melodic/share/gencpp/msg.h.template
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating C++ code from spot_msgs/LeaseArray.msg"
 	cd /home/vini/P5/src/spot_ros/spot_msgs && /home/vini/P5/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/vini/P5/src/spot_ros/spot_msgs/msg/LeaseArray.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/include/spot_msgs -e /opt/ros/melodic/share/gencpp/cmake/..
@@ -147,9 +147,9 @@ spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_cpp: /home/vini/P5/dev
 
 /home/vini/P5/devel/include/spot_msgs/MobilityParams.h: /opt/ros/melodic/lib/gencpp/gen_cpp.py
 /home/vini/P5/devel/include/spot_msgs/MobilityParams.h: /home/vini/P5/src/spot_ros/spot_msgs/msg/MobilityParams.msg
-/home/vini/P5/devel/include/spot_msgs/MobilityParams.h: /opt/ros/melodic/share/geometry_msgs/msg/Point.msg
-/home/vini/P5/devel/include/spot_msgs/MobilityParams.h: /opt/ros/melodic/share/geometry_msgs/msg/Pose.msg
 /home/vini/P5/devel/include/spot_msgs/MobilityParams.h: /opt/ros/melodic/share/geometry_msgs/msg/Quaternion.msg
+/home/vini/P5/devel/include/spot_msgs/MobilityParams.h: /opt/ros/melodic/share/geometry_msgs/msg/Pose.msg
+/home/vini/P5/devel/include/spot_msgs/MobilityParams.h: /opt/ros/melodic/share/geometry_msgs/msg/Point.msg
 /home/vini/P5/devel/include/spot_msgs/MobilityParams.h: /opt/ros/melodic/share/gencpp/msg.h.template
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Generating C++ code from spot_msgs/MobilityParams.msg"
 	cd /home/vini/P5/src/spot_ros/spot_msgs && /home/vini/P5/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/vini/P5/src/spot_ros/spot_msgs/msg/MobilityParams.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/include/spot_msgs -e /opt/ros/melodic/share/gencpp/cmake/..
@@ -176,8 +176,8 @@ spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_cpp: /home/vini/P5/dev
 
 /home/vini/P5/devel/include/spot_msgs/BehaviorFaultState.h: /opt/ros/melodic/lib/gencpp/gen_cpp.py
 /home/vini/P5/devel/include/spot_msgs/BehaviorFaultState.h: /home/vini/P5/src/spot_ros/spot_msgs/msg/BehaviorFaultState.msg
-/home/vini/P5/devel/include/spot_msgs/BehaviorFaultState.h: /home/vini/P5/src/spot_ros/spot_msgs/msg/BehaviorFault.msg
 /home/vini/P5/devel/include/spot_msgs/BehaviorFaultState.h: /opt/ros/melodic/share/std_msgs/msg/Header.msg
+/home/vini/P5/devel/include/spot_msgs/BehaviorFaultState.h: /home/vini/P5/src/spot_ros/spot_msgs/msg/BehaviorFault.msg
 /home/vini/P5/devel/include/spot_msgs/BehaviorFaultState.h: /opt/ros/melodic/share/gencpp/msg.h.template
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Generating C++ code from spot_msgs/BehaviorFaultState.msg"
 	cd /home/vini/P5/src/spot_ros/spot_msgs && /home/vini/P5/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/vini/P5/src/spot_ros/spot_msgs/msg/BehaviorFaultState.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/include/spot_msgs -e /opt/ros/melodic/share/gencpp/cmake/..
@@ -210,8 +210,8 @@ spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_cpp: /home/vini/P5/dev
 
 /home/vini/P5/devel/include/spot_msgs/LeaseResource.h: /opt/ros/melodic/lib/gencpp/gen_cpp.py
 /home/vini/P5/devel/include/spot_msgs/LeaseResource.h: /home/vini/P5/src/spot_ros/spot_msgs/msg/LeaseResource.msg
-/home/vini/P5/devel/include/spot_msgs/LeaseResource.h: /home/vini/P5/src/spot_ros/spot_msgs/msg/LeaseOwner.msg
 /home/vini/P5/devel/include/spot_msgs/LeaseResource.h: /home/vini/P5/src/spot_ros/spot_msgs/msg/Lease.msg
+/home/vini/P5/devel/include/spot_msgs/LeaseResource.h: /home/vini/P5/src/spot_ros/spot_msgs/msg/LeaseOwner.msg
 /home/vini/P5/devel/include/spot_msgs/LeaseResource.h: /opt/ros/melodic/share/gencpp/msg.h.template
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Generating C++ code from spot_msgs/LeaseResource.msg"
 	cd /home/vini/P5/src/spot_ros/spot_msgs && /home/vini/P5/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/vini/P5/src/spot_ros/spot_msgs/msg/LeaseResource.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/include/spot_msgs -e /opt/ros/melodic/share/gencpp/cmake/..
@@ -225,31 +225,31 @@ spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_cpp: /home/vini/P5/dev
 
 /home/vini/P5/devel/include/spot_msgs/SystemFaultState.h: /opt/ros/melodic/lib/gencpp/gen_cpp.py
 /home/vini/P5/devel/include/spot_msgs/SystemFaultState.h: /home/vini/P5/src/spot_ros/spot_msgs/msg/SystemFaultState.msg
-/home/vini/P5/devel/include/spot_msgs/SystemFaultState.h: /home/vini/P5/src/spot_ros/spot_msgs/msg/SystemFault.msg
 /home/vini/P5/devel/include/spot_msgs/SystemFaultState.h: /opt/ros/melodic/share/std_msgs/msg/Header.msg
+/home/vini/P5/devel/include/spot_msgs/SystemFaultState.h: /home/vini/P5/src/spot_ros/spot_msgs/msg/SystemFault.msg
 /home/vini/P5/devel/include/spot_msgs/SystemFaultState.h: /opt/ros/melodic/share/gencpp/msg.h.template
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Generating C++ code from spot_msgs/SystemFaultState.msg"
 	cd /home/vini/P5/src/spot_ros/spot_msgs && /home/vini/P5/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/vini/P5/src/spot_ros/spot_msgs/msg/SystemFaultState.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/include/spot_msgs -e /opt/ros/melodic/share/gencpp/cmake/..
 
 /home/vini/P5/devel/include/spot_msgs/NavigateToAction.h: /opt/ros/melodic/lib/gencpp/gen_cpp.py
 /home/vini/P5/devel/include/spot_msgs/NavigateToAction.h: /home/vini/P5/devel/share/spot_msgs/msg/NavigateToAction.msg
-/home/vini/P5/devel/include/spot_msgs/NavigateToAction.h: /home/vini/P5/devel/share/spot_msgs/msg/NavigateToActionResult.msg
-/home/vini/P5/devel/include/spot_msgs/NavigateToAction.h: /home/vini/P5/devel/share/spot_msgs/msg/NavigateToGoal.msg
-/home/vini/P5/devel/include/spot_msgs/NavigateToAction.h: /home/vini/P5/devel/share/spot_msgs/msg/NavigateToActionGoal.msg
-/home/vini/P5/devel/include/spot_msgs/NavigateToAction.h: /opt/ros/melodic/share/actionlib_msgs/msg/GoalID.msg
-/home/vini/P5/devel/include/spot_msgs/NavigateToAction.h: /home/vini/P5/devel/share/spot_msgs/msg/NavigateToActionFeedback.msg
 /home/vini/P5/devel/include/spot_msgs/NavigateToAction.h: /opt/ros/melodic/share/std_msgs/msg/Header.msg
-/home/vini/P5/devel/include/spot_msgs/NavigateToAction.h: /opt/ros/melodic/share/actionlib_msgs/msg/GoalStatus.msg
+/home/vini/P5/devel/include/spot_msgs/NavigateToAction.h: /opt/ros/melodic/share/actionlib_msgs/msg/GoalID.msg
 /home/vini/P5/devel/include/spot_msgs/NavigateToAction.h: /home/vini/P5/devel/share/spot_msgs/msg/NavigateToResult.msg
+/home/vini/P5/devel/include/spot_msgs/NavigateToAction.h: /home/vini/P5/devel/share/spot_msgs/msg/NavigateToActionGoal.msg
+/home/vini/P5/devel/include/spot_msgs/NavigateToAction.h: /home/vini/P5/devel/share/spot_msgs/msg/NavigateToGoal.msg
 /home/vini/P5/devel/include/spot_msgs/NavigateToAction.h: /home/vini/P5/devel/share/spot_msgs/msg/NavigateToFeedback.msg
+/home/vini/P5/devel/include/spot_msgs/NavigateToAction.h: /home/vini/P5/devel/share/spot_msgs/msg/NavigateToActionResult.msg
+/home/vini/P5/devel/include/spot_msgs/NavigateToAction.h: /opt/ros/melodic/share/actionlib_msgs/msg/GoalStatus.msg
+/home/vini/P5/devel/include/spot_msgs/NavigateToAction.h: /home/vini/P5/devel/share/spot_msgs/msg/NavigateToActionFeedback.msg
 /home/vini/P5/devel/include/spot_msgs/NavigateToAction.h: /opt/ros/melodic/share/gencpp/msg.h.template
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Generating C++ code from spot_msgs/NavigateToAction.msg"
 	cd /home/vini/P5/src/spot_ros/spot_msgs && /home/vini/P5/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/vini/P5/devel/share/spot_msgs/msg/NavigateToAction.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/include/spot_msgs -e /opt/ros/melodic/share/gencpp/cmake/..
 
 /home/vini/P5/devel/include/spot_msgs/NavigateToActionGoal.h: /opt/ros/melodic/lib/gencpp/gen_cpp.py
 /home/vini/P5/devel/include/spot_msgs/NavigateToActionGoal.h: /home/vini/P5/devel/share/spot_msgs/msg/NavigateToActionGoal.msg
-/home/vini/P5/devel/include/spot_msgs/NavigateToActionGoal.h: /opt/ros/melodic/share/actionlib_msgs/msg/GoalID.msg
 /home/vini/P5/devel/include/spot_msgs/NavigateToActionGoal.h: /opt/ros/melodic/share/std_msgs/msg/Header.msg
+/home/vini/P5/devel/include/spot_msgs/NavigateToActionGoal.h: /opt/ros/melodic/share/actionlib_msgs/msg/GoalID.msg
 /home/vini/P5/devel/include/spot_msgs/NavigateToActionGoal.h: /home/vini/P5/devel/share/spot_msgs/msg/NavigateToGoal.msg
 /home/vini/P5/devel/include/spot_msgs/NavigateToActionGoal.h: /opt/ros/melodic/share/gencpp/msg.h.template
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Generating C++ code from spot_msgs/NavigateToActionGoal.msg"
@@ -257,8 +257,8 @@ spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_cpp: /home/vini/P5/dev
 
 /home/vini/P5/devel/include/spot_msgs/NavigateToActionResult.h: /opt/ros/melodic/lib/gencpp/gen_cpp.py
 /home/vini/P5/devel/include/spot_msgs/NavigateToActionResult.h: /home/vini/P5/devel/share/spot_msgs/msg/NavigateToActionResult.msg
-/home/vini/P5/devel/include/spot_msgs/NavigateToActionResult.h: /opt/ros/melodic/share/actionlib_msgs/msg/GoalID.msg
 /home/vini/P5/devel/include/spot_msgs/NavigateToActionResult.h: /opt/ros/melodic/share/std_msgs/msg/Header.msg
+/home/vini/P5/devel/include/spot_msgs/NavigateToActionResult.h: /opt/ros/melodic/share/actionlib_msgs/msg/GoalID.msg
 /home/vini/P5/devel/include/spot_msgs/NavigateToActionResult.h: /opt/ros/melodic/share/actionlib_msgs/msg/GoalStatus.msg
 /home/vini/P5/devel/include/spot_msgs/NavigateToActionResult.h: /home/vini/P5/devel/share/spot_msgs/msg/NavigateToResult.msg
 /home/vini/P5/devel/include/spot_msgs/NavigateToActionResult.h: /opt/ros/melodic/share/gencpp/msg.h.template
@@ -267,9 +267,9 @@ spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_cpp: /home/vini/P5/dev
 
 /home/vini/P5/devel/include/spot_msgs/NavigateToActionFeedback.h: /opt/ros/melodic/lib/gencpp/gen_cpp.py
 /home/vini/P5/devel/include/spot_msgs/NavigateToActionFeedback.h: /home/vini/P5/devel/share/spot_msgs/msg/NavigateToActionFeedback.msg
-/home/vini/P5/devel/include/spot_msgs/NavigateToActionFeedback.h: /opt/ros/melodic/share/actionlib_msgs/msg/GoalID.msg
-/home/vini/P5/devel/include/spot_msgs/NavigateToActionFeedback.h: /home/vini/P5/devel/share/spot_msgs/msg/NavigateToFeedback.msg
 /home/vini/P5/devel/include/spot_msgs/NavigateToActionFeedback.h: /opt/ros/melodic/share/std_msgs/msg/Header.msg
+/home/vini/P5/devel/include/spot_msgs/NavigateToActionFeedback.h: /home/vini/P5/devel/share/spot_msgs/msg/NavigateToFeedback.msg
+/home/vini/P5/devel/include/spot_msgs/NavigateToActionFeedback.h: /opt/ros/melodic/share/actionlib_msgs/msg/GoalID.msg
 /home/vini/P5/devel/include/spot_msgs/NavigateToActionFeedback.h: /opt/ros/melodic/share/actionlib_msgs/msg/GoalStatus.msg
 /home/vini/P5/devel/include/spot_msgs/NavigateToActionFeedback.h: /opt/ros/melodic/share/gencpp/msg.h.template
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Generating C++ code from spot_msgs/NavigateToActionFeedback.msg"
@@ -295,33 +295,33 @@ spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_cpp: /home/vini/P5/dev
 
 /home/vini/P5/devel/include/spot_msgs/TrajectoryAction.h: /opt/ros/melodic/lib/gencpp/gen_cpp.py
 /home/vini/P5/devel/include/spot_msgs/TrajectoryAction.h: /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryAction.msg
-/home/vini/P5/devel/include/spot_msgs/TrajectoryAction.h: /opt/ros/melodic/share/std_msgs/msg/Duration.msg
 /home/vini/P5/devel/include/spot_msgs/TrajectoryAction.h: /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryActionResult.msg
-/home/vini/P5/devel/include/spot_msgs/TrajectoryAction.h: /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryFeedback.msg
-/home/vini/P5/devel/include/spot_msgs/TrajectoryAction.h: /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryGoal.msg
-/home/vini/P5/devel/include/spot_msgs/TrajectoryAction.h: /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryActionGoal.msg
-/home/vini/P5/devel/include/spot_msgs/TrajectoryAction.h: /opt/ros/melodic/share/geometry_msgs/msg/PoseStamped.msg
-/home/vini/P5/devel/include/spot_msgs/TrajectoryAction.h: /opt/ros/melodic/share/actionlib_msgs/msg/GoalID.msg
-/home/vini/P5/devel/include/spot_msgs/TrajectoryAction.h: /opt/ros/melodic/share/std_msgs/msg/Header.msg
 /home/vini/P5/devel/include/spot_msgs/TrajectoryAction.h: /opt/ros/melodic/share/geometry_msgs/msg/Pose.msg
-/home/vini/P5/devel/include/spot_msgs/TrajectoryAction.h: /opt/ros/melodic/share/actionlib_msgs/msg/GoalStatus.msg
-/home/vini/P5/devel/include/spot_msgs/TrajectoryAction.h: /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryResult.msg
-/home/vini/P5/devel/include/spot_msgs/TrajectoryAction.h: /opt/ros/melodic/share/geometry_msgs/msg/Point.msg
-/home/vini/P5/devel/include/spot_msgs/TrajectoryAction.h: /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryActionFeedback.msg
+/home/vini/P5/devel/include/spot_msgs/TrajectoryAction.h: /opt/ros/melodic/share/std_msgs/msg/Header.msg
 /home/vini/P5/devel/include/spot_msgs/TrajectoryAction.h: /opt/ros/melodic/share/geometry_msgs/msg/Quaternion.msg
+/home/vini/P5/devel/include/spot_msgs/TrajectoryAction.h: /opt/ros/melodic/share/actionlib_msgs/msg/GoalID.msg
+/home/vini/P5/devel/include/spot_msgs/TrajectoryAction.h: /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryActionFeedback.msg
+/home/vini/P5/devel/include/spot_msgs/TrajectoryAction.h: /opt/ros/melodic/share/geometry_msgs/msg/PoseStamped.msg
+/home/vini/P5/devel/include/spot_msgs/TrajectoryAction.h: /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryGoal.msg
+/home/vini/P5/devel/include/spot_msgs/TrajectoryAction.h: /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryFeedback.msg
+/home/vini/P5/devel/include/spot_msgs/TrajectoryAction.h: /opt/ros/melodic/share/actionlib_msgs/msg/GoalStatus.msg
+/home/vini/P5/devel/include/spot_msgs/TrajectoryAction.h: /opt/ros/melodic/share/geometry_msgs/msg/Point.msg
+/home/vini/P5/devel/include/spot_msgs/TrajectoryAction.h: /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryResult.msg
+/home/vini/P5/devel/include/spot_msgs/TrajectoryAction.h: /opt/ros/melodic/share/std_msgs/msg/Duration.msg
+/home/vini/P5/devel/include/spot_msgs/TrajectoryAction.h: /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryActionGoal.msg
 /home/vini/P5/devel/include/spot_msgs/TrajectoryAction.h: /opt/ros/melodic/share/gencpp/msg.h.template
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Generating C++ code from spot_msgs/TrajectoryAction.msg"
 	cd /home/vini/P5/src/spot_ros/spot_msgs && /home/vini/P5/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryAction.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/include/spot_msgs -e /opt/ros/melodic/share/gencpp/cmake/..
 
 /home/vini/P5/devel/include/spot_msgs/TrajectoryActionGoal.h: /opt/ros/melodic/lib/gencpp/gen_cpp.py
 /home/vini/P5/devel/include/spot_msgs/TrajectoryActionGoal.h: /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryActionGoal.msg
-/home/vini/P5/devel/include/spot_msgs/TrajectoryActionGoal.h: /opt/ros/melodic/share/std_msgs/msg/Duration.msg
-/home/vini/P5/devel/include/spot_msgs/TrajectoryActionGoal.h: /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryGoal.msg
-/home/vini/P5/devel/include/spot_msgs/TrajectoryActionGoal.h: /opt/ros/melodic/share/geometry_msgs/msg/PoseStamped.msg
-/home/vini/P5/devel/include/spot_msgs/TrajectoryActionGoal.h: /opt/ros/melodic/share/actionlib_msgs/msg/GoalID.msg
-/home/vini/P5/devel/include/spot_msgs/TrajectoryActionGoal.h: /opt/ros/melodic/share/std_msgs/msg/Header.msg
 /home/vini/P5/devel/include/spot_msgs/TrajectoryActionGoal.h: /opt/ros/melodic/share/geometry_msgs/msg/Pose.msg
+/home/vini/P5/devel/include/spot_msgs/TrajectoryActionGoal.h: /opt/ros/melodic/share/std_msgs/msg/Header.msg
+/home/vini/P5/devel/include/spot_msgs/TrajectoryActionGoal.h: /opt/ros/melodic/share/actionlib_msgs/msg/GoalID.msg
+/home/vini/P5/devel/include/spot_msgs/TrajectoryActionGoal.h: /opt/ros/melodic/share/geometry_msgs/msg/PoseStamped.msg
+/home/vini/P5/devel/include/spot_msgs/TrajectoryActionGoal.h: /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryGoal.msg
 /home/vini/P5/devel/include/spot_msgs/TrajectoryActionGoal.h: /opt/ros/melodic/share/geometry_msgs/msg/Point.msg
+/home/vini/P5/devel/include/spot_msgs/TrajectoryActionGoal.h: /opt/ros/melodic/share/std_msgs/msg/Duration.msg
 /home/vini/P5/devel/include/spot_msgs/TrajectoryActionGoal.h: /opt/ros/melodic/share/geometry_msgs/msg/Quaternion.msg
 /home/vini/P5/devel/include/spot_msgs/TrajectoryActionGoal.h: /opt/ros/melodic/share/gencpp/msg.h.template
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Generating C++ code from spot_msgs/TrajectoryActionGoal.msg"
@@ -329,18 +329,18 @@ spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_cpp: /home/vini/P5/dev
 
 /home/vini/P5/devel/include/spot_msgs/TrajectoryActionResult.h: /opt/ros/melodic/lib/gencpp/gen_cpp.py
 /home/vini/P5/devel/include/spot_msgs/TrajectoryActionResult.h: /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryActionResult.msg
-/home/vini/P5/devel/include/spot_msgs/TrajectoryActionResult.h: /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryResult.msg
-/home/vini/P5/devel/include/spot_msgs/TrajectoryActionResult.h: /opt/ros/melodic/share/actionlib_msgs/msg/GoalID.msg
 /home/vini/P5/devel/include/spot_msgs/TrajectoryActionResult.h: /opt/ros/melodic/share/std_msgs/msg/Header.msg
+/home/vini/P5/devel/include/spot_msgs/TrajectoryActionResult.h: /opt/ros/melodic/share/actionlib_msgs/msg/GoalID.msg
 /home/vini/P5/devel/include/spot_msgs/TrajectoryActionResult.h: /opt/ros/melodic/share/actionlib_msgs/msg/GoalStatus.msg
+/home/vini/P5/devel/include/spot_msgs/TrajectoryActionResult.h: /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryResult.msg
 /home/vini/P5/devel/include/spot_msgs/TrajectoryActionResult.h: /opt/ros/melodic/share/gencpp/msg.h.template
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Generating C++ code from spot_msgs/TrajectoryActionResult.msg"
 	cd /home/vini/P5/src/spot_ros/spot_msgs && /home/vini/P5/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryActionResult.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/include/spot_msgs -e /opt/ros/melodic/share/gencpp/cmake/..
 
 /home/vini/P5/devel/include/spot_msgs/TrajectoryActionFeedback.h: /opt/ros/melodic/lib/gencpp/gen_cpp.py
 /home/vini/P5/devel/include/spot_msgs/TrajectoryActionFeedback.h: /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryActionFeedback.msg
-/home/vini/P5/devel/include/spot_msgs/TrajectoryActionFeedback.h: /opt/ros/melodic/share/actionlib_msgs/msg/GoalID.msg
 /home/vini/P5/devel/include/spot_msgs/TrajectoryActionFeedback.h: /opt/ros/melodic/share/std_msgs/msg/Header.msg
+/home/vini/P5/devel/include/spot_msgs/TrajectoryActionFeedback.h: /opt/ros/melodic/share/actionlib_msgs/msg/GoalID.msg
 /home/vini/P5/devel/include/spot_msgs/TrajectoryActionFeedback.h: /opt/ros/melodic/share/actionlib_msgs/msg/GoalStatus.msg
 /home/vini/P5/devel/include/spot_msgs/TrajectoryActionFeedback.h: /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryFeedback.msg
 /home/vini/P5/devel/include/spot_msgs/TrajectoryActionFeedback.h: /opt/ros/melodic/share/gencpp/msg.h.template
@@ -349,11 +349,11 @@ spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_cpp: /home/vini/P5/dev
 
 /home/vini/P5/devel/include/spot_msgs/TrajectoryGoal.h: /opt/ros/melodic/lib/gencpp/gen_cpp.py
 /home/vini/P5/devel/include/spot_msgs/TrajectoryGoal.h: /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryGoal.msg
-/home/vini/P5/devel/include/spot_msgs/TrajectoryGoal.h: /opt/ros/melodic/share/std_msgs/msg/Duration.msg
-/home/vini/P5/devel/include/spot_msgs/TrajectoryGoal.h: /opt/ros/melodic/share/geometry_msgs/msg/PoseStamped.msg
-/home/vini/P5/devel/include/spot_msgs/TrajectoryGoal.h: /opt/ros/melodic/share/std_msgs/msg/Header.msg
 /home/vini/P5/devel/include/spot_msgs/TrajectoryGoal.h: /opt/ros/melodic/share/geometry_msgs/msg/Pose.msg
+/home/vini/P5/devel/include/spot_msgs/TrajectoryGoal.h: /opt/ros/melodic/share/std_msgs/msg/Header.msg
+/home/vini/P5/devel/include/spot_msgs/TrajectoryGoal.h: /opt/ros/melodic/share/geometry_msgs/msg/PoseStamped.msg
 /home/vini/P5/devel/include/spot_msgs/TrajectoryGoal.h: /opt/ros/melodic/share/geometry_msgs/msg/Point.msg
+/home/vini/P5/devel/include/spot_msgs/TrajectoryGoal.h: /opt/ros/melodic/share/std_msgs/msg/Duration.msg
 /home/vini/P5/devel/include/spot_msgs/TrajectoryGoal.h: /opt/ros/melodic/share/geometry_msgs/msg/Quaternion.msg
 /home/vini/P5/devel/include/spot_msgs/TrajectoryGoal.h: /opt/ros/melodic/share/gencpp/msg.h.template
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Generating C++ code from spot_msgs/TrajectoryGoal.msg"
@@ -387,8 +387,8 @@ spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_cpp: /home/vini/P5/dev
 
 /home/vini/P5/devel/include/spot_msgs/SetVelocity.h: /opt/ros/melodic/lib/gencpp/gen_cpp.py
 /home/vini/P5/devel/include/spot_msgs/SetVelocity.h: /home/vini/P5/src/spot_ros/spot_msgs/srv/SetVelocity.srv
-/home/vini/P5/devel/include/spot_msgs/SetVelocity.h: /opt/ros/melodic/share/geometry_msgs/msg/Vector3.msg
 /home/vini/P5/devel/include/spot_msgs/SetVelocity.h: /opt/ros/melodic/share/geometry_msgs/msg/Twist.msg
+/home/vini/P5/devel/include/spot_msgs/SetVelocity.h: /opt/ros/melodic/share/geometry_msgs/msg/Vector3.msg
 /home/vini/P5/devel/include/spot_msgs/SetVelocity.h: /opt/ros/melodic/share/gencpp/msg.h.template
 /home/vini/P5/devel/include/spot_msgs/SetVelocity.h: /opt/ros/melodic/share/gencpp/srv.h.template
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Generating C++ code from spot_msgs/SetVelocity.srv"
