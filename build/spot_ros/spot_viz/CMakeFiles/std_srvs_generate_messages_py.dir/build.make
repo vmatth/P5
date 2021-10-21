@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/axel/P5/src
+CMAKE_SOURCE_DIR = /home/vini/P5/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/axel/P5/build
+CMAKE_BINARY_DIR = /home/vini/P5/build
 
 # Utility rule file for std_srvs_generate_messages_py.
 
@@ -63,10 +63,10 @@ spot_ros/spot_viz/CMakeFiles/std_srvs_generate_messages_py.dir/build: std_srvs_g
 .PHONY : spot_ros/spot_viz/CMakeFiles/std_srvs_generate_messages_py.dir/build
 
 spot_ros/spot_viz/CMakeFiles/std_srvs_generate_messages_py.dir/clean:
-	cd /home/axel/P5/build/spot_ros/spot_viz && $(CMAKE_COMMAND) -P CMakeFiles/std_srvs_generate_messages_py.dir/cmake_clean.cmake
+	cd /home/vini/P5/build/spot_ros/spot_viz && $(CMAKE_COMMAND) -P CMakeFiles/std_srvs_generate_messages_py.dir/cmake_clean.cmake
 .PHONY : spot_ros/spot_viz/CMakeFiles/std_srvs_generate_messages_py.dir/clean
 
 spot_ros/spot_viz/CMakeFiles/std_srvs_generate_messages_py.dir/depend:
-	cd /home/axel/P5/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/axel/P5/src /home/axel/P5/src/spot_ros/spot_viz /home/axel/P5/build /home/axel/P5/build/spot_ros/spot_viz /home/axel/P5/build/spot_ros/spot_viz/CMakeFiles/std_srvs_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/vini/P5/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vini/P5/src /home/vini/P5/src/spot_ros/spot_viz /home/vini/P5/build /home/vini/P5/build/spot_ros/spot_viz /home/vini/P5/build/spot_ros/spot_viz/CMakeFiles/std_srvs_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : spot_ros/spot_viz/CMakeFiles/std_srvs_generate_messages_py.dir/depend
 

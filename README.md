@@ -1,7 +1,9 @@
 # P5
-run
+# run
 
 rosdep install spot_pkg
 
-to install dependencies such as move_base_msgs
+# to install move_base packages
+
+catkin_make
 

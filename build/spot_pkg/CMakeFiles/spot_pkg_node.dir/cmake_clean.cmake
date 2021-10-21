@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/spot_pkg_node.dir/src/stand_sit.cpp.o"
-  "/home/axel/P5/devel/lib/spot_pkg/spot_pkg_node.pdb"
-  "/home/axel/P5/devel/lib/spot_pkg/spot_pkg_node"
+  "/home/vini/P5/devel/lib/spot_pkg/spot_pkg_node.pdb"
+  "/home/vini/P5/devel/lib/spot_pkg/spot_pkg_node"
 )
 
 # Per-language clean rules from dependency scanning.

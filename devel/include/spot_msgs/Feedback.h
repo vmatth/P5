@@ -129,16 +129,6 @@ namespace message_traits
 
 
 template <class ContainerAllocator>
-struct IsMessage< ::spot_msgs::Feedback_<ContainerAllocator> >
-  : TrueType
-  { };
-
-template <class ContainerAllocator>
-struct IsMessage< ::spot_msgs::Feedback_<ContainerAllocator> const>
-  : TrueType
-  { };
-
-template <class ContainerAllocator>
 struct IsFixedSize< ::spot_msgs::Feedback_<ContainerAllocator> >
   : FalseType
   { };
@@ -146,6 +136,16 @@ struct IsFixedSize< ::spot_msgs::Feedback_<ContainerAllocator> >
 template <class ContainerAllocator>
 struct IsFixedSize< ::spot_msgs::Feedback_<ContainerAllocator> const>
   : FalseType
+  { };
+
+template <class ContainerAllocator>
+struct IsMessage< ::spot_msgs::Feedback_<ContainerAllocator> >
+  : TrueType
+  { };
+
+template <class ContainerAllocator>
+struct IsMessage< ::spot_msgs::Feedback_<ContainerAllocator> const>
+  : TrueType
   { };
 
 template <class ContainerAllocator>

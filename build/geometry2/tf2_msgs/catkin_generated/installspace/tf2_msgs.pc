@@ -1,4 +1,4 @@
-prefix=/home/axel/P5/install
+prefix=/home/vini/P5/install
 
 Name: tf2_msgs
 Description: Description of tf2_msgs

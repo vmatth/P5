@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/axel/P5/src
+CMAKE_SOURCE_DIR = /home/vini/P5/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/axel/P5/build
+CMAKE_BINARY_DIR = /home/vini/P5/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,9 +137,9 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/axel/P5/build/CMakeFiles /home/axel/P5/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vini/P5/build/CMakeFiles /home/vini/P5/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/axel/P5/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vini/P5/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -532,6 +532,45 @@ _tf2_msgs_generate_messages_check_deps_FrameGraph/fast:
 .PHONY : _tf2_msgs_generate_messages_check_deps_FrameGraph/fast
 
 #=============================================================================
+# Target rules for targets named _tf2_msgs_generate_messages_check_deps_LookupTransformActionResult
+
+# Build rule for target.
+_tf2_msgs_generate_messages_check_deps_LookupTransformActionResult: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _tf2_msgs_generate_messages_check_deps_LookupTransformActionResult
+.PHONY : _tf2_msgs_generate_messages_check_deps_LookupTransformActionResult
+
+# fast build rule for target.
+_tf2_msgs_generate_messages_check_deps_LookupTransformActionResult/fast:
+	$(MAKE) -f geometry2/tf2_msgs/CMakeFiles/_tf2_msgs_generate_messages_check_deps_LookupTransformActionResult.dir/build.make geometry2/tf2_msgs/CMakeFiles/_tf2_msgs_generate_messages_check_deps_LookupTransformActionResult.dir/build
+.PHONY : _tf2_msgs_generate_messages_check_deps_LookupTransformActionResult/fast
+
+#=============================================================================
+# Target rules for targets named tf2_msgs_gencpp
+
+# Build rule for target.
+tf2_msgs_gencpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tf2_msgs_gencpp
+.PHONY : tf2_msgs_gencpp
+
+# fast build rule for target.
+tf2_msgs_gencpp/fast:
+	$(MAKE) -f geometry2/tf2_msgs/CMakeFiles/tf2_msgs_gencpp.dir/build.make geometry2/tf2_msgs/CMakeFiles/tf2_msgs_gencpp.dir/build
+.PHONY : tf2_msgs_gencpp/fast
+
+#=============================================================================
+# Target rules for targets named tf2_msgs_geneus
+
+# Build rule for target.
+tf2_msgs_geneus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tf2_msgs_geneus
+.PHONY : tf2_msgs_geneus
+
+# fast build rule for target.
+tf2_msgs_geneus/fast:
+	$(MAKE) -f geometry2/tf2_msgs/CMakeFiles/tf2_msgs_geneus.dir/build.make geometry2/tf2_msgs/CMakeFiles/tf2_msgs_geneus.dir/build
+.PHONY : tf2_msgs_geneus/fast
+
+#=============================================================================
 # Target rules for targets named actionlib_msgs_generate_messages_cpp
 
 # Build rule for target.
@@ -597,43 +636,17 @@ _tf2_msgs_generate_messages_check_deps_LookupTransformAction/fast:
 .PHONY : _tf2_msgs_generate_messages_check_deps_LookupTransformAction/fast
 
 #=============================================================================
-# Target rules for targets named _tf2_msgs_generate_messages_check_deps_LookupTransformActionResult
+# Target rules for targets named _tf2_msgs_generate_messages_check_deps_LookupTransformResult
 
 # Build rule for target.
-_tf2_msgs_generate_messages_check_deps_LookupTransformActionResult: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _tf2_msgs_generate_messages_check_deps_LookupTransformActionResult
-.PHONY : _tf2_msgs_generate_messages_check_deps_LookupTransformActionResult
+_tf2_msgs_generate_messages_check_deps_LookupTransformResult: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _tf2_msgs_generate_messages_check_deps_LookupTransformResult
+.PHONY : _tf2_msgs_generate_messages_check_deps_LookupTransformResult
 
 # fast build rule for target.
-_tf2_msgs_generate_messages_check_deps_LookupTransformActionResult/fast:
-	$(MAKE) -f geometry2/tf2_msgs/CMakeFiles/_tf2_msgs_generate_messages_check_deps_LookupTransformActionResult.dir/build.make geometry2/tf2_msgs/CMakeFiles/_tf2_msgs_generate_messages_check_deps_LookupTransformActionResult.dir/build
-.PHONY : _tf2_msgs_generate_messages_check_deps_LookupTransformActionResult/fast
-
-#=============================================================================
-# Target rules for targets named tf2_msgs_gencpp
-
-# Build rule for target.
-tf2_msgs_gencpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tf2_msgs_gencpp
-.PHONY : tf2_msgs_gencpp
-
-# fast build rule for target.
-tf2_msgs_gencpp/fast:
-	$(MAKE) -f geometry2/tf2_msgs/CMakeFiles/tf2_msgs_gencpp.dir/build.make geometry2/tf2_msgs/CMakeFiles/tf2_msgs_gencpp.dir/build
-.PHONY : tf2_msgs_gencpp/fast
-
-#=============================================================================
-# Target rules for targets named tf2_msgs_geneus
-
-# Build rule for target.
-tf2_msgs_geneus: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tf2_msgs_geneus
-.PHONY : tf2_msgs_geneus
-
-# fast build rule for target.
-tf2_msgs_geneus/fast:
-	$(MAKE) -f geometry2/tf2_msgs/CMakeFiles/tf2_msgs_geneus.dir/build.make geometry2/tf2_msgs/CMakeFiles/tf2_msgs_geneus.dir/build
-.PHONY : tf2_msgs_geneus/fast
+_tf2_msgs_generate_messages_check_deps_LookupTransformResult/fast:
+	$(MAKE) -f geometry2/tf2_msgs/CMakeFiles/_tf2_msgs_generate_messages_check_deps_LookupTransformResult.dir/build.make geometry2/tf2_msgs/CMakeFiles/_tf2_msgs_generate_messages_check_deps_LookupTransformResult.dir/build
+.PHONY : _tf2_msgs_generate_messages_check_deps_LookupTransformResult/fast
 
 #=============================================================================
 # Target rules for targets named std_msgs_generate_messages_lisp
@@ -660,19 +673,6 @@ _tf2_msgs_generate_messages_check_deps_LookupTransformActionFeedback: cmake_chec
 _tf2_msgs_generate_messages_check_deps_LookupTransformActionFeedback/fast:
 	$(MAKE) -f geometry2/tf2_msgs/CMakeFiles/_tf2_msgs_generate_messages_check_deps_LookupTransformActionFeedback.dir/build.make geometry2/tf2_msgs/CMakeFiles/_tf2_msgs_generate_messages_check_deps_LookupTransformActionFeedback.dir/build
 .PHONY : _tf2_msgs_generate_messages_check_deps_LookupTransformActionFeedback/fast
-
-#=============================================================================
-# Target rules for targets named _tf2_msgs_generate_messages_check_deps_LookupTransformResult
-
-# Build rule for target.
-_tf2_msgs_generate_messages_check_deps_LookupTransformResult: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _tf2_msgs_generate_messages_check_deps_LookupTransformResult
-.PHONY : _tf2_msgs_generate_messages_check_deps_LookupTransformResult
-
-# fast build rule for target.
-_tf2_msgs_generate_messages_check_deps_LookupTransformResult/fast:
-	$(MAKE) -f geometry2/tf2_msgs/CMakeFiles/_tf2_msgs_generate_messages_check_deps_LookupTransformResult.dir/build.make geometry2/tf2_msgs/CMakeFiles/_tf2_msgs_generate_messages_check_deps_LookupTransformResult.dir/build
-.PHONY : _tf2_msgs_generate_messages_check_deps_LookupTransformResult/fast
 
 #=============================================================================
 # Target rules for targets named tf2_msgs_generate_messages_cpp
@@ -1195,95 +1195,30 @@ tf2_py/fast:
 .PHONY : tf2_py/fast
 
 #=============================================================================
-# Target rules for targets named _spot_msgs_generate_messages_check_deps_MobilityParams
+# Target rules for targets named _spot_msgs_generate_messages_check_deps_TrajectoryActionGoal
 
 # Build rule for target.
-_spot_msgs_generate_messages_check_deps_MobilityParams: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _spot_msgs_generate_messages_check_deps_MobilityParams
-.PHONY : _spot_msgs_generate_messages_check_deps_MobilityParams
+_spot_msgs_generate_messages_check_deps_TrajectoryActionGoal: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _spot_msgs_generate_messages_check_deps_TrajectoryActionGoal
+.PHONY : _spot_msgs_generate_messages_check_deps_TrajectoryActionGoal
 
 # fast build rule for target.
-_spot_msgs_generate_messages_check_deps_MobilityParams/fast:
-	$(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_MobilityParams.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_MobilityParams.dir/build
-.PHONY : _spot_msgs_generate_messages_check_deps_MobilityParams/fast
+_spot_msgs_generate_messages_check_deps_TrajectoryActionGoal/fast:
+	$(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_TrajectoryActionGoal.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_TrajectoryActionGoal.dir/build
+.PHONY : _spot_msgs_generate_messages_check_deps_TrajectoryActionGoal/fast
 
 #=============================================================================
-# Target rules for targets named _spot_msgs_generate_messages_check_deps_SystemFault
+# Target rules for targets named rosgraph_msgs_generate_messages_lisp
 
 # Build rule for target.
-_spot_msgs_generate_messages_check_deps_SystemFault: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _spot_msgs_generate_messages_check_deps_SystemFault
-.PHONY : _spot_msgs_generate_messages_check_deps_SystemFault
+rosgraph_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rosgraph_msgs_generate_messages_lisp
+.PHONY : rosgraph_msgs_generate_messages_lisp
 
 # fast build rule for target.
-_spot_msgs_generate_messages_check_deps_SystemFault/fast:
-	$(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_SystemFault.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_SystemFault.dir/build
-.PHONY : _spot_msgs_generate_messages_check_deps_SystemFault/fast
-
-#=============================================================================
-# Target rules for targets named _spot_msgs_generate_messages_check_deps_NavigateToGoal
-
-# Build rule for target.
-_spot_msgs_generate_messages_check_deps_NavigateToGoal: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _spot_msgs_generate_messages_check_deps_NavigateToGoal
-.PHONY : _spot_msgs_generate_messages_check_deps_NavigateToGoal
-
-# fast build rule for target.
-_spot_msgs_generate_messages_check_deps_NavigateToGoal/fast:
-	$(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_NavigateToGoal.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_NavigateToGoal.dir/build
-.PHONY : _spot_msgs_generate_messages_check_deps_NavigateToGoal/fast
-
-#=============================================================================
-# Target rules for targets named _spot_msgs_generate_messages_check_deps_LeaseOwner
-
-# Build rule for target.
-_spot_msgs_generate_messages_check_deps_LeaseOwner: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _spot_msgs_generate_messages_check_deps_LeaseOwner
-.PHONY : _spot_msgs_generate_messages_check_deps_LeaseOwner
-
-# fast build rule for target.
-_spot_msgs_generate_messages_check_deps_LeaseOwner/fast:
-	$(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_LeaseOwner.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_LeaseOwner.dir/build
-.PHONY : _spot_msgs_generate_messages_check_deps_LeaseOwner/fast
-
-#=============================================================================
-# Target rules for targets named _spot_msgs_generate_messages_check_deps_PowerState
-
-# Build rule for target.
-_spot_msgs_generate_messages_check_deps_PowerState: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _spot_msgs_generate_messages_check_deps_PowerState
-.PHONY : _spot_msgs_generate_messages_check_deps_PowerState
-
-# fast build rule for target.
-_spot_msgs_generate_messages_check_deps_PowerState/fast:
-	$(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_PowerState.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_PowerState.dir/build
-.PHONY : _spot_msgs_generate_messages_check_deps_PowerState/fast
-
-#=============================================================================
-# Target rules for targets named _spot_msgs_generate_messages_check_deps_BehaviorFault
-
-# Build rule for target.
-_spot_msgs_generate_messages_check_deps_BehaviorFault: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _spot_msgs_generate_messages_check_deps_BehaviorFault
-.PHONY : _spot_msgs_generate_messages_check_deps_BehaviorFault
-
-# fast build rule for target.
-_spot_msgs_generate_messages_check_deps_BehaviorFault/fast:
-	$(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_BehaviorFault.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_BehaviorFault.dir/build
-.PHONY : _spot_msgs_generate_messages_check_deps_BehaviorFault/fast
-
-#=============================================================================
-# Target rules for targets named _spot_msgs_generate_messages_check_deps_LeaseArray
-
-# Build rule for target.
-_spot_msgs_generate_messages_check_deps_LeaseArray: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _spot_msgs_generate_messages_check_deps_LeaseArray
-.PHONY : _spot_msgs_generate_messages_check_deps_LeaseArray
-
-# fast build rule for target.
-_spot_msgs_generate_messages_check_deps_LeaseArray/fast:
-	$(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_LeaseArray.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_LeaseArray.dir/build
-.PHONY : _spot_msgs_generate_messages_check_deps_LeaseArray/fast
+rosgraph_msgs_generate_messages_lisp/fast:
+	$(MAKE) -f spot_ros/spot_msgs/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make spot_ros/spot_msgs/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
+.PHONY : rosgraph_msgs_generate_messages_lisp/fast
 
 #=============================================================================
 # Target rules for targets named spot_msgs_generate_messages
@@ -1299,6 +1234,19 @@ spot_msgs_generate_messages/fast:
 .PHONY : spot_msgs_generate_messages/fast
 
 #=============================================================================
+# Target rules for targets named rosgraph_msgs_generate_messages_eus
+
+# Build rule for target.
+rosgraph_msgs_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rosgraph_msgs_generate_messages_eus
+.PHONY : rosgraph_msgs_generate_messages_eus
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_eus/fast:
+	$(MAKE) -f spot_ros/spot_msgs/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make spot_ros/spot_msgs/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
+.PHONY : rosgraph_msgs_generate_messages_eus/fast
+
+#=============================================================================
 # Target rules for targets named _spot_msgs_generate_messages_check_deps_BehaviorFaultState
 
 # Build rule for target.
@@ -1312,17 +1260,30 @@ _spot_msgs_generate_messages_check_deps_BehaviorFaultState/fast:
 .PHONY : _spot_msgs_generate_messages_check_deps_BehaviorFaultState/fast
 
 #=============================================================================
-# Target rules for targets named rosgraph_msgs_generate_messages_eus
+# Target rules for targets named _spot_msgs_generate_messages_check_deps_Lease
 
 # Build rule for target.
-rosgraph_msgs_generate_messages_eus: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 rosgraph_msgs_generate_messages_eus
-.PHONY : rosgraph_msgs_generate_messages_eus
+_spot_msgs_generate_messages_check_deps_Lease: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _spot_msgs_generate_messages_check_deps_Lease
+.PHONY : _spot_msgs_generate_messages_check_deps_Lease
 
 # fast build rule for target.
-rosgraph_msgs_generate_messages_eus/fast:
-	$(MAKE) -f spot_ros/spot_msgs/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make spot_ros/spot_msgs/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
-.PHONY : rosgraph_msgs_generate_messages_eus/fast
+_spot_msgs_generate_messages_check_deps_Lease/fast:
+	$(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_Lease.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_Lease.dir/build
+.PHONY : _spot_msgs_generate_messages_check_deps_Lease/fast
+
+#=============================================================================
+# Target rules for targets named _spot_msgs_generate_messages_check_deps_FootState
+
+# Build rule for target.
+_spot_msgs_generate_messages_check_deps_FootState: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _spot_msgs_generate_messages_check_deps_FootState
+.PHONY : _spot_msgs_generate_messages_check_deps_FootState
+
+# fast build rule for target.
+_spot_msgs_generate_messages_check_deps_FootState/fast:
+	$(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_FootState.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_FootState.dir/build
+.PHONY : _spot_msgs_generate_messages_check_deps_FootState/fast
 
 #=============================================================================
 # Target rules for targets named rosgraph_msgs_generate_messages_cpp
@@ -1494,17 +1455,17 @@ nav_msgs_generate_messages_lisp/fast:
 .PHONY : nav_msgs_generate_messages_lisp/fast
 
 #=============================================================================
-# Target rules for targets named _spot_msgs_generate_messages_check_deps_Metrics
+# Target rules for targets named _spot_msgs_generate_messages_check_deps_BatteryState
 
 # Build rule for target.
-_spot_msgs_generate_messages_check_deps_Metrics: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _spot_msgs_generate_messages_check_deps_Metrics
-.PHONY : _spot_msgs_generate_messages_check_deps_Metrics
+_spot_msgs_generate_messages_check_deps_BatteryState: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _spot_msgs_generate_messages_check_deps_BatteryState
+.PHONY : _spot_msgs_generate_messages_check_deps_BatteryState
 
 # fast build rule for target.
-_spot_msgs_generate_messages_check_deps_Metrics/fast:
-	$(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_Metrics.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_Metrics.dir/build
-.PHONY : _spot_msgs_generate_messages_check_deps_Metrics/fast
+_spot_msgs_generate_messages_check_deps_BatteryState/fast:
+	$(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_BatteryState.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_BatteryState.dir/build
+.PHONY : _spot_msgs_generate_messages_check_deps_BatteryState/fast
 
 #=============================================================================
 # Target rules for targets named sensor_msgs_generate_messages_cpp
@@ -1572,19 +1533,6 @@ sensor_msgs_generate_messages_nodejs/fast:
 .PHONY : sensor_msgs_generate_messages_nodejs/fast
 
 #=============================================================================
-# Target rules for targets named _spot_msgs_generate_messages_check_deps_SystemFaultState
-
-# Build rule for target.
-_spot_msgs_generate_messages_check_deps_SystemFaultState: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _spot_msgs_generate_messages_check_deps_SystemFaultState
-.PHONY : _spot_msgs_generate_messages_check_deps_SystemFaultState
-
-# fast build rule for target.
-_spot_msgs_generate_messages_check_deps_SystemFaultState/fast:
-	$(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_SystemFaultState.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_SystemFaultState.dir/build
-.PHONY : _spot_msgs_generate_messages_check_deps_SystemFaultState/fast
-
-#=============================================================================
 # Target rules for targets named _spot_msgs_generate_messages_check_deps_SetVelocity
 
 # Build rule for target.
@@ -1596,6 +1544,19 @@ _spot_msgs_generate_messages_check_deps_SetVelocity: cmake_check_build_system
 _spot_msgs_generate_messages_check_deps_SetVelocity/fast:
 	$(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_SetVelocity.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_SetVelocity.dir/build
 .PHONY : _spot_msgs_generate_messages_check_deps_SetVelocity/fast
+
+#=============================================================================
+# Target rules for targets named _spot_msgs_generate_messages_check_deps_SystemFaultState
+
+# Build rule for target.
+_spot_msgs_generate_messages_check_deps_SystemFaultState: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _spot_msgs_generate_messages_check_deps_SystemFaultState
+.PHONY : _spot_msgs_generate_messages_check_deps_SystemFaultState
+
+# fast build rule for target.
+_spot_msgs_generate_messages_check_deps_SystemFaultState/fast:
+	$(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_SystemFaultState.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_SystemFaultState.dir/build
+.PHONY : _spot_msgs_generate_messages_check_deps_SystemFaultState/fast
 
 #=============================================================================
 # Target rules for targets named actionlib_generate_messages_cpp
@@ -1741,32 +1702,6 @@ spot_msgs_generate_messages_lisp/fast:
 .PHONY : spot_msgs_generate_messages_lisp/fast
 
 #=============================================================================
-# Target rules for targets named rosgraph_msgs_generate_messages_lisp
-
-# Build rule for target.
-rosgraph_msgs_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 rosgraph_msgs_generate_messages_lisp
-.PHONY : rosgraph_msgs_generate_messages_lisp
-
-# fast build rule for target.
-rosgraph_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f spot_ros/spot_msgs/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make spot_ros/spot_msgs/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
-.PHONY : rosgraph_msgs_generate_messages_lisp/fast
-
-#=============================================================================
-# Target rules for targets named _spot_msgs_generate_messages_check_deps_TrajectoryActionGoal
-
-# Build rule for target.
-_spot_msgs_generate_messages_check_deps_TrajectoryActionGoal: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _spot_msgs_generate_messages_check_deps_TrajectoryActionGoal
-.PHONY : _spot_msgs_generate_messages_check_deps_TrajectoryActionGoal
-
-# fast build rule for target.
-_spot_msgs_generate_messages_check_deps_TrajectoryActionGoal/fast:
-	$(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_TrajectoryActionGoal.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_TrajectoryActionGoal.dir/build
-.PHONY : _spot_msgs_generate_messages_check_deps_TrajectoryActionGoal/fast
-
-#=============================================================================
 # Target rules for targets named actionlib_generate_messages_lisp
 
 # Build rule for target.
@@ -1778,19 +1713,6 @@ actionlib_generate_messages_lisp: cmake_check_build_system
 actionlib_generate_messages_lisp/fast:
 	$(MAKE) -f spot_ros/spot_msgs/CMakeFiles/actionlib_generate_messages_lisp.dir/build.make spot_ros/spot_msgs/CMakeFiles/actionlib_generate_messages_lisp.dir/build
 .PHONY : actionlib_generate_messages_lisp/fast
-
-#=============================================================================
-# Target rules for targets named _spot_msgs_generate_messages_check_deps_TrajectoryAction
-
-# Build rule for target.
-_spot_msgs_generate_messages_check_deps_TrajectoryAction: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _spot_msgs_generate_messages_check_deps_TrajectoryAction
-.PHONY : _spot_msgs_generate_messages_check_deps_TrajectoryAction
-
-# fast build rule for target.
-_spot_msgs_generate_messages_check_deps_TrajectoryAction/fast:
-	$(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_TrajectoryAction.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_TrajectoryAction.dir/build
-.PHONY : _spot_msgs_generate_messages_check_deps_TrajectoryAction/fast
 
 #=============================================================================
 # Target rules for targets named _spot_msgs_generate_messages_check_deps_TrajectoryActionResult
@@ -1806,6 +1728,45 @@ _spot_msgs_generate_messages_check_deps_TrajectoryActionResult/fast:
 .PHONY : _spot_msgs_generate_messages_check_deps_TrajectoryActionResult/fast
 
 #=============================================================================
+# Target rules for targets named _spot_msgs_generate_messages_check_deps_TrajectoryAction
+
+# Build rule for target.
+_spot_msgs_generate_messages_check_deps_TrajectoryAction: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _spot_msgs_generate_messages_check_deps_TrajectoryAction
+.PHONY : _spot_msgs_generate_messages_check_deps_TrajectoryAction
+
+# fast build rule for target.
+_spot_msgs_generate_messages_check_deps_TrajectoryAction/fast:
+	$(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_TrajectoryAction.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_TrajectoryAction.dir/build
+.PHONY : _spot_msgs_generate_messages_check_deps_TrajectoryAction/fast
+
+#=============================================================================
+# Target rules for targets named _spot_msgs_generate_messages_check_deps_SystemFault
+
+# Build rule for target.
+_spot_msgs_generate_messages_check_deps_SystemFault: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _spot_msgs_generate_messages_check_deps_SystemFault
+.PHONY : _spot_msgs_generate_messages_check_deps_SystemFault
+
+# fast build rule for target.
+_spot_msgs_generate_messages_check_deps_SystemFault/fast:
+	$(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_SystemFault.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_SystemFault.dir/build
+.PHONY : _spot_msgs_generate_messages_check_deps_SystemFault/fast
+
+#=============================================================================
+# Target rules for targets named _spot_msgs_generate_messages_check_deps_MobilityParams
+
+# Build rule for target.
+_spot_msgs_generate_messages_check_deps_MobilityParams: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _spot_msgs_generate_messages_check_deps_MobilityParams
+.PHONY : _spot_msgs_generate_messages_check_deps_MobilityParams
+
+# fast build rule for target.
+_spot_msgs_generate_messages_check_deps_MobilityParams/fast:
+	$(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_MobilityParams.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_MobilityParams.dir/build
+.PHONY : _spot_msgs_generate_messages_check_deps_MobilityParams/fast
+
+#=============================================================================
 # Target rules for targets named actionlib_generate_messages_py
 
 # Build rule for target.
@@ -1819,108 +1780,17 @@ actionlib_generate_messages_py/fast:
 .PHONY : actionlib_generate_messages_py/fast
 
 #=============================================================================
-# Target rules for targets named _spot_msgs_generate_messages_check_deps_BatteryState
+# Target rules for targets named _spot_msgs_generate_messages_check_deps_LeaseArray
 
 # Build rule for target.
-_spot_msgs_generate_messages_check_deps_BatteryState: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _spot_msgs_generate_messages_check_deps_BatteryState
-.PHONY : _spot_msgs_generate_messages_check_deps_BatteryState
+_spot_msgs_generate_messages_check_deps_LeaseArray: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _spot_msgs_generate_messages_check_deps_LeaseArray
+.PHONY : _spot_msgs_generate_messages_check_deps_LeaseArray
 
 # fast build rule for target.
-_spot_msgs_generate_messages_check_deps_BatteryState/fast:
-	$(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_BatteryState.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_BatteryState.dir/build
-.PHONY : _spot_msgs_generate_messages_check_deps_BatteryState/fast
-
-#=============================================================================
-# Target rules for targets named _spot_msgs_generate_messages_check_deps_EStopState
-
-# Build rule for target.
-_spot_msgs_generate_messages_check_deps_EStopState: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _spot_msgs_generate_messages_check_deps_EStopState
-.PHONY : _spot_msgs_generate_messages_check_deps_EStopState
-
-# fast build rule for target.
-_spot_msgs_generate_messages_check_deps_EStopState/fast:
-	$(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_EStopState.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_EStopState.dir/build
-.PHONY : _spot_msgs_generate_messages_check_deps_EStopState/fast
-
-#=============================================================================
-# Target rules for targets named _spot_msgs_generate_messages_check_deps_NavigateToAction
-
-# Build rule for target.
-_spot_msgs_generate_messages_check_deps_NavigateToAction: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _spot_msgs_generate_messages_check_deps_NavigateToAction
-.PHONY : _spot_msgs_generate_messages_check_deps_NavigateToAction
-
-# fast build rule for target.
-_spot_msgs_generate_messages_check_deps_NavigateToAction/fast:
-	$(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_NavigateToAction.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_NavigateToAction.dir/build
-.PHONY : _spot_msgs_generate_messages_check_deps_NavigateToAction/fast
-
-#=============================================================================
-# Target rules for targets named _spot_msgs_generate_messages_check_deps_Feedback
-
-# Build rule for target.
-_spot_msgs_generate_messages_check_deps_Feedback: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _spot_msgs_generate_messages_check_deps_Feedback
-.PHONY : _spot_msgs_generate_messages_check_deps_Feedback
-
-# fast build rule for target.
-_spot_msgs_generate_messages_check_deps_Feedback/fast:
-	$(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_Feedback.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_Feedback.dir/build
-.PHONY : _spot_msgs_generate_messages_check_deps_Feedback/fast
-
-#=============================================================================
-# Target rules for targets named _spot_msgs_generate_messages_check_deps_FootState
-
-# Build rule for target.
-_spot_msgs_generate_messages_check_deps_FootState: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _spot_msgs_generate_messages_check_deps_FootState
-.PHONY : _spot_msgs_generate_messages_check_deps_FootState
-
-# fast build rule for target.
-_spot_msgs_generate_messages_check_deps_FootState/fast:
-	$(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_FootState.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_FootState.dir/build
-.PHONY : _spot_msgs_generate_messages_check_deps_FootState/fast
-
-#=============================================================================
-# Target rules for targets named _spot_msgs_generate_messages_check_deps_Lease
-
-# Build rule for target.
-_spot_msgs_generate_messages_check_deps_Lease: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _spot_msgs_generate_messages_check_deps_Lease
-.PHONY : _spot_msgs_generate_messages_check_deps_Lease
-
-# fast build rule for target.
-_spot_msgs_generate_messages_check_deps_Lease/fast:
-	$(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_Lease.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_Lease.dir/build
-.PHONY : _spot_msgs_generate_messages_check_deps_Lease/fast
-
-#=============================================================================
-# Target rules for targets named _spot_msgs_generate_messages_check_deps_NavigateToActionGoal
-
-# Build rule for target.
-_spot_msgs_generate_messages_check_deps_NavigateToActionGoal: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _spot_msgs_generate_messages_check_deps_NavigateToActionGoal
-.PHONY : _spot_msgs_generate_messages_check_deps_NavigateToActionGoal
-
-# fast build rule for target.
-_spot_msgs_generate_messages_check_deps_NavigateToActionGoal/fast:
-	$(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_NavigateToActionGoal.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_NavigateToActionGoal.dir/build
-.PHONY : _spot_msgs_generate_messages_check_deps_NavigateToActionGoal/fast
-
-#=============================================================================
-# Target rules for targets named _spot_msgs_generate_messages_check_deps_NavigateToActionResult
-
-# Build rule for target.
-_spot_msgs_generate_messages_check_deps_NavigateToActionResult: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _spot_msgs_generate_messages_check_deps_NavigateToActionResult
-.PHONY : _spot_msgs_generate_messages_check_deps_NavigateToActionResult
-
-# fast build rule for target.
-_spot_msgs_generate_messages_check_deps_NavigateToActionResult/fast:
-	$(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_NavigateToActionResult.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_NavigateToActionResult.dir/build
-.PHONY : _spot_msgs_generate_messages_check_deps_NavigateToActionResult/fast
+_spot_msgs_generate_messages_check_deps_LeaseArray/fast:
+	$(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_LeaseArray.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_LeaseArray.dir/build
+.PHONY : _spot_msgs_generate_messages_check_deps_LeaseArray/fast
 
 #=============================================================================
 # Target rules for targets named _spot_msgs_generate_messages_check_deps_NavigateToActionFeedback
@@ -1936,6 +1806,32 @@ _spot_msgs_generate_messages_check_deps_NavigateToActionFeedback/fast:
 .PHONY : _spot_msgs_generate_messages_check_deps_NavigateToActionFeedback/fast
 
 #=============================================================================
+# Target rules for targets named _spot_msgs_generate_messages_check_deps_Metrics
+
+# Build rule for target.
+_spot_msgs_generate_messages_check_deps_Metrics: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _spot_msgs_generate_messages_check_deps_Metrics
+.PHONY : _spot_msgs_generate_messages_check_deps_Metrics
+
+# fast build rule for target.
+_spot_msgs_generate_messages_check_deps_Metrics/fast:
+	$(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_Metrics.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_Metrics.dir/build
+.PHONY : _spot_msgs_generate_messages_check_deps_Metrics/fast
+
+#=============================================================================
+# Target rules for targets named _spot_msgs_generate_messages_check_deps_NavigateToGoal
+
+# Build rule for target.
+_spot_msgs_generate_messages_check_deps_NavigateToGoal: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _spot_msgs_generate_messages_check_deps_NavigateToGoal
+.PHONY : _spot_msgs_generate_messages_check_deps_NavigateToGoal
+
+# fast build rule for target.
+_spot_msgs_generate_messages_check_deps_NavigateToGoal/fast:
+	$(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_NavigateToGoal.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_NavigateToGoal.dir/build
+.PHONY : _spot_msgs_generate_messages_check_deps_NavigateToGoal/fast
+
+#=============================================================================
 # Target rules for targets named _spot_msgs_generate_messages_check_deps_NavigateToFeedback
 
 # Build rule for target.
@@ -1949,30 +1845,43 @@ _spot_msgs_generate_messages_check_deps_NavigateToFeedback/fast:
 .PHONY : _spot_msgs_generate_messages_check_deps_NavigateToFeedback/fast
 
 #=============================================================================
-# Target rules for targets named _spot_msgs_generate_messages_check_deps_TrajectoryActionFeedback
+# Target rules for targets named _spot_msgs_generate_messages_check_deps_NavigateToActionResult
 
 # Build rule for target.
-_spot_msgs_generate_messages_check_deps_TrajectoryActionFeedback: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _spot_msgs_generate_messages_check_deps_TrajectoryActionFeedback
-.PHONY : _spot_msgs_generate_messages_check_deps_TrajectoryActionFeedback
+_spot_msgs_generate_messages_check_deps_NavigateToActionResult: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _spot_msgs_generate_messages_check_deps_NavigateToActionResult
+.PHONY : _spot_msgs_generate_messages_check_deps_NavigateToActionResult
 
 # fast build rule for target.
-_spot_msgs_generate_messages_check_deps_TrajectoryActionFeedback/fast:
-	$(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_TrajectoryActionFeedback.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_TrajectoryActionFeedback.dir/build
-.PHONY : _spot_msgs_generate_messages_check_deps_TrajectoryActionFeedback/fast
+_spot_msgs_generate_messages_check_deps_NavigateToActionResult/fast:
+	$(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_NavigateToActionResult.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_NavigateToActionResult.dir/build
+.PHONY : _spot_msgs_generate_messages_check_deps_NavigateToActionResult/fast
 
 #=============================================================================
-# Target rules for targets named _spot_msgs_generate_messages_check_deps_TrajectoryGoal
+# Target rules for targets named _spot_msgs_generate_messages_check_deps_BehaviorFault
 
 # Build rule for target.
-_spot_msgs_generate_messages_check_deps_TrajectoryGoal: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _spot_msgs_generate_messages_check_deps_TrajectoryGoal
-.PHONY : _spot_msgs_generate_messages_check_deps_TrajectoryGoal
+_spot_msgs_generate_messages_check_deps_BehaviorFault: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _spot_msgs_generate_messages_check_deps_BehaviorFault
+.PHONY : _spot_msgs_generate_messages_check_deps_BehaviorFault
 
 # fast build rule for target.
-_spot_msgs_generate_messages_check_deps_TrajectoryGoal/fast:
-	$(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_TrajectoryGoal.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_TrajectoryGoal.dir/build
-.PHONY : _spot_msgs_generate_messages_check_deps_TrajectoryGoal/fast
+_spot_msgs_generate_messages_check_deps_BehaviorFault/fast:
+	$(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_BehaviorFault.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_BehaviorFault.dir/build
+.PHONY : _spot_msgs_generate_messages_check_deps_BehaviorFault/fast
+
+#=============================================================================
+# Target rules for targets named _spot_msgs_generate_messages_check_deps_Feedback
+
+# Build rule for target.
+_spot_msgs_generate_messages_check_deps_Feedback: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _spot_msgs_generate_messages_check_deps_Feedback
+.PHONY : _spot_msgs_generate_messages_check_deps_Feedback
+
+# fast build rule for target.
+_spot_msgs_generate_messages_check_deps_Feedback/fast:
+	$(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_Feedback.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_Feedback.dir/build
+.PHONY : _spot_msgs_generate_messages_check_deps_Feedback/fast
 
 #=============================================================================
 # Target rules for targets named rosgraph_msgs_generate_messages_nodejs
@@ -2001,17 +1910,17 @@ _spot_msgs_generate_messages_check_deps_TrajectoryFeedback/fast:
 .PHONY : _spot_msgs_generate_messages_check_deps_TrajectoryFeedback/fast
 
 #=============================================================================
-# Target rules for targets named _spot_msgs_generate_messages_check_deps_BatteryStateArray
+# Target rules for targets named _spot_msgs_generate_messages_check_deps_ClearBehaviorFault
 
 # Build rule for target.
-_spot_msgs_generate_messages_check_deps_BatteryStateArray: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _spot_msgs_generate_messages_check_deps_BatteryStateArray
-.PHONY : _spot_msgs_generate_messages_check_deps_BatteryStateArray
+_spot_msgs_generate_messages_check_deps_ClearBehaviorFault: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _spot_msgs_generate_messages_check_deps_ClearBehaviorFault
+.PHONY : _spot_msgs_generate_messages_check_deps_ClearBehaviorFault
 
 # fast build rule for target.
-_spot_msgs_generate_messages_check_deps_BatteryStateArray/fast:
-	$(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_BatteryStateArray.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_BatteryStateArray.dir/build
-.PHONY : _spot_msgs_generate_messages_check_deps_BatteryStateArray/fast
+_spot_msgs_generate_messages_check_deps_ClearBehaviorFault/fast:
+	$(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_ClearBehaviorFault.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_ClearBehaviorFault.dir/build
+.PHONY : _spot_msgs_generate_messages_check_deps_ClearBehaviorFault/fast
 
 #=============================================================================
 # Target rules for targets named _spot_msgs_generate_messages_check_deps_ListGraph
@@ -2027,6 +1936,110 @@ _spot_msgs_generate_messages_check_deps_ListGraph/fast:
 .PHONY : _spot_msgs_generate_messages_check_deps_ListGraph/fast
 
 #=============================================================================
+# Target rules for targets named _spot_msgs_generate_messages_check_deps_BatteryStateArray
+
+# Build rule for target.
+_spot_msgs_generate_messages_check_deps_BatteryStateArray: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _spot_msgs_generate_messages_check_deps_BatteryStateArray
+.PHONY : _spot_msgs_generate_messages_check_deps_BatteryStateArray
+
+# fast build rule for target.
+_spot_msgs_generate_messages_check_deps_BatteryStateArray/fast:
+	$(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_BatteryStateArray.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_BatteryStateArray.dir/build
+.PHONY : _spot_msgs_generate_messages_check_deps_BatteryStateArray/fast
+
+#=============================================================================
+# Target rules for targets named _spot_msgs_generate_messages_check_deps_LeaseOwner
+
+# Build rule for target.
+_spot_msgs_generate_messages_check_deps_LeaseOwner: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _spot_msgs_generate_messages_check_deps_LeaseOwner
+.PHONY : _spot_msgs_generate_messages_check_deps_LeaseOwner
+
+# fast build rule for target.
+_spot_msgs_generate_messages_check_deps_LeaseOwner/fast:
+	$(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_LeaseOwner.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_LeaseOwner.dir/build
+.PHONY : _spot_msgs_generate_messages_check_deps_LeaseOwner/fast
+
+#=============================================================================
+# Target rules for targets named _spot_msgs_generate_messages_check_deps_PowerState
+
+# Build rule for target.
+_spot_msgs_generate_messages_check_deps_PowerState: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _spot_msgs_generate_messages_check_deps_PowerState
+.PHONY : _spot_msgs_generate_messages_check_deps_PowerState
+
+# fast build rule for target.
+_spot_msgs_generate_messages_check_deps_PowerState/fast:
+	$(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_PowerState.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_PowerState.dir/build
+.PHONY : _spot_msgs_generate_messages_check_deps_PowerState/fast
+
+#=============================================================================
+# Target rules for targets named _spot_msgs_generate_messages_check_deps_NavigateToActionGoal
+
+# Build rule for target.
+_spot_msgs_generate_messages_check_deps_NavigateToActionGoal: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _spot_msgs_generate_messages_check_deps_NavigateToActionGoal
+.PHONY : _spot_msgs_generate_messages_check_deps_NavigateToActionGoal
+
+# fast build rule for target.
+_spot_msgs_generate_messages_check_deps_NavigateToActionGoal/fast:
+	$(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_NavigateToActionGoal.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_NavigateToActionGoal.dir/build
+.PHONY : _spot_msgs_generate_messages_check_deps_NavigateToActionGoal/fast
+
+#=============================================================================
+# Target rules for targets named _spot_msgs_generate_messages_check_deps_TrajectoryGoal
+
+# Build rule for target.
+_spot_msgs_generate_messages_check_deps_TrajectoryGoal: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _spot_msgs_generate_messages_check_deps_TrajectoryGoal
+.PHONY : _spot_msgs_generate_messages_check_deps_TrajectoryGoal
+
+# fast build rule for target.
+_spot_msgs_generate_messages_check_deps_TrajectoryGoal/fast:
+	$(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_TrajectoryGoal.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_TrajectoryGoal.dir/build
+.PHONY : _spot_msgs_generate_messages_check_deps_TrajectoryGoal/fast
+
+#=============================================================================
+# Target rules for targets named _spot_msgs_generate_messages_check_deps_EStopState
+
+# Build rule for target.
+_spot_msgs_generate_messages_check_deps_EStopState: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _spot_msgs_generate_messages_check_deps_EStopState
+.PHONY : _spot_msgs_generate_messages_check_deps_EStopState
+
+# fast build rule for target.
+_spot_msgs_generate_messages_check_deps_EStopState/fast:
+	$(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_EStopState.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_EStopState.dir/build
+.PHONY : _spot_msgs_generate_messages_check_deps_EStopState/fast
+
+#=============================================================================
+# Target rules for targets named _spot_msgs_generate_messages_check_deps_NavigateToAction
+
+# Build rule for target.
+_spot_msgs_generate_messages_check_deps_NavigateToAction: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _spot_msgs_generate_messages_check_deps_NavigateToAction
+.PHONY : _spot_msgs_generate_messages_check_deps_NavigateToAction
+
+# fast build rule for target.
+_spot_msgs_generate_messages_check_deps_NavigateToAction/fast:
+	$(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_NavigateToAction.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_NavigateToAction.dir/build
+.PHONY : _spot_msgs_generate_messages_check_deps_NavigateToAction/fast
+
+#=============================================================================
+# Target rules for targets named _spot_msgs_generate_messages_check_deps_TrajectoryActionFeedback
+
+# Build rule for target.
+_spot_msgs_generate_messages_check_deps_TrajectoryActionFeedback: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _spot_msgs_generate_messages_check_deps_TrajectoryActionFeedback
+.PHONY : _spot_msgs_generate_messages_check_deps_TrajectoryActionFeedback
+
+# fast build rule for target.
+_spot_msgs_generate_messages_check_deps_TrajectoryActionFeedback/fast:
+	$(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_TrajectoryActionFeedback.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_TrajectoryActionFeedback.dir/build
+.PHONY : _spot_msgs_generate_messages_check_deps_TrajectoryActionFeedback/fast
+
+#=============================================================================
 # Target rules for targets named _spot_msgs_generate_messages_check_deps_SetLocomotion
 
 # Build rule for target.
@@ -2038,19 +2051,6 @@ _spot_msgs_generate_messages_check_deps_SetLocomotion: cmake_check_build_system
 _spot_msgs_generate_messages_check_deps_SetLocomotion/fast:
 	$(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_SetLocomotion.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_SetLocomotion.dir/build
 .PHONY : _spot_msgs_generate_messages_check_deps_SetLocomotion/fast
-
-#=============================================================================
-# Target rules for targets named _spot_msgs_generate_messages_check_deps_ClearBehaviorFault
-
-# Build rule for target.
-_spot_msgs_generate_messages_check_deps_ClearBehaviorFault: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _spot_msgs_generate_messages_check_deps_ClearBehaviorFault
-.PHONY : _spot_msgs_generate_messages_check_deps_ClearBehaviorFault
-
-# fast build rule for target.
-_spot_msgs_generate_messages_check_deps_ClearBehaviorFault/fast:
-	$(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_ClearBehaviorFault.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_ClearBehaviorFault.dir/build
-.PHONY : _spot_msgs_generate_messages_check_deps_ClearBehaviorFault/fast
 
 #=============================================================================
 # Target rules for targets named spot_msgs_generate_messages_cpp
@@ -3742,6 +3742,19 @@ spot_pkg_node/fast:
 	$(MAKE) -f spot_pkg/CMakeFiles/spot_pkg_node.dir/build.make spot_pkg/CMakeFiles/spot_pkg_node.dir/build
 .PHONY : spot_pkg_node/fast
 
+#=============================================================================
+# Target rules for targets named move_node
+
+# Build rule for target.
+move_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 move_node
+.PHONY : move_node
+
+# fast build rule for target.
+move_node/fast:
+	$(MAKE) -f spot_pkg/CMakeFiles/move_node.dir/build.make spot_pkg/CMakeFiles/move_node.dir/build
+.PHONY : move_node/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -3783,17 +3796,17 @@ help:
 	@echo "... std_msgs_generate_messages_cpp"
 	@echo "... tf2_msgs_generate_messages_eus"
 	@echo "... _tf2_msgs_generate_messages_check_deps_FrameGraph"
+	@echo "... _tf2_msgs_generate_messages_check_deps_LookupTransformActionResult"
+	@echo "... tf2_msgs_gencpp"
+	@echo "... tf2_msgs_geneus"
 	@echo "... actionlib_msgs_generate_messages_cpp"
 	@echo "... _tf2_msgs_generate_messages_check_deps_TFMessage"
 	@echo "... actionlib_msgs_generate_messages_eus"
 	@echo "... _tf2_msgs_generate_messages_check_deps_LookupTransformFeedback"
 	@echo "... _tf2_msgs_generate_messages_check_deps_LookupTransformAction"
-	@echo "... _tf2_msgs_generate_messages_check_deps_LookupTransformActionResult"
-	@echo "... tf2_msgs_gencpp"
-	@echo "... tf2_msgs_geneus"
+	@echo "... _tf2_msgs_generate_messages_check_deps_LookupTransformResult"
 	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... _tf2_msgs_generate_messages_check_deps_LookupTransformActionFeedback"
-	@echo "... _tf2_msgs_generate_messages_check_deps_LookupTransformResult"
 	@echo "... tf2_msgs_generate_messages_cpp"
 	@echo "... tf2_msgs_genlisp"
 	@echo "... tf2_msgs_generate_messages_lisp"
@@ -3834,16 +3847,13 @@ help:
 	@echo "... _run_tests_tf2_eigen_gtest"
 	@echo "... run_tests_tf2_eigen_gtest_tf2_eigen-test"
 	@echo "... tf2_py"
-	@echo "... _spot_msgs_generate_messages_check_deps_MobilityParams"
-	@echo "... _spot_msgs_generate_messages_check_deps_SystemFault"
-	@echo "... _spot_msgs_generate_messages_check_deps_NavigateToGoal"
-	@echo "... _spot_msgs_generate_messages_check_deps_LeaseOwner"
-	@echo "... _spot_msgs_generate_messages_check_deps_PowerState"
-	@echo "... _spot_msgs_generate_messages_check_deps_BehaviorFault"
-	@echo "... _spot_msgs_generate_messages_check_deps_LeaseArray"
+	@echo "... _spot_msgs_generate_messages_check_deps_TrajectoryActionGoal"
+	@echo "... rosgraph_msgs_generate_messages_lisp"
 	@echo "... spot_msgs_generate_messages"
-	@echo "... _spot_msgs_generate_messages_check_deps_BehaviorFaultState"
 	@echo "... rosgraph_msgs_generate_messages_eus"
+	@echo "... _spot_msgs_generate_messages_check_deps_BehaviorFaultState"
+	@echo "... _spot_msgs_generate_messages_check_deps_Lease"
+	@echo "... _spot_msgs_generate_messages_check_deps_FootState"
 	@echo "... rosgraph_msgs_generate_messages_cpp"
 	@echo "... roscpp_generate_messages_py"
 	@echo "... _spot_msgs_generate_messages_check_deps_TrajectoryResult"
@@ -3857,14 +3867,14 @@ help:
 	@echo "... _spot_msgs_generate_messages_check_deps_LeaseResource"
 	@echo "... roscpp_generate_messages_lisp"
 	@echo "... nav_msgs_generate_messages_lisp"
-	@echo "... _spot_msgs_generate_messages_check_deps_Metrics"
+	@echo "... _spot_msgs_generate_messages_check_deps_BatteryState"
 	@echo "... sensor_msgs_generate_messages_cpp"
 	@echo "... _spot_msgs_generate_messages_check_deps_NavigateToResult"
 	@echo "... sensor_msgs_generate_messages_eus"
 	@echo "... roscpp_generate_messages_cpp"
 	@echo "... sensor_msgs_generate_messages_nodejs"
-	@echo "... _spot_msgs_generate_messages_check_deps_SystemFaultState"
 	@echo "... _spot_msgs_generate_messages_check_deps_SetVelocity"
+	@echo "... _spot_msgs_generate_messages_check_deps_SystemFaultState"
 	@echo "... actionlib_generate_messages_cpp"
 	@echo "... actionlib_generate_messages_nodejs"
 	@echo "... nav_msgs_generate_messages_nodejs"
@@ -3876,30 +3886,33 @@ help:
 	@echo "... _spot_msgs_generate_messages_check_deps_EStopStateArray"
 	@echo "... actionlib_generate_messages_eus"
 	@echo "... spot_msgs_generate_messages_lisp"
-	@echo "... rosgraph_msgs_generate_messages_lisp"
-	@echo "... _spot_msgs_generate_messages_check_deps_TrajectoryActionGoal"
 	@echo "... actionlib_generate_messages_lisp"
-	@echo "... _spot_msgs_generate_messages_check_deps_TrajectoryAction"
 	@echo "... _spot_msgs_generate_messages_check_deps_TrajectoryActionResult"
+	@echo "... _spot_msgs_generate_messages_check_deps_TrajectoryAction"
+	@echo "... _spot_msgs_generate_messages_check_deps_SystemFault"
+	@echo "... _spot_msgs_generate_messages_check_deps_MobilityParams"
 	@echo "... actionlib_generate_messages_py"
-	@echo "... _spot_msgs_generate_messages_check_deps_BatteryState"
-	@echo "... _spot_msgs_generate_messages_check_deps_EStopState"
-	@echo "... _spot_msgs_generate_messages_check_deps_NavigateToAction"
-	@echo "... _spot_msgs_generate_messages_check_deps_Feedback"
-	@echo "... _spot_msgs_generate_messages_check_deps_FootState"
-	@echo "... _spot_msgs_generate_messages_check_deps_Lease"
-	@echo "... _spot_msgs_generate_messages_check_deps_NavigateToActionGoal"
-	@echo "... _spot_msgs_generate_messages_check_deps_NavigateToActionResult"
+	@echo "... _spot_msgs_generate_messages_check_deps_LeaseArray"
 	@echo "... _spot_msgs_generate_messages_check_deps_NavigateToActionFeedback"
+	@echo "... _spot_msgs_generate_messages_check_deps_Metrics"
+	@echo "... _spot_msgs_generate_messages_check_deps_NavigateToGoal"
 	@echo "... _spot_msgs_generate_messages_check_deps_NavigateToFeedback"
-	@echo "... _spot_msgs_generate_messages_check_deps_TrajectoryActionFeedback"
-	@echo "... _spot_msgs_generate_messages_check_deps_TrajectoryGoal"
+	@echo "... _spot_msgs_generate_messages_check_deps_NavigateToActionResult"
+	@echo "... _spot_msgs_generate_messages_check_deps_BehaviorFault"
+	@echo "... _spot_msgs_generate_messages_check_deps_Feedback"
 	@echo "... rosgraph_msgs_generate_messages_nodejs"
 	@echo "... _spot_msgs_generate_messages_check_deps_TrajectoryFeedback"
-	@echo "... _spot_msgs_generate_messages_check_deps_BatteryStateArray"
-	@echo "... _spot_msgs_generate_messages_check_deps_ListGraph"
-	@echo "... _spot_msgs_generate_messages_check_deps_SetLocomotion"
 	@echo "... _spot_msgs_generate_messages_check_deps_ClearBehaviorFault"
+	@echo "... _spot_msgs_generate_messages_check_deps_ListGraph"
+	@echo "... _spot_msgs_generate_messages_check_deps_BatteryStateArray"
+	@echo "... _spot_msgs_generate_messages_check_deps_LeaseOwner"
+	@echo "... _spot_msgs_generate_messages_check_deps_PowerState"
+	@echo "... _spot_msgs_generate_messages_check_deps_NavigateToActionGoal"
+	@echo "... _spot_msgs_generate_messages_check_deps_TrajectoryGoal"
+	@echo "... _spot_msgs_generate_messages_check_deps_EStopState"
+	@echo "... _spot_msgs_generate_messages_check_deps_NavigateToAction"
+	@echo "... _spot_msgs_generate_messages_check_deps_TrajectoryActionFeedback"
+	@echo "... _spot_msgs_generate_messages_check_deps_SetLocomotion"
 	@echo "... spot_msgs_generate_messages_cpp"
 	@echo "... spot_msgs_gencpp"
 	@echo "... spot_msgs_generate_messages_eus"
@@ -4030,6 +4043,7 @@ help:
 	@echo "... dynamic_reconfigure_generate_messages_eus"
 	@echo "... dynamic_reconfigure_generate_messages_lisp"
 	@echo "... spot_pkg_node"
+	@echo "... move_node"
 .PHONY : help
 
 

@@ -1,6 +1,3 @@
-//Hello!
-//HI!
-
 #include "ros/ros.h"
 #include <std_srvs/Trigger.h>
 #include <geometry_msgs/Pose.h>
@@ -170,7 +167,7 @@ int main(int argc, char **argv)
     sit();
     ros::Duration(1.0).sleep();
     power_off();
-    ros::spin();
+  //  ros::spin();
 
     return 0;
 }

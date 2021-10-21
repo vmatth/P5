@@ -43,361 +43,361 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/axel/P5/src
+CMAKE_SOURCE_DIR = /home/vini/P5/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/axel/P5/build
+CMAKE_BINARY_DIR = /home/vini/P5/build
 
 # Utility rule file for spot_msgs_generate_messages_lisp.
 
 # Include the progress variables for this target.
 include spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_lisp.dir/progress.make
 
-spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_lisp: /home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/BatteryStateArray.lisp
-spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_lisp: /home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/BehaviorFault.lisp
-spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_lisp: /home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/EStopStateArray.lisp
-spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_lisp: /home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/FootStateArray.lisp
-spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_lisp: /home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/LeaseArray.lisp
-spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_lisp: /home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/LeaseOwner.lisp
-spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_lisp: /home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/Metrics.lisp
-spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_lisp: /home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/MobilityParams.lisp
-spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_lisp: /home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/SystemFault.lisp
-spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_lisp: /home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/WiFiState.lisp
-spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_lisp: /home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/BatteryState.lisp
-spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_lisp: /home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/BehaviorFaultState.lisp
-spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_lisp: /home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/EStopState.lisp
-spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_lisp: /home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/Feedback.lisp
-spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_lisp: /home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/FootState.lisp
-spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_lisp: /home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/Lease.lisp
-spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_lisp: /home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/LeaseResource.lisp
-spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_lisp: /home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/PowerState.lisp
-spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_lisp: /home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/SystemFaultState.lisp
-spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_lisp: /home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/NavigateToAction.lisp
-spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_lisp: /home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/NavigateToActionGoal.lisp
-spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_lisp: /home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/NavigateToActionResult.lisp
-spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_lisp: /home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/NavigateToActionFeedback.lisp
-spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_lisp: /home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/NavigateToGoal.lisp
-spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_lisp: /home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/NavigateToResult.lisp
-spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_lisp: /home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/NavigateToFeedback.lisp
-spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_lisp: /home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryAction.lisp
-spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_lisp: /home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryActionGoal.lisp
-spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_lisp: /home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryActionResult.lisp
-spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_lisp: /home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryActionFeedback.lisp
-spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_lisp: /home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryGoal.lisp
-spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_lisp: /home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryResult.lisp
-spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_lisp: /home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryFeedback.lisp
-spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_lisp: /home/axel/P5/devel/share/common-lisp/ros/spot_msgs/srv/ListGraph.lisp
-spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_lisp: /home/axel/P5/devel/share/common-lisp/ros/spot_msgs/srv/SetLocomotion.lisp
-spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_lisp: /home/axel/P5/devel/share/common-lisp/ros/spot_msgs/srv/SetVelocity.lisp
-spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_lisp: /home/axel/P5/devel/share/common-lisp/ros/spot_msgs/srv/ClearBehaviorFault.lisp
+spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_lisp: /home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/EStopStateArray.lisp
+spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_lisp: /home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/WiFiState.lisp
+spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_lisp: /home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryFeedback.lisp
+spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_lisp: /home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/BatteryState.lisp
+spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_lisp: /home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/FootStateArray.lisp
+spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_lisp: /home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/Lease.lisp
+spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_lisp: /home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/NavigateToResult.lisp
+spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_lisp: /home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/LeaseResource.lisp
+spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_lisp: /home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/SystemFault.lisp
+spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_lisp: /home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/LeaseArray.lisp
+spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_lisp: /home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/NavigateToActionFeedback.lisp
+spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_lisp: /home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/BatteryStateArray.lisp
+spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_lisp: /home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/Metrics.lisp
+spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_lisp: /home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/NavigateToFeedback.lisp
+spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_lisp: /home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/NavigateToActionResult.lisp
+spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_lisp: /home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/BehaviorFault.lisp
+spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_lisp: /home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/NavigateToGoal.lisp
+spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_lisp: /home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/Feedback.lisp
+spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_lisp: /home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryResult.lisp
+spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_lisp: /home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryActionResult.lisp
+spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_lisp: /home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/SystemFaultState.lisp
+spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_lisp: /home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryAction.lisp
+spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_lisp: /home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/LeaseOwner.lisp
+spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_lisp: /home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/BehaviorFaultState.lisp
+spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_lisp: /home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/NavigateToActionGoal.lisp
+spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_lisp: /home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryGoal.lisp
+spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_lisp: /home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/MobilityParams.lisp
+spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_lisp: /home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/PowerState.lisp
+spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_lisp: /home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/EStopState.lisp
+spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_lisp: /home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryActionFeedback.lisp
+spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_lisp: /home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryActionGoal.lisp
+spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_lisp: /home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/NavigateToAction.lisp
+spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_lisp: /home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/FootState.lisp
+spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_lisp: /home/vini/P5/devel/share/common-lisp/ros/spot_msgs/srv/ListGraph.lisp
+spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_lisp: /home/vini/P5/devel/share/common-lisp/ros/spot_msgs/srv/SetVelocity.lisp
+spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_lisp: /home/vini/P5/devel/share/common-lisp/ros/spot_msgs/srv/ClearBehaviorFault.lisp
+spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_lisp: /home/vini/P5/devel/share/common-lisp/ros/spot_msgs/srv/SetLocomotion.lisp
 
 
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/BatteryStateArray.lisp: /opt/ros/melodic/lib/genlisp/gen_lisp.py
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/BatteryStateArray.lisp: /home/axel/P5/src/spot_ros/spot_msgs/msg/BatteryStateArray.msg
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/BatteryStateArray.lisp: /opt/ros/melodic/share/std_msgs/msg/Header.msg
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/BatteryStateArray.lisp: /home/axel/P5/src/spot_ros/spot_msgs/msg/BatteryState.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/axel/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Lisp code from spot_msgs/BatteryStateArray.msg"
-	cd /home/axel/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/axel/P5/src/spot_ros/spot_msgs/msg/BatteryStateArray.msg -Ispot_msgs:/home/axel/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/axel/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/EStopStateArray.lisp: /opt/ros/melodic/lib/genlisp/gen_lisp.py
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/EStopStateArray.lisp: /home/vini/P5/src/spot_ros/spot_msgs/msg/EStopStateArray.msg
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/EStopStateArray.lisp: /home/vini/P5/src/spot_ros/spot_msgs/msg/EStopState.msg
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/EStopStateArray.lisp: /opt/ros/melodic/share/std_msgs/msg/Header.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Lisp code from spot_msgs/EStopStateArray.msg"
+	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/vini/P5/src/spot_ros/spot_msgs/msg/EStopStateArray.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg
 
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/BehaviorFault.lisp: /opt/ros/melodic/lib/genlisp/gen_lisp.py
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/BehaviorFault.lisp: /home/axel/P5/src/spot_ros/spot_msgs/msg/BehaviorFault.msg
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/BehaviorFault.lisp: /opt/ros/melodic/share/std_msgs/msg/Header.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/axel/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Lisp code from spot_msgs/BehaviorFault.msg"
-	cd /home/axel/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/axel/P5/src/spot_ros/spot_msgs/msg/BehaviorFault.msg -Ispot_msgs:/home/axel/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/axel/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/WiFiState.lisp: /opt/ros/melodic/lib/genlisp/gen_lisp.py
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/WiFiState.lisp: /home/vini/P5/src/spot_ros/spot_msgs/msg/WiFiState.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Lisp code from spot_msgs/WiFiState.msg"
+	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/vini/P5/src/spot_ros/spot_msgs/msg/WiFiState.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg
 
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/EStopStateArray.lisp: /opt/ros/melodic/lib/genlisp/gen_lisp.py
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/EStopStateArray.lisp: /home/axel/P5/src/spot_ros/spot_msgs/msg/EStopStateArray.msg
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/EStopStateArray.lisp: /home/axel/P5/src/spot_ros/spot_msgs/msg/EStopState.msg
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/EStopStateArray.lisp: /opt/ros/melodic/share/std_msgs/msg/Header.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/axel/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Lisp code from spot_msgs/EStopStateArray.msg"
-	cd /home/axel/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/axel/P5/src/spot_ros/spot_msgs/msg/EStopStateArray.msg -Ispot_msgs:/home/axel/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/axel/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryFeedback.lisp: /opt/ros/melodic/lib/genlisp/gen_lisp.py
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryFeedback.lisp: /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryFeedback.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Lisp code from spot_msgs/TrajectoryFeedback.msg"
+	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryFeedback.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg
 
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/FootStateArray.lisp: /opt/ros/melodic/lib/genlisp/gen_lisp.py
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/FootStateArray.lisp: /home/axel/P5/src/spot_ros/spot_msgs/msg/FootStateArray.msg
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/FootStateArray.lisp: /home/axel/P5/src/spot_ros/spot_msgs/msg/FootState.msg
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/FootStateArray.lisp: /opt/ros/melodic/share/geometry_msgs/msg/Point.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/axel/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating Lisp code from spot_msgs/FootStateArray.msg"
-	cd /home/axel/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/axel/P5/src/spot_ros/spot_msgs/msg/FootStateArray.msg -Ispot_msgs:/home/axel/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/axel/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/BatteryState.lisp: /opt/ros/melodic/lib/genlisp/gen_lisp.py
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/BatteryState.lisp: /home/vini/P5/src/spot_ros/spot_msgs/msg/BatteryState.msg
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/BatteryState.lisp: /opt/ros/melodic/share/std_msgs/msg/Header.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating Lisp code from spot_msgs/BatteryState.msg"
+	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/vini/P5/src/spot_ros/spot_msgs/msg/BatteryState.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg
 
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/LeaseArray.lisp: /opt/ros/melodic/lib/genlisp/gen_lisp.py
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/LeaseArray.lisp: /home/axel/P5/src/spot_ros/spot_msgs/msg/LeaseArray.msg
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/LeaseArray.lisp: /home/axel/P5/src/spot_ros/spot_msgs/msg/LeaseResource.msg
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/LeaseArray.lisp: /home/axel/P5/src/spot_ros/spot_msgs/msg/LeaseOwner.msg
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/LeaseArray.lisp: /home/axel/P5/src/spot_ros/spot_msgs/msg/Lease.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/axel/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating Lisp code from spot_msgs/LeaseArray.msg"
-	cd /home/axel/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/axel/P5/src/spot_ros/spot_msgs/msg/LeaseArray.msg -Ispot_msgs:/home/axel/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/axel/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/FootStateArray.lisp: /opt/ros/melodic/lib/genlisp/gen_lisp.py
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/FootStateArray.lisp: /home/vini/P5/src/spot_ros/spot_msgs/msg/FootStateArray.msg
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/FootStateArray.lisp: /home/vini/P5/src/spot_ros/spot_msgs/msg/FootState.msg
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/FootStateArray.lisp: /opt/ros/melodic/share/geometry_msgs/msg/Point.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating Lisp code from spot_msgs/FootStateArray.msg"
+	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/vini/P5/src/spot_ros/spot_msgs/msg/FootStateArray.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg
 
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/LeaseOwner.lisp: /opt/ros/melodic/lib/genlisp/gen_lisp.py
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/LeaseOwner.lisp: /home/axel/P5/src/spot_ros/spot_msgs/msg/LeaseOwner.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/axel/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating Lisp code from spot_msgs/LeaseOwner.msg"
-	cd /home/axel/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/axel/P5/src/spot_ros/spot_msgs/msg/LeaseOwner.msg -Ispot_msgs:/home/axel/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/axel/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/Lease.lisp: /opt/ros/melodic/lib/genlisp/gen_lisp.py
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/Lease.lisp: /home/vini/P5/src/spot_ros/spot_msgs/msg/Lease.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating Lisp code from spot_msgs/Lease.msg"
+	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/vini/P5/src/spot_ros/spot_msgs/msg/Lease.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg
 
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/Metrics.lisp: /opt/ros/melodic/lib/genlisp/gen_lisp.py
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/Metrics.lisp: /home/axel/P5/src/spot_ros/spot_msgs/msg/Metrics.msg
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/Metrics.lisp: /opt/ros/melodic/share/std_msgs/msg/Header.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/axel/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating Lisp code from spot_msgs/Metrics.msg"
-	cd /home/axel/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/axel/P5/src/spot_ros/spot_msgs/msg/Metrics.msg -Ispot_msgs:/home/axel/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/axel/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/NavigateToResult.lisp: /opt/ros/melodic/lib/genlisp/gen_lisp.py
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/NavigateToResult.lisp: /home/vini/P5/devel/share/spot_msgs/msg/NavigateToResult.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating Lisp code from spot_msgs/NavigateToResult.msg"
+	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/vini/P5/devel/share/spot_msgs/msg/NavigateToResult.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg
 
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/MobilityParams.lisp: /opt/ros/melodic/lib/genlisp/gen_lisp.py
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/MobilityParams.lisp: /home/axel/P5/src/spot_ros/spot_msgs/msg/MobilityParams.msg
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/MobilityParams.lisp: /opt/ros/melodic/share/geometry_msgs/msg/Pose.msg
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/MobilityParams.lisp: /opt/ros/melodic/share/geometry_msgs/msg/Quaternion.msg
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/MobilityParams.lisp: /opt/ros/melodic/share/geometry_msgs/msg/Point.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/axel/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Generating Lisp code from spot_msgs/MobilityParams.msg"
-	cd /home/axel/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/axel/P5/src/spot_ros/spot_msgs/msg/MobilityParams.msg -Ispot_msgs:/home/axel/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/axel/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/LeaseResource.lisp: /opt/ros/melodic/lib/genlisp/gen_lisp.py
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/LeaseResource.lisp: /home/vini/P5/src/spot_ros/spot_msgs/msg/LeaseResource.msg
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/LeaseResource.lisp: /home/vini/P5/src/spot_ros/spot_msgs/msg/LeaseOwner.msg
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/LeaseResource.lisp: /home/vini/P5/src/spot_ros/spot_msgs/msg/Lease.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Generating Lisp code from spot_msgs/LeaseResource.msg"
+	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/vini/P5/src/spot_ros/spot_msgs/msg/LeaseResource.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg
 
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/SystemFault.lisp: /opt/ros/melodic/lib/genlisp/gen_lisp.py
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/SystemFault.lisp: /home/axel/P5/src/spot_ros/spot_msgs/msg/SystemFault.msg
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/SystemFault.lisp: /opt/ros/melodic/share/std_msgs/msg/Header.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/axel/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Generating Lisp code from spot_msgs/SystemFault.msg"
-	cd /home/axel/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/axel/P5/src/spot_ros/spot_msgs/msg/SystemFault.msg -Ispot_msgs:/home/axel/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/axel/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/SystemFault.lisp: /opt/ros/melodic/lib/genlisp/gen_lisp.py
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/SystemFault.lisp: /home/vini/P5/src/spot_ros/spot_msgs/msg/SystemFault.msg
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/SystemFault.lisp: /opt/ros/melodic/share/std_msgs/msg/Header.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Generating Lisp code from spot_msgs/SystemFault.msg"
+	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/vini/P5/src/spot_ros/spot_msgs/msg/SystemFault.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg
 
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/WiFiState.lisp: /opt/ros/melodic/lib/genlisp/gen_lisp.py
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/WiFiState.lisp: /home/axel/P5/src/spot_ros/spot_msgs/msg/WiFiState.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/axel/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Generating Lisp code from spot_msgs/WiFiState.msg"
-	cd /home/axel/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/axel/P5/src/spot_ros/spot_msgs/msg/WiFiState.msg -Ispot_msgs:/home/axel/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/axel/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/LeaseArray.lisp: /opt/ros/melodic/lib/genlisp/gen_lisp.py
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/LeaseArray.lisp: /home/vini/P5/src/spot_ros/spot_msgs/msg/LeaseArray.msg
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/LeaseArray.lisp: /home/vini/P5/src/spot_ros/spot_msgs/msg/LeaseResource.msg
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/LeaseArray.lisp: /home/vini/P5/src/spot_ros/spot_msgs/msg/LeaseOwner.msg
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/LeaseArray.lisp: /home/vini/P5/src/spot_ros/spot_msgs/msg/Lease.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Generating Lisp code from spot_msgs/LeaseArray.msg"
+	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/vini/P5/src/spot_ros/spot_msgs/msg/LeaseArray.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg
 
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/BatteryState.lisp: /opt/ros/melodic/lib/genlisp/gen_lisp.py
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/BatteryState.lisp: /home/axel/P5/src/spot_ros/spot_msgs/msg/BatteryState.msg
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/BatteryState.lisp: /opt/ros/melodic/share/std_msgs/msg/Header.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/axel/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Generating Lisp code from spot_msgs/BatteryState.msg"
-	cd /home/axel/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/axel/P5/src/spot_ros/spot_msgs/msg/BatteryState.msg -Ispot_msgs:/home/axel/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/axel/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/NavigateToActionFeedback.lisp: /opt/ros/melodic/lib/genlisp/gen_lisp.py
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/NavigateToActionFeedback.lisp: /home/vini/P5/devel/share/spot_msgs/msg/NavigateToActionFeedback.msg
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/NavigateToActionFeedback.lisp: /opt/ros/melodic/share/actionlib_msgs/msg/GoalID.msg
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/NavigateToActionFeedback.lisp: /opt/ros/melodic/share/actionlib_msgs/msg/GoalStatus.msg
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/NavigateToActionFeedback.lisp: /home/vini/P5/devel/share/spot_msgs/msg/NavigateToFeedback.msg
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/NavigateToActionFeedback.lisp: /opt/ros/melodic/share/std_msgs/msg/Header.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Generating Lisp code from spot_msgs/NavigateToActionFeedback.msg"
+	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/vini/P5/devel/share/spot_msgs/msg/NavigateToActionFeedback.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg
 
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/BehaviorFaultState.lisp: /opt/ros/melodic/lib/genlisp/gen_lisp.py
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/BehaviorFaultState.lisp: /home/axel/P5/src/spot_ros/spot_msgs/msg/BehaviorFaultState.msg
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/BehaviorFaultState.lisp: /opt/ros/melodic/share/std_msgs/msg/Header.msg
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/BehaviorFaultState.lisp: /home/axel/P5/src/spot_ros/spot_msgs/msg/BehaviorFault.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/axel/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Generating Lisp code from spot_msgs/BehaviorFaultState.msg"
-	cd /home/axel/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/axel/P5/src/spot_ros/spot_msgs/msg/BehaviorFaultState.msg -Ispot_msgs:/home/axel/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/axel/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/BatteryStateArray.lisp: /opt/ros/melodic/lib/genlisp/gen_lisp.py
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/BatteryStateArray.lisp: /home/vini/P5/src/spot_ros/spot_msgs/msg/BatteryStateArray.msg
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/BatteryStateArray.lisp: /home/vini/P5/src/spot_ros/spot_msgs/msg/BatteryState.msg
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/BatteryStateArray.lisp: /opt/ros/melodic/share/std_msgs/msg/Header.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Generating Lisp code from spot_msgs/BatteryStateArray.msg"
+	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/vini/P5/src/spot_ros/spot_msgs/msg/BatteryStateArray.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg
 
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/EStopState.lisp: /opt/ros/melodic/lib/genlisp/gen_lisp.py
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/EStopState.lisp: /home/axel/P5/src/spot_ros/spot_msgs/msg/EStopState.msg
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/EStopState.lisp: /opt/ros/melodic/share/std_msgs/msg/Header.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/axel/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Generating Lisp code from spot_msgs/EStopState.msg"
-	cd /home/axel/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/axel/P5/src/spot_ros/spot_msgs/msg/EStopState.msg -Ispot_msgs:/home/axel/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/axel/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/Metrics.lisp: /opt/ros/melodic/lib/genlisp/gen_lisp.py
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/Metrics.lisp: /home/vini/P5/src/spot_ros/spot_msgs/msg/Metrics.msg
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/Metrics.lisp: /opt/ros/melodic/share/std_msgs/msg/Header.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Generating Lisp code from spot_msgs/Metrics.msg"
+	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/vini/P5/src/spot_ros/spot_msgs/msg/Metrics.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg
 
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/Feedback.lisp: /opt/ros/melodic/lib/genlisp/gen_lisp.py
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/Feedback.lisp: /home/axel/P5/src/spot_ros/spot_msgs/msg/Feedback.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/axel/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Generating Lisp code from spot_msgs/Feedback.msg"
-	cd /home/axel/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/axel/P5/src/spot_ros/spot_msgs/msg/Feedback.msg -Ispot_msgs:/home/axel/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/axel/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/NavigateToFeedback.lisp: /opt/ros/melodic/lib/genlisp/gen_lisp.py
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/NavigateToFeedback.lisp: /home/vini/P5/devel/share/spot_msgs/msg/NavigateToFeedback.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Generating Lisp code from spot_msgs/NavigateToFeedback.msg"
+	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/vini/P5/devel/share/spot_msgs/msg/NavigateToFeedback.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg
 
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/FootState.lisp: /opt/ros/melodic/lib/genlisp/gen_lisp.py
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/FootState.lisp: /home/axel/P5/src/spot_ros/spot_msgs/msg/FootState.msg
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/FootState.lisp: /opt/ros/melodic/share/geometry_msgs/msg/Point.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/axel/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Generating Lisp code from spot_msgs/FootState.msg"
-	cd /home/axel/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/axel/P5/src/spot_ros/spot_msgs/msg/FootState.msg -Ispot_msgs:/home/axel/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/axel/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/NavigateToActionResult.lisp: /opt/ros/melodic/lib/genlisp/gen_lisp.py
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/NavigateToActionResult.lisp: /home/vini/P5/devel/share/spot_msgs/msg/NavigateToActionResult.msg
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/NavigateToActionResult.lisp: /home/vini/P5/devel/share/spot_msgs/msg/NavigateToResult.msg
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/NavigateToActionResult.lisp: /opt/ros/melodic/share/actionlib_msgs/msg/GoalID.msg
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/NavigateToActionResult.lisp: /opt/ros/melodic/share/actionlib_msgs/msg/GoalStatus.msg
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/NavigateToActionResult.lisp: /opt/ros/melodic/share/std_msgs/msg/Header.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Generating Lisp code from spot_msgs/NavigateToActionResult.msg"
+	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/vini/P5/devel/share/spot_msgs/msg/NavigateToActionResult.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg
 
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/Lease.lisp: /opt/ros/melodic/lib/genlisp/gen_lisp.py
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/Lease.lisp: /home/axel/P5/src/spot_ros/spot_msgs/msg/Lease.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/axel/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Generating Lisp code from spot_msgs/Lease.msg"
-	cd /home/axel/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/axel/P5/src/spot_ros/spot_msgs/msg/Lease.msg -Ispot_msgs:/home/axel/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/axel/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/BehaviorFault.lisp: /opt/ros/melodic/lib/genlisp/gen_lisp.py
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/BehaviorFault.lisp: /home/vini/P5/src/spot_ros/spot_msgs/msg/BehaviorFault.msg
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/BehaviorFault.lisp: /opt/ros/melodic/share/std_msgs/msg/Header.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Generating Lisp code from spot_msgs/BehaviorFault.msg"
+	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/vini/P5/src/spot_ros/spot_msgs/msg/BehaviorFault.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg
 
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/LeaseResource.lisp: /opt/ros/melodic/lib/genlisp/gen_lisp.py
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/LeaseResource.lisp: /home/axel/P5/src/spot_ros/spot_msgs/msg/LeaseResource.msg
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/LeaseResource.lisp: /home/axel/P5/src/spot_ros/spot_msgs/msg/LeaseOwner.msg
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/LeaseResource.lisp: /home/axel/P5/src/spot_ros/spot_msgs/msg/Lease.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/axel/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Generating Lisp code from spot_msgs/LeaseResource.msg"
-	cd /home/axel/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/axel/P5/src/spot_ros/spot_msgs/msg/LeaseResource.msg -Ispot_msgs:/home/axel/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/axel/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/NavigateToGoal.lisp: /opt/ros/melodic/lib/genlisp/gen_lisp.py
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/NavigateToGoal.lisp: /home/vini/P5/devel/share/spot_msgs/msg/NavigateToGoal.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Generating Lisp code from spot_msgs/NavigateToGoal.msg"
+	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/vini/P5/devel/share/spot_msgs/msg/NavigateToGoal.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg
 
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/PowerState.lisp: /opt/ros/melodic/lib/genlisp/gen_lisp.py
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/PowerState.lisp: /home/axel/P5/src/spot_ros/spot_msgs/msg/PowerState.msg
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/PowerState.lisp: /opt/ros/melodic/share/std_msgs/msg/Header.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/axel/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Generating Lisp code from spot_msgs/PowerState.msg"
-	cd /home/axel/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/axel/P5/src/spot_ros/spot_msgs/msg/PowerState.msg -Ispot_msgs:/home/axel/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/axel/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/Feedback.lisp: /opt/ros/melodic/lib/genlisp/gen_lisp.py
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/Feedback.lisp: /home/vini/P5/src/spot_ros/spot_msgs/msg/Feedback.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Generating Lisp code from spot_msgs/Feedback.msg"
+	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/vini/P5/src/spot_ros/spot_msgs/msg/Feedback.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg
 
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/SystemFaultState.lisp: /opt/ros/melodic/lib/genlisp/gen_lisp.py
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/SystemFaultState.lisp: /home/axel/P5/src/spot_ros/spot_msgs/msg/SystemFaultState.msg
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/SystemFaultState.lisp: /home/axel/P5/src/spot_ros/spot_msgs/msg/SystemFault.msg
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/SystemFaultState.lisp: /opt/ros/melodic/share/std_msgs/msg/Header.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/axel/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Generating Lisp code from spot_msgs/SystemFaultState.msg"
-	cd /home/axel/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/axel/P5/src/spot_ros/spot_msgs/msg/SystemFaultState.msg -Ispot_msgs:/home/axel/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/axel/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryResult.lisp: /opt/ros/melodic/lib/genlisp/gen_lisp.py
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryResult.lisp: /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryResult.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Generating Lisp code from spot_msgs/TrajectoryResult.msg"
+	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryResult.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg
 
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/NavigateToAction.lisp: /opt/ros/melodic/lib/genlisp/gen_lisp.py
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/NavigateToAction.lisp: /home/axel/P5/devel/share/spot_msgs/msg/NavigateToAction.msg
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/NavigateToAction.lisp: /home/axel/P5/devel/share/spot_msgs/msg/NavigateToFeedback.msg
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/NavigateToAction.lisp: /opt/ros/melodic/share/actionlib_msgs/msg/GoalStatus.msg
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/NavigateToAction.lisp: /home/axel/P5/devel/share/spot_msgs/msg/NavigateToResult.msg
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/NavigateToAction.lisp: /home/axel/P5/devel/share/spot_msgs/msg/NavigateToGoal.msg
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/NavigateToAction.lisp: /opt/ros/melodic/share/actionlib_msgs/msg/GoalID.msg
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/NavigateToAction.lisp: /home/axel/P5/devel/share/spot_msgs/msg/NavigateToActionResult.msg
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/NavigateToAction.lisp: /home/axel/P5/devel/share/spot_msgs/msg/NavigateToActionFeedback.msg
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/NavigateToAction.lisp: /opt/ros/melodic/share/std_msgs/msg/Header.msg
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/NavigateToAction.lisp: /home/axel/P5/devel/share/spot_msgs/msg/NavigateToActionGoal.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/axel/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Generating Lisp code from spot_msgs/NavigateToAction.msg"
-	cd /home/axel/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/axel/P5/devel/share/spot_msgs/msg/NavigateToAction.msg -Ispot_msgs:/home/axel/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/axel/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryActionResult.lisp: /opt/ros/melodic/lib/genlisp/gen_lisp.py
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryActionResult.lisp: /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryActionResult.msg
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryActionResult.lisp: /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryResult.msg
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryActionResult.lisp: /opt/ros/melodic/share/actionlib_msgs/msg/GoalID.msg
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryActionResult.lisp: /opt/ros/melodic/share/actionlib_msgs/msg/GoalStatus.msg
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryActionResult.lisp: /opt/ros/melodic/share/std_msgs/msg/Header.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Generating Lisp code from spot_msgs/TrajectoryActionResult.msg"
+	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryActionResult.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg
 
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/NavigateToActionGoal.lisp: /opt/ros/melodic/lib/genlisp/gen_lisp.py
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/NavigateToActionGoal.lisp: /home/axel/P5/devel/share/spot_msgs/msg/NavigateToActionGoal.msg
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/NavigateToActionGoal.lisp: /opt/ros/melodic/share/std_msgs/msg/Header.msg
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/NavigateToActionGoal.lisp: /home/axel/P5/devel/share/spot_msgs/msg/NavigateToGoal.msg
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/NavigateToActionGoal.lisp: /opt/ros/melodic/share/actionlib_msgs/msg/GoalID.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/axel/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Generating Lisp code from spot_msgs/NavigateToActionGoal.msg"
-	cd /home/axel/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/axel/P5/devel/share/spot_msgs/msg/NavigateToActionGoal.msg -Ispot_msgs:/home/axel/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/axel/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/SystemFaultState.lisp: /opt/ros/melodic/lib/genlisp/gen_lisp.py
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/SystemFaultState.lisp: /home/vini/P5/src/spot_ros/spot_msgs/msg/SystemFaultState.msg
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/SystemFaultState.lisp: /home/vini/P5/src/spot_ros/spot_msgs/msg/SystemFault.msg
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/SystemFaultState.lisp: /opt/ros/melodic/share/std_msgs/msg/Header.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Generating Lisp code from spot_msgs/SystemFaultState.msg"
+	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/vini/P5/src/spot_ros/spot_msgs/msg/SystemFaultState.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg
 
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/NavigateToActionResult.lisp: /opt/ros/melodic/lib/genlisp/gen_lisp.py
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/NavigateToActionResult.lisp: /home/axel/P5/devel/share/spot_msgs/msg/NavigateToActionResult.msg
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/NavigateToActionResult.lisp: /opt/ros/melodic/share/actionlib_msgs/msg/GoalID.msg
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/NavigateToActionResult.lisp: /opt/ros/melodic/share/std_msgs/msg/Header.msg
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/NavigateToActionResult.lisp: /home/axel/P5/devel/share/spot_msgs/msg/NavigateToResult.msg
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/NavigateToActionResult.lisp: /opt/ros/melodic/share/actionlib_msgs/msg/GoalStatus.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/axel/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Generating Lisp code from spot_msgs/NavigateToActionResult.msg"
-	cd /home/axel/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/axel/P5/devel/share/spot_msgs/msg/NavigateToActionResult.msg -Ispot_msgs:/home/axel/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/axel/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryAction.lisp: /opt/ros/melodic/lib/genlisp/gen_lisp.py
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryAction.lisp: /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryAction.msg
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryAction.lisp: /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryResult.msg
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryAction.lisp: /opt/ros/melodic/share/actionlib_msgs/msg/GoalID.msg
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryAction.lisp: /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryGoal.msg
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryAction.lisp: /opt/ros/melodic/share/std_msgs/msg/Duration.msg
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryAction.lisp: /opt/ros/melodic/share/actionlib_msgs/msg/GoalStatus.msg
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryAction.lisp: /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryActionGoal.msg
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryAction.lisp: /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryActionFeedback.msg
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryAction.lisp: /opt/ros/melodic/share/geometry_msgs/msg/Pose.msg
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryAction.lisp: /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryActionResult.msg
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryAction.lisp: /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryFeedback.msg
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryAction.lisp: /opt/ros/melodic/share/std_msgs/msg/Header.msg
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryAction.lisp: /opt/ros/melodic/share/geometry_msgs/msg/Quaternion.msg
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryAction.lisp: /opt/ros/melodic/share/geometry_msgs/msg/PoseStamped.msg
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryAction.lisp: /opt/ros/melodic/share/geometry_msgs/msg/Point.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Generating Lisp code from spot_msgs/TrajectoryAction.msg"
+	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryAction.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg
 
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/NavigateToActionFeedback.lisp: /opt/ros/melodic/lib/genlisp/gen_lisp.py
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/NavigateToActionFeedback.lisp: /home/axel/P5/devel/share/spot_msgs/msg/NavigateToActionFeedback.msg
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/NavigateToActionFeedback.lisp: /opt/ros/melodic/share/actionlib_msgs/msg/GoalID.msg
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/NavigateToActionFeedback.lisp: /opt/ros/melodic/share/std_msgs/msg/Header.msg
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/NavigateToActionFeedback.lisp: /home/axel/P5/devel/share/spot_msgs/msg/NavigateToFeedback.msg
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/NavigateToActionFeedback.lisp: /opt/ros/melodic/share/actionlib_msgs/msg/GoalStatus.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/axel/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Generating Lisp code from spot_msgs/NavigateToActionFeedback.msg"
-	cd /home/axel/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/axel/P5/devel/share/spot_msgs/msg/NavigateToActionFeedback.msg -Ispot_msgs:/home/axel/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/axel/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/LeaseOwner.lisp: /opt/ros/melodic/lib/genlisp/gen_lisp.py
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/LeaseOwner.lisp: /home/vini/P5/src/spot_ros/spot_msgs/msg/LeaseOwner.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Generating Lisp code from spot_msgs/LeaseOwner.msg"
+	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/vini/P5/src/spot_ros/spot_msgs/msg/LeaseOwner.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg
 
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/NavigateToGoal.lisp: /opt/ros/melodic/lib/genlisp/gen_lisp.py
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/NavigateToGoal.lisp: /home/axel/P5/devel/share/spot_msgs/msg/NavigateToGoal.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/axel/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Generating Lisp code from spot_msgs/NavigateToGoal.msg"
-	cd /home/axel/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/axel/P5/devel/share/spot_msgs/msg/NavigateToGoal.msg -Ispot_msgs:/home/axel/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/axel/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/BehaviorFaultState.lisp: /opt/ros/melodic/lib/genlisp/gen_lisp.py
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/BehaviorFaultState.lisp: /home/vini/P5/src/spot_ros/spot_msgs/msg/BehaviorFaultState.msg
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/BehaviorFaultState.lisp: /home/vini/P5/src/spot_ros/spot_msgs/msg/BehaviorFault.msg
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/BehaviorFaultState.lisp: /opt/ros/melodic/share/std_msgs/msg/Header.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Generating Lisp code from spot_msgs/BehaviorFaultState.msg"
+	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/vini/P5/src/spot_ros/spot_msgs/msg/BehaviorFaultState.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg
 
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/NavigateToResult.lisp: /opt/ros/melodic/lib/genlisp/gen_lisp.py
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/NavigateToResult.lisp: /home/axel/P5/devel/share/spot_msgs/msg/NavigateToResult.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/axel/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Generating Lisp code from spot_msgs/NavigateToResult.msg"
-	cd /home/axel/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/axel/P5/devel/share/spot_msgs/msg/NavigateToResult.msg -Ispot_msgs:/home/axel/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/axel/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/NavigateToActionGoal.lisp: /opt/ros/melodic/lib/genlisp/gen_lisp.py
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/NavigateToActionGoal.lisp: /home/vini/P5/devel/share/spot_msgs/msg/NavigateToActionGoal.msg
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/NavigateToActionGoal.lisp: /opt/ros/melodic/share/actionlib_msgs/msg/GoalID.msg
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/NavigateToActionGoal.lisp: /home/vini/P5/devel/share/spot_msgs/msg/NavigateToGoal.msg
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/NavigateToActionGoal.lisp: /opt/ros/melodic/share/std_msgs/msg/Header.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Generating Lisp code from spot_msgs/NavigateToActionGoal.msg"
+	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/vini/P5/devel/share/spot_msgs/msg/NavigateToActionGoal.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg
 
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/NavigateToFeedback.lisp: /opt/ros/melodic/lib/genlisp/gen_lisp.py
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/NavigateToFeedback.lisp: /home/axel/P5/devel/share/spot_msgs/msg/NavigateToFeedback.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/axel/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Generating Lisp code from spot_msgs/NavigateToFeedback.msg"
-	cd /home/axel/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/axel/P5/devel/share/spot_msgs/msg/NavigateToFeedback.msg -Ispot_msgs:/home/axel/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/axel/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryGoal.lisp: /opt/ros/melodic/lib/genlisp/gen_lisp.py
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryGoal.lisp: /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryGoal.msg
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryGoal.lisp: /opt/ros/melodic/share/std_msgs/msg/Duration.msg
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryGoal.lisp: /opt/ros/melodic/share/geometry_msgs/msg/Pose.msg
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryGoal.lisp: /opt/ros/melodic/share/std_msgs/msg/Header.msg
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryGoal.lisp: /opt/ros/melodic/share/geometry_msgs/msg/Point.msg
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryGoal.lisp: /opt/ros/melodic/share/geometry_msgs/msg/PoseStamped.msg
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryGoal.lisp: /opt/ros/melodic/share/geometry_msgs/msg/Quaternion.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Generating Lisp code from spot_msgs/TrajectoryGoal.msg"
+	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryGoal.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg
 
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryAction.lisp: /opt/ros/melodic/lib/genlisp/gen_lisp.py
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryAction.lisp: /home/axel/P5/devel/share/spot_msgs/msg/TrajectoryAction.msg
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryAction.lisp: /home/axel/P5/devel/share/spot_msgs/msg/TrajectoryActionFeedback.msg
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryAction.lisp: /opt/ros/melodic/share/actionlib_msgs/msg/GoalStatus.msg
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryAction.lisp: /home/axel/P5/devel/share/spot_msgs/msg/TrajectoryGoal.msg
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryAction.lisp: /opt/ros/melodic/share/std_msgs/msg/Duration.msg
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryAction.lisp: /home/axel/P5/devel/share/spot_msgs/msg/TrajectoryFeedback.msg
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryAction.lisp: /opt/ros/melodic/share/actionlib_msgs/msg/GoalID.msg
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryAction.lisp: /opt/ros/melodic/share/geometry_msgs/msg/PoseStamped.msg
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryAction.lisp: /opt/ros/melodic/share/geometry_msgs/msg/Quaternion.msg
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryAction.lisp: /home/axel/P5/devel/share/spot_msgs/msg/TrajectoryActionResult.msg
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryAction.lisp: /opt/ros/melodic/share/geometry_msgs/msg/Point.msg
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryAction.lisp: /opt/ros/melodic/share/geometry_msgs/msg/Pose.msg
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryAction.lisp: /home/axel/P5/devel/share/spot_msgs/msg/TrajectoryResult.msg
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryAction.lisp: /opt/ros/melodic/share/std_msgs/msg/Header.msg
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryAction.lisp: /home/axel/P5/devel/share/spot_msgs/msg/TrajectoryActionGoal.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/axel/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Generating Lisp code from spot_msgs/TrajectoryAction.msg"
-	cd /home/axel/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/axel/P5/devel/share/spot_msgs/msg/TrajectoryAction.msg -Ispot_msgs:/home/axel/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/axel/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/MobilityParams.lisp: /opt/ros/melodic/lib/genlisp/gen_lisp.py
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/MobilityParams.lisp: /home/vini/P5/src/spot_ros/spot_msgs/msg/MobilityParams.msg
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/MobilityParams.lisp: /opt/ros/melodic/share/geometry_msgs/msg/Pose.msg
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/MobilityParams.lisp: /opt/ros/melodic/share/geometry_msgs/msg/Quaternion.msg
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/MobilityParams.lisp: /opt/ros/melodic/share/geometry_msgs/msg/Point.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Generating Lisp code from spot_msgs/MobilityParams.msg"
+	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/vini/P5/src/spot_ros/spot_msgs/msg/MobilityParams.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg
 
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryActionGoal.lisp: /opt/ros/melodic/lib/genlisp/gen_lisp.py
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryActionGoal.lisp: /home/axel/P5/devel/share/spot_msgs/msg/TrajectoryActionGoal.msg
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryActionGoal.lisp: /home/axel/P5/devel/share/spot_msgs/msg/TrajectoryGoal.msg
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryActionGoal.lisp: /opt/ros/melodic/share/std_msgs/msg/Duration.msg
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryActionGoal.lisp: /opt/ros/melodic/share/actionlib_msgs/msg/GoalID.msg
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryActionGoal.lisp: /opt/ros/melodic/share/geometry_msgs/msg/PoseStamped.msg
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryActionGoal.lisp: /opt/ros/melodic/share/geometry_msgs/msg/Quaternion.msg
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryActionGoal.lisp: /opt/ros/melodic/share/geometry_msgs/msg/Point.msg
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryActionGoal.lisp: /opt/ros/melodic/share/geometry_msgs/msg/Pose.msg
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryActionGoal.lisp: /opt/ros/melodic/share/std_msgs/msg/Header.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/axel/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Generating Lisp code from spot_msgs/TrajectoryActionGoal.msg"
-	cd /home/axel/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/axel/P5/devel/share/spot_msgs/msg/TrajectoryActionGoal.msg -Ispot_msgs:/home/axel/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/axel/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/PowerState.lisp: /opt/ros/melodic/lib/genlisp/gen_lisp.py
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/PowerState.lisp: /home/vini/P5/src/spot_ros/spot_msgs/msg/PowerState.msg
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/PowerState.lisp: /opt/ros/melodic/share/std_msgs/msg/Header.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Generating Lisp code from spot_msgs/PowerState.msg"
+	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/vini/P5/src/spot_ros/spot_msgs/msg/PowerState.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg
 
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryActionResult.lisp: /opt/ros/melodic/lib/genlisp/gen_lisp.py
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryActionResult.lisp: /home/axel/P5/devel/share/spot_msgs/msg/TrajectoryActionResult.msg
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryActionResult.lisp: /opt/ros/melodic/share/actionlib_msgs/msg/GoalID.msg
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryActionResult.lisp: /home/axel/P5/devel/share/spot_msgs/msg/TrajectoryResult.msg
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryActionResult.lisp: /opt/ros/melodic/share/std_msgs/msg/Header.msg
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryActionResult.lisp: /opt/ros/melodic/share/actionlib_msgs/msg/GoalStatus.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/axel/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Generating Lisp code from spot_msgs/TrajectoryActionResult.msg"
-	cd /home/axel/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/axel/P5/devel/share/spot_msgs/msg/TrajectoryActionResult.msg -Ispot_msgs:/home/axel/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/axel/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/EStopState.lisp: /opt/ros/melodic/lib/genlisp/gen_lisp.py
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/EStopState.lisp: /home/vini/P5/src/spot_ros/spot_msgs/msg/EStopState.msg
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/EStopState.lisp: /opt/ros/melodic/share/std_msgs/msg/Header.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Generating Lisp code from spot_msgs/EStopState.msg"
+	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/vini/P5/src/spot_ros/spot_msgs/msg/EStopState.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg
 
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryActionFeedback.lisp: /opt/ros/melodic/lib/genlisp/gen_lisp.py
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryActionFeedback.lisp: /home/axel/P5/devel/share/spot_msgs/msg/TrajectoryActionFeedback.msg
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryActionFeedback.lisp: /opt/ros/melodic/share/actionlib_msgs/msg/GoalID.msg
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryActionFeedback.lisp: /opt/ros/melodic/share/std_msgs/msg/Header.msg
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryActionFeedback.lisp: /home/axel/P5/devel/share/spot_msgs/msg/TrajectoryFeedback.msg
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryActionFeedback.lisp: /opt/ros/melodic/share/actionlib_msgs/msg/GoalStatus.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/axel/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Generating Lisp code from spot_msgs/TrajectoryActionFeedback.msg"
-	cd /home/axel/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/axel/P5/devel/share/spot_msgs/msg/TrajectoryActionFeedback.msg -Ispot_msgs:/home/axel/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/axel/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryActionFeedback.lisp: /opt/ros/melodic/lib/genlisp/gen_lisp.py
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryActionFeedback.lisp: /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryActionFeedback.msg
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryActionFeedback.lisp: /opt/ros/melodic/share/actionlib_msgs/msg/GoalID.msg
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryActionFeedback.lisp: /opt/ros/melodic/share/actionlib_msgs/msg/GoalStatus.msg
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryActionFeedback.lisp: /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryFeedback.msg
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryActionFeedback.lisp: /opt/ros/melodic/share/std_msgs/msg/Header.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Generating Lisp code from spot_msgs/TrajectoryActionFeedback.msg"
+	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryActionFeedback.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg
 
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryGoal.lisp: /opt/ros/melodic/lib/genlisp/gen_lisp.py
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryGoal.lisp: /home/axel/P5/devel/share/spot_msgs/msg/TrajectoryGoal.msg
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryGoal.lisp: /opt/ros/melodic/share/std_msgs/msg/Duration.msg
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryGoal.lisp: /opt/ros/melodic/share/geometry_msgs/msg/PoseStamped.msg
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryGoal.lisp: /opt/ros/melodic/share/geometry_msgs/msg/Quaternion.msg
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryGoal.lisp: /opt/ros/melodic/share/geometry_msgs/msg/Point.msg
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryGoal.lisp: /opt/ros/melodic/share/geometry_msgs/msg/Pose.msg
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryGoal.lisp: /opt/ros/melodic/share/std_msgs/msg/Header.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/axel/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Generating Lisp code from spot_msgs/TrajectoryGoal.msg"
-	cd /home/axel/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/axel/P5/devel/share/spot_msgs/msg/TrajectoryGoal.msg -Ispot_msgs:/home/axel/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/axel/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryActionGoal.lisp: /opt/ros/melodic/lib/genlisp/gen_lisp.py
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryActionGoal.lisp: /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryActionGoal.msg
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryActionGoal.lisp: /opt/ros/melodic/share/actionlib_msgs/msg/GoalID.msg
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryActionGoal.lisp: /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryGoal.msg
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryActionGoal.lisp: /opt/ros/melodic/share/std_msgs/msg/Duration.msg
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryActionGoal.lisp: /opt/ros/melodic/share/geometry_msgs/msg/Pose.msg
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryActionGoal.lisp: /opt/ros/melodic/share/std_msgs/msg/Header.msg
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryActionGoal.lisp: /opt/ros/melodic/share/geometry_msgs/msg/Quaternion.msg
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryActionGoal.lisp: /opt/ros/melodic/share/geometry_msgs/msg/PoseStamped.msg
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryActionGoal.lisp: /opt/ros/melodic/share/geometry_msgs/msg/Point.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Generating Lisp code from spot_msgs/TrajectoryActionGoal.msg"
+	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryActionGoal.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg
 
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryResult.lisp: /opt/ros/melodic/lib/genlisp/gen_lisp.py
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryResult.lisp: /home/axel/P5/devel/share/spot_msgs/msg/TrajectoryResult.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/axel/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Generating Lisp code from spot_msgs/TrajectoryResult.msg"
-	cd /home/axel/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/axel/P5/devel/share/spot_msgs/msg/TrajectoryResult.msg -Ispot_msgs:/home/axel/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/axel/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/NavigateToAction.lisp: /opt/ros/melodic/lib/genlisp/gen_lisp.py
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/NavigateToAction.lisp: /home/vini/P5/devel/share/spot_msgs/msg/NavigateToAction.msg
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/NavigateToAction.lisp: /opt/ros/melodic/share/actionlib_msgs/msg/GoalID.msg
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/NavigateToAction.lisp: /home/vini/P5/devel/share/spot_msgs/msg/NavigateToActionResult.msg
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/NavigateToAction.lisp: /home/vini/P5/devel/share/spot_msgs/msg/NavigateToActionGoal.msg
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/NavigateToAction.lisp: /home/vini/P5/devel/share/spot_msgs/msg/NavigateToResult.msg
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/NavigateToAction.lisp: /opt/ros/melodic/share/actionlib_msgs/msg/GoalStatus.msg
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/NavigateToAction.lisp: /home/vini/P5/devel/share/spot_msgs/msg/NavigateToFeedback.msg
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/NavigateToAction.lisp: /home/vini/P5/devel/share/spot_msgs/msg/NavigateToActionFeedback.msg
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/NavigateToAction.lisp: /opt/ros/melodic/share/std_msgs/msg/Header.msg
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/NavigateToAction.lisp: /home/vini/P5/devel/share/spot_msgs/msg/NavigateToGoal.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Generating Lisp code from spot_msgs/NavigateToAction.msg"
+	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/vini/P5/devel/share/spot_msgs/msg/NavigateToAction.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg
 
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryFeedback.lisp: /opt/ros/melodic/lib/genlisp/gen_lisp.py
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryFeedback.lisp: /home/axel/P5/devel/share/spot_msgs/msg/TrajectoryFeedback.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/axel/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Generating Lisp code from spot_msgs/TrajectoryFeedback.msg"
-	cd /home/axel/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/axel/P5/devel/share/spot_msgs/msg/TrajectoryFeedback.msg -Ispot_msgs:/home/axel/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/axel/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/FootState.lisp: /opt/ros/melodic/lib/genlisp/gen_lisp.py
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/FootState.lisp: /home/vini/P5/src/spot_ros/spot_msgs/msg/FootState.msg
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/FootState.lisp: /opt/ros/melodic/share/geometry_msgs/msg/Point.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Generating Lisp code from spot_msgs/FootState.msg"
+	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/vini/P5/src/spot_ros/spot_msgs/msg/FootState.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg
 
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/srv/ListGraph.lisp: /opt/ros/melodic/lib/genlisp/gen_lisp.py
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/srv/ListGraph.lisp: /home/axel/P5/src/spot_ros/spot_msgs/srv/ListGraph.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/axel/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Generating Lisp code from spot_msgs/ListGraph.srv"
-	cd /home/axel/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/axel/P5/src/spot_ros/spot_msgs/srv/ListGraph.srv -Ispot_msgs:/home/axel/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/axel/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/axel/P5/devel/share/common-lisp/ros/spot_msgs/srv
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/srv/ListGraph.lisp: /opt/ros/melodic/lib/genlisp/gen_lisp.py
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/srv/ListGraph.lisp: /home/vini/P5/src/spot_ros/spot_msgs/srv/ListGraph.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Generating Lisp code from spot_msgs/ListGraph.srv"
+	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/vini/P5/src/spot_ros/spot_msgs/srv/ListGraph.srv -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/common-lisp/ros/spot_msgs/srv
 
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/srv/SetLocomotion.lisp: /opt/ros/melodic/lib/genlisp/gen_lisp.py
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/srv/SetLocomotion.lisp: /home/axel/P5/src/spot_ros/spot_msgs/srv/SetLocomotion.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/axel/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Generating Lisp code from spot_msgs/SetLocomotion.srv"
-	cd /home/axel/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/axel/P5/src/spot_ros/spot_msgs/srv/SetLocomotion.srv -Ispot_msgs:/home/axel/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/axel/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/axel/P5/devel/share/common-lisp/ros/spot_msgs/srv
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/srv/SetVelocity.lisp: /opt/ros/melodic/lib/genlisp/gen_lisp.py
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/srv/SetVelocity.lisp: /home/vini/P5/src/spot_ros/spot_msgs/srv/SetVelocity.srv
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/srv/SetVelocity.lisp: /opt/ros/melodic/share/geometry_msgs/msg/Twist.msg
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/srv/SetVelocity.lisp: /opt/ros/melodic/share/geometry_msgs/msg/Vector3.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Generating Lisp code from spot_msgs/SetVelocity.srv"
+	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/vini/P5/src/spot_ros/spot_msgs/srv/SetVelocity.srv -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/common-lisp/ros/spot_msgs/srv
 
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/srv/SetVelocity.lisp: /opt/ros/melodic/lib/genlisp/gen_lisp.py
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/srv/SetVelocity.lisp: /home/axel/P5/src/spot_ros/spot_msgs/srv/SetVelocity.srv
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/srv/SetVelocity.lisp: /opt/ros/melodic/share/geometry_msgs/msg/Vector3.msg
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/srv/SetVelocity.lisp: /opt/ros/melodic/share/geometry_msgs/msg/Twist.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/axel/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Generating Lisp code from spot_msgs/SetVelocity.srv"
-	cd /home/axel/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/axel/P5/src/spot_ros/spot_msgs/srv/SetVelocity.srv -Ispot_msgs:/home/axel/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/axel/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/axel/P5/devel/share/common-lisp/ros/spot_msgs/srv
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/srv/ClearBehaviorFault.lisp: /opt/ros/melodic/lib/genlisp/gen_lisp.py
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/srv/ClearBehaviorFault.lisp: /home/vini/P5/src/spot_ros/spot_msgs/srv/ClearBehaviorFault.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Generating Lisp code from spot_msgs/ClearBehaviorFault.srv"
+	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/vini/P5/src/spot_ros/spot_msgs/srv/ClearBehaviorFault.srv -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/common-lisp/ros/spot_msgs/srv
 
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/srv/ClearBehaviorFault.lisp: /opt/ros/melodic/lib/genlisp/gen_lisp.py
-/home/axel/P5/devel/share/common-lisp/ros/spot_msgs/srv/ClearBehaviorFault.lisp: /home/axel/P5/src/spot_ros/spot_msgs/srv/ClearBehaviorFault.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/axel/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Generating Lisp code from spot_msgs/ClearBehaviorFault.srv"
-	cd /home/axel/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/axel/P5/src/spot_ros/spot_msgs/srv/ClearBehaviorFault.srv -Ispot_msgs:/home/axel/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/axel/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/axel/P5/devel/share/common-lisp/ros/spot_msgs/srv
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/srv/SetLocomotion.lisp: /opt/ros/melodic/lib/genlisp/gen_lisp.py
+/home/vini/P5/devel/share/common-lisp/ros/spot_msgs/srv/SetLocomotion.lisp: /home/vini/P5/src/spot_ros/spot_msgs/srv/SetLocomotion.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Generating Lisp code from spot_msgs/SetLocomotion.srv"
+	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/vini/P5/src/spot_ros/spot_msgs/srv/SetLocomotion.srv -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/common-lisp/ros/spot_msgs/srv
 
 spot_msgs_generate_messages_lisp: spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_lisp
-spot_msgs_generate_messages_lisp: /home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/BatteryStateArray.lisp
-spot_msgs_generate_messages_lisp: /home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/BehaviorFault.lisp
-spot_msgs_generate_messages_lisp: /home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/EStopStateArray.lisp
-spot_msgs_generate_messages_lisp: /home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/FootStateArray.lisp
-spot_msgs_generate_messages_lisp: /home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/LeaseArray.lisp
-spot_msgs_generate_messages_lisp: /home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/LeaseOwner.lisp
-spot_msgs_generate_messages_lisp: /home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/Metrics.lisp
-spot_msgs_generate_messages_lisp: /home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/MobilityParams.lisp
-spot_msgs_generate_messages_lisp: /home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/SystemFault.lisp
-spot_msgs_generate_messages_lisp: /home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/WiFiState.lisp
-spot_msgs_generate_messages_lisp: /home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/BatteryState.lisp
-spot_msgs_generate_messages_lisp: /home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/BehaviorFaultState.lisp
-spot_msgs_generate_messages_lisp: /home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/EStopState.lisp
-spot_msgs_generate_messages_lisp: /home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/Feedback.lisp
-spot_msgs_generate_messages_lisp: /home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/FootState.lisp
-spot_msgs_generate_messages_lisp: /home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/Lease.lisp
-spot_msgs_generate_messages_lisp: /home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/LeaseResource.lisp
-spot_msgs_generate_messages_lisp: /home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/PowerState.lisp
-spot_msgs_generate_messages_lisp: /home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/SystemFaultState.lisp
-spot_msgs_generate_messages_lisp: /home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/NavigateToAction.lisp
-spot_msgs_generate_messages_lisp: /home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/NavigateToActionGoal.lisp
-spot_msgs_generate_messages_lisp: /home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/NavigateToActionResult.lisp
-spot_msgs_generate_messages_lisp: /home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/NavigateToActionFeedback.lisp
-spot_msgs_generate_messages_lisp: /home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/NavigateToGoal.lisp
-spot_msgs_generate_messages_lisp: /home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/NavigateToResult.lisp
-spot_msgs_generate_messages_lisp: /home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/NavigateToFeedback.lisp
-spot_msgs_generate_messages_lisp: /home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryAction.lisp
-spot_msgs_generate_messages_lisp: /home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryActionGoal.lisp
-spot_msgs_generate_messages_lisp: /home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryActionResult.lisp
-spot_msgs_generate_messages_lisp: /home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryActionFeedback.lisp
-spot_msgs_generate_messages_lisp: /home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryGoal.lisp
-spot_msgs_generate_messages_lisp: /home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryResult.lisp
-spot_msgs_generate_messages_lisp: /home/axel/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryFeedback.lisp
-spot_msgs_generate_messages_lisp: /home/axel/P5/devel/share/common-lisp/ros/spot_msgs/srv/ListGraph.lisp
-spot_msgs_generate_messages_lisp: /home/axel/P5/devel/share/common-lisp/ros/spot_msgs/srv/SetLocomotion.lisp
-spot_msgs_generate_messages_lisp: /home/axel/P5/devel/share/common-lisp/ros/spot_msgs/srv/SetVelocity.lisp
-spot_msgs_generate_messages_lisp: /home/axel/P5/devel/share/common-lisp/ros/spot_msgs/srv/ClearBehaviorFault.lisp
+spot_msgs_generate_messages_lisp: /home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/EStopStateArray.lisp
+spot_msgs_generate_messages_lisp: /home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/WiFiState.lisp
+spot_msgs_generate_messages_lisp: /home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryFeedback.lisp
+spot_msgs_generate_messages_lisp: /home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/BatteryState.lisp
+spot_msgs_generate_messages_lisp: /home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/FootStateArray.lisp
+spot_msgs_generate_messages_lisp: /home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/Lease.lisp
+spot_msgs_generate_messages_lisp: /home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/NavigateToResult.lisp
+spot_msgs_generate_messages_lisp: /home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/LeaseResource.lisp
+spot_msgs_generate_messages_lisp: /home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/SystemFault.lisp
+spot_msgs_generate_messages_lisp: /home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/LeaseArray.lisp
+spot_msgs_generate_messages_lisp: /home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/NavigateToActionFeedback.lisp
+spot_msgs_generate_messages_lisp: /home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/BatteryStateArray.lisp
+spot_msgs_generate_messages_lisp: /home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/Metrics.lisp
+spot_msgs_generate_messages_lisp: /home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/NavigateToFeedback.lisp
+spot_msgs_generate_messages_lisp: /home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/NavigateToActionResult.lisp
+spot_msgs_generate_messages_lisp: /home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/BehaviorFault.lisp
+spot_msgs_generate_messages_lisp: /home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/NavigateToGoal.lisp
+spot_msgs_generate_messages_lisp: /home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/Feedback.lisp
+spot_msgs_generate_messages_lisp: /home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryResult.lisp
+spot_msgs_generate_messages_lisp: /home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryActionResult.lisp
+spot_msgs_generate_messages_lisp: /home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/SystemFaultState.lisp
+spot_msgs_generate_messages_lisp: /home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryAction.lisp
+spot_msgs_generate_messages_lisp: /home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/LeaseOwner.lisp
+spot_msgs_generate_messages_lisp: /home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/BehaviorFaultState.lisp
+spot_msgs_generate_messages_lisp: /home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/NavigateToActionGoal.lisp
+spot_msgs_generate_messages_lisp: /home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryGoal.lisp
+spot_msgs_generate_messages_lisp: /home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/MobilityParams.lisp
+spot_msgs_generate_messages_lisp: /home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/PowerState.lisp
+spot_msgs_generate_messages_lisp: /home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/EStopState.lisp
+spot_msgs_generate_messages_lisp: /home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryActionFeedback.lisp
+spot_msgs_generate_messages_lisp: /home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/TrajectoryActionGoal.lisp
+spot_msgs_generate_messages_lisp: /home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/NavigateToAction.lisp
+spot_msgs_generate_messages_lisp: /home/vini/P5/devel/share/common-lisp/ros/spot_msgs/msg/FootState.lisp
+spot_msgs_generate_messages_lisp: /home/vini/P5/devel/share/common-lisp/ros/spot_msgs/srv/ListGraph.lisp
+spot_msgs_generate_messages_lisp: /home/vini/P5/devel/share/common-lisp/ros/spot_msgs/srv/SetVelocity.lisp
+spot_msgs_generate_messages_lisp: /home/vini/P5/devel/share/common-lisp/ros/spot_msgs/srv/ClearBehaviorFault.lisp
+spot_msgs_generate_messages_lisp: /home/vini/P5/devel/share/common-lisp/ros/spot_msgs/srv/SetLocomotion.lisp
 spot_msgs_generate_messages_lisp: spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_lisp.dir/build.make
 
 .PHONY : spot_msgs_generate_messages_lisp
@@ -408,10 +408,10 @@ spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_lisp.dir/build: spot_m
 .PHONY : spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_lisp.dir/build
 
 spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_lisp.dir/clean:
-	cd /home/axel/P5/build/spot_ros/spot_msgs && $(CMAKE_COMMAND) -P CMakeFiles/spot_msgs_generate_messages_lisp.dir/cmake_clean.cmake
+	cd /home/vini/P5/build/spot_ros/spot_msgs && $(CMAKE_COMMAND) -P CMakeFiles/spot_msgs_generate_messages_lisp.dir/cmake_clean.cmake
 .PHONY : spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_lisp.dir/clean
 
 spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_lisp.dir/depend:
-	cd /home/axel/P5/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/axel/P5/src /home/axel/P5/src/spot_ros/spot_msgs /home/axel/P5/build /home/axel/P5/build/spot_ros/spot_msgs /home/axel/P5/build/spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_lisp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/vini/P5/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vini/P5/src /home/vini/P5/src/spot_ros/spot_msgs /home/vini/P5/build /home/vini/P5/build/spot_ros/spot_msgs /home/vini/P5/build/spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_lisp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_lisp.dir/depend
 

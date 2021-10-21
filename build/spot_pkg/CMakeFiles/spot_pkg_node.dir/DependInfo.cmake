@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/axel/P5/src/spot_pkg/src/stand_sit.cpp" "/home/axel/P5/build/spot_pkg/CMakeFiles/spot_pkg_node.dir/src/stand_sit.cpp.o"
+  "/home/vini/P5/src/spot_pkg/src/stand_sit.cpp" "/home/vini/P5/build/spot_pkg/CMakeFiles/spot_pkg_node.dir/src/stand_sit.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

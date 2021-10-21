@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "".split(';') if "" != "" else []
 PROJECT_CATKIN_DEPENDS = "".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "spot_description"
-PROJECT_SPACE_DIR = "/home/axel/P5/install"
+PROJECT_SPACE_DIR = "/home/vini/P5/install"
 PROJECT_VERSION = "0.0.0"

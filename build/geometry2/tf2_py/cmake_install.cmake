@@ -1,8 +1,8 @@
-# Install script for directory: /home/axel/P5/src/geometry2/tf2_py
+# Install script for directory: /home/vini/P5/src/geometry2/tf2_py
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/axel/P5/install")
+  set(CMAKE_INSTALL_PREFIX "/home/vini/P5/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -12,7 +12,7 @@ if(NOT DEFINED CMAKE_INSTALL_CONFIG_NAME)
     string(REGEX REPLACE "^[^A-Za-z0-9_]+" ""
            CMAKE_INSTALL_CONFIG_NAME "${BUILD_TYPE}")
   else()
-    set(CMAKE_INSTALL_CONFIG_NAME "Release")
+    set(CMAKE_INSTALL_CONFIG_NAME "")
   endif()
   message(STATUS "Install configuration: \"${CMAKE_INSTALL_CONFIG_NAME}\"")
 endif()
@@ -38,25 +38,25 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/home/axel/P5/build/geometry2/tf2_py/catkin_generated/safe_execute_install.cmake")
+  include("/home/vini/P5/build/geometry2/tf2_py/catkin_generated/safe_execute_install.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/axel/P5/build/geometry2/tf2_py/catkin_generated/installspace/tf2_py.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/vini/P5/build/geometry2/tf2_py/catkin_generated/installspace/tf2_py.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/tf2_py/cmake" TYPE FILE FILES
-    "/home/axel/P5/build/geometry2/tf2_py/catkin_generated/installspace/tf2_pyConfig.cmake"
-    "/home/axel/P5/build/geometry2/tf2_py/catkin_generated/installspace/tf2_pyConfig-version.cmake"
+    "/home/vini/P5/build/geometry2/tf2_py/catkin_generated/installspace/tf2_pyConfig.cmake"
+    "/home/vini/P5/build/geometry2/tf2_py/catkin_generated/installspace/tf2_pyConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/tf2_py" TYPE FILE FILES "/home/axel/P5/src/geometry2/tf2_py/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/tf2_py" TYPE FILE FILES "/home/vini/P5/src/geometry2/tf2_py/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages/tf2_py" TYPE FILE FILES "/home/axel/P5/devel/lib/python3/dist-packages/tf2_py/_tf2.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/tf2_py" TYPE FILE FILES "/home/vini/P5/devel/lib/python2.7/dist-packages/tf2_py/_tf2.so")
 endif()
 

@@ -1,8 +1,8 @@
-# Install script for directory: /home/axel/P5/src/spot_ros/spot_description
+# Install script for directory: /home/vini/P5/src/spot_ros/spot_description
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/axel/P5/install")
+  set(CMAKE_INSTALL_PREFIX "/home/vini/P5/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -12,7 +12,7 @@ if(NOT DEFINED CMAKE_INSTALL_CONFIG_NAME)
     string(REGEX REPLACE "^[^A-Za-z0-9_]+" ""
            CMAKE_INSTALL_CONFIG_NAME "${BUILD_TYPE}")
   else()
-    set(CMAKE_INSTALL_CONFIG_NAME "Release")
+    set(CMAKE_INSTALL_CONFIG_NAME "")
   endif()
   message(STATUS "Install configuration: \"${CMAKE_INSTALL_CONFIG_NAME}\"")
 endif()
@@ -38,29 +38,29 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/axel/P5/build/spot_ros/spot_description/catkin_generated/installspace/spot_description.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/vini/P5/build/spot_ros/spot_description/catkin_generated/installspace/spot_description.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/spot_description/cmake" TYPE FILE FILES
-    "/home/axel/P5/build/spot_ros/spot_description/catkin_generated/installspace/spot_descriptionConfig.cmake"
-    "/home/axel/P5/build/spot_ros/spot_description/catkin_generated/installspace/spot_descriptionConfig-version.cmake"
+    "/home/vini/P5/build/spot_ros/spot_description/catkin_generated/installspace/spot_descriptionConfig.cmake"
+    "/home/vini/P5/build/spot_ros/spot_description/catkin_generated/installspace/spot_descriptionConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/spot_description" TYPE FILE FILES "/home/axel/P5/src/spot_ros/spot_description/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/spot_description" TYPE FILE FILES "/home/vini/P5/src/spot_ros/spot_description/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/spot_description" TYPE DIRECTORY FILES "/home/axel/P5/src/spot_ros/spot_description/launch")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/spot_description" TYPE DIRECTORY FILES "/home/vini/P5/src/spot_ros/spot_description/launch")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/spot_description" TYPE DIRECTORY FILES "/home/axel/P5/src/spot_ros/spot_description/urdf")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/spot_description" TYPE DIRECTORY FILES "/home/vini/P5/src/spot_ros/spot_description/urdf")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/spot_description" TYPE DIRECTORY FILES "/home/axel/P5/src/spot_ros/spot_description/meshes")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/spot_description" TYPE DIRECTORY FILES "/home/vini/P5/src/spot_ros/spot_description/meshes")
 endif()
 
