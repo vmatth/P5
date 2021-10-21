@@ -1,9 +1,13 @@
-# P5
-# run
+# P5 AAU Project
 
+Install ros dependancies
+
+```
 rosdep install spot_pkg
+```
+Build P5
 
-# to install move_base packages
-
+```
 catkin_make
+```
 
