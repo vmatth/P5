@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
-# Source directory: /home/vini/P5/src/geometry2/geometry2
-# Build directory: /home/vini/P5/build/geometry2/geometry2
+# Source directory: /home/axel/P5/src/geometry2/geometry2
+# Build directory: /home/axel/P5/build/geometry2/geometry2
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.

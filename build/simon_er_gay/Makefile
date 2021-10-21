@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vini/P5/src
+CMAKE_SOURCE_DIR = /home/axel/P5/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vini/P5/build
+CMAKE_BINARY_DIR = /home/axel/P5/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -67,6 +67,18 @@ install/strip/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
 	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
 
 # Special rule for the target list_install_components
 list_install_components:
@@ -100,18 +112,6 @@ test/fast: test
 
 .PHONY : test/fast
 
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
-
-# Special rule for the target install/local
-install/local/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -137,14 +137,14 @@ install/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/vini/P5/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/vini/P5/build/CMakeFiles /home/vini/P5/build/simon_er_gay/CMakeFiles/progress.marks
-	cd /home/vini/P5/build && $(MAKE) -f CMakeFiles/Makefile2 simon_er_gay/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vini/P5/build/CMakeFiles 0
+	cd /home/axel/P5/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/axel/P5/build/CMakeFiles /home/axel/P5/build/simon_er_gay/CMakeFiles/progress.marks
+	cd /home/axel/P5/build && $(MAKE) -f CMakeFiles/Makefile2 simon_er_gay/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/axel/P5/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/vini/P5/build && $(MAKE) -f CMakeFiles/Makefile2 simon_er_gay/clean
+	cd /home/axel/P5/build && $(MAKE) -f CMakeFiles/Makefile2 simon_er_gay/clean
 .PHONY : clean
 
 # The main clean target
@@ -154,22 +154,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/vini/P5/build && $(MAKE) -f CMakeFiles/Makefile2 simon_er_gay/preinstall
+	cd /home/axel/P5/build && $(MAKE) -f CMakeFiles/Makefile2 simon_er_gay/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/vini/P5/build && $(MAKE) -f CMakeFiles/Makefile2 simon_er_gay/preinstall
+	cd /home/axel/P5/build && $(MAKE) -f CMakeFiles/Makefile2 simon_er_gay/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/vini/P5/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/axel/P5/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 simon_er_gay/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule:
-	cd /home/vini/P5/build && $(MAKE) -f CMakeFiles/Makefile2 simon_er_gay/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
+	cd /home/axel/P5/build && $(MAKE) -f CMakeFiles/Makefile2 simon_er_gay/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
 .PHONY : simon_er_gay/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -179,12 +179,12 @@ roscpp_generate_messages_nodejs: simon_er_gay/CMakeFiles/roscpp_generate_message
 
 # fast build rule for target.
 roscpp_generate_messages_nodejs/fast:
-	cd /home/vini/P5/build && $(MAKE) -f simon_er_gay/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make simon_er_gay/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
+	cd /home/axel/P5/build && $(MAKE) -f simon_er_gay/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make simon_er_gay/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
 .PHONY : roscpp_generate_messages_nodejs/fast
 
 # Convenience name for target.
 simon_er_gay/CMakeFiles/roscpp_generate_messages_eus.dir/rule:
-	cd /home/vini/P5/build && $(MAKE) -f CMakeFiles/Makefile2 simon_er_gay/CMakeFiles/roscpp_generate_messages_eus.dir/rule
+	cd /home/axel/P5/build && $(MAKE) -f CMakeFiles/Makefile2 simon_er_gay/CMakeFiles/roscpp_generate_messages_eus.dir/rule
 .PHONY : simon_er_gay/CMakeFiles/roscpp_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -194,12 +194,12 @@ roscpp_generate_messages_eus: simon_er_gay/CMakeFiles/roscpp_generate_messages_e
 
 # fast build rule for target.
 roscpp_generate_messages_eus/fast:
-	cd /home/vini/P5/build && $(MAKE) -f simon_er_gay/CMakeFiles/roscpp_generate_messages_eus.dir/build.make simon_er_gay/CMakeFiles/roscpp_generate_messages_eus.dir/build
+	cd /home/axel/P5/build && $(MAKE) -f simon_er_gay/CMakeFiles/roscpp_generate_messages_eus.dir/build.make simon_er_gay/CMakeFiles/roscpp_generate_messages_eus.dir/build
 .PHONY : roscpp_generate_messages_eus/fast
 
 # Convenience name for target.
 simon_er_gay/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule:
-	cd /home/vini/P5/build && $(MAKE) -f CMakeFiles/Makefile2 simon_er_gay/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+	cd /home/axel/P5/build && $(MAKE) -f CMakeFiles/Makefile2 simon_er_gay/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
 .PHONY : simon_er_gay/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -209,12 +209,12 @@ rosgraph_msgs_generate_messages_cpp: simon_er_gay/CMakeFiles/rosgraph_msgs_gener
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_cpp/fast:
-	cd /home/vini/P5/build && $(MAKE) -f simon_er_gay/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make simon_er_gay/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
+	cd /home/axel/P5/build && $(MAKE) -f simon_er_gay/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make simon_er_gay/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
 .PHONY : rosgraph_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
 simon_er_gay/CMakeFiles/roscpp_generate_messages_cpp.dir/rule:
-	cd /home/vini/P5/build && $(MAKE) -f CMakeFiles/Makefile2 simon_er_gay/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
+	cd /home/axel/P5/build && $(MAKE) -f CMakeFiles/Makefile2 simon_er_gay/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
 .PHONY : simon_er_gay/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -224,12 +224,12 @@ roscpp_generate_messages_cpp: simon_er_gay/CMakeFiles/roscpp_generate_messages_c
 
 # fast build rule for target.
 roscpp_generate_messages_cpp/fast:
-	cd /home/vini/P5/build && $(MAKE) -f simon_er_gay/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make simon_er_gay/CMakeFiles/roscpp_generate_messages_cpp.dir/build
+	cd /home/axel/P5/build && $(MAKE) -f simon_er_gay/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make simon_er_gay/CMakeFiles/roscpp_generate_messages_cpp.dir/build
 .PHONY : roscpp_generate_messages_cpp/fast
 
 # Convenience name for target.
 simon_er_gay/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule:
-	cd /home/vini/P5/build && $(MAKE) -f CMakeFiles/Makefile2 simon_er_gay/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
+	cd /home/axel/P5/build && $(MAKE) -f CMakeFiles/Makefile2 simon_er_gay/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
 .PHONY : simon_er_gay/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -239,12 +239,12 @@ rosgraph_msgs_generate_messages_lisp: simon_er_gay/CMakeFiles/rosgraph_msgs_gene
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_lisp/fast:
-	cd /home/vini/P5/build && $(MAKE) -f simon_er_gay/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make simon_er_gay/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
+	cd /home/axel/P5/build && $(MAKE) -f simon_er_gay/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make simon_er_gay/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
 .PHONY : rosgraph_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
 simon_er_gay/CMakeFiles/roscpp_generate_messages_py.dir/rule:
-	cd /home/vini/P5/build && $(MAKE) -f CMakeFiles/Makefile2 simon_er_gay/CMakeFiles/roscpp_generate_messages_py.dir/rule
+	cd /home/axel/P5/build && $(MAKE) -f CMakeFiles/Makefile2 simon_er_gay/CMakeFiles/roscpp_generate_messages_py.dir/rule
 .PHONY : simon_er_gay/CMakeFiles/roscpp_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -254,12 +254,12 @@ roscpp_generate_messages_py: simon_er_gay/CMakeFiles/roscpp_generate_messages_py
 
 # fast build rule for target.
 roscpp_generate_messages_py/fast:
-	cd /home/vini/P5/build && $(MAKE) -f simon_er_gay/CMakeFiles/roscpp_generate_messages_py.dir/build.make simon_er_gay/CMakeFiles/roscpp_generate_messages_py.dir/build
+	cd /home/axel/P5/build && $(MAKE) -f simon_er_gay/CMakeFiles/roscpp_generate_messages_py.dir/build.make simon_er_gay/CMakeFiles/roscpp_generate_messages_py.dir/build
 .PHONY : roscpp_generate_messages_py/fast
 
 # Convenience name for target.
 simon_er_gay/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/vini/P5/build && $(MAKE) -f CMakeFiles/Makefile2 simon_er_gay/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
+	cd /home/axel/P5/build && $(MAKE) -f CMakeFiles/Makefile2 simon_er_gay/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
 .PHONY : simon_er_gay/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -269,12 +269,12 @@ rosgraph_msgs_generate_messages_nodejs: simon_er_gay/CMakeFiles/rosgraph_msgs_ge
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_nodejs/fast:
-	cd /home/vini/P5/build && $(MAKE) -f simon_er_gay/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make simon_er_gay/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
+	cd /home/axel/P5/build && $(MAKE) -f simon_er_gay/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make simon_er_gay/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
 .PHONY : rosgraph_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
 simon_er_gay/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule:
-	cd /home/vini/P5/build && $(MAKE) -f CMakeFiles/Makefile2 simon_er_gay/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
+	cd /home/axel/P5/build && $(MAKE) -f CMakeFiles/Makefile2 simon_er_gay/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
 .PHONY : simon_er_gay/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -284,12 +284,27 @@ rosgraph_msgs_generate_messages_py: simon_er_gay/CMakeFiles/rosgraph_msgs_genera
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_py/fast:
-	cd /home/vini/P5/build && $(MAKE) -f simon_er_gay/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make simon_er_gay/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
+	cd /home/axel/P5/build && $(MAKE) -f simon_er_gay/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make simon_er_gay/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
 .PHONY : rosgraph_msgs_generate_messages_py/fast
 
 # Convenience name for target.
+simon_er_gay/CMakeFiles/simon_er_gay_node.dir/rule:
+	cd /home/axel/P5/build && $(MAKE) -f CMakeFiles/Makefile2 simon_er_gay/CMakeFiles/simon_er_gay_node.dir/rule
+.PHONY : simon_er_gay/CMakeFiles/simon_er_gay_node.dir/rule
+
+# Convenience name for target.
+simon_er_gay_node: simon_er_gay/CMakeFiles/simon_er_gay_node.dir/rule
+
+.PHONY : simon_er_gay_node
+
+# fast build rule for target.
+simon_er_gay_node/fast:
+	cd /home/axel/P5/build && $(MAKE) -f simon_er_gay/CMakeFiles/simon_er_gay_node.dir/build.make simon_er_gay/CMakeFiles/simon_er_gay_node.dir/build
+.PHONY : simon_er_gay_node/fast
+
+# Convenience name for target.
 simon_er_gay/CMakeFiles/roscpp_generate_messages_lisp.dir/rule:
-	cd /home/vini/P5/build && $(MAKE) -f CMakeFiles/Makefile2 simon_er_gay/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
+	cd /home/axel/P5/build && $(MAKE) -f CMakeFiles/Makefile2 simon_er_gay/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
 .PHONY : simon_er_gay/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -299,12 +314,12 @@ roscpp_generate_messages_lisp: simon_er_gay/CMakeFiles/roscpp_generate_messages_
 
 # fast build rule for target.
 roscpp_generate_messages_lisp/fast:
-	cd /home/vini/P5/build && $(MAKE) -f simon_er_gay/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make simon_er_gay/CMakeFiles/roscpp_generate_messages_lisp.dir/build
+	cd /home/axel/P5/build && $(MAKE) -f simon_er_gay/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make simon_er_gay/CMakeFiles/roscpp_generate_messages_lisp.dir/build
 .PHONY : roscpp_generate_messages_lisp/fast
 
 # Convenience name for target.
 simon_er_gay/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule:
-	cd /home/vini/P5/build && $(MAKE) -f CMakeFiles/Makefile2 simon_er_gay/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
+	cd /home/axel/P5/build && $(MAKE) -f CMakeFiles/Makefile2 simon_er_gay/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
 .PHONY : simon_er_gay/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -314,8 +329,35 @@ rosgraph_msgs_generate_messages_eus: simon_er_gay/CMakeFiles/rosgraph_msgs_gener
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_eus/fast:
-	cd /home/vini/P5/build && $(MAKE) -f simon_er_gay/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make simon_er_gay/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
+	cd /home/axel/P5/build && $(MAKE) -f simon_er_gay/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make simon_er_gay/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
 .PHONY : rosgraph_msgs_generate_messages_eus/fast
+
+src/stand_sit.o: src/stand_sit.cpp.o
+
+.PHONY : src/stand_sit.o
+
+# target to build an object file
+src/stand_sit.cpp.o:
+	cd /home/axel/P5/build && $(MAKE) -f simon_er_gay/CMakeFiles/simon_er_gay_node.dir/build.make simon_er_gay/CMakeFiles/simon_er_gay_node.dir/src/stand_sit.cpp.o
+.PHONY : src/stand_sit.cpp.o
+
+src/stand_sit.i: src/stand_sit.cpp.i
+
+.PHONY : src/stand_sit.i
+
+# target to preprocess a source file
+src/stand_sit.cpp.i:
+	cd /home/axel/P5/build && $(MAKE) -f simon_er_gay/CMakeFiles/simon_er_gay_node.dir/build.make simon_er_gay/CMakeFiles/simon_er_gay_node.dir/src/stand_sit.cpp.i
+.PHONY : src/stand_sit.cpp.i
+
+src/stand_sit.s: src/stand_sit.cpp.s
+
+.PHONY : src/stand_sit.s
+
+# target to generate assembly for a file
+src/stand_sit.cpp.s:
+	cd /home/axel/P5/build && $(MAKE) -f simon_er_gay/CMakeFiles/simon_er_gay_node.dir/build.make simon_er_gay/CMakeFiles/simon_er_gay_node.dir/src/stand_sit.cpp.s
+.PHONY : src/stand_sit.cpp.s
 
 # Help Target
 help:
@@ -324,6 +366,7 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... install/strip"
+	@echo "... install/local"
 	@echo "... roscpp_generate_messages_nodejs"
 	@echo "... roscpp_generate_messages_eus"
 	@echo "... rosgraph_msgs_generate_messages_cpp"
@@ -333,13 +376,16 @@ help:
 	@echo "... list_install_components"
 	@echo "... rosgraph_msgs_generate_messages_nodejs"
 	@echo "... rosgraph_msgs_generate_messages_py"
+	@echo "... simon_er_gay_node"
 	@echo "... roscpp_generate_messages_lisp"
 	@echo "... edit_cache"
 	@echo "... test"
-	@echo "... install/local"
 	@echo "... rebuild_cache"
 	@echo "... rosgraph_msgs_generate_messages_eus"
 	@echo "... install"
+	@echo "... src/stand_sit.o"
+	@echo "... src/stand_sit.i"
+	@echo "... src/stand_sit.s"
 .PHONY : help
 
 
@@ -351,6 +397,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/vini/P5/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/axel/P5/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

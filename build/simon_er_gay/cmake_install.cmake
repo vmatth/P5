@@ -1,8 +1,8 @@
-# Install script for directory: /home/vini/P5/src/simon_er_gay
+# Install script for directory: /home/axel/P5/src/simon_er_gay
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/vini/P5/install")
+  set(CMAKE_INSTALL_PREFIX "/home/axel/P5/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,17 +38,17 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/vini/P5/build/simon_er_gay/catkin_generated/installspace/simon_er_gay.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/axel/P5/build/simon_er_gay/catkin_generated/installspace/simon_er_gay.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/simon_er_gay/cmake" TYPE FILE FILES
-    "/home/vini/P5/build/simon_er_gay/catkin_generated/installspace/simon_er_gayConfig.cmake"
-    "/home/vini/P5/build/simon_er_gay/catkin_generated/installspace/simon_er_gayConfig-version.cmake"
+    "/home/axel/P5/build/simon_er_gay/catkin_generated/installspace/simon_er_gayConfig.cmake"
+    "/home/axel/P5/build/simon_er_gay/catkin_generated/installspace/simon_er_gayConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/simon_er_gay" TYPE FILE FILES "/home/vini/P5/src/simon_er_gay/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/simon_er_gay" TYPE FILE FILES "/home/axel/P5/src/simon_er_gay/package.xml")
 endif()
 

@@ -1,0 +1,25 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "",
+        "limitSymbolsToIncludedHeaders": true
+      },
+      "includePath": [
+        "/home/axel/P5/devel/include/**",
+        "/opt/ros/melodic/include/**",
+        "/home/axel/P5/src/geometry2/tf2/include/**",
+        "/home/axel/P5/src/geometry2/tf2_bullet/include/**",
+        "/home/axel/P5/src/geometry2/tf2_eigen/include/**",
+        "/home/axel/P5/src/geometry2/tf2_geometry_msgs/include/**",
+        "/home/axel/P5/src/geometry2/tf2_kdl/include/**",
+        "/home/axel/P5/src/geometry2/tf2_msgs/include/**",
+        "/home/axel/P5/src/geometry2/tf2_ros/include/**",
+        "/home/axel/P5/src/geometry2/tf2_sensor_msgs/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS"
+    }
+  ],
+  "version": 4
+}

@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
-# Source directory: /home/vini/P5/src
-# Build directory: /home/vini/P5/build
+# Source directory: /home/axel/P5/src
+# Build directory: /home/axel/P5/build
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
@@ -12,7 +12,6 @@ subdirs("geometry2/tf2_msgs")
 subdirs("geometry2/tf2")
 subdirs("geometry2/tf2_bullet")
 subdirs("geometry2/tf2_eigen")
-subdirs("simon_er_gay")
 subdirs("geometry2/tf2_py")
 subdirs("spot_ros/spot_msgs")
 subdirs("geometry2/tf2_ros")
@@ -22,3 +21,4 @@ subdirs("geometry2/test_tf2")
 subdirs("geometry2/tf2_sensor_msgs")
 subdirs("geometry2/tf2_tools")
 subdirs("spot_ros/spot_viz")
+subdirs("spot_pkg")
