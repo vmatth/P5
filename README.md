@@ -25,5 +25,10 @@ roslaunch spot_pkg boot.launch
 rosrun spot_pkg spot_pkg_node
 ```
 
+To open SPOT in rviz
+```
+roslaunch spot_viz view_robot.launch
+```
+
 
 
