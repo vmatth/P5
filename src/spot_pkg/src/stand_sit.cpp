@@ -1,3 +1,6 @@
+//Hello!
+//HI!
+
 #include "ros/ros.h"
 #include <std_srvs/Trigger.h>
 #include <geometry_msgs/Pose.h>
@@ -130,7 +133,6 @@ int main(int argc, char **argv)
     while(!ac.waitForServer(ros::Duration(5.0))){
         ROS_INFO("Waiting for the move_base action server to come up");
     }
-
     move_base_msgs::MoveBaseGoal goal;
 
     //we'll send a goal to the robot to move 1 meter forward
@@ -153,21 +155,22 @@ int main(int argc, char **argv)
 // MOVE BASE CLIENT END//////////////////////////////////////////////////////////
 // //////////////////////////////////////////////////////////////////////////////
 
-    /*
+/*
     while(ros::ok()){
         geometry_msgs::PoseStamped goalmsg;
-        goalmsg.pose.position.x = 0.1;
+        goalmsg.pose.position.x = 1;
         goalmsg.pose.position.y = 0;
         goalmsg.pose.position.z = 0;
         goalPub.publish(goalmsg);
+        //ROS_INFO("x=[%f]",goalmsg.pose.position.x);
     }
-    */
+*/
 
     ros::Duration(5.0).sleep();
     sit();
     ros::Duration(1.0).sleep();
     power_off();
-  //  ros::spin();
+    ros::spin();
 
     return 0;
 }

@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/test_buffer_client.dir/test/test_buffer_client.cpp.o"
-  "/home/vini/P5/devel/lib/test_tf2/test_buffer_client.pdb"
-  "/home/vini/P5/devel/lib/test_tf2/test_buffer_client"
+  "/home/axel/P5/devel/lib/test_tf2/test_buffer_client.pdb"
+  "/home/axel/P5/devel/lib/test_tf2/test_buffer_client"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -1,8 +1,8 @@
-# Install script for directory: /home/vini/P5/src/geometry2/geometry2
+# Install script for directory: /home/axel/P5/src/geometry2/geometry2
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/vini/P5/install")
+  set(CMAKE_INSTALL_PREFIX "/home/axel/P5/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,6 +38,6 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/geometry2" TYPE FILE FILES "/home/vini/P5/src/geometry2/geometry2/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/geometry2" TYPE FILE FILES "/home/axel/P5/src/geometry2/geometry2/package.xml")
 endif()
 

@@ -6,5 +6,14 @@
     "python.analysis.extraPaths": [
         "/home/axel/P5/devel/lib/python3/dist-packages",
         "/opt/ros/melodic/lib/python2.7/dist-packages"
-    ]
+    ],
+    "files.associations": {
+        "*.tcc": "cpp",
+        "deque": "cpp",
+        "list": "cpp",
+        "string": "cpp",
+        "vector": "cpp",
+        "hash_map": "cpp",
+        "hash_set": "cpp"
+    }
 }

@@ -3,8 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/spot_viz_autogen.dir/AutogenOldSettings.cmake"
   "CMakeFiles/spot_viz.dir/src/spot_panel.cpp.o"
   "CMakeFiles/spot_viz.dir/spot_viz_autogen/mocs_compilation.cpp.o"
-  "/home/vini/P5/devel/lib/libspot_viz.pdb"
-  "/home/vini/P5/devel/lib/libspot_viz.so"
+  "/home/axel/P5/devel/lib/libspot_viz.pdb"
+  "/home/axel/P5/devel/lib/libspot_viz.so"
 )
 
 # Per-language clean rules from dependency scanning.

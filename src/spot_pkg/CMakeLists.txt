@@ -16,6 +16,8 @@ find_package(catkin REQUIRED COMPONENTS
   move_base
   actionlib
   actionlib_msgs
+  tf
+  sensor_msgs
 )
 
 ## System dependencies are found with CMake's conventions
@@ -112,6 +114,7 @@ catkin_package(
 #  LIBRARIES simon_er_gay
 #  CATKIN_DEPENDS roscpp rospy std_msgs
 #  DEPENDS system_lib
+  CATKIN_DEPENDS tf roscpp sensor_msgs
 )
 
 ###########
@@ -140,6 +143,7 @@ include_directories(
 ## The recommended prefix ensures that target names across packages don't collide
 add_executable(${PROJECT_NAME}_node src/stand_sit.cpp)
 add_executable(move_node src/move.cpp)
+add_executable(laser_footprint_filter src/laser_footprint_filter.cpp)
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
@@ -158,7 +162,9 @@ target_link_libraries(${PROJECT_NAME}_node
 target_link_libraries(move_node
    ${catkin_LIBRARIES}
 )
-
+target_link_libraries(laser_footprint_filter 
+    ${catkin_LIBRARIES}
+)
 #############
 ## Install ##
 #############
@@ -168,10 +174,36 @@ target_link_libraries(move_node
 
 ## Mark executable scripts (Python etc.) for installation
 ## in contrast to setup.py, you can choose the destination
-# catkin_install_python(PROGRAMS
-#   scripts/my_python_script
-#   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
-# )
+catkin_install_python(PROGRAMS
+  scripts/python_test.py
+  DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+)
+
+# Mark executables and/or libraries for installation
+install(TARGETS laser_footprint_filter
+  LIBRARY DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
+  RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+)
+
+# Mark anything (useful) else for installation
+install(DIRECTORY laser
+        DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
+)
+
+install(DIRECTORY launch
+        DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
+)
+
+install(DIRECTORY param
+        DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
+)
+
+install(DIRECTORY maps
+        DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
+)
+
+
+
 
 ## Mark executables for installation
 ## See http://docs.ros.org/melodic/api/catkin/html/howto/format1/building_executables.html
