@@ -1,7 +1,9 @@
 # P5 AAU Project
 
 Setup
+
 Install ros melodic: http://wiki.ros.org/melodic
+
 Install spot package: https://github.com/clearpathrobotics/spot_ros
 
 Install ros dependencies
