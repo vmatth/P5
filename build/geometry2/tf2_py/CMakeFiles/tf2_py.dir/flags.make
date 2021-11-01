@@ -6,5 +6,9 @@ CXX_FLAGS = -O3 -DNDEBUG -fPIC   -g -Wno-missing-field-initializers
 
 CXX_DEFINES = -DROS_BUILD_SHARED_LIBS=1 -Dtf2_py_EXPORTS
 
+<<<<<<< HEAD
 CXX_INCLUDES = -I/usr/include/python3.6m -I/home/vini/P5/devel/include -I/home/vini/P5/src/geometry2/tf2/include -I/home/vini/P5/src/geometry2/tf2_msgs/include -I/opt/ros/melodic/include 
+=======
+CXX_INCLUDES = -I/usr/include/python2.7 -I/home/axel/P5/devel/include -I/home/axel/P5/src/geometry2/tf2/include -I/home/axel/P5/src/geometry2/tf2_msgs/include -I/opt/ros/melodic/include 
+>>>>>>> c0686da4ef00f543f3e2534c55792ba20b859868
 

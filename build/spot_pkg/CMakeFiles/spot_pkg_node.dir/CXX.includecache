@@ -6,9 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/home/vini/P5/src/spot_pkg/src/stand_sit.cpp
+/home/axel/P5/src/spot_pkg/src/stand_sit.cpp
 ros/ros.h
-/home/vini/P5/src/spot_pkg/src/ros/ros.h
+/home/axel/P5/src/spot_pkg/src/ros/ros.h
 std_srvs/Trigger.h
 -
 geometry_msgs/Pose.h

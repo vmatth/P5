@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vini/P5/src
+CMAKE_SOURCE_DIR = /home/axel/P5/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vini/P5/build
+CMAKE_BINARY_DIR = /home/axel/P5/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,14 +137,14 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/vini/P5/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/vini/P5/build/CMakeFiles /home/vini/P5/build/spot_pkg/CMakeFiles/progress.marks
-	cd /home/vini/P5/build && $(MAKE) -f CMakeFiles/Makefile2 spot_pkg/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vini/P5/build/CMakeFiles 0
+	cd /home/axel/P5/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/axel/P5/build/CMakeFiles /home/axel/P5/build/spot_pkg/CMakeFiles/progress.marks
+	cd /home/axel/P5/build && $(MAKE) -f CMakeFiles/Makefile2 spot_pkg/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/axel/P5/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/vini/P5/build && $(MAKE) -f CMakeFiles/Makefile2 spot_pkg/clean
+	cd /home/axel/P5/build && $(MAKE) -f CMakeFiles/Makefile2 spot_pkg/clean
 .PHONY : clean
 
 # The main clean target
@@ -154,22 +154,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/vini/P5/build && $(MAKE) -f CMakeFiles/Makefile2 spot_pkg/preinstall
+	cd /home/axel/P5/build && $(MAKE) -f CMakeFiles/Makefile2 spot_pkg/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/vini/P5/build && $(MAKE) -f CMakeFiles/Makefile2 spot_pkg/preinstall
+	cd /home/axel/P5/build && $(MAKE) -f CMakeFiles/Makefile2 spot_pkg/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/vini/P5/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/axel/P5/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 spot_pkg/CMakeFiles/move_base_msgs_generate_messages_lisp.dir/rule:
-	cd /home/vini/P5/build && $(MAKE) -f CMakeFiles/Makefile2 spot_pkg/CMakeFiles/move_base_msgs_generate_messages_lisp.dir/rule
+	cd /home/axel/P5/build && $(MAKE) -f CMakeFiles/Makefile2 spot_pkg/CMakeFiles/move_base_msgs_generate_messages_lisp.dir/rule
 .PHONY : spot_pkg/CMakeFiles/move_base_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -179,12 +179,12 @@ move_base_msgs_generate_messages_lisp: spot_pkg/CMakeFiles/move_base_msgs_genera
 
 # fast build rule for target.
 move_base_msgs_generate_messages_lisp/fast:
-	cd /home/vini/P5/build && $(MAKE) -f spot_pkg/CMakeFiles/move_base_msgs_generate_messages_lisp.dir/build.make spot_pkg/CMakeFiles/move_base_msgs_generate_messages_lisp.dir/build
+	cd /home/axel/P5/build && $(MAKE) -f spot_pkg/CMakeFiles/move_base_msgs_generate_messages_lisp.dir/build.make spot_pkg/CMakeFiles/move_base_msgs_generate_messages_lisp.dir/build
 .PHONY : move_base_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
 spot_pkg/CMakeFiles/move_base_gencfg.dir/rule:
-	cd /home/vini/P5/build && $(MAKE) -f CMakeFiles/Makefile2 spot_pkg/CMakeFiles/move_base_gencfg.dir/rule
+	cd /home/axel/P5/build && $(MAKE) -f CMakeFiles/Makefile2 spot_pkg/CMakeFiles/move_base_gencfg.dir/rule
 .PHONY : spot_pkg/CMakeFiles/move_base_gencfg.dir/rule
 
 # Convenience name for target.
@@ -194,12 +194,12 @@ move_base_gencfg: spot_pkg/CMakeFiles/move_base_gencfg.dir/rule
 
 # fast build rule for target.
 move_base_gencfg/fast:
-	cd /home/vini/P5/build && $(MAKE) -f spot_pkg/CMakeFiles/move_base_gencfg.dir/build.make spot_pkg/CMakeFiles/move_base_gencfg.dir/build
+	cd /home/axel/P5/build && $(MAKE) -f spot_pkg/CMakeFiles/move_base_gencfg.dir/build.make spot_pkg/CMakeFiles/move_base_gencfg.dir/build
 .PHONY : move_base_gencfg/fast
 
 # Convenience name for target.
 spot_pkg/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/rule:
-	cd /home/vini/P5/build && $(MAKE) -f CMakeFiles/Makefile2 spot_pkg/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/rule
+	cd /home/axel/P5/build && $(MAKE) -f CMakeFiles/Makefile2 spot_pkg/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/rule
 .PHONY : spot_pkg/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -209,12 +209,12 @@ dynamic_reconfigure_generate_messages_nodejs: spot_pkg/CMakeFiles/dynamic_reconf
 
 # fast build rule for target.
 dynamic_reconfigure_generate_messages_nodejs/fast:
-	cd /home/vini/P5/build && $(MAKE) -f spot_pkg/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/build.make spot_pkg/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/build
+	cd /home/axel/P5/build && $(MAKE) -f spot_pkg/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/build.make spot_pkg/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/build
 .PHONY : dynamic_reconfigure_generate_messages_nodejs/fast
 
 # Convenience name for target.
 spot_pkg/CMakeFiles/dynamic_reconfigure_gencfg.dir/rule:
-	cd /home/vini/P5/build && $(MAKE) -f CMakeFiles/Makefile2 spot_pkg/CMakeFiles/dynamic_reconfigure_gencfg.dir/rule
+	cd /home/axel/P5/build && $(MAKE) -f CMakeFiles/Makefile2 spot_pkg/CMakeFiles/dynamic_reconfigure_gencfg.dir/rule
 .PHONY : spot_pkg/CMakeFiles/dynamic_reconfigure_gencfg.dir/rule
 
 # Convenience name for target.
@@ -224,12 +224,12 @@ dynamic_reconfigure_gencfg: spot_pkg/CMakeFiles/dynamic_reconfigure_gencfg.dir/r
 
 # fast build rule for target.
 dynamic_reconfigure_gencfg/fast:
-	cd /home/vini/P5/build && $(MAKE) -f spot_pkg/CMakeFiles/dynamic_reconfigure_gencfg.dir/build.make spot_pkg/CMakeFiles/dynamic_reconfigure_gencfg.dir/build
+	cd /home/axel/P5/build && $(MAKE) -f spot_pkg/CMakeFiles/dynamic_reconfigure_gencfg.dir/build.make spot_pkg/CMakeFiles/dynamic_reconfigure_gencfg.dir/build
 .PHONY : dynamic_reconfigure_gencfg/fast
 
 # Convenience name for target.
 spot_pkg/CMakeFiles/move_base_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/vini/P5/build && $(MAKE) -f CMakeFiles/Makefile2 spot_pkg/CMakeFiles/move_base_msgs_generate_messages_nodejs.dir/rule
+	cd /home/axel/P5/build && $(MAKE) -f CMakeFiles/Makefile2 spot_pkg/CMakeFiles/move_base_msgs_generate_messages_nodejs.dir/rule
 .PHONY : spot_pkg/CMakeFiles/move_base_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -239,12 +239,12 @@ move_base_msgs_generate_messages_nodejs: spot_pkg/CMakeFiles/move_base_msgs_gene
 
 # fast build rule for target.
 move_base_msgs_generate_messages_nodejs/fast:
-	cd /home/vini/P5/build && $(MAKE) -f spot_pkg/CMakeFiles/move_base_msgs_generate_messages_nodejs.dir/build.make spot_pkg/CMakeFiles/move_base_msgs_generate_messages_nodejs.dir/build
+	cd /home/axel/P5/build && $(MAKE) -f spot_pkg/CMakeFiles/move_base_msgs_generate_messages_nodejs.dir/build.make spot_pkg/CMakeFiles/move_base_msgs_generate_messages_nodejs.dir/build
 .PHONY : move_base_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
 spot_pkg/CMakeFiles/move_base_msgs_generate_messages_cpp.dir/rule:
-	cd /home/vini/P5/build && $(MAKE) -f CMakeFiles/Makefile2 spot_pkg/CMakeFiles/move_base_msgs_generate_messages_cpp.dir/rule
+	cd /home/axel/P5/build && $(MAKE) -f CMakeFiles/Makefile2 spot_pkg/CMakeFiles/move_base_msgs_generate_messages_cpp.dir/rule
 .PHONY : spot_pkg/CMakeFiles/move_base_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -254,12 +254,12 @@ move_base_msgs_generate_messages_cpp: spot_pkg/CMakeFiles/move_base_msgs_generat
 
 # fast build rule for target.
 move_base_msgs_generate_messages_cpp/fast:
-	cd /home/vini/P5/build && $(MAKE) -f spot_pkg/CMakeFiles/move_base_msgs_generate_messages_cpp.dir/build.make spot_pkg/CMakeFiles/move_base_msgs_generate_messages_cpp.dir/build
+	cd /home/axel/P5/build && $(MAKE) -f spot_pkg/CMakeFiles/move_base_msgs_generate_messages_cpp.dir/build.make spot_pkg/CMakeFiles/move_base_msgs_generate_messages_cpp.dir/build
 .PHONY : move_base_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
 spot_pkg/CMakeFiles/move_base_msgs_generate_messages_eus.dir/rule:
-	cd /home/vini/P5/build && $(MAKE) -f CMakeFiles/Makefile2 spot_pkg/CMakeFiles/move_base_msgs_generate_messages_eus.dir/rule
+	cd /home/axel/P5/build && $(MAKE) -f CMakeFiles/Makefile2 spot_pkg/CMakeFiles/move_base_msgs_generate_messages_eus.dir/rule
 .PHONY : spot_pkg/CMakeFiles/move_base_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -269,12 +269,12 @@ move_base_msgs_generate_messages_eus: spot_pkg/CMakeFiles/move_base_msgs_generat
 
 # fast build rule for target.
 move_base_msgs_generate_messages_eus/fast:
-	cd /home/vini/P5/build && $(MAKE) -f spot_pkg/CMakeFiles/move_base_msgs_generate_messages_eus.dir/build.make spot_pkg/CMakeFiles/move_base_msgs_generate_messages_eus.dir/build
+	cd /home/axel/P5/build && $(MAKE) -f spot_pkg/CMakeFiles/move_base_msgs_generate_messages_eus.dir/build.make spot_pkg/CMakeFiles/move_base_msgs_generate_messages_eus.dir/build
 .PHONY : move_base_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
 spot_pkg/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/rule:
-	cd /home/vini/P5/build && $(MAKE) -f CMakeFiles/Makefile2 spot_pkg/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/rule
+	cd /home/axel/P5/build && $(MAKE) -f CMakeFiles/Makefile2 spot_pkg/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/rule
 .PHONY : spot_pkg/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -284,12 +284,12 @@ dynamic_reconfigure_generate_messages_py: spot_pkg/CMakeFiles/dynamic_reconfigur
 
 # fast build rule for target.
 dynamic_reconfigure_generate_messages_py/fast:
-	cd /home/vini/P5/build && $(MAKE) -f spot_pkg/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/build.make spot_pkg/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/build
+	cd /home/axel/P5/build && $(MAKE) -f spot_pkg/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/build.make spot_pkg/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/build
 .PHONY : dynamic_reconfigure_generate_messages_py/fast
 
 # Convenience name for target.
 spot_pkg/CMakeFiles/move_base_msgs_generate_messages_py.dir/rule:
-	cd /home/vini/P5/build && $(MAKE) -f CMakeFiles/Makefile2 spot_pkg/CMakeFiles/move_base_msgs_generate_messages_py.dir/rule
+	cd /home/axel/P5/build && $(MAKE) -f CMakeFiles/Makefile2 spot_pkg/CMakeFiles/move_base_msgs_generate_messages_py.dir/rule
 .PHONY : spot_pkg/CMakeFiles/move_base_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -299,12 +299,12 @@ move_base_msgs_generate_messages_py: spot_pkg/CMakeFiles/move_base_msgs_generate
 
 # fast build rule for target.
 move_base_msgs_generate_messages_py/fast:
-	cd /home/vini/P5/build && $(MAKE) -f spot_pkg/CMakeFiles/move_base_msgs_generate_messages_py.dir/build.make spot_pkg/CMakeFiles/move_base_msgs_generate_messages_py.dir/build
+	cd /home/axel/P5/build && $(MAKE) -f spot_pkg/CMakeFiles/move_base_msgs_generate_messages_py.dir/build.make spot_pkg/CMakeFiles/move_base_msgs_generate_messages_py.dir/build
 .PHONY : move_base_msgs_generate_messages_py/fast
 
 # Convenience name for target.
 spot_pkg/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/rule:
-	cd /home/vini/P5/build && $(MAKE) -f CMakeFiles/Makefile2 spot_pkg/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/rule
+	cd /home/axel/P5/build && $(MAKE) -f CMakeFiles/Makefile2 spot_pkg/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/rule
 .PHONY : spot_pkg/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -314,12 +314,12 @@ dynamic_reconfigure_generate_messages_cpp: spot_pkg/CMakeFiles/dynamic_reconfigu
 
 # fast build rule for target.
 dynamic_reconfigure_generate_messages_cpp/fast:
-	cd /home/vini/P5/build && $(MAKE) -f spot_pkg/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/build.make spot_pkg/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/build
+	cd /home/axel/P5/build && $(MAKE) -f spot_pkg/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/build.make spot_pkg/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/build
 .PHONY : dynamic_reconfigure_generate_messages_cpp/fast
 
 # Convenience name for target.
 spot_pkg/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/rule:
-	cd /home/vini/P5/build && $(MAKE) -f CMakeFiles/Makefile2 spot_pkg/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/rule
+	cd /home/axel/P5/build && $(MAKE) -f CMakeFiles/Makefile2 spot_pkg/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/rule
 .PHONY : spot_pkg/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -329,12 +329,12 @@ dynamic_reconfigure_generate_messages_eus: spot_pkg/CMakeFiles/dynamic_reconfigu
 
 # fast build rule for target.
 dynamic_reconfigure_generate_messages_eus/fast:
-	cd /home/vini/P5/build && $(MAKE) -f spot_pkg/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/build.make spot_pkg/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/build
+	cd /home/axel/P5/build && $(MAKE) -f spot_pkg/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/build.make spot_pkg/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/build
 .PHONY : dynamic_reconfigure_generate_messages_eus/fast
 
 # Convenience name for target.
 spot_pkg/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/rule:
-	cd /home/vini/P5/build && $(MAKE) -f CMakeFiles/Makefile2 spot_pkg/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/rule
+	cd /home/axel/P5/build && $(MAKE) -f CMakeFiles/Makefile2 spot_pkg/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/rule
 .PHONY : spot_pkg/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -344,12 +344,12 @@ dynamic_reconfigure_generate_messages_lisp: spot_pkg/CMakeFiles/dynamic_reconfig
 
 # fast build rule for target.
 dynamic_reconfigure_generate_messages_lisp/fast:
-	cd /home/vini/P5/build && $(MAKE) -f spot_pkg/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/build.make spot_pkg/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/build
+	cd /home/axel/P5/build && $(MAKE) -f spot_pkg/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/build.make spot_pkg/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/build
 .PHONY : dynamic_reconfigure_generate_messages_lisp/fast
 
 # Convenience name for target.
 spot_pkg/CMakeFiles/spot_pkg_node.dir/rule:
-	cd /home/vini/P5/build && $(MAKE) -f CMakeFiles/Makefile2 spot_pkg/CMakeFiles/spot_pkg_node.dir/rule
+	cd /home/axel/P5/build && $(MAKE) -f CMakeFiles/Makefile2 spot_pkg/CMakeFiles/spot_pkg_node.dir/rule
 .PHONY : spot_pkg/CMakeFiles/spot_pkg_node.dir/rule
 
 # Convenience name for target.
@@ -359,16 +359,76 @@ spot_pkg_node: spot_pkg/CMakeFiles/spot_pkg_node.dir/rule
 
 # fast build rule for target.
 spot_pkg_node/fast:
-	cd /home/vini/P5/build && $(MAKE) -f spot_pkg/CMakeFiles/spot_pkg_node.dir/build.make spot_pkg/CMakeFiles/spot_pkg_node.dir/build
+	cd /home/axel/P5/build && $(MAKE) -f spot_pkg/CMakeFiles/spot_pkg_node.dir/build.make spot_pkg/CMakeFiles/spot_pkg_node.dir/build
 .PHONY : spot_pkg_node/fast
 
+<<<<<<< HEAD
+=======
+# Convenience name for target.
+spot_pkg/CMakeFiles/move_node.dir/rule:
+	cd /home/axel/P5/build && $(MAKE) -f CMakeFiles/Makefile2 spot_pkg/CMakeFiles/move_node.dir/rule
+.PHONY : spot_pkg/CMakeFiles/move_node.dir/rule
+
+# Convenience name for target.
+move_node: spot_pkg/CMakeFiles/move_node.dir/rule
+
+.PHONY : move_node
+
+# fast build rule for target.
+move_node/fast:
+	cd /home/axel/P5/build && $(MAKE) -f spot_pkg/CMakeFiles/move_node.dir/build.make spot_pkg/CMakeFiles/move_node.dir/build
+.PHONY : move_node/fast
+
+# Convenience name for target.
+spot_pkg/CMakeFiles/laser_footprint_filter.dir/rule:
+	cd /home/axel/P5/build && $(MAKE) -f CMakeFiles/Makefile2 spot_pkg/CMakeFiles/laser_footprint_filter.dir/rule
+.PHONY : spot_pkg/CMakeFiles/laser_footprint_filter.dir/rule
+
+# Convenience name for target.
+laser_footprint_filter: spot_pkg/CMakeFiles/laser_footprint_filter.dir/rule
+
+.PHONY : laser_footprint_filter
+
+# fast build rule for target.
+laser_footprint_filter/fast:
+	cd /home/axel/P5/build && $(MAKE) -f spot_pkg/CMakeFiles/laser_footprint_filter.dir/build.make spot_pkg/CMakeFiles/laser_footprint_filter.dir/build
+.PHONY : laser_footprint_filter/fast
+
+src/move.o: src/move.cpp.o
+
+.PHONY : src/move.o
+
+# target to build an object file
+src/move.cpp.o:
+	cd /home/axel/P5/build && $(MAKE) -f spot_pkg/CMakeFiles/move_node.dir/build.make spot_pkg/CMakeFiles/move_node.dir/src/move.cpp.o
+.PHONY : src/move.cpp.o
+
+src/move.i: src/move.cpp.i
+
+.PHONY : src/move.i
+
+# target to preprocess a source file
+src/move.cpp.i:
+	cd /home/axel/P5/build && $(MAKE) -f spot_pkg/CMakeFiles/move_node.dir/build.make spot_pkg/CMakeFiles/move_node.dir/src/move.cpp.i
+.PHONY : src/move.cpp.i
+
+src/move.s: src/move.cpp.s
+
+.PHONY : src/move.s
+
+# target to generate assembly for a file
+src/move.cpp.s:
+	cd /home/axel/P5/build && $(MAKE) -f spot_pkg/CMakeFiles/move_node.dir/build.make spot_pkg/CMakeFiles/move_node.dir/src/move.cpp.s
+.PHONY : src/move.cpp.s
+
+>>>>>>> c0686da4ef00f543f3e2534c55792ba20b859868
 src/stand_sit.o: src/stand_sit.cpp.o
 
 .PHONY : src/stand_sit.o
 
 # target to build an object file
 src/stand_sit.cpp.o:
-	cd /home/vini/P5/build && $(MAKE) -f spot_pkg/CMakeFiles/spot_pkg_node.dir/build.make spot_pkg/CMakeFiles/spot_pkg_node.dir/src/stand_sit.cpp.o
+	cd /home/axel/P5/build && $(MAKE) -f spot_pkg/CMakeFiles/spot_pkg_node.dir/build.make spot_pkg/CMakeFiles/spot_pkg_node.dir/src/stand_sit.cpp.o
 .PHONY : src/stand_sit.cpp.o
 
 src/stand_sit.i: src/stand_sit.cpp.i
@@ -377,7 +437,7 @@ src/stand_sit.i: src/stand_sit.cpp.i
 
 # target to preprocess a source file
 src/stand_sit.cpp.i:
-	cd /home/vini/P5/build && $(MAKE) -f spot_pkg/CMakeFiles/spot_pkg_node.dir/build.make spot_pkg/CMakeFiles/spot_pkg_node.dir/src/stand_sit.cpp.i
+	cd /home/axel/P5/build && $(MAKE) -f spot_pkg/CMakeFiles/spot_pkg_node.dir/build.make spot_pkg/CMakeFiles/spot_pkg_node.dir/src/stand_sit.cpp.i
 .PHONY : src/stand_sit.cpp.i
 
 src/stand_sit.s: src/stand_sit.cpp.s
@@ -386,7 +446,7 @@ src/stand_sit.s: src/stand_sit.cpp.s
 
 # target to generate assembly for a file
 src/stand_sit.cpp.s:
-	cd /home/vini/P5/build && $(MAKE) -f spot_pkg/CMakeFiles/spot_pkg_node.dir/build.make spot_pkg/CMakeFiles/spot_pkg_node.dir/src/stand_sit.cpp.s
+	cd /home/axel/P5/build && $(MAKE) -f spot_pkg/CMakeFiles/spot_pkg_node.dir/build.make spot_pkg/CMakeFiles/spot_pkg_node.dir/src/stand_sit.cpp.s
 .PHONY : src/stand_sit.cpp.s
 
 # Help Target
@@ -413,7 +473,13 @@ help:
 	@echo "... dynamic_reconfigure_generate_messages_eus"
 	@echo "... dynamic_reconfigure_generate_messages_lisp"
 	@echo "... spot_pkg_node"
+<<<<<<< HEAD
 	@echo "... edit_cache"
+=======
+	@echo "... move_node"
+	@echo "... edit_cache"
+	@echo "... laser_footprint_filter"
+>>>>>>> c0686da4ef00f543f3e2534c55792ba20b859868
 	@echo "... test"
 	@echo "... src/stand_sit.o"
 	@echo "... src/stand_sit.i"
@@ -429,6 +495,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/vini/P5/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/axel/P5/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

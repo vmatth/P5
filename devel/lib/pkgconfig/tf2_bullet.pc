@@ -1,8 +1,8 @@
-prefix=/home/vini/P5/devel
+prefix=/home/axel/P5/devel
 
 Name: tf2_bullet
 Description: Description of tf2_bullet
 Version: 0.6.5
-Cflags: -I/home/vini/P5/src/geometry2/tf2_bullet/include -I/usr/include/bullet
+Cflags: -I/home/axel/P5/src/geometry2/tf2_bullet/include -I/usr/include/bullet
 Libs: -L${prefix}/lib 
 Requires: 

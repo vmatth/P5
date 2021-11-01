@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vini/P5/src
+CMAKE_SOURCE_DIR = /home/axel/P5/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vini/P5/build
+CMAKE_BINARY_DIR = /home/axel/P5/build
 
 # Utility rule file for run_tests.
 
@@ -67,6 +67,6 @@ CMakeFiles/run_tests.dir/clean:
 .PHONY : CMakeFiles/run_tests.dir/clean
 
 CMakeFiles/run_tests.dir/depend:
-	cd /home/vini/P5/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vini/P5/src /home/vini/P5/src /home/vini/P5/build /home/vini/P5/build /home/vini/P5/build/CMakeFiles/run_tests.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/axel/P5/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/axel/P5/src /home/axel/P5/src /home/axel/P5/build /home/axel/P5/build /home/axel/P5/build/CMakeFiles/run_tests.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/run_tests.dir/depend
 

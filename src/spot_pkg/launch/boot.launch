@@ -23,4 +23,5 @@
 
 <node pkg="rosservice" type="rosservice" name="claimService" args="call --wait /spot/claim" />
 
+<include file="$(find spot_pkg)/launch/includes/move_base.launch.xml">
 </launch>
