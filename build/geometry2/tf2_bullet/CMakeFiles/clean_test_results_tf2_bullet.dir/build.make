@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/vini/P5/build
 include geometry2/tf2_bullet/CMakeFiles/clean_test_results_tf2_bullet.dir/progress.make
 
 geometry2/tf2_bullet/CMakeFiles/clean_test_results_tf2_bullet:
-	cd /home/vini/P5/build/geometry2/tf2_bullet && /usr/bin/python2 /opt/ros/melodic/share/catkin/cmake/test/remove_test_results.py /home/vini/P5/build/test_results/tf2_bullet
+	cd /home/vini/P5/build/geometry2/tf2_bullet && /usr/bin/python3 /opt/ros/melodic/share/catkin/cmake/test/remove_test_results.py /home/vini/P5/build/test_results/tf2_bullet
 
 clean_test_results_tf2_bullet: geometry2/tf2_bullet/CMakeFiles/clean_test_results_tf2_bullet
 clean_test_results_tf2_bullet: geometry2/tf2_bullet/CMakeFiles/clean_test_results_tf2_bullet.dir/build.make

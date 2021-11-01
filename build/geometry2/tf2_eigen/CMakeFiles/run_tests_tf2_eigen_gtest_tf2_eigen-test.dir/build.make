@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/vini/P5/build
 include geometry2/tf2_eigen/CMakeFiles/run_tests_tf2_eigen_gtest_tf2_eigen-test.dir/progress.make
 
 geometry2/tf2_eigen/CMakeFiles/run_tests_tf2_eigen_gtest_tf2_eigen-test:
-	cd /home/vini/P5/build/geometry2/tf2_eigen && ../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/catkin/cmake/test/run_tests.py /home/vini/P5/build/test_results/tf2_eigen/gtest-tf2_eigen-test.xml "/home/vini/P5/devel/lib/tf2_eigen/tf2_eigen-test --gtest_output=xml:/home/vini/P5/build/test_results/tf2_eigen/gtest-tf2_eigen-test.xml"
+	cd /home/vini/P5/build/geometry2/tf2_eigen && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/catkin/cmake/test/run_tests.py /home/vini/P5/build/test_results/tf2_eigen/gtest-tf2_eigen-test.xml "/home/vini/P5/devel/lib/tf2_eigen/tf2_eigen-test --gtest_output=xml:/home/vini/P5/build/test_results/tf2_eigen/gtest-tf2_eigen-test.xml"
 
 run_tests_tf2_eigen_gtest_tf2_eigen-test: geometry2/tf2_eigen/CMakeFiles/run_tests_tf2_eigen_gtest_tf2_eigen-test
 run_tests_tf2_eigen_gtest_tf2_eigen-test: geometry2/tf2_eigen/CMakeFiles/run_tests_tf2_eigen_gtest_tf2_eigen-test.dir/build.make

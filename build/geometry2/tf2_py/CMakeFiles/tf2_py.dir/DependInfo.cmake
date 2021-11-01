@@ -15,7 +15,7 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/usr/include/python2.7"
+  "/usr/include/python3.6m"
   "/home/vini/P5/devel/include"
   "/home/vini/P5/src/geometry2/tf2/include"
   "/home/vini/P5/src/geometry2/tf2_msgs/include"

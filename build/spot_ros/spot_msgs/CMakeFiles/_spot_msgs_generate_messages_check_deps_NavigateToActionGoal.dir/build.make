@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/vini/P5/build
 include spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_NavigateToActionGoal.dir/progress.make
 
 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_NavigateToActionGoal:
-	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py spot_msgs /home/vini/P5/devel/share/spot_msgs/msg/NavigateToActionGoal.msg actionlib_msgs/GoalID:spot_msgs/NavigateToGoal:std_msgs/Header
+	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py spot_msgs /home/vini/P5/devel/share/spot_msgs/msg/NavigateToActionGoal.msg actionlib_msgs/GoalID:std_msgs/Header:spot_msgs/NavigateToGoal
 
 _spot_msgs_generate_messages_check_deps_NavigateToActionGoal: spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_NavigateToActionGoal
 _spot_msgs_generate_messages_check_deps_NavigateToActionGoal: spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_NavigateToActionGoal.dir/build.make

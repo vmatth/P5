@@ -56,6 +56,18 @@ Boost_LIBRARY_DIR_DEBUG:PATH=/usr/lib/x86_64-linux-gnu
 //Boost library directory RELEASE
 Boost_LIBRARY_DIR_RELEASE:PATH=/usr/lib/x86_64-linux-gnu
 
+//Boost python37 library (debug)
+Boost_PYTHON37_LIBRARY_DEBUG:FILEPATH=Boost_PYTHON37_LIBRARY_DEBUG-NOTFOUND
+
+//Boost python37 library (release)
+Boost_PYTHON37_LIBRARY_RELEASE:FILEPATH=Boost_PYTHON37_LIBRARY_RELEASE-NOTFOUND
+
+//Boost python3 library (debug)
+Boost_PYTHON3_LIBRARY_DEBUG:FILEPATH=/usr/lib/x86_64-linux-gnu/libboost_python3.so
+
+//Boost python3 library (release)
+Boost_PYTHON3_LIBRARY_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/libboost_python3.so
+
 //Boost signals library (debug)
 Boost_SIGNALS_LIBRARY_DEBUG:FILEPATH=/usr/lib/x86_64-linux-gnu/libboost_signals.so
 
@@ -98,7 +110,7 @@ CMAKE_AR:FILEPATH=/usr/bin/ar
 
 //Choose the type of build, options are: None(CMAKE_CXX_FLAGS or
 // CMAKE_C_FLAGS used) Debug Release RelWithDebInfo MinSizeRel.
-CMAKE_BUILD_TYPE:STRING=
+CMAKE_BUILD_TYPE:STRING=Release
 
 //Enable/Disable color output during build.
 CMAKE_COLOR_MAKEFILE:BOOL=ON
@@ -300,19 +312,22 @@ LSB_FOUND:BOOL=TRUE
 LSB_RELEASE_EXECUTABLE:FILEPATH=/usr/bin/lsb_release
 
 //Path to a program.
-NOSETESTS:FILEPATH=/usr/bin/nosetests-2.7
+NOSETESTS:FILEPATH=/usr/bin/nosetests
+
+//The directory containing a CMake configuration file for OpenCV.
+OpenCV_DIR:PATH=OpenCV_DIR-NOTFOUND
 
 //pkg-config executable
 PKG_CONFIG_EXECUTABLE:FILEPATH=/usr/bin/pkg-config
 
 //Path to a program.
-PYTHON_EXECUTABLE:FILEPATH=/usr/bin/python2
+PYTHON_EXECUTABLE:FILEPATH=/usr/bin/python3
 
 //Path to a file.
-PYTHON_INCLUDE_DIR:PATH=/usr/include/python2.7
+PYTHON_INCLUDE_DIR:PATH=/usr/include/python3.6m
 
 //Path to a library.
-PYTHON_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libpython2.7.so
+PYTHON_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libpython3.6m.so
 
 //Path to a library.
 PYTHON_LIBRARY_DEBUG:FILEPATH=PYTHON_LIBRARY_DEBUG-NOTFOUND
@@ -394,6 +409,15 @@ console_bridge_DIR:PATH=/usr/lib/x86_64-linux-gnu/console_bridge/cmake
 
 //The directory containing a CMake configuration file for cpp_common.
 cpp_common_DIR:PATH=/opt/ros/melodic/share/cpp_common/cmake
+
+//Value Computed by CMake
+cv_bridge_BINARY_DIR:STATIC=/home/vini/P5/build/vision_opencv-melodic/cv_bridge
+
+//The directory containing a CMake configuration file for cv_bridge.
+cv_bridge_DIR:PATH=cv_bridge_DIR-NOTFOUND
+
+//Value Computed by CMake
+cv_bridge_SOURCE_DIR:STATIC=/home/vini/P5/src/vision_opencv-melodic/cv_bridge
 
 //The directory containing a CMake configuration file for dynamic_reconfigure.
 dynamic_reconfigure_DIR:PATH=/opt/ros/melodic/share/dynamic_reconfigure/cmake
@@ -484,7 +508,7 @@ interactive_markers_DIR:PATH=/opt/ros/melodic/share/interactive_markers/cmake
 laser_geometry_DIR:PATH=/opt/ros/melodic/share/laser_geometry/cmake
 
 //Path to a library.
-lib:FILEPATH=/opt/ros/melodic/lib/libmessage_filters.so
+lib:FILEPATH=/opt/ros/melodic/lib/libroscpp_serialization.so
 
 //The directory containing a CMake configuration file for map_msgs.
 map_msgs_DIR:PATH=/opt/ros/melodic/share/map_msgs/cmake
@@ -507,6 +531,12 @@ move_base_msgs_DIR:PATH=/opt/ros/melodic/share/move_base_msgs/cmake
 //The directory containing a CMake configuration file for nav_msgs.
 nav_msgs_DIR:PATH=/opt/ros/melodic/share/nav_msgs/cmake
 
+//Value Computed by CMake
+opencv_tests_BINARY_DIR:STATIC=/home/vini/P5/build/vision_opencv-melodic/opencv_tests
+
+//Value Computed by CMake
+opencv_tests_SOURCE_DIR:STATIC=/home/vini/P5/src/vision_opencv-melodic/opencv_tests
+
 //The directory containing a CMake configuration file for orocos_kdl.
 orocos_kdl_DIR:PATH=/opt/ros/melodic/share/orocos_kdl/cmake
 
@@ -515,12 +545,6 @@ pluginlib_DIR:PATH=/opt/ros/melodic/share/pluginlib/cmake
 
 //The directory containing a CMake configuration file for resource_retriever.
 resource_retriever_DIR:PATH=/opt/ros/melodic/share/resource_retriever/cmake
-
-//Value Computed by CMake
-robot_setup_tf_BINARY_DIR:STATIC=/home/vini/P5/build/robot_setup_tf
-
-//Value Computed by CMake
-robot_setup_tf_SOURCE_DIR:STATIC=/home/vini/P5/src/robot_setup_tf
 
 //The directory containing a CMake configuration file for rosconsole.
 rosconsole_DIR:PATH=/opt/ros/melodic/share/rosconsole/cmake
@@ -627,8 +651,7 @@ tf2_SOURCE_DIR:STATIC=/home/vini/P5/src/geometry2/tf2
 //Value Computed by CMake
 tf2_bullet_BINARY_DIR:STATIC=/home/vini/P5/build/geometry2/tf2_bullet
 
-//The directory containing a CMake configuration file for tf2_bullet.
-tf2_bullet_DIR:PATH=/home/vini/P5/devel/share/tf2_bullet/cmake
+tf2_bullet_DIR:PATH=
 
 //Value Computed by CMake
 tf2_bullet_SOURCE_DIR:STATIC=/home/vini/P5/src/geometry2/tf2_bullet
@@ -669,11 +692,10 @@ tf2_msgs_SOURCE_DIR:STATIC=/home/vini/P5/src/geometry2/tf2_msgs
 //Value Computed by CMake
 tf2_py_BINARY_DIR:STATIC=/home/vini/P5/build/geometry2/tf2_py
 
-//The directory containing a CMake configuration file for tf2_py.
-tf2_py_DIR:PATH=/home/vini/P5/devel/share/tf2_py/cmake
+tf2_py_DIR:PATH=
 
 //Dependencies for the target
-tf2_py_LIB_DEPENDS:STATIC=general;/usr/lib/x86_64-linux-gnu/libpython2.7.so;general;tf2;general;/opt/ros/melodic/lib/libroscpp_serialization.so;general;/opt/ros/melodic/lib/librostime.so;general;/opt/ros/melodic/lib/libcpp_common.so;general;/usr/lib/x86_64-linux-gnu/libboost_system.so;general;/usr/lib/x86_64-linux-gnu/libboost_thread.so;general;/usr/lib/x86_64-linux-gnu/libboost_chrono.so;general;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;general;/usr/lib/x86_64-linux-gnu/libboost_atomic.so;general;/usr/lib/x86_64-linux-gnu/libpthread.so;general;/usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4;
+tf2_py_LIB_DEPENDS:STATIC=general;/usr/lib/x86_64-linux-gnu/libpython3.6m.so;general;tf2;general;/opt/ros/melodic/lib/libroscpp_serialization.so;general;/opt/ros/melodic/lib/librostime.so;general;/opt/ros/melodic/lib/libcpp_common.so;general;/usr/lib/x86_64-linux-gnu/libboost_system.so;general;/usr/lib/x86_64-linux-gnu/libboost_thread.so;general;/usr/lib/x86_64-linux-gnu/libboost_chrono.so;general;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;general;/usr/lib/x86_64-linux-gnu/libboost_atomic.so;general;/usr/lib/x86_64-linux-gnu/libpthread.so;general;/usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4;
 
 //Value Computed by CMake
 tf2_py_SOURCE_DIR:STATIC=/home/vini/P5/src/geometry2/tf2_py
@@ -708,6 +730,12 @@ tf_DIR:PATH=/opt/ros/melodic/share/tf/cmake
 //The directory containing a CMake configuration file for urdf.
 urdf_DIR:PATH=/opt/ros/melodic/share/urdf/cmake
 
+//Value Computed by CMake
+vision_opencv_BINARY_DIR:STATIC=/home/vini/P5/build/vision_opencv-melodic/vision_opencv
+
+//Value Computed by CMake
+vision_opencv_SOURCE_DIR:STATIC=/home/vini/P5/src/vision_opencv-melodic/vision_opencv
+
 //The directory containing a CMake configuration file for visualization_msgs.
 visualization_msgs_DIR:PATH=/opt/ros/melodic/share/visualization_msgs/cmake
 
@@ -739,6 +767,14 @@ Boost_INCLUDE_DIR-ADVANCED:INTERNAL=1
 Boost_LIBRARY_DIR_DEBUG-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: Boost_LIBRARY_DIR_RELEASE
 Boost_LIBRARY_DIR_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: Boost_PYTHON37_LIBRARY_DEBUG
+Boost_PYTHON37_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: Boost_PYTHON37_LIBRARY_RELEASE
+Boost_PYTHON37_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: Boost_PYTHON3_LIBRARY_DEBUG
+Boost_PYTHON3_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: Boost_PYTHON3_LIBRARY_RELEASE
+Boost_PYTHON3_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: Boost_SIGNALS_LIBRARY_DEBUG
 Boost_SIGNALS_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: Boost_SIGNALS_LIBRARY_RELEASE
@@ -856,7 +892,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=21
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=15
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -900,9 +936,9 @@ CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 //Details about finding PkgConfig
 FIND_PACKAGE_MESSAGE_DETAILS_PkgConfig:INTERNAL=[/usr/bin/pkg-config][v0.29.1()]
 //Details about finding PythonInterp
-FIND_PACKAGE_MESSAGE_DETAILS_PythonInterp:INTERNAL=[/usr/bin/python2][v2.7.17()]
+FIND_PACKAGE_MESSAGE_DETAILS_PythonInterp:INTERNAL=[/usr/bin/python3][v3.6.9()]
 //Details about finding PythonLibs
-FIND_PACKAGE_MESSAGE_DETAILS_PythonLibs:INTERNAL=[/usr/lib/x86_64-linux-gnu/libpython2.7.so][/usr/include/python2.7][v2.7.17(2)]
+FIND_PACKAGE_MESSAGE_DETAILS_PythonLibs:INTERNAL=[/usr/lib/x86_64-linux-gnu/libpython3.6m.so][/usr/include/python3.6m][v3.6.9()]
 //Details about finding Threads
 FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
 GMOCK_FROM_SOURCE_FOUND:INTERNAL=TRUE
@@ -934,13 +970,13 @@ PYTHON_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //This needs to be in PYTHONPATH when 'setup.py install' is called.
 //  And it needs to match.  But setuptools won't tell us where
 // it will install things.
-PYTHON_INSTALL_DIR:INTERNAL=lib/python2.7/dist-packages
+PYTHON_INSTALL_DIR:INTERNAL=lib/python3/dist-packages
 //ADVANCED property for variable: PYTHON_LIBRARY
 PYTHON_LIBRARY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: PYTHON_LIBRARY_DEBUG
 PYTHON_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
 //Components requested for this build tree.
-_Boost_COMPONENTS_SEARCHED:INTERNAL=atomic;chrono;date_time;signals;system;thread
+_Boost_COMPONENTS_SEARCHED:INTERNAL=atomic;chrono;date_time;python3;python37;signals;system;thread
 //Last used Boost_INCLUDE_DIR value.
 _Boost_INCLUDE_DIR_LAST:INTERNAL=/usr/include
 //Last used Boost_LIBRARY_DIR_DEBUG value.

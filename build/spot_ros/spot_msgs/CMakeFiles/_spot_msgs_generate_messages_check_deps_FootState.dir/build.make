@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/vini/P5/build
 include spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_FootState.dir/progress.make
 
 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_FootState:
-	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py spot_msgs /home/vini/P5/src/spot_ros/spot_msgs/msg/FootState.msg geometry_msgs/Point
+	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py spot_msgs /home/vini/P5/src/spot_ros/spot_msgs/msg/FootState.msg geometry_msgs/Point
 
 _spot_msgs_generate_messages_check_deps_FootState: spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_FootState
 _spot_msgs_generate_messages_check_deps_FootState: spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_FootState.dir/build.make

@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/vini/P5/build
 include geometry2/tf2/CMakeFiles/clean_test_results_tf2.dir/progress.make
 
 geometry2/tf2/CMakeFiles/clean_test_results_tf2:
-	cd /home/vini/P5/build/geometry2/tf2 && /usr/bin/python2 /opt/ros/melodic/share/catkin/cmake/test/remove_test_results.py /home/vini/P5/build/test_results/tf2
+	cd /home/vini/P5/build/geometry2/tf2 && /usr/bin/python3 /opt/ros/melodic/share/catkin/cmake/test/remove_test_results.py /home/vini/P5/build/test_results/tf2
 
 clean_test_results_tf2: geometry2/tf2/CMakeFiles/clean_test_results_tf2
 clean_test_results_tf2: geometry2/tf2/CMakeFiles/clean_test_results_tf2.dir/build.make

@@ -53,351 +53,351 @@ CMAKE_BINARY_DIR = /home/vini/P5/build
 # Include the progress variables for this target.
 include spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_nodejs.dir/progress.make
 
-spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/EStopStateArray.js
-spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/WiFiState.js
-spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryFeedback.js
-spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/BatteryState.js
-spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/FootStateArray.js
-spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/Lease.js
-spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/NavigateToResult.js
-spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/LeaseResource.js
-spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/SystemFault.js
-spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/LeaseArray.js
-spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/NavigateToActionFeedback.js
 spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/BatteryStateArray.js
-spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/Metrics.js
-spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/NavigateToFeedback.js
-spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/NavigateToActionResult.js
 spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/BehaviorFault.js
-spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/NavigateToGoal.js
-spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/Feedback.js
-spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryResult.js
-spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryActionResult.js
-spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/SystemFaultState.js
-spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryAction.js
+spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/EStopStateArray.js
+spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/FootStateArray.js
+spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/LeaseArray.js
 spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/LeaseOwner.js
-spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/BehaviorFaultState.js
-spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/NavigateToActionGoal.js
-spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryGoal.js
+spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/Metrics.js
 spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/MobilityParams.js
-spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/PowerState.js
+spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/SystemFault.js
+spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/WiFiState.js
+spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/BatteryState.js
+spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/BehaviorFaultState.js
 spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/EStopState.js
-spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryActionFeedback.js
-spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryActionGoal.js
-spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/NavigateToAction.js
+spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/Feedback.js
 spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/FootState.js
+spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/Lease.js
+spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/LeaseResource.js
+spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/PowerState.js
+spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/SystemFaultState.js
+spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/NavigateToAction.js
+spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/NavigateToActionGoal.js
+spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/NavigateToActionResult.js
+spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/NavigateToActionFeedback.js
+spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/NavigateToGoal.js
+spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/NavigateToResult.js
+spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/NavigateToFeedback.js
+spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryAction.js
+spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryActionGoal.js
+spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryActionResult.js
+spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryActionFeedback.js
+spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryGoal.js
+spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryResult.js
+spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryFeedback.js
 spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/srv/ListGraph.js
+spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/srv/SetLocomotion.js
 spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/srv/SetVelocity.js
 spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/srv/ClearBehaviorFault.js
-spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/srv/SetLocomotion.js
 
+
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/BatteryStateArray.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/BatteryStateArray.js: /home/vini/P5/src/spot_ros/spot_msgs/msg/BatteryStateArray.msg
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/BatteryStateArray.js: /opt/ros/melodic/share/std_msgs/msg/Header.msg
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/BatteryStateArray.js: /home/vini/P5/src/spot_ros/spot_msgs/msg/BatteryState.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Javascript code from spot_msgs/BatteryStateArray.msg"
+	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/vini/P5/src/spot_ros/spot_msgs/msg/BatteryStateArray.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg
+
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/BehaviorFault.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/BehaviorFault.js: /home/vini/P5/src/spot_ros/spot_msgs/msg/BehaviorFault.msg
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/BehaviorFault.js: /opt/ros/melodic/share/std_msgs/msg/Header.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Javascript code from spot_msgs/BehaviorFault.msg"
+	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/vini/P5/src/spot_ros/spot_msgs/msg/BehaviorFault.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg
 
 /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/EStopStateArray.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
 /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/EStopStateArray.js: /home/vini/P5/src/spot_ros/spot_msgs/msg/EStopStateArray.msg
 /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/EStopStateArray.js: /home/vini/P5/src/spot_ros/spot_msgs/msg/EStopState.msg
 /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/EStopStateArray.js: /opt/ros/melodic/share/std_msgs/msg/Header.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Javascript code from spot_msgs/EStopStateArray.msg"
-	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/vini/P5/src/spot_ros/spot_msgs/msg/EStopStateArray.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg
-
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/WiFiState.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/WiFiState.js: /home/vini/P5/src/spot_ros/spot_msgs/msg/WiFiState.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Javascript code from spot_msgs/WiFiState.msg"
-	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/vini/P5/src/spot_ros/spot_msgs/msg/WiFiState.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg
-
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryFeedback.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryFeedback.js: /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryFeedback.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Javascript code from spot_msgs/TrajectoryFeedback.msg"
-	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryFeedback.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg
-
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/BatteryState.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/BatteryState.js: /home/vini/P5/src/spot_ros/spot_msgs/msg/BatteryState.msg
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/BatteryState.js: /opt/ros/melodic/share/std_msgs/msg/Header.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating Javascript code from spot_msgs/BatteryState.msg"
-	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/vini/P5/src/spot_ros/spot_msgs/msg/BatteryState.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Javascript code from spot_msgs/EStopStateArray.msg"
+	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/vini/P5/src/spot_ros/spot_msgs/msg/EStopStateArray.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg
 
 /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/FootStateArray.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
 /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/FootStateArray.js: /home/vini/P5/src/spot_ros/spot_msgs/msg/FootStateArray.msg
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/FootStateArray.js: /home/vini/P5/src/spot_ros/spot_msgs/msg/FootState.msg
 /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/FootStateArray.js: /opt/ros/melodic/share/geometry_msgs/msg/Point.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating Javascript code from spot_msgs/FootStateArray.msg"
-	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/vini/P5/src/spot_ros/spot_msgs/msg/FootStateArray.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/FootStateArray.js: /home/vini/P5/src/spot_ros/spot_msgs/msg/FootState.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating Javascript code from spot_msgs/FootStateArray.msg"
+	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/vini/P5/src/spot_ros/spot_msgs/msg/FootStateArray.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg
 
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/Lease.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/Lease.js: /home/vini/P5/src/spot_ros/spot_msgs/msg/Lease.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating Javascript code from spot_msgs/Lease.msg"
-	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/vini/P5/src/spot_ros/spot_msgs/msg/Lease.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/LeaseArray.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/LeaseArray.js: /home/vini/P5/src/spot_ros/spot_msgs/msg/LeaseArray.msg
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/LeaseArray.js: /home/vini/P5/src/spot_ros/spot_msgs/msg/Lease.msg
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/LeaseArray.js: /home/vini/P5/src/spot_ros/spot_msgs/msg/LeaseResource.msg
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/LeaseArray.js: /home/vini/P5/src/spot_ros/spot_msgs/msg/LeaseOwner.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating Javascript code from spot_msgs/LeaseArray.msg"
+	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/vini/P5/src/spot_ros/spot_msgs/msg/LeaseArray.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg
 
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/NavigateToResult.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/NavigateToResult.js: /home/vini/P5/devel/share/spot_msgs/msg/NavigateToResult.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating Javascript code from spot_msgs/NavigateToResult.msg"
-	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/vini/P5/devel/share/spot_msgs/msg/NavigateToResult.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/LeaseOwner.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/LeaseOwner.js: /home/vini/P5/src/spot_ros/spot_msgs/msg/LeaseOwner.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating Javascript code from spot_msgs/LeaseOwner.msg"
+	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/vini/P5/src/spot_ros/spot_msgs/msg/LeaseOwner.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg
 
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/LeaseResource.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/LeaseResource.js: /home/vini/P5/src/spot_ros/spot_msgs/msg/LeaseResource.msg
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/LeaseResource.js: /home/vini/P5/src/spot_ros/spot_msgs/msg/LeaseOwner.msg
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/LeaseResource.js: /home/vini/P5/src/spot_ros/spot_msgs/msg/Lease.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Generating Javascript code from spot_msgs/LeaseResource.msg"
-	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/vini/P5/src/spot_ros/spot_msgs/msg/LeaseResource.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/Metrics.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/Metrics.js: /home/vini/P5/src/spot_ros/spot_msgs/msg/Metrics.msg
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/Metrics.js: /opt/ros/melodic/share/std_msgs/msg/Header.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating Javascript code from spot_msgs/Metrics.msg"
+	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/vini/P5/src/spot_ros/spot_msgs/msg/Metrics.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg
+
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/MobilityParams.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/MobilityParams.js: /home/vini/P5/src/spot_ros/spot_msgs/msg/MobilityParams.msg
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/MobilityParams.js: /opt/ros/melodic/share/geometry_msgs/msg/Point.msg
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/MobilityParams.js: /opt/ros/melodic/share/geometry_msgs/msg/Pose.msg
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/MobilityParams.js: /opt/ros/melodic/share/geometry_msgs/msg/Quaternion.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Generating Javascript code from spot_msgs/MobilityParams.msg"
+	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/vini/P5/src/spot_ros/spot_msgs/msg/MobilityParams.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg
 
 /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/SystemFault.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
 /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/SystemFault.js: /home/vini/P5/src/spot_ros/spot_msgs/msg/SystemFault.msg
 /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/SystemFault.js: /opt/ros/melodic/share/std_msgs/msg/Header.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Generating Javascript code from spot_msgs/SystemFault.msg"
-	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/vini/P5/src/spot_ros/spot_msgs/msg/SystemFault.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg
+	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/vini/P5/src/spot_ros/spot_msgs/msg/SystemFault.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg
 
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/LeaseArray.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/LeaseArray.js: /home/vini/P5/src/spot_ros/spot_msgs/msg/LeaseArray.msg
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/LeaseArray.js: /home/vini/P5/src/spot_ros/spot_msgs/msg/LeaseResource.msg
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/LeaseArray.js: /home/vini/P5/src/spot_ros/spot_msgs/msg/LeaseOwner.msg
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/LeaseArray.js: /home/vini/P5/src/spot_ros/spot_msgs/msg/Lease.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Generating Javascript code from spot_msgs/LeaseArray.msg"
-	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/vini/P5/src/spot_ros/spot_msgs/msg/LeaseArray.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/WiFiState.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/WiFiState.js: /home/vini/P5/src/spot_ros/spot_msgs/msg/WiFiState.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Generating Javascript code from spot_msgs/WiFiState.msg"
+	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/vini/P5/src/spot_ros/spot_msgs/msg/WiFiState.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg
 
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/NavigateToActionFeedback.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/NavigateToActionFeedback.js: /home/vini/P5/devel/share/spot_msgs/msg/NavigateToActionFeedback.msg
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/NavigateToActionFeedback.js: /opt/ros/melodic/share/actionlib_msgs/msg/GoalID.msg
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/NavigateToActionFeedback.js: /opt/ros/melodic/share/actionlib_msgs/msg/GoalStatus.msg
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/NavigateToActionFeedback.js: /home/vini/P5/devel/share/spot_msgs/msg/NavigateToFeedback.msg
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/NavigateToActionFeedback.js: /opt/ros/melodic/share/std_msgs/msg/Header.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Generating Javascript code from spot_msgs/NavigateToActionFeedback.msg"
-	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/vini/P5/devel/share/spot_msgs/msg/NavigateToActionFeedback.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg
-
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/BatteryStateArray.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/BatteryStateArray.js: /home/vini/P5/src/spot_ros/spot_msgs/msg/BatteryStateArray.msg
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/BatteryStateArray.js: /home/vini/P5/src/spot_ros/spot_msgs/msg/BatteryState.msg
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/BatteryStateArray.js: /opt/ros/melodic/share/std_msgs/msg/Header.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Generating Javascript code from spot_msgs/BatteryStateArray.msg"
-	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/vini/P5/src/spot_ros/spot_msgs/msg/BatteryStateArray.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg
-
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/Metrics.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/Metrics.js: /home/vini/P5/src/spot_ros/spot_msgs/msg/Metrics.msg
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/Metrics.js: /opt/ros/melodic/share/std_msgs/msg/Header.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Generating Javascript code from spot_msgs/Metrics.msg"
-	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/vini/P5/src/spot_ros/spot_msgs/msg/Metrics.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg
-
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/NavigateToFeedback.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/NavigateToFeedback.js: /home/vini/P5/devel/share/spot_msgs/msg/NavigateToFeedback.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Generating Javascript code from spot_msgs/NavigateToFeedback.msg"
-	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/vini/P5/devel/share/spot_msgs/msg/NavigateToFeedback.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg
-
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/NavigateToActionResult.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/NavigateToActionResult.js: /home/vini/P5/devel/share/spot_msgs/msg/NavigateToActionResult.msg
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/NavigateToActionResult.js: /home/vini/P5/devel/share/spot_msgs/msg/NavigateToResult.msg
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/NavigateToActionResult.js: /opt/ros/melodic/share/actionlib_msgs/msg/GoalID.msg
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/NavigateToActionResult.js: /opt/ros/melodic/share/actionlib_msgs/msg/GoalStatus.msg
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/NavigateToActionResult.js: /opt/ros/melodic/share/std_msgs/msg/Header.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Generating Javascript code from spot_msgs/NavigateToActionResult.msg"
-	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/vini/P5/devel/share/spot_msgs/msg/NavigateToActionResult.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg
-
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/BehaviorFault.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/BehaviorFault.js: /home/vini/P5/src/spot_ros/spot_msgs/msg/BehaviorFault.msg
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/BehaviorFault.js: /opt/ros/melodic/share/std_msgs/msg/Header.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Generating Javascript code from spot_msgs/BehaviorFault.msg"
-	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/vini/P5/src/spot_ros/spot_msgs/msg/BehaviorFault.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg
-
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/NavigateToGoal.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/NavigateToGoal.js: /home/vini/P5/devel/share/spot_msgs/msg/NavigateToGoal.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Generating Javascript code from spot_msgs/NavigateToGoal.msg"
-	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/vini/P5/devel/share/spot_msgs/msg/NavigateToGoal.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg
-
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/Feedback.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/Feedback.js: /home/vini/P5/src/spot_ros/spot_msgs/msg/Feedback.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Generating Javascript code from spot_msgs/Feedback.msg"
-	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/vini/P5/src/spot_ros/spot_msgs/msg/Feedback.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg
-
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryResult.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryResult.js: /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryResult.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Generating Javascript code from spot_msgs/TrajectoryResult.msg"
-	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryResult.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg
-
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryActionResult.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryActionResult.js: /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryActionResult.msg
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryActionResult.js: /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryResult.msg
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryActionResult.js: /opt/ros/melodic/share/actionlib_msgs/msg/GoalID.msg
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryActionResult.js: /opt/ros/melodic/share/actionlib_msgs/msg/GoalStatus.msg
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryActionResult.js: /opt/ros/melodic/share/std_msgs/msg/Header.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Generating Javascript code from spot_msgs/TrajectoryActionResult.msg"
-	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryActionResult.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg
-
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/SystemFaultState.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/SystemFaultState.js: /home/vini/P5/src/spot_ros/spot_msgs/msg/SystemFaultState.msg
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/SystemFaultState.js: /home/vini/P5/src/spot_ros/spot_msgs/msg/SystemFault.msg
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/SystemFaultState.js: /opt/ros/melodic/share/std_msgs/msg/Header.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Generating Javascript code from spot_msgs/SystemFaultState.msg"
-	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/vini/P5/src/spot_ros/spot_msgs/msg/SystemFaultState.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg
-
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryAction.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryAction.js: /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryAction.msg
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryAction.js: /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryResult.msg
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryAction.js: /opt/ros/melodic/share/actionlib_msgs/msg/GoalID.msg
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryAction.js: /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryGoal.msg
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryAction.js: /opt/ros/melodic/share/std_msgs/msg/Duration.msg
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryAction.js: /opt/ros/melodic/share/actionlib_msgs/msg/GoalStatus.msg
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryAction.js: /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryActionGoal.msg
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryAction.js: /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryActionFeedback.msg
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryAction.js: /opt/ros/melodic/share/geometry_msgs/msg/Pose.msg
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryAction.js: /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryActionResult.msg
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryAction.js: /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryFeedback.msg
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryAction.js: /opt/ros/melodic/share/std_msgs/msg/Header.msg
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryAction.js: /opt/ros/melodic/share/geometry_msgs/msg/Quaternion.msg
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryAction.js: /opt/ros/melodic/share/geometry_msgs/msg/PoseStamped.msg
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryAction.js: /opt/ros/melodic/share/geometry_msgs/msg/Point.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Generating Javascript code from spot_msgs/TrajectoryAction.msg"
-	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryAction.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg
-
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/LeaseOwner.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/LeaseOwner.js: /home/vini/P5/src/spot_ros/spot_msgs/msg/LeaseOwner.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Generating Javascript code from spot_msgs/LeaseOwner.msg"
-	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/vini/P5/src/spot_ros/spot_msgs/msg/LeaseOwner.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/BatteryState.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/BatteryState.js: /home/vini/P5/src/spot_ros/spot_msgs/msg/BatteryState.msg
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/BatteryState.js: /opt/ros/melodic/share/std_msgs/msg/Header.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Generating Javascript code from spot_msgs/BatteryState.msg"
+	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/vini/P5/src/spot_ros/spot_msgs/msg/BatteryState.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg
 
 /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/BehaviorFaultState.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
 /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/BehaviorFaultState.js: /home/vini/P5/src/spot_ros/spot_msgs/msg/BehaviorFaultState.msg
 /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/BehaviorFaultState.js: /home/vini/P5/src/spot_ros/spot_msgs/msg/BehaviorFault.msg
 /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/BehaviorFaultState.js: /opt/ros/melodic/share/std_msgs/msg/Header.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Generating Javascript code from spot_msgs/BehaviorFaultState.msg"
-	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/vini/P5/src/spot_ros/spot_msgs/msg/BehaviorFaultState.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg
-
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/NavigateToActionGoal.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/NavigateToActionGoal.js: /home/vini/P5/devel/share/spot_msgs/msg/NavigateToActionGoal.msg
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/NavigateToActionGoal.js: /opt/ros/melodic/share/actionlib_msgs/msg/GoalID.msg
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/NavigateToActionGoal.js: /home/vini/P5/devel/share/spot_msgs/msg/NavigateToGoal.msg
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/NavigateToActionGoal.js: /opt/ros/melodic/share/std_msgs/msg/Header.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Generating Javascript code from spot_msgs/NavigateToActionGoal.msg"
-	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/vini/P5/devel/share/spot_msgs/msg/NavigateToActionGoal.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg
-
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryGoal.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryGoal.js: /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryGoal.msg
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryGoal.js: /opt/ros/melodic/share/std_msgs/msg/Duration.msg
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryGoal.js: /opt/ros/melodic/share/geometry_msgs/msg/Pose.msg
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryGoal.js: /opt/ros/melodic/share/std_msgs/msg/Header.msg
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryGoal.js: /opt/ros/melodic/share/geometry_msgs/msg/Point.msg
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryGoal.js: /opt/ros/melodic/share/geometry_msgs/msg/PoseStamped.msg
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryGoal.js: /opt/ros/melodic/share/geometry_msgs/msg/Quaternion.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Generating Javascript code from spot_msgs/TrajectoryGoal.msg"
-	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryGoal.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg
-
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/MobilityParams.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/MobilityParams.js: /home/vini/P5/src/spot_ros/spot_msgs/msg/MobilityParams.msg
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/MobilityParams.js: /opt/ros/melodic/share/geometry_msgs/msg/Pose.msg
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/MobilityParams.js: /opt/ros/melodic/share/geometry_msgs/msg/Quaternion.msg
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/MobilityParams.js: /opt/ros/melodic/share/geometry_msgs/msg/Point.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Generating Javascript code from spot_msgs/MobilityParams.msg"
-	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/vini/P5/src/spot_ros/spot_msgs/msg/MobilityParams.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg
-
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/PowerState.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/PowerState.js: /home/vini/P5/src/spot_ros/spot_msgs/msg/PowerState.msg
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/PowerState.js: /opt/ros/melodic/share/std_msgs/msg/Header.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Generating Javascript code from spot_msgs/PowerState.msg"
-	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/vini/P5/src/spot_ros/spot_msgs/msg/PowerState.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Generating Javascript code from spot_msgs/BehaviorFaultState.msg"
+	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/vini/P5/src/spot_ros/spot_msgs/msg/BehaviorFaultState.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg
 
 /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/EStopState.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
 /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/EStopState.js: /home/vini/P5/src/spot_ros/spot_msgs/msg/EStopState.msg
 /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/EStopState.js: /opt/ros/melodic/share/std_msgs/msg/Header.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Generating Javascript code from spot_msgs/EStopState.msg"
-	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/vini/P5/src/spot_ros/spot_msgs/msg/EStopState.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Generating Javascript code from spot_msgs/EStopState.msg"
+	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/vini/P5/src/spot_ros/spot_msgs/msg/EStopState.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg
 
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryActionFeedback.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryActionFeedback.js: /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryActionFeedback.msg
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryActionFeedback.js: /opt/ros/melodic/share/actionlib_msgs/msg/GoalID.msg
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryActionFeedback.js: /opt/ros/melodic/share/actionlib_msgs/msg/GoalStatus.msg
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryActionFeedback.js: /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryFeedback.msg
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryActionFeedback.js: /opt/ros/melodic/share/std_msgs/msg/Header.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Generating Javascript code from spot_msgs/TrajectoryActionFeedback.msg"
-	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryActionFeedback.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg
-
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryActionGoal.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryActionGoal.js: /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryActionGoal.msg
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryActionGoal.js: /opt/ros/melodic/share/actionlib_msgs/msg/GoalID.msg
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryActionGoal.js: /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryGoal.msg
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryActionGoal.js: /opt/ros/melodic/share/std_msgs/msg/Duration.msg
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryActionGoal.js: /opt/ros/melodic/share/geometry_msgs/msg/Pose.msg
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryActionGoal.js: /opt/ros/melodic/share/std_msgs/msg/Header.msg
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryActionGoal.js: /opt/ros/melodic/share/geometry_msgs/msg/Quaternion.msg
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryActionGoal.js: /opt/ros/melodic/share/geometry_msgs/msg/PoseStamped.msg
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryActionGoal.js: /opt/ros/melodic/share/geometry_msgs/msg/Point.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Generating Javascript code from spot_msgs/TrajectoryActionGoal.msg"
-	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryActionGoal.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg
-
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/NavigateToAction.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/NavigateToAction.js: /home/vini/P5/devel/share/spot_msgs/msg/NavigateToAction.msg
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/NavigateToAction.js: /opt/ros/melodic/share/actionlib_msgs/msg/GoalID.msg
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/NavigateToAction.js: /home/vini/P5/devel/share/spot_msgs/msg/NavigateToActionResult.msg
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/NavigateToAction.js: /home/vini/P5/devel/share/spot_msgs/msg/NavigateToActionGoal.msg
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/NavigateToAction.js: /home/vini/P5/devel/share/spot_msgs/msg/NavigateToResult.msg
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/NavigateToAction.js: /opt/ros/melodic/share/actionlib_msgs/msg/GoalStatus.msg
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/NavigateToAction.js: /home/vini/P5/devel/share/spot_msgs/msg/NavigateToFeedback.msg
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/NavigateToAction.js: /home/vini/P5/devel/share/spot_msgs/msg/NavigateToActionFeedback.msg
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/NavigateToAction.js: /opt/ros/melodic/share/std_msgs/msg/Header.msg
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/NavigateToAction.js: /home/vini/P5/devel/share/spot_msgs/msg/NavigateToGoal.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Generating Javascript code from spot_msgs/NavigateToAction.msg"
-	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/vini/P5/devel/share/spot_msgs/msg/NavigateToAction.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/Feedback.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/Feedback.js: /home/vini/P5/src/spot_ros/spot_msgs/msg/Feedback.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Generating Javascript code from spot_msgs/Feedback.msg"
+	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/vini/P5/src/spot_ros/spot_msgs/msg/Feedback.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg
 
 /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/FootState.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
 /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/FootState.js: /home/vini/P5/src/spot_ros/spot_msgs/msg/FootState.msg
 /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/FootState.js: /opt/ros/melodic/share/geometry_msgs/msg/Point.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Generating Javascript code from spot_msgs/FootState.msg"
-	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/vini/P5/src/spot_ros/spot_msgs/msg/FootState.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Generating Javascript code from spot_msgs/FootState.msg"
+	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/vini/P5/src/spot_ros/spot_msgs/msg/FootState.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg
+
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/Lease.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/Lease.js: /home/vini/P5/src/spot_ros/spot_msgs/msg/Lease.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Generating Javascript code from spot_msgs/Lease.msg"
+	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/vini/P5/src/spot_ros/spot_msgs/msg/Lease.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg
+
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/LeaseResource.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/LeaseResource.js: /home/vini/P5/src/spot_ros/spot_msgs/msg/LeaseResource.msg
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/LeaseResource.js: /home/vini/P5/src/spot_ros/spot_msgs/msg/Lease.msg
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/LeaseResource.js: /home/vini/P5/src/spot_ros/spot_msgs/msg/LeaseOwner.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Generating Javascript code from spot_msgs/LeaseResource.msg"
+	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/vini/P5/src/spot_ros/spot_msgs/msg/LeaseResource.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg
+
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/PowerState.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/PowerState.js: /home/vini/P5/src/spot_ros/spot_msgs/msg/PowerState.msg
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/PowerState.js: /opt/ros/melodic/share/std_msgs/msg/Header.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Generating Javascript code from spot_msgs/PowerState.msg"
+	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/vini/P5/src/spot_ros/spot_msgs/msg/PowerState.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg
+
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/SystemFaultState.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/SystemFaultState.js: /home/vini/P5/src/spot_ros/spot_msgs/msg/SystemFaultState.msg
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/SystemFaultState.js: /home/vini/P5/src/spot_ros/spot_msgs/msg/SystemFault.msg
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/SystemFaultState.js: /opt/ros/melodic/share/std_msgs/msg/Header.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Generating Javascript code from spot_msgs/SystemFaultState.msg"
+	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/vini/P5/src/spot_ros/spot_msgs/msg/SystemFaultState.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg
+
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/NavigateToAction.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/NavigateToAction.js: /home/vini/P5/devel/share/spot_msgs/msg/NavigateToAction.msg
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/NavigateToAction.js: /home/vini/P5/devel/share/spot_msgs/msg/NavigateToActionResult.msg
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/NavigateToAction.js: /opt/ros/melodic/share/std_msgs/msg/Header.msg
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/NavigateToAction.js: /home/vini/P5/devel/share/spot_msgs/msg/NavigateToActionFeedback.msg
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/NavigateToAction.js: /opt/ros/melodic/share/actionlib_msgs/msg/GoalID.msg
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/NavigateToAction.js: /opt/ros/melodic/share/actionlib_msgs/msg/GoalStatus.msg
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/NavigateToAction.js: /home/vini/P5/devel/share/spot_msgs/msg/NavigateToResult.msg
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/NavigateToAction.js: /home/vini/P5/devel/share/spot_msgs/msg/NavigateToFeedback.msg
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/NavigateToAction.js: /home/vini/P5/devel/share/spot_msgs/msg/NavigateToActionGoal.msg
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/NavigateToAction.js: /home/vini/P5/devel/share/spot_msgs/msg/NavigateToGoal.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Generating Javascript code from spot_msgs/NavigateToAction.msg"
+	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/vini/P5/devel/share/spot_msgs/msg/NavigateToAction.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg
+
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/NavigateToActionGoal.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/NavigateToActionGoal.js: /home/vini/P5/devel/share/spot_msgs/msg/NavigateToActionGoal.msg
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/NavigateToActionGoal.js: /opt/ros/melodic/share/actionlib_msgs/msg/GoalID.msg
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/NavigateToActionGoal.js: /opt/ros/melodic/share/std_msgs/msg/Header.msg
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/NavigateToActionGoal.js: /home/vini/P5/devel/share/spot_msgs/msg/NavigateToGoal.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Generating Javascript code from spot_msgs/NavigateToActionGoal.msg"
+	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/vini/P5/devel/share/spot_msgs/msg/NavigateToActionGoal.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg
+
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/NavigateToActionResult.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/NavigateToActionResult.js: /home/vini/P5/devel/share/spot_msgs/msg/NavigateToActionResult.msg
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/NavigateToActionResult.js: /opt/ros/melodic/share/actionlib_msgs/msg/GoalID.msg
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/NavigateToActionResult.js: /home/vini/P5/devel/share/spot_msgs/msg/NavigateToResult.msg
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/NavigateToActionResult.js: /opt/ros/melodic/share/std_msgs/msg/Header.msg
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/NavigateToActionResult.js: /opt/ros/melodic/share/actionlib_msgs/msg/GoalStatus.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Generating Javascript code from spot_msgs/NavigateToActionResult.msg"
+	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/vini/P5/devel/share/spot_msgs/msg/NavigateToActionResult.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg
+
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/NavigateToActionFeedback.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/NavigateToActionFeedback.js: /home/vini/P5/devel/share/spot_msgs/msg/NavigateToActionFeedback.msg
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/NavigateToActionFeedback.js: /opt/ros/melodic/share/actionlib_msgs/msg/GoalID.msg
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/NavigateToActionFeedback.js: /home/vini/P5/devel/share/spot_msgs/msg/NavigateToFeedback.msg
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/NavigateToActionFeedback.js: /opt/ros/melodic/share/std_msgs/msg/Header.msg
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/NavigateToActionFeedback.js: /opt/ros/melodic/share/actionlib_msgs/msg/GoalStatus.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Generating Javascript code from spot_msgs/NavigateToActionFeedback.msg"
+	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/vini/P5/devel/share/spot_msgs/msg/NavigateToActionFeedback.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg
+
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/NavigateToGoal.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/NavigateToGoal.js: /home/vini/P5/devel/share/spot_msgs/msg/NavigateToGoal.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Generating Javascript code from spot_msgs/NavigateToGoal.msg"
+	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/vini/P5/devel/share/spot_msgs/msg/NavigateToGoal.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg
+
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/NavigateToResult.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/NavigateToResult.js: /home/vini/P5/devel/share/spot_msgs/msg/NavigateToResult.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Generating Javascript code from spot_msgs/NavigateToResult.msg"
+	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/vini/P5/devel/share/spot_msgs/msg/NavigateToResult.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg
+
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/NavigateToFeedback.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/NavigateToFeedback.js: /home/vini/P5/devel/share/spot_msgs/msg/NavigateToFeedback.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Generating Javascript code from spot_msgs/NavigateToFeedback.msg"
+	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/vini/P5/devel/share/spot_msgs/msg/NavigateToFeedback.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg
+
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryAction.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryAction.js: /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryAction.msg
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryAction.js: /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryActionResult.msg
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryAction.js: /opt/ros/melodic/share/std_msgs/msg/Header.msg
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryAction.js: /opt/ros/melodic/share/std_msgs/msg/Duration.msg
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryAction.js: /opt/ros/melodic/share/actionlib_msgs/msg/GoalID.msg
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryAction.js: /opt/ros/melodic/share/geometry_msgs/msg/Pose.msg
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryAction.js: /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryActionFeedback.msg
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryAction.js: /opt/ros/melodic/share/geometry_msgs/msg/Quaternion.msg
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryAction.js: /opt/ros/melodic/share/geometry_msgs/msg/Point.msg
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryAction.js: /opt/ros/melodic/share/actionlib_msgs/msg/GoalStatus.msg
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryAction.js: /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryFeedback.msg
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryAction.js: /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryActionGoal.msg
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryAction.js: /opt/ros/melodic/share/geometry_msgs/msg/PoseStamped.msg
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryAction.js: /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryGoal.msg
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryAction.js: /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryResult.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Generating Javascript code from spot_msgs/TrajectoryAction.msg"
+	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryAction.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg
+
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryActionGoal.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryActionGoal.js: /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryActionGoal.msg
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryActionGoal.js: /opt/ros/melodic/share/std_msgs/msg/Header.msg
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryActionGoal.js: /opt/ros/melodic/share/std_msgs/msg/Duration.msg
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryActionGoal.js: /opt/ros/melodic/share/actionlib_msgs/msg/GoalID.msg
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryActionGoal.js: /opt/ros/melodic/share/geometry_msgs/msg/Pose.msg
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryActionGoal.js: /opt/ros/melodic/share/geometry_msgs/msg/Quaternion.msg
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryActionGoal.js: /opt/ros/melodic/share/geometry_msgs/msg/Point.msg
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryActionGoal.js: /opt/ros/melodic/share/geometry_msgs/msg/PoseStamped.msg
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryActionGoal.js: /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryGoal.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Generating Javascript code from spot_msgs/TrajectoryActionGoal.msg"
+	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryActionGoal.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg
+
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryActionResult.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryActionResult.js: /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryActionResult.msg
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryActionResult.js: /opt/ros/melodic/share/actionlib_msgs/msg/GoalID.msg
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryActionResult.js: /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryResult.msg
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryActionResult.js: /opt/ros/melodic/share/std_msgs/msg/Header.msg
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryActionResult.js: /opt/ros/melodic/share/actionlib_msgs/msg/GoalStatus.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Generating Javascript code from spot_msgs/TrajectoryActionResult.msg"
+	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryActionResult.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg
+
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryActionFeedback.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryActionFeedback.js: /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryActionFeedback.msg
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryActionFeedback.js: /opt/ros/melodic/share/actionlib_msgs/msg/GoalID.msg
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryActionFeedback.js: /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryFeedback.msg
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryActionFeedback.js: /opt/ros/melodic/share/std_msgs/msg/Header.msg
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryActionFeedback.js: /opt/ros/melodic/share/actionlib_msgs/msg/GoalStatus.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Generating Javascript code from spot_msgs/TrajectoryActionFeedback.msg"
+	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryActionFeedback.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg
+
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryGoal.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryGoal.js: /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryGoal.msg
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryGoal.js: /opt/ros/melodic/share/std_msgs/msg/Header.msg
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryGoal.js: /opt/ros/melodic/share/std_msgs/msg/Duration.msg
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryGoal.js: /opt/ros/melodic/share/geometry_msgs/msg/Pose.msg
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryGoal.js: /opt/ros/melodic/share/geometry_msgs/msg/Quaternion.msg
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryGoal.js: /opt/ros/melodic/share/geometry_msgs/msg/Point.msg
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryGoal.js: /opt/ros/melodic/share/geometry_msgs/msg/PoseStamped.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Generating Javascript code from spot_msgs/TrajectoryGoal.msg"
+	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryGoal.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg
+
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryResult.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryResult.js: /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryResult.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Generating Javascript code from spot_msgs/TrajectoryResult.msg"
+	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryResult.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg
+
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryFeedback.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryFeedback.js: /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryFeedback.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Generating Javascript code from spot_msgs/TrajectoryFeedback.msg"
+	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/vini/P5/devel/share/spot_msgs/msg/TrajectoryFeedback.msg -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg
 
 /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/srv/ListGraph.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
 /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/srv/ListGraph.js: /home/vini/P5/src/spot_ros/spot_msgs/srv/ListGraph.srv
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Generating Javascript code from spot_msgs/ListGraph.srv"
-	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/vini/P5/src/spot_ros/spot_msgs/srv/ListGraph.srv -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/srv
+	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/vini/P5/src/spot_ros/spot_msgs/srv/ListGraph.srv -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/srv
+
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/srv/SetLocomotion.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
+/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/srv/SetLocomotion.js: /home/vini/P5/src/spot_ros/spot_msgs/srv/SetLocomotion.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Generating Javascript code from spot_msgs/SetLocomotion.srv"
+	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/vini/P5/src/spot_ros/spot_msgs/srv/SetLocomotion.srv -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/srv
 
 /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/srv/SetVelocity.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
 /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/srv/SetVelocity.js: /home/vini/P5/src/spot_ros/spot_msgs/srv/SetVelocity.srv
 /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/srv/SetVelocity.js: /opt/ros/melodic/share/geometry_msgs/msg/Twist.msg
 /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/srv/SetVelocity.js: /opt/ros/melodic/share/geometry_msgs/msg/Vector3.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Generating Javascript code from spot_msgs/SetVelocity.srv"
-	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/vini/P5/src/spot_ros/spot_msgs/srv/SetVelocity.srv -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Generating Javascript code from spot_msgs/SetVelocity.srv"
+	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/vini/P5/src/spot_ros/spot_msgs/srv/SetVelocity.srv -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/srv
 
 /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/srv/ClearBehaviorFault.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
 /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/srv/ClearBehaviorFault.js: /home/vini/P5/src/spot_ros/spot_msgs/srv/ClearBehaviorFault.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Generating Javascript code from spot_msgs/ClearBehaviorFault.srv"
-	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/vini/P5/src/spot_ros/spot_msgs/srv/ClearBehaviorFault.srv -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/srv
-
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/srv/SetLocomotion.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
-/home/vini/P5/devel/share/gennodejs/ros/spot_msgs/srv/SetLocomotion.js: /home/vini/P5/src/spot_ros/spot_msgs/srv/SetLocomotion.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Generating Javascript code from spot_msgs/SetLocomotion.srv"
-	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/vini/P5/src/spot_ros/spot_msgs/srv/SetLocomotion.srv -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Generating Javascript code from spot_msgs/ClearBehaviorFault.srv"
+	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/vini/P5/src/spot_ros/spot_msgs/srv/ClearBehaviorFault.srv -Ispot_msgs:/home/vini/P5/src/spot_ros/spot_msgs/msg -Ispot_msgs:/home/vini/P5/devel/share/spot_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -p spot_msgs -o /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/srv
 
 spot_msgs_generate_messages_nodejs: spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_nodejs
-spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/EStopStateArray.js
-spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/WiFiState.js
-spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryFeedback.js
-spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/BatteryState.js
-spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/FootStateArray.js
-spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/Lease.js
-spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/NavigateToResult.js
-spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/LeaseResource.js
-spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/SystemFault.js
-spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/LeaseArray.js
-spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/NavigateToActionFeedback.js
 spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/BatteryStateArray.js
-spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/Metrics.js
-spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/NavigateToFeedback.js
-spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/NavigateToActionResult.js
 spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/BehaviorFault.js
-spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/NavigateToGoal.js
-spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/Feedback.js
-spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryResult.js
-spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryActionResult.js
-spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/SystemFaultState.js
-spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryAction.js
+spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/EStopStateArray.js
+spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/FootStateArray.js
+spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/LeaseArray.js
 spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/LeaseOwner.js
-spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/BehaviorFaultState.js
-spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/NavigateToActionGoal.js
-spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryGoal.js
+spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/Metrics.js
 spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/MobilityParams.js
-spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/PowerState.js
+spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/SystemFault.js
+spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/WiFiState.js
+spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/BatteryState.js
+spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/BehaviorFaultState.js
 spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/EStopState.js
-spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryActionFeedback.js
-spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryActionGoal.js
-spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/NavigateToAction.js
+spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/Feedback.js
 spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/FootState.js
+spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/Lease.js
+spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/LeaseResource.js
+spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/PowerState.js
+spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/SystemFaultState.js
+spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/NavigateToAction.js
+spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/NavigateToActionGoal.js
+spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/NavigateToActionResult.js
+spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/NavigateToActionFeedback.js
+spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/NavigateToGoal.js
+spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/NavigateToResult.js
+spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/NavigateToFeedback.js
+spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryAction.js
+spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryActionGoal.js
+spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryActionResult.js
+spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryActionFeedback.js
+spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryGoal.js
+spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryResult.js
+spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/msg/TrajectoryFeedback.js
 spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/srv/ListGraph.js
+spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/srv/SetLocomotion.js
 spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/srv/SetVelocity.js
 spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/srv/ClearBehaviorFault.js
-spot_msgs_generate_messages_nodejs: /home/vini/P5/devel/share/gennodejs/ros/spot_msgs/srv/SetLocomotion.js
 spot_msgs_generate_messages_nodejs: spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_nodejs.dir/build.make
 
 .PHONY : spot_msgs_generate_messages_nodejs

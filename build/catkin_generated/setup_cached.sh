@@ -8,4 +8,3 @@
 
 # modified environment variables
 export PWD='/home/vini/P5/build'
-export PYTHONPATH='/home/vini/P5/devel/lib/python2.7/dist-packages:/opt/ros/melodic/lib/python2.7/dist-packages:/home/vini/P5/devel/lib/python3/dist-packages'

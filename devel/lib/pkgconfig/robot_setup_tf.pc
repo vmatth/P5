@@ -1,8 +1,0 @@
-prefix=/home/vini/P5/devel
-
-Name: robot_setup_tf
-Description: Description of robot_setup_tf
-Version: 0.0.0
-Cflags: -I/home/vini/P5/src/robot_setup_tf/include
-Libs: -L${prefix}/lib -lrobot_setup_tf
-Requires: geometry_msgs roscpp tf

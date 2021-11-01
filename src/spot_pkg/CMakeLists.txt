@@ -128,6 +128,7 @@ include_directories(
   ${catkin_INCLUDE_DIRS}
 )
 
+
 ## Declare a C++ library
 #add_library(${PROJECT_NAME}
 #  src/${PROJECT_NAME}/stand_sit.cpp
@@ -210,3 +211,4 @@ catkin_install_python(PROGRAMS scripts/point_cloud.py
 
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)
+

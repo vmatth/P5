@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/vini/P5/build
 include geometry2/tf2_kdl/CMakeFiles/_run_tests_tf2_kdl_rostest_test_test.launch.dir/progress.make
 
 geometry2/tf2_kdl/CMakeFiles/_run_tests_tf2_kdl_rostest_test_test.launch:
-	cd /home/vini/P5/build/geometry2/tf2_kdl && ../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/catkin/cmake/test/run_tests.py /home/vini/P5/build/test_results/tf2_kdl/rostest-test_test.xml "/usr/bin/python2 /opt/ros/melodic/share/rostest/cmake/../../../bin/rostest --pkgdir=/home/vini/P5/src/geometry2/tf2_kdl --package=tf2_kdl --results-filename test_test.xml --results-base-dir \"/home/vini/P5/build/test_results\" /home/vini/P5/src/geometry2/tf2_kdl/test/test.launch "
+	cd /home/vini/P5/build/geometry2/tf2_kdl && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/catkin/cmake/test/run_tests.py /home/vini/P5/build/test_results/tf2_kdl/rostest-test_test.xml "/usr/bin/python3 /opt/ros/melodic/share/rostest/cmake/../../../bin/rostest --pkgdir=/home/vini/P5/src/geometry2/tf2_kdl --package=tf2_kdl --results-filename test_test.xml --results-base-dir \"/home/vini/P5/build/test_results\" /home/vini/P5/src/geometry2/tf2_kdl/test/test.launch "
 
 _run_tests_tf2_kdl_rostest_test_test.launch: geometry2/tf2_kdl/CMakeFiles/_run_tests_tf2_kdl_rostest_test_test.launch
 _run_tests_tf2_kdl_rostest_test_test.launch: geometry2/tf2_kdl/CMakeFiles/_run_tests_tf2_kdl_rostest_test_test.launch.dir/build.make
