@@ -362,48 +362,6 @@ spot_pkg_node/fast:
 	cd /home/vini/P5/build && $(MAKE) -f spot_pkg/CMakeFiles/spot_pkg_node.dir/build.make spot_pkg/CMakeFiles/spot_pkg_node.dir/build
 .PHONY : spot_pkg_node/fast
 
-# Convenience name for target.
-spot_pkg/CMakeFiles/move_node.dir/rule:
-	cd /home/vini/P5/build && $(MAKE) -f CMakeFiles/Makefile2 spot_pkg/CMakeFiles/move_node.dir/rule
-.PHONY : spot_pkg/CMakeFiles/move_node.dir/rule
-
-# Convenience name for target.
-move_node: spot_pkg/CMakeFiles/move_node.dir/rule
-
-.PHONY : move_node
-
-# fast build rule for target.
-move_node/fast:
-	cd /home/vini/P5/build && $(MAKE) -f spot_pkg/CMakeFiles/move_node.dir/build.make spot_pkg/CMakeFiles/move_node.dir/build
-.PHONY : move_node/fast
-
-src/move.o: src/move.cpp.o
-
-.PHONY : src/move.o
-
-# target to build an object file
-src/move.cpp.o:
-	cd /home/vini/P5/build && $(MAKE) -f spot_pkg/CMakeFiles/move_node.dir/build.make spot_pkg/CMakeFiles/move_node.dir/src/move.cpp.o
-.PHONY : src/move.cpp.o
-
-src/move.i: src/move.cpp.i
-
-.PHONY : src/move.i
-
-# target to preprocess a source file
-src/move.cpp.i:
-	cd /home/vini/P5/build && $(MAKE) -f spot_pkg/CMakeFiles/move_node.dir/build.make spot_pkg/CMakeFiles/move_node.dir/src/move.cpp.i
-.PHONY : src/move.cpp.i
-
-src/move.s: src/move.cpp.s
-
-.PHONY : src/move.s
-
-# target to generate assembly for a file
-src/move.cpp.s:
-	cd /home/vini/P5/build && $(MAKE) -f spot_pkg/CMakeFiles/move_node.dir/build.make spot_pkg/CMakeFiles/move_node.dir/src/move.cpp.s
-.PHONY : src/move.cpp.s
-
 src/stand_sit.o: src/stand_sit.cpp.o
 
 .PHONY : src/stand_sit.o
@@ -456,11 +414,7 @@ help:
 	@echo "... dynamic_reconfigure_generate_messages_lisp"
 	@echo "... spot_pkg_node"
 	@echo "... edit_cache"
-	@echo "... move_node"
 	@echo "... test"
-	@echo "... src/move.o"
-	@echo "... src/move.i"
-	@echo "... src/move.s"
 	@echo "... src/stand_sit.o"
 	@echo "... src/stand_sit.i"
 	@echo "... src/stand_sit.s"

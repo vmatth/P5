@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/vini/P5/build
 include CMakeFiles/clean_test_results.dir/progress.make
 
 CMakeFiles/clean_test_results:
-	/usr/bin/python2 /opt/ros/melodic/share/catkin/cmake/test/remove_test_results.py /home/vini/P5/build/test_results
+	/usr/bin/python3 /opt/ros/melodic/share/catkin/cmake/test/remove_test_results.py /home/vini/P5/build/test_results
 
 clean_test_results: CMakeFiles/clean_test_results
 clean_test_results: CMakeFiles/clean_test_results.dir/build.make

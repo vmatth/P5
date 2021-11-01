@@ -55,7 +55,7 @@ include spot_ros/spot_viz/CMakeFiles/spot_viz_autogen.dir/progress.make
 
 spot_ros/spot_viz/CMakeFiles/spot_viz_autogen:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC for target spot_viz"
-	cd /home/vini/P5/build/spot_ros/spot_viz && /usr/bin/cmake -E cmake_autogen /home/vini/P5/build/spot_ros/spot_viz/CMakeFiles/spot_viz_autogen.dir ""
+	cd /home/vini/P5/build/spot_ros/spot_viz && /usr/bin/cmake -E cmake_autogen /home/vini/P5/build/spot_ros/spot_viz/CMakeFiles/spot_viz_autogen.dir Release
 
 spot_viz_autogen: spot_ros/spot_viz/CMakeFiles/spot_viz_autogen
 spot_viz_autogen: spot_ros/spot_viz/CMakeFiles/spot_viz_autogen.dir/build.make

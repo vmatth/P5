@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/vini/P5/build
 include geometry2/tf2_geometry_msgs/CMakeFiles/_run_tests_tf2_geometry_msgs_gtest_test_tomsg_frommsg.dir/progress.make
 
 geometry2/tf2_geometry_msgs/CMakeFiles/_run_tests_tf2_geometry_msgs_gtest_test_tomsg_frommsg:
-	cd /home/vini/P5/build/geometry2/tf2_geometry_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/catkin/cmake/test/run_tests.py /home/vini/P5/build/test_results/tf2_geometry_msgs/gtest-test_tomsg_frommsg.xml "/home/vini/P5/devel/lib/tf2_geometry_msgs/test_tomsg_frommsg --gtest_output=xml:/home/vini/P5/build/test_results/tf2_geometry_msgs/gtest-test_tomsg_frommsg.xml"
+	cd /home/vini/P5/build/geometry2/tf2_geometry_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/catkin/cmake/test/run_tests.py /home/vini/P5/build/test_results/tf2_geometry_msgs/gtest-test_tomsg_frommsg.xml "/home/vini/P5/devel/lib/tf2_geometry_msgs/test_tomsg_frommsg --gtest_output=xml:/home/vini/P5/build/test_results/tf2_geometry_msgs/gtest-test_tomsg_frommsg.xml"
 
 _run_tests_tf2_geometry_msgs_gtest_test_tomsg_frommsg: geometry2/tf2_geometry_msgs/CMakeFiles/_run_tests_tf2_geometry_msgs_gtest_test_tomsg_frommsg
 _run_tests_tf2_geometry_msgs_gtest_test_tomsg_frommsg: geometry2/tf2_geometry_msgs/CMakeFiles/_run_tests_tf2_geometry_msgs_gtest_test_tomsg_frommsg.dir/build.make

@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/vini/P5/build
 include spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_BehaviorFaultState.dir/progress.make
 
 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_BehaviorFaultState:
-	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py spot_msgs /home/vini/P5/src/spot_ros/spot_msgs/msg/BehaviorFaultState.msg spot_msgs/BehaviorFault:std_msgs/Header
+	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py spot_msgs /home/vini/P5/src/spot_ros/spot_msgs/msg/BehaviorFaultState.msg std_msgs/Header:spot_msgs/BehaviorFault
 
 _spot_msgs_generate_messages_check_deps_BehaviorFaultState: spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_BehaviorFaultState
 _spot_msgs_generate_messages_check_deps_BehaviorFaultState: spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_BehaviorFaultState.dir/build.make

@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/vini/P5/build
 include geometry2/test_tf2/CMakeFiles/_run_tests_test_tf2_gtest_test_utils.dir/progress.make
 
 geometry2/test_tf2/CMakeFiles/_run_tests_test_tf2_gtest_test_utils:
-	cd /home/vini/P5/build/geometry2/test_tf2 && ../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/catkin/cmake/test/run_tests.py /home/vini/P5/build/test_results/test_tf2/gtest-test_utils.xml "/home/vini/P5/devel/lib/test_tf2/test_utils --gtest_output=xml:/home/vini/P5/build/test_results/test_tf2/gtest-test_utils.xml"
+	cd /home/vini/P5/build/geometry2/test_tf2 && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/catkin/cmake/test/run_tests.py /home/vini/P5/build/test_results/test_tf2/gtest-test_utils.xml "/home/vini/P5/devel/lib/test_tf2/test_utils --gtest_output=xml:/home/vini/P5/build/test_results/test_tf2/gtest-test_utils.xml"
 
 _run_tests_test_tf2_gtest_test_utils: geometry2/test_tf2/CMakeFiles/_run_tests_test_tf2_gtest_test_utils
 _run_tests_test_tf2_gtest_test_utils: geometry2/test_tf2/CMakeFiles/_run_tests_test_tf2_gtest_test_utils.dir/build.make
