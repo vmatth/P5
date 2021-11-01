@@ -1,6 +1,6 @@
 # P5 AAU Project
 
-Setup
+##Setup
 
 Install ros melodic: http://wiki.ros.org/melodic
 
@@ -22,6 +22,8 @@ Source P5 (in P5 repo)
 ```
 source devel/setup.bash
 ```
+##Running the nodes on spot
+
 Remember to connect to SPOT's wifi
 
 To run the ROS nodes
