@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/axel/P5/src
+CMAKE_SOURCE_DIR = /home/vini/P5/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/axel/P5/build
+CMAKE_BINARY_DIR = /home/vini/P5/build
 
 # Include any dependencies generated for this target.
 include geometry2/tf2_py/CMakeFiles/tf2_py.dir/depend.make
@@ -58,17 +58,17 @@ include geometry2/tf2_py/CMakeFiles/tf2_py.dir/progress.make
 include geometry2/tf2_py/CMakeFiles/tf2_py.dir/flags.make
 
 geometry2/tf2_py/CMakeFiles/tf2_py.dir/src/tf2_py.cpp.o: geometry2/tf2_py/CMakeFiles/tf2_py.dir/flags.make
-geometry2/tf2_py/CMakeFiles/tf2_py.dir/src/tf2_py.cpp.o: /home/axel/P5/src/geometry2/tf2_py/src/tf2_py.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/axel/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object geometry2/tf2_py/CMakeFiles/tf2_py.dir/src/tf2_py.cpp.o"
-	cd /home/axel/P5/build/geometry2/tf2_py && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tf2_py.dir/src/tf2_py.cpp.o -c /home/axel/P5/src/geometry2/tf2_py/src/tf2_py.cpp
+geometry2/tf2_py/CMakeFiles/tf2_py.dir/src/tf2_py.cpp.o: /home/vini/P5/src/geometry2/tf2_py/src/tf2_py.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object geometry2/tf2_py/CMakeFiles/tf2_py.dir/src/tf2_py.cpp.o"
+	cd /home/vini/P5/build/geometry2/tf2_py && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tf2_py.dir/src/tf2_py.cpp.o -c /home/vini/P5/src/geometry2/tf2_py/src/tf2_py.cpp
 
 geometry2/tf2_py/CMakeFiles/tf2_py.dir/src/tf2_py.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tf2_py.dir/src/tf2_py.cpp.i"
-	cd /home/axel/P5/build/geometry2/tf2_py && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/axel/P5/src/geometry2/tf2_py/src/tf2_py.cpp > CMakeFiles/tf2_py.dir/src/tf2_py.cpp.i
+	cd /home/vini/P5/build/geometry2/tf2_py && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vini/P5/src/geometry2/tf2_py/src/tf2_py.cpp > CMakeFiles/tf2_py.dir/src/tf2_py.cpp.i
 
 geometry2/tf2_py/CMakeFiles/tf2_py.dir/src/tf2_py.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tf2_py.dir/src/tf2_py.cpp.s"
-	cd /home/axel/P5/build/geometry2/tf2_py && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/axel/P5/src/geometry2/tf2_py/src/tf2_py.cpp -o CMakeFiles/tf2_py.dir/src/tf2_py.cpp.s
+	cd /home/vini/P5/build/geometry2/tf2_py && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vini/P5/src/geometry2/tf2_py/src/tf2_py.cpp -o CMakeFiles/tf2_py.dir/src/tf2_py.cpp.s
 
 geometry2/tf2_py/CMakeFiles/tf2_py.dir/src/tf2_py.cpp.o.requires:
 
@@ -88,73 +88,38 @@ tf2_py_OBJECTS = \
 # External object files for target tf2_py
 tf2_py_EXTERNAL_OBJECTS =
 
-<<<<<<< HEAD
-/home/vini/P5/devel/lib/python3/dist-packages/tf2_py/_tf2.so: geometry2/tf2_py/CMakeFiles/tf2_py.dir/src/tf2_py.cpp.o
-/home/vini/P5/devel/lib/python3/dist-packages/tf2_py/_tf2.so: geometry2/tf2_py/CMakeFiles/tf2_py.dir/build.make
-/home/vini/P5/devel/lib/python3/dist-packages/tf2_py/_tf2.so: /usr/lib/x86_64-linux-gnu/libpython3.6m.so
-/home/vini/P5/devel/lib/python3/dist-packages/tf2_py/_tf2.so: /home/vini/P5/devel/lib/libtf2.so
-/home/vini/P5/devel/lib/python3/dist-packages/tf2_py/_tf2.so: /opt/ros/melodic/lib/libroscpp_serialization.so
-/home/vini/P5/devel/lib/python3/dist-packages/tf2_py/_tf2.so: /opt/ros/melodic/lib/librostime.so
-/home/vini/P5/devel/lib/python3/dist-packages/tf2_py/_tf2.so: /opt/ros/melodic/lib/libcpp_common.so
-/home/vini/P5/devel/lib/python3/dist-packages/tf2_py/_tf2.so: /usr/lib/x86_64-linux-gnu/libboost_system.so
-/home/vini/P5/devel/lib/python3/dist-packages/tf2_py/_tf2.so: /usr/lib/x86_64-linux-gnu/libboost_thread.so
-/home/vini/P5/devel/lib/python3/dist-packages/tf2_py/_tf2.so: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
-/home/vini/P5/devel/lib/python3/dist-packages/tf2_py/_tf2.so: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
-/home/vini/P5/devel/lib/python3/dist-packages/tf2_py/_tf2.so: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
-/home/vini/P5/devel/lib/python3/dist-packages/tf2_py/_tf2.so: /usr/lib/x86_64-linux-gnu/libpthread.so
-/home/vini/P5/devel/lib/python3/dist-packages/tf2_py/_tf2.so: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
-/home/vini/P5/devel/lib/python3/dist-packages/tf2_py/_tf2.so: /usr/lib/x86_64-linux-gnu/libboost_signals.so
-/home/vini/P5/devel/lib/python3/dist-packages/tf2_py/_tf2.so: /opt/ros/melodic/lib/libroscpp_serialization.so
-/home/vini/P5/devel/lib/python3/dist-packages/tf2_py/_tf2.so: /opt/ros/melodic/lib/librostime.so
-/home/vini/P5/devel/lib/python3/dist-packages/tf2_py/_tf2.so: /opt/ros/melodic/lib/libcpp_common.so
-/home/vini/P5/devel/lib/python3/dist-packages/tf2_py/_tf2.so: /usr/lib/x86_64-linux-gnu/libboost_system.so
-/home/vini/P5/devel/lib/python3/dist-packages/tf2_py/_tf2.so: /usr/lib/x86_64-linux-gnu/libboost_thread.so
-/home/vini/P5/devel/lib/python3/dist-packages/tf2_py/_tf2.so: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
-/home/vini/P5/devel/lib/python3/dist-packages/tf2_py/_tf2.so: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
-/home/vini/P5/devel/lib/python3/dist-packages/tf2_py/_tf2.so: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
-/home/vini/P5/devel/lib/python3/dist-packages/tf2_py/_tf2.so: /usr/lib/x86_64-linux-gnu/libpthread.so
-/home/vini/P5/devel/lib/python3/dist-packages/tf2_py/_tf2.so: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
-/home/vini/P5/devel/lib/python3/dist-packages/tf2_py/_tf2.so: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
-/home/vini/P5/devel/lib/python3/dist-packages/tf2_py/_tf2.so: geometry2/tf2_py/CMakeFiles/tf2_py.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX shared library /home/vini/P5/devel/lib/python3/dist-packages/tf2_py/_tf2.so"
+/home/vini/P5/devel/lib/python2.7/dist-packages/tf2_py/_tf2.so: geometry2/tf2_py/CMakeFiles/tf2_py.dir/src/tf2_py.cpp.o
+/home/vini/P5/devel/lib/python2.7/dist-packages/tf2_py/_tf2.so: geometry2/tf2_py/CMakeFiles/tf2_py.dir/build.make
+/home/vini/P5/devel/lib/python2.7/dist-packages/tf2_py/_tf2.so: /usr/lib/x86_64-linux-gnu/libpython2.7.so
+/home/vini/P5/devel/lib/python2.7/dist-packages/tf2_py/_tf2.so: /home/vini/P5/devel/lib/libtf2.so
+/home/vini/P5/devel/lib/python2.7/dist-packages/tf2_py/_tf2.so: /opt/ros/melodic/lib/libroscpp_serialization.so
+/home/vini/P5/devel/lib/python2.7/dist-packages/tf2_py/_tf2.so: /opt/ros/melodic/lib/librostime.so
+/home/vini/P5/devel/lib/python2.7/dist-packages/tf2_py/_tf2.so: /opt/ros/melodic/lib/libcpp_common.so
+/home/vini/P5/devel/lib/python2.7/dist-packages/tf2_py/_tf2.so: /usr/lib/x86_64-linux-gnu/libboost_system.so
+/home/vini/P5/devel/lib/python2.7/dist-packages/tf2_py/_tf2.so: /usr/lib/x86_64-linux-gnu/libboost_thread.so
+/home/vini/P5/devel/lib/python2.7/dist-packages/tf2_py/_tf2.so: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
+/home/vini/P5/devel/lib/python2.7/dist-packages/tf2_py/_tf2.so: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
+/home/vini/P5/devel/lib/python2.7/dist-packages/tf2_py/_tf2.so: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
+/home/vini/P5/devel/lib/python2.7/dist-packages/tf2_py/_tf2.so: /usr/lib/x86_64-linux-gnu/libpthread.so
+/home/vini/P5/devel/lib/python2.7/dist-packages/tf2_py/_tf2.so: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
+/home/vini/P5/devel/lib/python2.7/dist-packages/tf2_py/_tf2.so: /usr/lib/x86_64-linux-gnu/libboost_signals.so
+/home/vini/P5/devel/lib/python2.7/dist-packages/tf2_py/_tf2.so: /opt/ros/melodic/lib/libroscpp_serialization.so
+/home/vini/P5/devel/lib/python2.7/dist-packages/tf2_py/_tf2.so: /opt/ros/melodic/lib/librostime.so
+/home/vini/P5/devel/lib/python2.7/dist-packages/tf2_py/_tf2.so: /opt/ros/melodic/lib/libcpp_common.so
+/home/vini/P5/devel/lib/python2.7/dist-packages/tf2_py/_tf2.so: /usr/lib/x86_64-linux-gnu/libboost_system.so
+/home/vini/P5/devel/lib/python2.7/dist-packages/tf2_py/_tf2.so: /usr/lib/x86_64-linux-gnu/libboost_thread.so
+/home/vini/P5/devel/lib/python2.7/dist-packages/tf2_py/_tf2.so: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
+/home/vini/P5/devel/lib/python2.7/dist-packages/tf2_py/_tf2.so: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
+/home/vini/P5/devel/lib/python2.7/dist-packages/tf2_py/_tf2.so: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
+/home/vini/P5/devel/lib/python2.7/dist-packages/tf2_py/_tf2.so: /usr/lib/x86_64-linux-gnu/libpthread.so
+/home/vini/P5/devel/lib/python2.7/dist-packages/tf2_py/_tf2.so: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
+/home/vini/P5/devel/lib/python2.7/dist-packages/tf2_py/_tf2.so: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
+/home/vini/P5/devel/lib/python2.7/dist-packages/tf2_py/_tf2.so: geometry2/tf2_py/CMakeFiles/tf2_py.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX shared library /home/vini/P5/devel/lib/python2.7/dist-packages/tf2_py/_tf2.so"
 	cd /home/vini/P5/build/geometry2/tf2_py && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/tf2_py.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-geometry2/tf2_py/CMakeFiles/tf2_py.dir/build: /home/vini/P5/devel/lib/python3/dist-packages/tf2_py/_tf2.so
-=======
-/home/axel/P5/devel/lib/python2.7/dist-packages/tf2_py/_tf2.so: geometry2/tf2_py/CMakeFiles/tf2_py.dir/src/tf2_py.cpp.o
-/home/axel/P5/devel/lib/python2.7/dist-packages/tf2_py/_tf2.so: geometry2/tf2_py/CMakeFiles/tf2_py.dir/build.make
-/home/axel/P5/devel/lib/python2.7/dist-packages/tf2_py/_tf2.so: /usr/lib/x86_64-linux-gnu/libpython2.7.so
-/home/axel/P5/devel/lib/python2.7/dist-packages/tf2_py/_tf2.so: /home/axel/P5/devel/lib/libtf2.so
-/home/axel/P5/devel/lib/python2.7/dist-packages/tf2_py/_tf2.so: /opt/ros/melodic/lib/libroscpp_serialization.so
-/home/axel/P5/devel/lib/python2.7/dist-packages/tf2_py/_tf2.so: /opt/ros/melodic/lib/librostime.so
-/home/axel/P5/devel/lib/python2.7/dist-packages/tf2_py/_tf2.so: /opt/ros/melodic/lib/libcpp_common.so
-/home/axel/P5/devel/lib/python2.7/dist-packages/tf2_py/_tf2.so: /usr/lib/x86_64-linux-gnu/libboost_system.so
-/home/axel/P5/devel/lib/python2.7/dist-packages/tf2_py/_tf2.so: /usr/lib/x86_64-linux-gnu/libboost_thread.so
-/home/axel/P5/devel/lib/python2.7/dist-packages/tf2_py/_tf2.so: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
-/home/axel/P5/devel/lib/python2.7/dist-packages/tf2_py/_tf2.so: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
-/home/axel/P5/devel/lib/python2.7/dist-packages/tf2_py/_tf2.so: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
-/home/axel/P5/devel/lib/python2.7/dist-packages/tf2_py/_tf2.so: /usr/lib/x86_64-linux-gnu/libpthread.so
-/home/axel/P5/devel/lib/python2.7/dist-packages/tf2_py/_tf2.so: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
-/home/axel/P5/devel/lib/python2.7/dist-packages/tf2_py/_tf2.so: /usr/lib/x86_64-linux-gnu/libboost_signals.so
-/home/axel/P5/devel/lib/python2.7/dist-packages/tf2_py/_tf2.so: /opt/ros/melodic/lib/libroscpp_serialization.so
-/home/axel/P5/devel/lib/python2.7/dist-packages/tf2_py/_tf2.so: /opt/ros/melodic/lib/librostime.so
-/home/axel/P5/devel/lib/python2.7/dist-packages/tf2_py/_tf2.so: /opt/ros/melodic/lib/libcpp_common.so
-/home/axel/P5/devel/lib/python2.7/dist-packages/tf2_py/_tf2.so: /usr/lib/x86_64-linux-gnu/libboost_system.so
-/home/axel/P5/devel/lib/python2.7/dist-packages/tf2_py/_tf2.so: /usr/lib/x86_64-linux-gnu/libboost_thread.so
-/home/axel/P5/devel/lib/python2.7/dist-packages/tf2_py/_tf2.so: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
-/home/axel/P5/devel/lib/python2.7/dist-packages/tf2_py/_tf2.so: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
-/home/axel/P5/devel/lib/python2.7/dist-packages/tf2_py/_tf2.so: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
-/home/axel/P5/devel/lib/python2.7/dist-packages/tf2_py/_tf2.so: /usr/lib/x86_64-linux-gnu/libpthread.so
-/home/axel/P5/devel/lib/python2.7/dist-packages/tf2_py/_tf2.so: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
-/home/axel/P5/devel/lib/python2.7/dist-packages/tf2_py/_tf2.so: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
-/home/axel/P5/devel/lib/python2.7/dist-packages/tf2_py/_tf2.so: geometry2/tf2_py/CMakeFiles/tf2_py.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/axel/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX shared library /home/axel/P5/devel/lib/python2.7/dist-packages/tf2_py/_tf2.so"
-	cd /home/axel/P5/build/geometry2/tf2_py && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/tf2_py.dir/link.txt --verbose=$(VERBOSE)
-
-# Rule to build all files generated by this target.
-geometry2/tf2_py/CMakeFiles/tf2_py.dir/build: /home/axel/P5/devel/lib/python2.7/dist-packages/tf2_py/_tf2.so
->>>>>>> c0686da4ef00f543f3e2534c55792ba20b859868
+geometry2/tf2_py/CMakeFiles/tf2_py.dir/build: /home/vini/P5/devel/lib/python2.7/dist-packages/tf2_py/_tf2.so
 
 .PHONY : geometry2/tf2_py/CMakeFiles/tf2_py.dir/build
 
@@ -163,10 +128,10 @@ geometry2/tf2_py/CMakeFiles/tf2_py.dir/requires: geometry2/tf2_py/CMakeFiles/tf2
 .PHONY : geometry2/tf2_py/CMakeFiles/tf2_py.dir/requires
 
 geometry2/tf2_py/CMakeFiles/tf2_py.dir/clean:
-	cd /home/axel/P5/build/geometry2/tf2_py && $(CMAKE_COMMAND) -P CMakeFiles/tf2_py.dir/cmake_clean.cmake
+	cd /home/vini/P5/build/geometry2/tf2_py && $(CMAKE_COMMAND) -P CMakeFiles/tf2_py.dir/cmake_clean.cmake
 .PHONY : geometry2/tf2_py/CMakeFiles/tf2_py.dir/clean
 
 geometry2/tf2_py/CMakeFiles/tf2_py.dir/depend:
-	cd /home/axel/P5/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/axel/P5/src /home/axel/P5/src/geometry2/tf2_py /home/axel/P5/build /home/axel/P5/build/geometry2/tf2_py /home/axel/P5/build/geometry2/tf2_py/CMakeFiles/tf2_py.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/vini/P5/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vini/P5/src /home/vini/P5/src/geometry2/tf2_py /home/vini/P5/build /home/vini/P5/build/geometry2/tf2_py /home/vini/P5/build/geometry2/tf2_py/CMakeFiles/tf2_py.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : geometry2/tf2_py/CMakeFiles/tf2_py.dir/depend
 

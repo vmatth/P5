@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "".split(';') if "" != "" else []
 PROJECT_CATKIN_DEPENDS = "tf;roscpp;sensor_msgs".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "spot_pkg"
-PROJECT_SPACE_DIR = "/home/axel/P5/devel"
+PROJECT_SPACE_DIR = "/home/vini/P5/devel"
 PROJECT_VERSION = "0.0.0"

@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/axel/P5/src
+CMAKE_SOURCE_DIR = /home/vini/P5/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/axel/P5/build
+CMAKE_BINARY_DIR = /home/vini/P5/build
 
 # Utility rule file for _spot_msgs_generate_messages_check_deps_SetLocomotion.
 
@@ -54,11 +54,7 @@ CMAKE_BINARY_DIR = /home/axel/P5/build
 include spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_SetLocomotion.dir/progress.make
 
 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_SetLocomotion:
-<<<<<<< HEAD
-	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py spot_msgs /home/vini/P5/src/spot_ros/spot_msgs/srv/SetLocomotion.srv 
-=======
-	cd /home/axel/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py spot_msgs /home/axel/P5/src/spot_ros/spot_msgs/srv/SetLocomotion.srv 
->>>>>>> c0686da4ef00f543f3e2534c55792ba20b859868
+	cd /home/vini/P5/build/spot_ros/spot_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py spot_msgs /home/vini/P5/src/spot_ros/spot_msgs/srv/SetLocomotion.srv 
 
 _spot_msgs_generate_messages_check_deps_SetLocomotion: spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_SetLocomotion
 _spot_msgs_generate_messages_check_deps_SetLocomotion: spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_SetLocomotion.dir/build.make
@@ -71,10 +67,10 @@ spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_SetLocomot
 .PHONY : spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_SetLocomotion.dir/build
 
 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_SetLocomotion.dir/clean:
-	cd /home/axel/P5/build/spot_ros/spot_msgs && $(CMAKE_COMMAND) -P CMakeFiles/_spot_msgs_generate_messages_check_deps_SetLocomotion.dir/cmake_clean.cmake
+	cd /home/vini/P5/build/spot_ros/spot_msgs && $(CMAKE_COMMAND) -P CMakeFiles/_spot_msgs_generate_messages_check_deps_SetLocomotion.dir/cmake_clean.cmake
 .PHONY : spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_SetLocomotion.dir/clean
 
 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_SetLocomotion.dir/depend:
-	cd /home/axel/P5/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/axel/P5/src /home/axel/P5/src/spot_ros/spot_msgs /home/axel/P5/build /home/axel/P5/build/spot_ros/spot_msgs /home/axel/P5/build/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_SetLocomotion.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/vini/P5/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vini/P5/src /home/vini/P5/src/spot_ros/spot_msgs /home/vini/P5/build /home/vini/P5/build/spot_ros/spot_msgs /home/vini/P5/build/spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_SetLocomotion.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_SetLocomotion.dir/depend
 

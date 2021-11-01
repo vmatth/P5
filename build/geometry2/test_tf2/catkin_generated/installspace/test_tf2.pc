@@ -1,4 +1,4 @@
-prefix=/home/axel/P5/install
+prefix=/home/vini/P5/install
 
 Name: test_tf2
 Description: Description of test_tf2

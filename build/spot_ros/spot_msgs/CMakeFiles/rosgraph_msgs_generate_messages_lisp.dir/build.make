@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/axel/P5/src
+CMAKE_SOURCE_DIR = /home/vini/P5/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/axel/P5/build
+CMAKE_BINARY_DIR = /home/vini/P5/build
 
 # Utility rule file for rosgraph_msgs_generate_messages_lisp.
 
@@ -63,10 +63,10 @@ spot_ros/spot_msgs/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build: ro
 .PHONY : spot_ros/spot_msgs/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
 
 spot_ros/spot_msgs/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean:
-	cd /home/axel/P5/build/spot_ros/spot_msgs && $(CMAKE_COMMAND) -P CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/cmake_clean.cmake
+	cd /home/vini/P5/build/spot_ros/spot_msgs && $(CMAKE_COMMAND) -P CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/cmake_clean.cmake
 .PHONY : spot_ros/spot_msgs/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
 
 spot_ros/spot_msgs/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/depend:
-	cd /home/axel/P5/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/axel/P5/src /home/axel/P5/src/spot_ros/spot_msgs /home/axel/P5/build /home/axel/P5/build/spot_ros/spot_msgs /home/axel/P5/build/spot_ros/spot_msgs/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/vini/P5/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vini/P5/src /home/vini/P5/src/spot_ros/spot_msgs /home/vini/P5/build /home/vini/P5/build/spot_ros/spot_msgs /home/vini/P5/build/spot_ros/spot_msgs/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : spot_ros/spot_msgs/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/depend
 

@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/tf2_ros_static_transform_publisher.dir/src/static_transform_broadcaster_program.cpp.o"
-  "/home/axel/P5/devel/lib/tf2_ros/static_transform_publisher.pdb"
-  "/home/axel/P5/devel/lib/tf2_ros/static_transform_publisher"
+  "/home/vini/P5/devel/lib/tf2_ros/static_transform_publisher.pdb"
+  "/home/vini/P5/devel/lib/tf2_ros/static_transform_publisher"
 )
 
 # Per-language clean rules from dependency scanning.

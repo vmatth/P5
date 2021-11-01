@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/axel/P5/src
+CMAKE_SOURCE_DIR = /home/vini/P5/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/axel/P5/build
+CMAKE_BINARY_DIR = /home/vini/P5/build
 
 # Include any dependencies generated for this target.
 include spot_pkg/CMakeFiles/spot_pkg_node.dir/depend.make
@@ -58,17 +58,17 @@ include spot_pkg/CMakeFiles/spot_pkg_node.dir/progress.make
 include spot_pkg/CMakeFiles/spot_pkg_node.dir/flags.make
 
 spot_pkg/CMakeFiles/spot_pkg_node.dir/src/stand_sit.cpp.o: spot_pkg/CMakeFiles/spot_pkg_node.dir/flags.make
-spot_pkg/CMakeFiles/spot_pkg_node.dir/src/stand_sit.cpp.o: /home/axel/P5/src/spot_pkg/src/stand_sit.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/axel/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object spot_pkg/CMakeFiles/spot_pkg_node.dir/src/stand_sit.cpp.o"
-	cd /home/axel/P5/build/spot_pkg && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/spot_pkg_node.dir/src/stand_sit.cpp.o -c /home/axel/P5/src/spot_pkg/src/stand_sit.cpp
+spot_pkg/CMakeFiles/spot_pkg_node.dir/src/stand_sit.cpp.o: /home/vini/P5/src/spot_pkg/src/stand_sit.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object spot_pkg/CMakeFiles/spot_pkg_node.dir/src/stand_sit.cpp.o"
+	cd /home/vini/P5/build/spot_pkg && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/spot_pkg_node.dir/src/stand_sit.cpp.o -c /home/vini/P5/src/spot_pkg/src/stand_sit.cpp
 
 spot_pkg/CMakeFiles/spot_pkg_node.dir/src/stand_sit.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/spot_pkg_node.dir/src/stand_sit.cpp.i"
-	cd /home/axel/P5/build/spot_pkg && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/axel/P5/src/spot_pkg/src/stand_sit.cpp > CMakeFiles/spot_pkg_node.dir/src/stand_sit.cpp.i
+	cd /home/vini/P5/build/spot_pkg && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vini/P5/src/spot_pkg/src/stand_sit.cpp > CMakeFiles/spot_pkg_node.dir/src/stand_sit.cpp.i
 
 spot_pkg/CMakeFiles/spot_pkg_node.dir/src/stand_sit.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/spot_pkg_node.dir/src/stand_sit.cpp.s"
-	cd /home/axel/P5/build/spot_pkg && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/axel/P5/src/spot_pkg/src/stand_sit.cpp -o CMakeFiles/spot_pkg_node.dir/src/stand_sit.cpp.s
+	cd /home/vini/P5/build/spot_pkg && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vini/P5/src/spot_pkg/src/stand_sit.cpp -o CMakeFiles/spot_pkg_node.dir/src/stand_sit.cpp.s
 
 spot_pkg/CMakeFiles/spot_pkg_node.dir/src/stand_sit.cpp.o.requires:
 
@@ -88,50 +88,50 @@ spot_pkg_node_OBJECTS = \
 # External object files for target spot_pkg_node
 spot_pkg_node_EXTERNAL_OBJECTS =
 
-/home/axel/P5/devel/lib/spot_pkg/spot_pkg_node: spot_pkg/CMakeFiles/spot_pkg_node.dir/src/stand_sit.cpp.o
-/home/axel/P5/devel/lib/spot_pkg/spot_pkg_node: spot_pkg/CMakeFiles/spot_pkg_node.dir/build.make
-/home/axel/P5/devel/lib/spot_pkg/spot_pkg_node: /opt/ros/melodic/lib/libdynamic_reconfigure_config_init_mutex.so
-/home/axel/P5/devel/lib/spot_pkg/spot_pkg_node: /opt/ros/melodic/lib/libtf.so
-/home/axel/P5/devel/lib/spot_pkg/spot_pkg_node: /home/axel/P5/devel/lib/libtf2_ros.so
-/home/axel/P5/devel/lib/spot_pkg/spot_pkg_node: /opt/ros/melodic/lib/libactionlib.so
-/home/axel/P5/devel/lib/spot_pkg/spot_pkg_node: /opt/ros/melodic/lib/libmessage_filters.so
-/home/axel/P5/devel/lib/spot_pkg/spot_pkg_node: /opt/ros/melodic/lib/libroscpp.so
-/home/axel/P5/devel/lib/spot_pkg/spot_pkg_node: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
-/home/axel/P5/devel/lib/spot_pkg/spot_pkg_node: /opt/ros/melodic/lib/libxmlrpcpp.so
-/home/axel/P5/devel/lib/spot_pkg/spot_pkg_node: /home/axel/P5/devel/lib/libtf2.so
-/home/axel/P5/devel/lib/spot_pkg/spot_pkg_node: /opt/ros/melodic/lib/librosconsole.so
-/home/axel/P5/devel/lib/spot_pkg/spot_pkg_node: /opt/ros/melodic/lib/librosconsole_log4cxx.so
-/home/axel/P5/devel/lib/spot_pkg/spot_pkg_node: /opt/ros/melodic/lib/librosconsole_backend_interface.so
-/home/axel/P5/devel/lib/spot_pkg/spot_pkg_node: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
-/home/axel/P5/devel/lib/spot_pkg/spot_pkg_node: /usr/lib/x86_64-linux-gnu/libboost_regex.so
-/home/axel/P5/devel/lib/spot_pkg/spot_pkg_node: /opt/ros/melodic/lib/libroscpp_serialization.so
-/home/axel/P5/devel/lib/spot_pkg/spot_pkg_node: /opt/ros/melodic/lib/librostime.so
-/home/axel/P5/devel/lib/spot_pkg/spot_pkg_node: /opt/ros/melodic/lib/libcpp_common.so
-/home/axel/P5/devel/lib/spot_pkg/spot_pkg_node: /usr/lib/x86_64-linux-gnu/libboost_system.so
-/home/axel/P5/devel/lib/spot_pkg/spot_pkg_node: /usr/lib/x86_64-linux-gnu/libboost_thread.so
-/home/axel/P5/devel/lib/spot_pkg/spot_pkg_node: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
-/home/axel/P5/devel/lib/spot_pkg/spot_pkg_node: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
-/home/axel/P5/devel/lib/spot_pkg/spot_pkg_node: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
-/home/axel/P5/devel/lib/spot_pkg/spot_pkg_node: /usr/lib/x86_64-linux-gnu/libpthread.so
-/home/axel/P5/devel/lib/spot_pkg/spot_pkg_node: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
-/home/axel/P5/devel/lib/spot_pkg/spot_pkg_node: /usr/lib/x86_64-linux-gnu/libboost_signals.so
-/home/axel/P5/devel/lib/spot_pkg/spot_pkg_node: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
-/home/axel/P5/devel/lib/spot_pkg/spot_pkg_node: /opt/ros/melodic/lib/libroscpp_serialization.so
-/home/axel/P5/devel/lib/spot_pkg/spot_pkg_node: /opt/ros/melodic/lib/librostime.so
-/home/axel/P5/devel/lib/spot_pkg/spot_pkg_node: /opt/ros/melodic/lib/libcpp_common.so
-/home/axel/P5/devel/lib/spot_pkg/spot_pkg_node: /usr/lib/x86_64-linux-gnu/libboost_system.so
-/home/axel/P5/devel/lib/spot_pkg/spot_pkg_node: /usr/lib/x86_64-linux-gnu/libboost_thread.so
-/home/axel/P5/devel/lib/spot_pkg/spot_pkg_node: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
-/home/axel/P5/devel/lib/spot_pkg/spot_pkg_node: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
-/home/axel/P5/devel/lib/spot_pkg/spot_pkg_node: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
-/home/axel/P5/devel/lib/spot_pkg/spot_pkg_node: /usr/lib/x86_64-linux-gnu/libpthread.so
-/home/axel/P5/devel/lib/spot_pkg/spot_pkg_node: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
-/home/axel/P5/devel/lib/spot_pkg/spot_pkg_node: spot_pkg/CMakeFiles/spot_pkg_node.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/axel/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /home/axel/P5/devel/lib/spot_pkg/spot_pkg_node"
-	cd /home/axel/P5/build/spot_pkg && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/spot_pkg_node.dir/link.txt --verbose=$(VERBOSE)
+/home/vini/P5/devel/lib/spot_pkg/spot_pkg_node: spot_pkg/CMakeFiles/spot_pkg_node.dir/src/stand_sit.cpp.o
+/home/vini/P5/devel/lib/spot_pkg/spot_pkg_node: spot_pkg/CMakeFiles/spot_pkg_node.dir/build.make
+/home/vini/P5/devel/lib/spot_pkg/spot_pkg_node: /opt/ros/melodic/lib/libdynamic_reconfigure_config_init_mutex.so
+/home/vini/P5/devel/lib/spot_pkg/spot_pkg_node: /opt/ros/melodic/lib/libtf.so
+/home/vini/P5/devel/lib/spot_pkg/spot_pkg_node: /home/vini/P5/devel/lib/libtf2_ros.so
+/home/vini/P5/devel/lib/spot_pkg/spot_pkg_node: /opt/ros/melodic/lib/libactionlib.so
+/home/vini/P5/devel/lib/spot_pkg/spot_pkg_node: /opt/ros/melodic/lib/libmessage_filters.so
+/home/vini/P5/devel/lib/spot_pkg/spot_pkg_node: /opt/ros/melodic/lib/libroscpp.so
+/home/vini/P5/devel/lib/spot_pkg/spot_pkg_node: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
+/home/vini/P5/devel/lib/spot_pkg/spot_pkg_node: /opt/ros/melodic/lib/libxmlrpcpp.so
+/home/vini/P5/devel/lib/spot_pkg/spot_pkg_node: /home/vini/P5/devel/lib/libtf2.so
+/home/vini/P5/devel/lib/spot_pkg/spot_pkg_node: /opt/ros/melodic/lib/librosconsole.so
+/home/vini/P5/devel/lib/spot_pkg/spot_pkg_node: /opt/ros/melodic/lib/librosconsole_log4cxx.so
+/home/vini/P5/devel/lib/spot_pkg/spot_pkg_node: /opt/ros/melodic/lib/librosconsole_backend_interface.so
+/home/vini/P5/devel/lib/spot_pkg/spot_pkg_node: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
+/home/vini/P5/devel/lib/spot_pkg/spot_pkg_node: /usr/lib/x86_64-linux-gnu/libboost_regex.so
+/home/vini/P5/devel/lib/spot_pkg/spot_pkg_node: /opt/ros/melodic/lib/libroscpp_serialization.so
+/home/vini/P5/devel/lib/spot_pkg/spot_pkg_node: /opt/ros/melodic/lib/librostime.so
+/home/vini/P5/devel/lib/spot_pkg/spot_pkg_node: /opt/ros/melodic/lib/libcpp_common.so
+/home/vini/P5/devel/lib/spot_pkg/spot_pkg_node: /usr/lib/x86_64-linux-gnu/libboost_system.so
+/home/vini/P5/devel/lib/spot_pkg/spot_pkg_node: /usr/lib/x86_64-linux-gnu/libboost_thread.so
+/home/vini/P5/devel/lib/spot_pkg/spot_pkg_node: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
+/home/vini/P5/devel/lib/spot_pkg/spot_pkg_node: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
+/home/vini/P5/devel/lib/spot_pkg/spot_pkg_node: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
+/home/vini/P5/devel/lib/spot_pkg/spot_pkg_node: /usr/lib/x86_64-linux-gnu/libpthread.so
+/home/vini/P5/devel/lib/spot_pkg/spot_pkg_node: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
+/home/vini/P5/devel/lib/spot_pkg/spot_pkg_node: /usr/lib/x86_64-linux-gnu/libboost_signals.so
+/home/vini/P5/devel/lib/spot_pkg/spot_pkg_node: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
+/home/vini/P5/devel/lib/spot_pkg/spot_pkg_node: /opt/ros/melodic/lib/libroscpp_serialization.so
+/home/vini/P5/devel/lib/spot_pkg/spot_pkg_node: /opt/ros/melodic/lib/librostime.so
+/home/vini/P5/devel/lib/spot_pkg/spot_pkg_node: /opt/ros/melodic/lib/libcpp_common.so
+/home/vini/P5/devel/lib/spot_pkg/spot_pkg_node: /usr/lib/x86_64-linux-gnu/libboost_system.so
+/home/vini/P5/devel/lib/spot_pkg/spot_pkg_node: /usr/lib/x86_64-linux-gnu/libboost_thread.so
+/home/vini/P5/devel/lib/spot_pkg/spot_pkg_node: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
+/home/vini/P5/devel/lib/spot_pkg/spot_pkg_node: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
+/home/vini/P5/devel/lib/spot_pkg/spot_pkg_node: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
+/home/vini/P5/devel/lib/spot_pkg/spot_pkg_node: /usr/lib/x86_64-linux-gnu/libpthread.so
+/home/vini/P5/devel/lib/spot_pkg/spot_pkg_node: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
+/home/vini/P5/devel/lib/spot_pkg/spot_pkg_node: spot_pkg/CMakeFiles/spot_pkg_node.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/vini/P5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /home/vini/P5/devel/lib/spot_pkg/spot_pkg_node"
+	cd /home/vini/P5/build/spot_pkg && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/spot_pkg_node.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-spot_pkg/CMakeFiles/spot_pkg_node.dir/build: /home/axel/P5/devel/lib/spot_pkg/spot_pkg_node
+spot_pkg/CMakeFiles/spot_pkg_node.dir/build: /home/vini/P5/devel/lib/spot_pkg/spot_pkg_node
 
 .PHONY : spot_pkg/CMakeFiles/spot_pkg_node.dir/build
 
@@ -140,10 +140,10 @@ spot_pkg/CMakeFiles/spot_pkg_node.dir/requires: spot_pkg/CMakeFiles/spot_pkg_nod
 .PHONY : spot_pkg/CMakeFiles/spot_pkg_node.dir/requires
 
 spot_pkg/CMakeFiles/spot_pkg_node.dir/clean:
-	cd /home/axel/P5/build/spot_pkg && $(CMAKE_COMMAND) -P CMakeFiles/spot_pkg_node.dir/cmake_clean.cmake
+	cd /home/vini/P5/build/spot_pkg && $(CMAKE_COMMAND) -P CMakeFiles/spot_pkg_node.dir/cmake_clean.cmake
 .PHONY : spot_pkg/CMakeFiles/spot_pkg_node.dir/clean
 
 spot_pkg/CMakeFiles/spot_pkg_node.dir/depend:
-	cd /home/axel/P5/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/axel/P5/src /home/axel/P5/src/spot_pkg /home/axel/P5/build /home/axel/P5/build/spot_pkg /home/axel/P5/build/spot_pkg/CMakeFiles/spot_pkg_node.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/vini/P5/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vini/P5/src /home/vini/P5/src/spot_pkg /home/vini/P5/build /home/vini/P5/build/spot_pkg /home/vini/P5/build/spot_pkg/CMakeFiles/spot_pkg_node.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : spot_pkg/CMakeFiles/spot_pkg_node.dir/depend
 

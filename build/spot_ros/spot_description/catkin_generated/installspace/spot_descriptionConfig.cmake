@@ -67,14 +67,14 @@ set(spot_description_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(spot_description_SOURCE_PREFIX /home/axel/P5/src/spot_ros/spot_description)
-  set(spot_description_DEVEL_PREFIX /home/axel/P5/devel)
+  set(spot_description_SOURCE_PREFIX /home/vini/P5/src/spot_ros/spot_description)
+  set(spot_description_DEVEL_PREFIX /home/vini/P5/devel)
   set(spot_description_INSTALL_PREFIX "")
   set(spot_description_PREFIX ${spot_description_DEVEL_PREFIX})
 else()
   set(spot_description_SOURCE_PREFIX "")
   set(spot_description_DEVEL_PREFIX "")
-  set(spot_description_INSTALL_PREFIX /home/axel/P5/install)
+  set(spot_description_INSTALL_PREFIX /home/vini/P5/install)
   set(spot_description_PREFIX ${spot_description_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/axel/P5/install/lib;/home/axel/P5/devel/lib;/opt/ros/melodic/lib)
+    foreach(path /home/vini/P5/install/lib;/home/vini/P5/devel/lib;/opt/ros/melodic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

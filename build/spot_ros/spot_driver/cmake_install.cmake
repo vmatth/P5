@@ -1,8 +1,8 @@
-# Install script for directory: /home/axel/P5/src/spot_ros/spot_driver
+# Install script for directory: /home/vini/P5/src/spot_ros/spot_driver
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/axel/P5/install")
+  set(CMAKE_INSTALL_PREFIX "/home/vini/P5/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -12,7 +12,7 @@ if(NOT DEFINED CMAKE_INSTALL_CONFIG_NAME)
     string(REGEX REPLACE "^[^A-Za-z0-9_]+" ""
            CMAKE_INSTALL_CONFIG_NAME "${BUILD_TYPE}")
   else()
-    set(CMAKE_INSTALL_CONFIG_NAME "Release")
+    set(CMAKE_INSTALL_CONFIG_NAME "")
   endif()
   message(STATUS "Install configuration: \"${CMAKE_INSTALL_CONFIG_NAME}\"")
 endif()
@@ -38,37 +38,37 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/axel/P5/build/spot_ros/spot_driver/catkin_generated/installspace/spot_driver.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/vini/P5/build/spot_ros/spot_driver/catkin_generated/installspace/spot_driver.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/spot_driver/cmake" TYPE FILE FILES
-    "/home/axel/P5/build/spot_ros/spot_driver/catkin_generated/installspace/spot_driverConfig.cmake"
-    "/home/axel/P5/build/spot_ros/spot_driver/catkin_generated/installspace/spot_driverConfig-version.cmake"
+    "/home/vini/P5/build/spot_ros/spot_driver/catkin_generated/installspace/spot_driverConfig.cmake"
+    "/home/vini/P5/build/spot_ros/spot_driver/catkin_generated/installspace/spot_driverConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/spot_driver" TYPE FILE FILES "/home/axel/P5/src/spot_ros/spot_driver/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/spot_driver" TYPE FILE FILES "/home/vini/P5/src/spot_ros/spot_driver/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/home/axel/P5/build/spot_ros/spot_driver/catkin_generated/safe_execute_install.cmake")
+  include("/home/vini/P5/build/spot_ros/spot_driver/catkin_generated/safe_execute_install.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/spot_driver" TYPE PROGRAM FILES "/home/axel/P5/build/spot_ros/spot_driver/catkin_generated/installspace/spot_ros")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/spot_driver" TYPE PROGRAM FILES "/home/vini/P5/build/spot_ros/spot_driver/catkin_generated/installspace/spot_ros")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/spot_driver" TYPE DIRECTORY FILES "/home/axel/P5/src/spot_ros/spot_driver/launch")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/spot_driver" TYPE DIRECTORY FILES "/home/vini/P5/src/spot_ros/spot_driver/launch")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/spot_driver" TYPE DIRECTORY FILES "/home/axel/P5/src/spot_ros/spot_driver/doc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/spot_driver" TYPE DIRECTORY FILES "/home/vini/P5/src/spot_ros/spot_driver/doc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/spot_driver" TYPE DIRECTORY FILES "/home/axel/P5/src/spot_ros/spot_driver/config")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/spot_driver" TYPE DIRECTORY FILES "/home/vini/P5/src/spot_ros/spot_driver/config")
 endif()
 

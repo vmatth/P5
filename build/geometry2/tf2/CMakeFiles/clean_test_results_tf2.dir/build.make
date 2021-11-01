@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/axel/P5/src
+CMAKE_SOURCE_DIR = /home/vini/P5/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/axel/P5/build
+CMAKE_BINARY_DIR = /home/vini/P5/build
 
 # Utility rule file for clean_test_results_tf2.
 
@@ -54,11 +54,7 @@ CMAKE_BINARY_DIR = /home/axel/P5/build
 include geometry2/tf2/CMakeFiles/clean_test_results_tf2.dir/progress.make
 
 geometry2/tf2/CMakeFiles/clean_test_results_tf2:
-<<<<<<< HEAD
-	cd /home/vini/P5/build/geometry2/tf2 && /usr/bin/python3 /opt/ros/melodic/share/catkin/cmake/test/remove_test_results.py /home/vini/P5/build/test_results/tf2
-=======
-	cd /home/axel/P5/build/geometry2/tf2 && /usr/bin/python2 /opt/ros/melodic/share/catkin/cmake/test/remove_test_results.py /home/axel/P5/build/test_results/tf2
->>>>>>> c0686da4ef00f543f3e2534c55792ba20b859868
+	cd /home/vini/P5/build/geometry2/tf2 && /usr/bin/python2 /opt/ros/melodic/share/catkin/cmake/test/remove_test_results.py /home/vini/P5/build/test_results/tf2
 
 clean_test_results_tf2: geometry2/tf2/CMakeFiles/clean_test_results_tf2
 clean_test_results_tf2: geometry2/tf2/CMakeFiles/clean_test_results_tf2.dir/build.make
@@ -71,10 +67,10 @@ geometry2/tf2/CMakeFiles/clean_test_results_tf2.dir/build: clean_test_results_tf
 .PHONY : geometry2/tf2/CMakeFiles/clean_test_results_tf2.dir/build
 
 geometry2/tf2/CMakeFiles/clean_test_results_tf2.dir/clean:
-	cd /home/axel/P5/build/geometry2/tf2 && $(CMAKE_COMMAND) -P CMakeFiles/clean_test_results_tf2.dir/cmake_clean.cmake
+	cd /home/vini/P5/build/geometry2/tf2 && $(CMAKE_COMMAND) -P CMakeFiles/clean_test_results_tf2.dir/cmake_clean.cmake
 .PHONY : geometry2/tf2/CMakeFiles/clean_test_results_tf2.dir/clean
 
 geometry2/tf2/CMakeFiles/clean_test_results_tf2.dir/depend:
-	cd /home/axel/P5/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/axel/P5/src /home/axel/P5/src/geometry2/tf2 /home/axel/P5/build /home/axel/P5/build/geometry2/tf2 /home/axel/P5/build/geometry2/tf2/CMakeFiles/clean_test_results_tf2.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/vini/P5/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vini/P5/src /home/vini/P5/src/geometry2/tf2 /home/vini/P5/build /home/vini/P5/build/geometry2/tf2 /home/vini/P5/build/geometry2/tf2/CMakeFiles/clean_test_results_tf2.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : geometry2/tf2/CMakeFiles/clean_test_results_tf2.dir/depend
 

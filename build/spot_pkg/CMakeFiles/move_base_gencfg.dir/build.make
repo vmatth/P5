@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/axel/P5/src
+CMAKE_SOURCE_DIR = /home/vini/P5/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/axel/P5/build
+CMAKE_BINARY_DIR = /home/vini/P5/build
 
 # Utility rule file for move_base_gencfg.
 
@@ -63,10 +63,10 @@ spot_pkg/CMakeFiles/move_base_gencfg.dir/build: move_base_gencfg
 .PHONY : spot_pkg/CMakeFiles/move_base_gencfg.dir/build
 
 spot_pkg/CMakeFiles/move_base_gencfg.dir/clean:
-	cd /home/axel/P5/build/spot_pkg && $(CMAKE_COMMAND) -P CMakeFiles/move_base_gencfg.dir/cmake_clean.cmake
+	cd /home/vini/P5/build/spot_pkg && $(CMAKE_COMMAND) -P CMakeFiles/move_base_gencfg.dir/cmake_clean.cmake
 .PHONY : spot_pkg/CMakeFiles/move_base_gencfg.dir/clean
 
 spot_pkg/CMakeFiles/move_base_gencfg.dir/depend:
-	cd /home/axel/P5/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/axel/P5/src /home/axel/P5/src/spot_pkg /home/axel/P5/build /home/axel/P5/build/spot_pkg /home/axel/P5/build/spot_pkg/CMakeFiles/move_base_gencfg.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/vini/P5/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vini/P5/src /home/vini/P5/src/spot_pkg /home/vini/P5/build /home/vini/P5/build/spot_pkg /home/vini/P5/build/spot_pkg/CMakeFiles/move_base_gencfg.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : spot_pkg/CMakeFiles/move_base_gencfg.dir/depend
 

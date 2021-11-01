@@ -7,8 +7,5 @@
 # new environment variables
 
 # modified environment variables
-<<<<<<< HEAD
 export PWD='/home/vini/P5/build'
-=======
-export PWD='/home/axel/P5/build'
->>>>>>> c0686da4ef00f543f3e2534c55792ba20b859868
+export PYTHONPATH='/home/vini/P5/devel/lib/python2.7/dist-packages:/opt/ros/melodic/lib/python2.7/dist-packages:/home/vini/P5/devel/lib/python3/dist-packages'
