@@ -21,7 +21,7 @@
     <remap from="cmd_vel_out" to="spot/cmd_vel"/>
   </node>
 
-<node pkg="rosservice" type="rosservice" name="claimService" args="call --wait /spot/claim" />
+  <node pkg="rosservice" type="rosservice" name="claimService" args="call --wait /spot/claim" />
 
-<!--<include file="$(find spot_pkg)/launch/includes/move_base.launch.xml">-->
+  <include file="$(find spot_pkg)/launch/includes/move_base.launch.xml">
 </launch>

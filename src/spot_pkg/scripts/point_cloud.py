@@ -2,37 +2,32 @@
 import rospy
 from std_msgs.msg import String
 from sensor_msgs.msg import Image
-from cv_bridge import CvBridge
+from cv_bridge import CvBridge, CvBridgeError
 import cv2
 
 
-def callback(data):
-    print("camera callback!")
-    rospy.loginfo("height: %d", data.height)
-    rospy.loginfo("width: %d", data.width)
 
-    rospy.loginfo("data length: %d", len(data.data))
+class image_converter:
 
-    bridge = CvBridge()
-    cv_image = bridge.imgmsg_to_cv2(data.data, "mono8")
+    def __init__(self):
+        self.bridge = CvBridge()
+        self.image_sub = rospy.Subscriber("/spot/depth/frontleft/image",Image, self.callback)
 
-
-
-def listener():
-    rospy.loginfo("listening")
-    rospy.Subscriber("/spot/depth/frontleft/image", Image, callback)
-    rospy.spin()
-
-def publisher():
-    pub = rospy.Publisher('/depth/frontleft', Image, queue_size=10)
-    
-
-
-    
+    def callback(self,data):
+        print("camera callback!")
+        rospy.loginfo("height: %d", data.height)
+        rospy.loginfo("width: %d", data.width)
+        try: 
+            cv_image = self.bridge.imgmsg_to_cv2(data.data, "mono8")
+        except CvBridgeError as e:
+            print(e)
+        
+        cv2.imshow("Image window", cv_image)
+        cv2.waitKey(3)
+ 
 
 if __name__ == '__main__':
+    ic = image_converter()
     rospy.init_node('point_cloud_listener')
     rospy.loginfo("Starting point_cloud node")
-    
-    listener()
-    ##publisher()
+    rospy.spin()
