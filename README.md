@@ -12,6 +12,7 @@ Install ros dependencies and packages
 rosdep install spot_pkg
 rosdep install cv_bridge
 sudo apt-get install ros-melodic-map-server
+sudo apt-get install ros-melodic-amcl
 ```
 Build P5 (in P5 repo)
 
