@@ -93,16 +93,6 @@ namespace message_traits
 
 
 template <class ContainerAllocator>
-struct IsFixedSize< ::spot_msgs::ClearBehaviorFaultResponse_<ContainerAllocator> >
-  : FalseType
-  { };
-
-template <class ContainerAllocator>
-struct IsFixedSize< ::spot_msgs::ClearBehaviorFaultResponse_<ContainerAllocator> const>
-  : FalseType
-  { };
-
-template <class ContainerAllocator>
 struct IsMessage< ::spot_msgs::ClearBehaviorFaultResponse_<ContainerAllocator> >
   : TrueType
   { };
@@ -110,6 +100,16 @@ struct IsMessage< ::spot_msgs::ClearBehaviorFaultResponse_<ContainerAllocator> >
 template <class ContainerAllocator>
 struct IsMessage< ::spot_msgs::ClearBehaviorFaultResponse_<ContainerAllocator> const>
   : TrueType
+  { };
+
+template <class ContainerAllocator>
+struct IsFixedSize< ::spot_msgs::ClearBehaviorFaultResponse_<ContainerAllocator> >
+  : FalseType
+  { };
+
+template <class ContainerAllocator>
+struct IsFixedSize< ::spot_msgs::ClearBehaviorFaultResponse_<ContainerAllocator> const>
+  : FalseType
   { };
 
 template <class ContainerAllocator>

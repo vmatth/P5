@@ -1,9 +1,10 @@
-#!/usr/bin/env python
+#!/usr/bin/env python2.7
 import rospy
 from std_msgs.msg import String
 from sensor_msgs.msg import Image
 from cv_bridge import CvBridge, CvBridgeError
 import cv2
+
 
 
 
@@ -18,7 +19,7 @@ class image_converter:
         rospy.loginfo("height: %d", data.height)
         rospy.loginfo("width: %d", data.width)
         try: 
-            cv_image = self.bridge.imgmsg_to_cv2(data.data, "mono8")
+            cv_image = self.bridge.imgmsg_to_cv2(data, "mono16")
         except CvBridgeError as e:
             print(e)
         

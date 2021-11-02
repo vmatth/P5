@@ -88,16 +88,6 @@ namespace message_traits
 
 
 template <class ContainerAllocator>
-struct IsFixedSize< ::spot_msgs::EStopStateArray_<ContainerAllocator> >
-  : FalseType
-  { };
-
-template <class ContainerAllocator>
-struct IsFixedSize< ::spot_msgs::EStopStateArray_<ContainerAllocator> const>
-  : FalseType
-  { };
-
-template <class ContainerAllocator>
 struct IsMessage< ::spot_msgs::EStopStateArray_<ContainerAllocator> >
   : TrueType
   { };
@@ -105,6 +95,16 @@ struct IsMessage< ::spot_msgs::EStopStateArray_<ContainerAllocator> >
 template <class ContainerAllocator>
 struct IsMessage< ::spot_msgs::EStopStateArray_<ContainerAllocator> const>
   : TrueType
+  { };
+
+template <class ContainerAllocator>
+struct IsFixedSize< ::spot_msgs::EStopStateArray_<ContainerAllocator> >
+  : FalseType
+  { };
+
+template <class ContainerAllocator>
+struct IsFixedSize< ::spot_msgs::EStopStateArray_<ContainerAllocator> const>
+  : FalseType
   { };
 
 template <class ContainerAllocator>

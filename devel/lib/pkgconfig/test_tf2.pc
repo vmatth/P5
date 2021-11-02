@@ -1,4 +1,4 @@
-prefix=/home/axel/P5/devel
+prefix=/home/vini/P5/devel
 
 Name: test_tf2
 Description: Description of test_tf2
