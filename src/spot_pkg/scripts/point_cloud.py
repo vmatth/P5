@@ -3,6 +3,8 @@ import rospy
 from std_msgs.msg import String
 from sensor_msgs.msg import Image
 from cv_bridge import CvBridge
+import cv2
+
 
 def callback(data):
     print("camera callback!")
@@ -10,10 +12,11 @@ def callback(data):
     rospy.loginfo("width: %d", data.width)
 
     rospy.loginfo("data length: %d", len(data.data))
-    i = 0
-    for x in data.data:
-        i = i + 1
-        rospy.loginfo("Index[%d]: %s", i, x)
+
+    bridge = CvBridge()
+    cv_image = bridge.imgmsg_to_cv2(data.data, "mono8")
+
+
 
 def listener():
     rospy.loginfo("listening")
@@ -30,5 +33,6 @@ def publisher():
 if __name__ == '__main__':
     rospy.init_node('point_cloud_listener')
     rospy.loginfo("Starting point_cloud node")
+    
     listener()
     ##publisher()

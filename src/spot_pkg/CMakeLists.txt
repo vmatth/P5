@@ -18,6 +18,7 @@ find_package(catkin REQUIRED COMPONENTS
   actionlib_msgs
   tf
   sensor_msgs
+  #cv2
 )
 
 ## System dependencies are found with CMake's conventions
