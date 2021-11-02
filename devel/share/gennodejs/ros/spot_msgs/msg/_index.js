@@ -1,72 +1,72 @@
 
 "use strict";
 
-let WiFiState = require('./WiFiState.js');
-let Metrics = require('./Metrics.js');
-let EStopState = require('./EStopState.js');
-let FootState = require('./FootState.js');
-let MobilityParams = require('./MobilityParams.js');
-let PowerState = require('./PowerState.js');
-let Feedback = require('./Feedback.js');
-let SystemFaultState = require('./SystemFaultState.js');
-let EStopStateArray = require('./EStopStateArray.js');
-let Lease = require('./Lease.js');
 let FootStateArray = require('./FootStateArray.js');
-let SystemFault = require('./SystemFault.js');
 let LeaseArray = require('./LeaseArray.js');
+let EStopStateArray = require('./EStopStateArray.js');
+let PowerState = require('./PowerState.js');
+let Metrics = require('./Metrics.js');
 let BehaviorFault = require('./BehaviorFault.js');
+let SystemFault = require('./SystemFault.js');
+let WiFiState = require('./WiFiState.js');
 let BatteryState = require('./BatteryState.js');
+let EStopState = require('./EStopState.js');
 let BehaviorFaultState = require('./BehaviorFaultState.js');
 let LeaseOwner = require('./LeaseOwner.js');
-let BatteryStateArray = require('./BatteryStateArray.js');
+let MobilityParams = require('./MobilityParams.js');
 let LeaseResource = require('./LeaseResource.js');
-let TrajectoryResult = require('./TrajectoryResult.js');
-let NavigateToActionGoal = require('./NavigateToActionGoal.js');
+let Feedback = require('./Feedback.js');
+let BatteryStateArray = require('./BatteryStateArray.js');
+let SystemFaultState = require('./SystemFaultState.js');
+let Lease = require('./Lease.js');
+let FootState = require('./FootState.js');
 let NavigateToFeedback = require('./NavigateToFeedback.js');
-let TrajectoryActionResult = require('./TrajectoryActionResult.js');
-let NavigateToAction = require('./NavigateToAction.js');
-let TrajectoryAction = require('./TrajectoryAction.js');
-let NavigateToGoal = require('./NavigateToGoal.js');
-let TrajectoryActionFeedback = require('./TrajectoryActionFeedback.js');
-let TrajectoryFeedback = require('./TrajectoryFeedback.js');
-let TrajectoryActionGoal = require('./TrajectoryActionGoal.js');
 let NavigateToResult = require('./NavigateToResult.js');
-let NavigateToActionResult = require('./NavigateToActionResult.js');
+let TrajectoryFeedback = require('./TrajectoryFeedback.js');
+let TrajectoryActionResult = require('./TrajectoryActionResult.js');
 let TrajectoryGoal = require('./TrajectoryGoal.js');
+let NavigateToAction = require('./NavigateToAction.js');
+let TrajectoryActionFeedback = require('./TrajectoryActionFeedback.js');
+let TrajectoryActionGoal = require('./TrajectoryActionGoal.js');
+let NavigateToGoal = require('./NavigateToGoal.js');
 let NavigateToActionFeedback = require('./NavigateToActionFeedback.js');
+let TrajectoryResult = require('./TrajectoryResult.js');
+let TrajectoryAction = require('./TrajectoryAction.js');
+let NavigateToActionGoal = require('./NavigateToActionGoal.js');
+let NavigateToActionResult = require('./NavigateToActionResult.js');
 
 module.exports = {
-  WiFiState: WiFiState,
-  Metrics: Metrics,
-  EStopState: EStopState,
-  FootState: FootState,
-  MobilityParams: MobilityParams,
-  PowerState: PowerState,
-  Feedback: Feedback,
-  SystemFaultState: SystemFaultState,
-  EStopStateArray: EStopStateArray,
-  Lease: Lease,
   FootStateArray: FootStateArray,
-  SystemFault: SystemFault,
   LeaseArray: LeaseArray,
+  EStopStateArray: EStopStateArray,
+  PowerState: PowerState,
+  Metrics: Metrics,
   BehaviorFault: BehaviorFault,
+  SystemFault: SystemFault,
+  WiFiState: WiFiState,
   BatteryState: BatteryState,
+  EStopState: EStopState,
   BehaviorFaultState: BehaviorFaultState,
   LeaseOwner: LeaseOwner,
-  BatteryStateArray: BatteryStateArray,
+  MobilityParams: MobilityParams,
   LeaseResource: LeaseResource,
-  TrajectoryResult: TrajectoryResult,
-  NavigateToActionGoal: NavigateToActionGoal,
+  Feedback: Feedback,
+  BatteryStateArray: BatteryStateArray,
+  SystemFaultState: SystemFaultState,
+  Lease: Lease,
+  FootState: FootState,
   NavigateToFeedback: NavigateToFeedback,
-  TrajectoryActionResult: TrajectoryActionResult,
-  NavigateToAction: NavigateToAction,
-  TrajectoryAction: TrajectoryAction,
-  NavigateToGoal: NavigateToGoal,
-  TrajectoryActionFeedback: TrajectoryActionFeedback,
-  TrajectoryFeedback: TrajectoryFeedback,
-  TrajectoryActionGoal: TrajectoryActionGoal,
   NavigateToResult: NavigateToResult,
-  NavigateToActionResult: NavigateToActionResult,
+  TrajectoryFeedback: TrajectoryFeedback,
+  TrajectoryActionResult: TrajectoryActionResult,
   TrajectoryGoal: TrajectoryGoal,
+  NavigateToAction: NavigateToAction,
+  TrajectoryActionFeedback: TrajectoryActionFeedback,
+  TrajectoryActionGoal: TrajectoryActionGoal,
+  NavigateToGoal: NavigateToGoal,
   NavigateToActionFeedback: NavigateToActionFeedback,
+  TrajectoryResult: TrajectoryResult,
+  TrajectoryAction: TrajectoryAction,
+  NavigateToActionGoal: NavigateToActionGoal,
+  NavigateToActionResult: NavigateToActionResult,
 };

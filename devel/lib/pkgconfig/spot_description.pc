@@ -1,4 +1,4 @@
-prefix=/home/vini/P5/devel
+prefix=/home/axel/P5/devel
 
 Name: spot_description
 Description: Description of spot_description
