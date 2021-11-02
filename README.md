@@ -10,6 +10,7 @@ Install ros dependencies
 
 ```
 rosdep install spot_pkg
+rosdep install cv_bridge
 ```
 Build P5 (in P5 repo)
 
