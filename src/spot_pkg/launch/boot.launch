@@ -7,21 +7,30 @@
   <include file="$(find spot_driver)/launch/control.launch" />
   <include file="$(find spot_driver)/launch/accessories.launch" />
 
-  <node pkg="spot_driver" type="spot_ros" name="spot_ros"  ns="spot" output="screen">
+  <node pkg="spot_driver" type="spot_ros" name="spot_ros" ns="spot" output="screen">
     <rosparam file="$(find spot_driver)/config/spot_ros.yaml" command="load" />
     <param name="username" value="$(arg username)" />
     <param name="password" value="$(arg password)" />
     <param name="hostname" value="$(arg hostname)" />
-    <remap from="joint_states" to="/joint_states"/>
-    <remap from="tf" to="/tf"/>
+    <remap from="joint_states" to="/joint_states" />
+    <remap from="tf" to="/tf" />
+    <!--     <remap from="/spot/depth/frontleft/camera_info" to="/camera_info"/>
+    <remap from="/spot/depth/frontright/camera_info" to="/camera_info"/>
+    <remap from="/spot/depth/frontleft/image" to="/image_rect"/>
+    <remap from="/spot/depth/frontright/image" to="/image_rect"/> -->
   </node>
 
-  <node pkg="twist_mux" type="twist_mux" name="twist_mux" >
+  <node pkg="twist_mux" type="twist_mux" name="twist_mux">
     <rosparam command="load" file="$(find spot_driver)/config/twist_mux.yaml" />
-    <remap from="cmd_vel_out" to="spot/cmd_vel"/>
+    <remap from="cmd_vel_out" to="spot/cmd_vel" />
   </node>
 
   <node pkg="rosservice" type="rosservice" name="claimService" args="call --wait /spot/claim" />
 
-<!--   <include file="$(find spot_pkg)/launch/includes/move_base.launch.xml"  -->/>
+
+  <include file="$(find spot_pkg)/launch/depth_to_pointcloud.launch" />
+  <include file="$(find spot_pkg)/launch/pointcloud_to_laserscan.launch" />
+
+  <!--   <include file="$(find spot_pkg)/launch/includes/move_base.launch.xml"  -->
+  />
 </launch>

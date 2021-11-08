@@ -7,4 +7,4 @@ inflation_radius: 0.6
 
 observation_sensor: point_cloud_sensor
 
-point_cloud_sensor: {sensor_frame: base_link, data_type: PointCloud, topic: /spot/point_cloud, marking: true, clearing: true}
+point_cloud_sensor: {sensor_frame: body, data_type: PointCloud, topic: /camera/depth/points, marking: true, clearing: true}
