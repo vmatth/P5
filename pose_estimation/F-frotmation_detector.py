@@ -3,109 +3,101 @@ import numpy as np
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 import math as math
+from sklearn.linear_model import LinearRegression
 
 # plane = ax + by + cz = d
 
 #Use ransac for plane
 
-peopleNum = 2 #cols
-subjectPoints = 3 #rows
+##SKIFT TIL 2D, for der er ingen grund til at gøre det i 3D. Skift fra plan til linje og fra 3 til 2 koordinater##
 
-matrix = [[0]*peopleNum for _ in range(subjectPoints)]
-print('matrix: ', matrix)
+def Find_angle(persPointLeftHip, persPointLeftAnkle, persPointRightHip, persPointRightAnkle):
+        PointNum = 4
+        print('Finding Angle...')
+        persPointList = np.array([persPointLeftHip, persPointLeftAnkle, persPointRightHip, persPointRightAnkle])
+        persx = np.array([None, None, None, None]).reshape(-1, 1)
+        persy = np.array([None, None, None, None])
 
-index = np.array([0, 1, 2])
-maxElement = np.amax(index)
-print('Max element: ', maxElement)
+        #Seperate the x and y values and put them in their own array
+        for i in range(PointNum):
+                persx[i] = persPointList[i][0]
+                persy[i] = persPointList[i][1]
+
+        #Make linear regression of the x and y
+        persmodel = LinearRegression(). fit(persx, persy)
+#        print('person intercept: ', persmodel.intercept_)
+#        print('person slope: ', persmodel.coef_)
+
+        #Find two points on the line and make a vector on the line
+        x1 = 0
+        x2 = 1
+        persPoint1OnLine = persmodel.coef_*x1+persmodel.intercept_
+        persPoint2OnLine = persmodel.coef_*x2+persmodel.intercept_
+#        print('Person Point 1 on line: ', persPoint1OnLine[0])
+#        print('Person Point 2 on line: ', persPoint2OnLine[0])
+
+        persVectorOnLine = np.array([x2-x1, persPoint2OnLine[0]-persPoint1OnLine[0]])
+#        print('Person vector on line: ', persVectorOnLine)
+
+        #Find difference in x and y
+        dx = x2 - x1
+        persdy = persPoint2OnLine[0] - persPoint1OnLine[0]
+#        print('pers1dx: ', dx, 'pers1dy: ', persdy)
+
+        #choose the normal vector that points the same way as the feet
+        if persPointLeftAnkle[0] < persPointRightAnkle[0]:
+                persNormal1 = (-persdy, dx)
+#                print('Person is facing in the direction of: ', persNormal1)
+                PersNormalAngle = math.atan2(persNormal1[1], persNormal1[0])
+#                print('Person has an angle of: ', PersNormalAngle)
+        elif persPointLeftAnkle[0] > persPointRightAnkle[0]:
+                persNormal2 = (persdy, -dx)
+#                print('Person is facing in the direction of: ', persNormal2)
+                PersNormalAngle = math.atan2(persNormal2[1], persNormal2[0])
+#                print('Person has an angle of: ', PersNormalAngle) 
+
+        #Calculate the approx center of the person
+        if persPointRightAnkle[0] > persPointLeftAnkle[0] and persPointRightAnkle[1] > persPointLeftAnkle[1]:
+                persAnkleDiff = (persPointRightAnkle - persPointLeftAnkle)/2
+                persCenter = persPointLeftAnkle + persAnkleDiff
+#                print('Person center: ', persCenter)
+        elif persPointRightAnkle[0] < persPointLeftAnkle[0] and persPointRightAnkle[1] < persPointLeftAnkle[1]:
+                persAnkleDiff = (persPointLeftAnkle - persPointRightAnkle)/2
+                persCenter = persPointRightAnkle + persAnkleDiff
+#                print('Person center: ', persCenter)
+        elif persPointRightAnkle[0] > persPointLeftAnkle[0] or persPointRightAnkle[1] > persPointLeftAnkle[1]:
+                persAnkleDiff = (persPointRightAnkle - persPointLeftAnkle)/2
+                persCenter = persPointLeftAnkle + persAnkleDiff
+#                print('Person center: ', persCenter)
+        elif persPointRightAnkle[0] < persPointLeftAnkle[0] or persPointRightAnkle[1] < persPointLeftAnkle[1]:
+                persAnkleDiff = (persPointLeftAnkle - persPointRightAnkle)/2
+                persCenter = persPointRightAnkle + persAnkleDiff
+#                print('Person center: ', persCenter)
+        
+        return persCenter, PersNormalAngle
+
+# peopleNum = 2 #cols
+# subjectPoints = 3 #rows
+
+# matrix = [[0]*peopleNum for _ in range(subjectPoints)]
+# print('matrix: ', matrix)
+
+# index = np.array([0, 1])
+# maxElement = np.amax(index)
+# print('Max element: ', maxElement)
+
 #Set points as arrays
-pers1Point1 = np.array([1, 2, 3])
-pers1Point2 = np.array([4, 6, 9])
-pers1Point3 = np.array([12, 11, 9])
+pers1PointLeftHip = np.array([2.2, 1])
+pers1PointLeftAnkle = np.array([2, 1])
+pers1PointRightHip = np.array([2.8, 2])
+pers1PointRightAnkle = np.array([3, 2])
 
-pers1Point1 = np.array([1, 2, 3])
-pers1Point2 = np.array([4, 6, 9])
-pers1Point3 = np.array([12, 11, 9])
+pers2PointLeftHip = np.array([2.8, 3])
+pers2PointLeftAnkle = np.array([2, 3])
+pers2PointRightHip = np.array([1.2, 2])
+pers2PointRightAnkle = np.array([1, 2])
 
+#Find_angle(pers1PointLeftHip, pers1PointLeftAnkle, pers1PointRightHip, pers1PointRightAnkle)
 
-#for i in index:
-pointList = [[pers1Point1[maxElement-(subjectPoints-1)], pers1Point1[maxElement-(subjectPoints-2)], pers1Point1[maxElement-(subjectPoints-3)]], 
-[pers1Point2[maxElement-(subjectPoints-1)], pers1Point2[maxElement-(subjectPoints-2)], pers1Point2[maxElement-(subjectPoints-3)]],
-[pers1Point3[maxElement-(subjectPoints-1)], pers1Point3[maxElement-(subjectPoints-2)], pers1Point3[maxElement-(subjectPoints-3)]]]
-print('PointList: ', pointList)
-
-for i in range(0, subjectPoints):
-        for j in range(0, peopleNum):
-                matrix[i][j] = pointList[i][j]
-#                print('i:', i)
-#                print('j:', j)
-
-# Two vectors in the plane
-v1 = p3 - p1
-v2 = p3 - p2
-
-#Cross-product of the two vectors is a vector normal to the plane
-cp = np.cross(v1, v2)
-print('Cross product: ', cp)
-a, b, c = cp
-
-d = np.dot(cp, p3)
-
-print('The equation is {0}x + {1}y + {2}z = {3}'.format(a, b, c, d))
-
-
-normVector2D = np.array([cp[0], cp[1]])
-print('2d normal vector is: ', normVector2D)
-
-normvector_hat = normVector2D / (normVector2D**2).sum()**0.5
-
-tail = [0, 0]
-
-x_values = [tail[0], normvector_hat[0]]
-y_values = [tail[1], normvector_hat[1]]
-plt.plot(x_values, y_values)
-
-print(normvector_hat)
-
-# Lidt pythagoras
-c = math.sqrt(normvector_hat[0]*normvector_hat[0]+normvector_hat[1]*normvector_hat[1])
-print('norm vector length: ', c)
-
-#plt.show()
-
-#matplotlib
-
-# import matplotlib.pyplot as plt
-# from mpl_toolkits.mplot3d import Axes3D
-
-# fig = plt.figure()
-# ax = fig.add_subplot(111, projection='3d')
-
-# x = np.linspace(-2, 14, 5)
-# y = np.linspace(-2, 14, 5)
-# X, Y = np.meshgrid(x, y)
-
-# Z = (d - a * X - b * Y) / c
-
-# # plot the mesh. Each array is 2D, so we flatten them to 1D arrays
-# ax.plot(X.flatten(),
-#         Y.flatten(),
-#         Z.flatten(), 'bo ')
-
-# # plot the original points. We use zip to get 1D lists of x, y and z
-# # coordinates.
-# ax.plot(*zip(p1, p2, p3), color='r', linestyle=' ', marker='o')
-
-# origin = np.array([[0, 0, 0], [0, 0, 0]])
-
-# #cp = np.array([-30, 48, -17])
-
-# normVecZip = zip(origin, cp)
-
-# cpPoint = ax.plot(*zip(cp), color='g', linestyle='dashed', marker='o')
-# print('Crossproduct has been plotted!')
-
-# # adjust the view so we can see the point/plane alignment
-# ax.view_init(0, 22)
-# plt.tight_layout()
-# plt.savefig('images/plane.png')
-# plt.show()
+persCenter, persNormalAngle = Find_angle(pers1PointLeftHip, pers1PointLeftAnkle, pers1PointRightHip, pers1PointRightAnkle)
+print('Person center is: ', persCenter, 'Person angle is: ', persNormalAngle)
