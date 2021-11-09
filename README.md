@@ -46,3 +46,10 @@ roslaunch spot_viz view_robot.launch
 
 
 
+
+## Pose estimation SETUP
+
+```
+pip3 install -U scikit-learn
+pip3 install more-itertools
+``` 
