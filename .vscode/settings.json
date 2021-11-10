@@ -5,7 +5,8 @@
     ],
     "python.analysis.extraPaths": [
         "/home/axel/P5/devel/lib/python3/dist-packages",
-        "/opt/ros/melodic/lib/python2.7/dist-packages"
+        "/opt/ros/melodic/lib/python2.7/dist-packages",
+        "./pose_estimation"
     ],
     "files.associations": {
         "*.tcc": "cpp",
