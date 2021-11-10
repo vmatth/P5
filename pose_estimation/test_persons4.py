@@ -1,4 +1,5 @@
 import math
+import numpy as np
 
 def test_data(arg):
 
@@ -13,4 +14,4 @@ def test_data(arg):
     if arg == "print" :
         print(array)
     return array
-    
+
