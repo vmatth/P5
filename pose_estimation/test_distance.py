@@ -9,9 +9,10 @@ person1 = [5,5.5, pi - pi/4]
 person2 = [4,5,pi/4]
 person3 = [6,4,pi + pi/4]
 person4 = [1,8,3*pi/2]
+person5 = [20,40,pi]
 
 #array = [person1, person2, person3, person4]
-array = [person1, person4, person3, person2]
+array = [person1, person3, person5, person2, person4]
 print(array)
 
 maxDistance = 3
