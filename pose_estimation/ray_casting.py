@@ -1,4 +1,5 @@
 import numpy as np
+from sympy.core import symbol
 from sympy.solvers import solve
 from sympy import Symbol
 
@@ -28,12 +29,22 @@ def Line_constructor(arr):
     return a, b
     
 def Ray_casting(polyArr, point):
+    count = 0
     pointArray = np.array([[point[0], point[1]],[point[0]+20,point[1]]]).reshape(-1, 2)
     rayA,rayB = Line_constructor(pointArray)
     for i in range(0,len(polyArr)):
         a,b = Line_constructor(polyArr[i])
-        #crossing = 
+        x = Symbol('x')
+        xcrossing = solve(rayA*x+rayB - a*x+b,x)
+        print('xcrossing: ', xcrossing)
+        ycrossing = rayA*xcrossing[0] + rayB
+        print('ycrossing: ', ycrossing)
+        if xcrossing[0] > point[0] and xcrossing[0] < point[0]+20 and ycrossing == point[1]:
+            count = count + 1
+    print(count)
+
 
     return 0
 
 #print("output: ",Line_constructor(array))
+Ray_casting(polyarray, [-1,1.5])
