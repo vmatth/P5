@@ -13,7 +13,6 @@ rosdep install spot_pkg
 sudo apt-get install ros-melodic-map-server
 sudo apt-get install ros-melodic-amcl
 sudo apt-get install ros-melodic-slam-gmapping
-sudo apt-get install ros-melodic-depth-image-proc
 ```
 Build P5 (in P5 repo)
 
