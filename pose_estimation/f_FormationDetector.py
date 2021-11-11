@@ -69,8 +69,10 @@ oSpace_combinations = generate_OspaceCombinations.oSpaceCombinations(num_persons
     # Check O-space
     #6.1    Remove O-space if a person is inside a O-space
             # point in polygon method
+            # Ray casting algorithm
     #6.2    Remove O-space if one or more person is not looking into the O-space
             # point in polygon method, but here construct a point in the orientation axis
+    #6.2.1    find a method for when only two persons form a o-space
 
 #7. 
     # Construct a convexhull based of the valid O-spaces from #6

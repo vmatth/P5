@@ -1,65 +1,36 @@
-def get_orientation(self, origin, p1, p2):
-    '''
-    Returns the orientation of the Point p1 with regards to Point p2 using origin.
-    Negative if p1 is clockwise of p2.
-    :param p1:
-    :param p2:
-    :return: integer
-    '''
-    difference = (
-        ((p2.x - origin.x) * (p1.y - origin.y))
-        - ((p1.x - origin.x) * (p2.y - origin.y))
-    )
+import numpy as np
+from scipy.spatial import ConvexHull, convex_hull_plot_2d
+import matplotlib.pyplot as plt
+import random
+center1 = [0,0]
+center2 = [3,3]
+center3 = [2,1.5]
+center4 = [3,1]
+center5 = [0,4]
 
-    return difference
 
-def compute_hull(self):
-    '''
-    Computes the points that make up the convex hull.
-    :return:
-    '''
-    points = self._points
+center = [center1, center2, center3, center4, center5]
 
-    # get leftmost point
-    start = points[0]
-    min_x = start.x
-    for p in points[1:]:
-        if p.x < min_x:
-            min_x = p.x
-            start = p
 
-    point = start
-    self._hull_points.append(start)
 
-    far_point = None
-    while far_point is not start:
+arr = np.array([center]).reshape(-1, 2)
+#arr = np.array(list(zip(x, y)))
+print("right:", arr)
 
-        # get the first point (initial max) to use to compare with others
-        p1 = None
-        for p in points:
-            if p is point:
-                continue
-            else:
-                p1 = p
-                break
+def convexHull(peopleCentrum):
 
-        far_point = p1
+    array=[]
+    array=peopleCentrum
 
-        for p2 in points:
-            # ensure we aren't comparing to self or pivot point
-            if p2 is point or p2 is p1:
-                continue
-            else:
-                direction = get_orientation(point, far_point, p2)
-                if direction > 0:
-                    far_point = p2
+    plt.plot(array[:,0], array[:,1], '+')
+    hull = ConvexHull(array)
+    for simplex in hull.simplices:
+        plt.plot(array[simplex, 0], array[simplex, 1], 'k-')
+        print("x",array[simplex,0])
+        print("y",array[simplex,1])
+    plt.show()
 
-        self._hull_points.append(far_point)
-        point = far_point
+    if 2+2==4:
+        print("simon er gay")
 
-def get_hull_points(self):
-    if self._points and not self._hull_points:
-        self.compute_hull()
-
-    return self._hull_points
-
+convexHull(arr)

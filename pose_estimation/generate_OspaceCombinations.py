@@ -79,4 +79,4 @@ def oSpaceCombinations(num):
     return newCombination
 
 
-oSpaceCombinations(6)
+oSpaceCombinations(9)
