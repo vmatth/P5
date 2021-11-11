@@ -55,7 +55,8 @@ def set_partitions(iterable, k=None):
         yield from set_partitions_helper(L, k)
 
 
-print("---------------------------------------------------")
+
+
 def oSpaceCombinations(num):
     a=[]
     num = num+1
@@ -65,7 +66,7 @@ def oSpaceCombinations(num):
     newnew = []
     for k in 1, 2:
         for groups in list(set_partitions(a,k)):
-            print(groups)
+            #print(groups)
             newnew.append(groups)
     newCombination.append(newnew[0][0])
     for i in range(1, len(newnew)):
@@ -76,3 +77,6 @@ def oSpaceCombinations(num):
     print("num of combinations: ", len(newCombination))
 
     return newCombination
+
+
+oSpaceCombinations(6)

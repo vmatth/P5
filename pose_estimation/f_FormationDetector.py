@@ -42,6 +42,8 @@ print(Persons[0].y)
 
 #1. 
     # https://github.com/stevenjj/openpose_ros
+    # https://github.com/dusty-nv/jetson-inference/releases
+    # https://github.com/ravijo/ros_openpose
     #   subcribe to a ros topic to get the x,y,z position of desired keypoint
     # input this information into "centerNdirection" n-times(people detected)
 #2.
