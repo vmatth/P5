@@ -3,10 +3,11 @@ import math
 
 import test_persons4
 import generate_OspaceCombinations
-#import Construct_Ospaces
+import Construct_Ospaces
 import test
 import class_person
 import convexhull_personSpace
+import NEW_Distance_excluder
 
 
 #persons = test_persons4.test_data()# input "print" into argument, if person data shall be written to terminal
@@ -50,7 +51,7 @@ print(Persons[0].y)
     # contruct datastructure with (x,y,orientation) of each person detected
         # maybe a class structure or simple list in list ?
 #3.
-    # Jonathan / Vinh code here
+#NEW_Distance_excluder.Distance_excluder(array_of_poeple, distance)    
 
 #4. input number of people detected
     # Calculate the posible combinations people can be arranged in
@@ -59,11 +60,7 @@ oSpace_combinations = generate_OspaceCombinations.oSpaceCombinations(num_persons
 #5. 
     # Based on the coordinates from #3, and the posibles solutions from #4
     # 5.1   Remove any convexhull if not all people from the specific solution is used to create the convexhull
-
-# ch = test.ConvexHull()
-# ch.add(Persons)
-# print("Points on hull:", ch.get_hull_points())
-# ch.display()
+#Construct_Ospaces.convexHull(input array of people (x,y))
 
 #6.
     # Check O-space

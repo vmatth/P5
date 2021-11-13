@@ -5,12 +5,12 @@ import random
 import generate_OspaceCombinations
 
 center1 = [0,0] # 0,0
-center2 = [3,3] # 3,3
-center3 = [2,1.5] # 2,1.5
-center4 = [3,1] # 3,1
-center5 = [0,4] # 0,4
+center2 = [0,2] # 3,3
+center3 = [2,2] # 2,1.5
+center4 = [1.5,1] # 3,1
+center5 = [1,1] # 0,4
 
-center = [center1, center2, center3]
+center = [center1, center2, center3, center4]
 
 
 arr = np.array([center]).reshape(-1, 2)
@@ -49,14 +49,22 @@ def convexHull(peopleCentrum):
                 tempArray.append(arr)
         elif len(tempNpArrayPeople) == 2:
             tempArray.append(tempNpArrayPeople)
-#            print('TMEPOREP: ', tempNpArrayPeople) 
-        returnList.append(tempArray)
-    print('array1: ', returnList[1])
-    if len(tempArray) < len(tempNpArrayPeople):
-        print('The polygon is not valid aw :(')
-        return 0
-    else:
-        return returnList
+            print('TMEPOREP: ', len(tempNpArrayPeople))
+            
+        if len(tempArray) < len(tempNpArrayPeople):
+            print("len tempnparray: ", len(tempNpArrayPeople))
+            print("tempNP: ", tempNpArrayPeople)
+            print("len tempArray: ", len(tempArray))
+            print("temp array: ", tempArray)
+            if len(tempArray) == 1: # append to return list, if it is only two persons
+                returnList.append(tempArray)
+            else:
+                tempArray = []
+            print('The polygon is not valid aw :(')
+        else:
+            returnList.append(tempArray)
+    print('array1: ', returnList)
+    return returnList
    # plt.show()
 
 #Test om inputlængde og output længde er det samme

@@ -73,8 +73,8 @@ def oSpaceCombinations(num):
         for j in range(0,2):
             if len(newnew[i][j]) != 1:
                 newCombination.append(newnew[i][j])
-    #print("Combinations: ",newCombination)
-    #print("num of combinations: ", len(newCombination))
+    print("Combinations: ",newCombination)
+    print("num of combinations: ", len(newCombination))
 
     return newCombination
 
