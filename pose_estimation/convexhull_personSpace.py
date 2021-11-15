@@ -20,7 +20,7 @@ def convexHull(peopleCentrum):
     x=[]
     y=[]
     array=[]
-    maxPoint = 2
+    maxPoint = 20
     radius = 0.8
 
 
