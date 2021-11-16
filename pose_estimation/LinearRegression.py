@@ -3,6 +3,8 @@ import sympy as sym
 from sympy import Symbol, Eq, solve
 from sympy.core.function import diff
 
+#Least Square
+
 def LinearRegression():
 
 #Input
@@ -11,49 +13,35 @@ def LinearRegression():
     pers1PointRightHip = np.array([2.8, 2])
     pers1PointRightAnkle = np.array([3, 2])
 
-#Define a and b as symbol for calc
+#Define a and b as symbol for calculations
     a = Symbol("a")
     b = Symbol("b")
 
+#Input gathered in List
     inputList = [pers1PointLeftHip, pers1PointLeftAnkle, pers1PointRightHip, pers1PointRightAnkle]
-    print("inputlist", inputList)
+    #print("inputList", inputList)
 
     TotalPoints = []
-
+#Loop all input as d=ax+b-y squared
     for i in range(len(inputList)):
         tempPoint = ((a*inputList[i][0]+b-inputList[i][1])**2)
         TotalPoints.append(tempPoint)
+    #print("TotalPoints", TotalPoints)
 
-    print("TotalPoints", TotalPoints)
-
-#d=ax+b-y
-#point1 = (a*2.2+b-1)**2
-#point2 = (a*2+b-1)**2
-#point3 = (a*2.8+b-2)**2
-#point4 = (a*3+b-2)**2
-
-#print("Data før", point1, point2, point3, point4)
-
+#Sum all
     total_sum = sum(TotalPoints)
 
+#Take derivative of total_sum with respect to a and b  
     Equation1 = sym.diff(total_sum, a)
 #print(Equation1)
     Equation2 = sym.diff(total_sum, b)
 #print(Equation2)
 
-
-
-#Differentiate
-#x = Symbol("x")
-#print(sym.diff(5*x))
-
-#Solve two equations with two varaibles
-    eq1 = Eq(Equation1, 0)
-    eq2 = Eq(Equation2, 0)
-    print(solve((eq1, eq2), (a, b)))
+#Solve equations for most optimal regression.
+    eq1 = Eq(Equation1, 0) #Set equation 1 = 0
+    eq2 = Eq(Equation2, 0) #Set equation 2 = 0
+#Solve two equations with two variables
     solution = solve((eq1, eq2), (a, b))
-    print(type(solve((eq1, eq2), (a, b))))
-
     return solution[a],solution[b]
 
 Regression = LinearRegression()
