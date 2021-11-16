@@ -19,7 +19,7 @@ def Line_constructor(arr):
     deltay = y2-y1
     deltax = x2-x1
     if deltax == 0:
-        print('The line is vertical')
+        #print('The line is vertical')
         x1 = x1 + 0.000001
         deltay = y2-y1
         deltax = x2-x1
@@ -34,14 +34,14 @@ def Ray_casting(polyArr, point):
         # check if the point is on the Line
         a,b = Line_constructor(polyArr[i])
         dist = abs(a * point[0] + b - point[1]) / (math.sqrt(a*a+1))
-        print("dist: ", dist)
+#        print("dist: ", dist)
         if dist < 0.000001 and dist > 0:
-            print("hallo")
+#            print("hallo")
             return True
             
         if rayintersectseg(point, polyArr[i]):
             count = count + 1
-            print("Count up: ", count)
+#            print("Count up: ", count)
     if count == 0 or count > 1:
         Boolean = False
         print("no intersect")
@@ -74,7 +74,9 @@ def rayintersectseg(point, Line):
     # check if point y coordianate is equal to the lines y coordinates
     # Change the point y coordinate if this is true
     if point.y == a.y or point.y == b.y:
-        point.y = point.y + _eps
+        yy = point.y
+        point._replace(y=yy+_eps)
+        #point.y = point.y + _eps
     
     # Check if the point over b or below a, or if point is greater at the x-axis
     # if true - then no intersection can occur

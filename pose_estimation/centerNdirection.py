@@ -73,8 +73,8 @@ def Find_angle(persPointLeftHip, persPointLeftAnkle, persPointRightHip, persPoin
                 persAnkleDiff = (persPointLeftAnkle - persPointRightAnkle)/2
                 persCenter = persPointRightAnkle + persAnkleDiff
 #                print('Person center: ', persCenter)
-        
-        return persCenter, PersNormalAngle
+        FinalList = [persCenter, persNormalAngle]
+        return FinalList
 
 # peopleNum = 2 #cols
 # subjectPoints = 3 #rows
@@ -92,10 +92,20 @@ pers1PointLeftAnkle = np.array([2, 1])
 pers1PointRightHip = np.array([2.8, 2])
 pers1PointRightAnkle = np.array([3, 2])
 
-pers2PointLeftHip = np.array([2.8, 3])
+pers2PointLeftHip = np.array([1.8, 3])
 pers2PointLeftAnkle = np.array([2, 3])
 pers2PointRightHip = np.array([1.2, 2])
 pers2PointRightAnkle = np.array([1, 2])
+
+pers3PointLeftHip = np.array([3.8, 2])
+pers3PointLeftAnkle = np.array([4, 2])
+pers3PointRightHip = np.array([3.2, 3])
+pers3PointRightAnkle = np.array([3, 3])
+
+pers4PointLeftHip = np.array([1.2, 1])
+pers4PointLeftAnkle = np.array([1, 1])
+pers4PointRightHip = np.array([1.8, 0])
+pers4PointRightAnkle = np.array([2, 0])
 
 #Find_angle(pers1PointLeftHip, pers1PointLeftAnkle, pers1PointRightHip, pers1PointRightAnkle)
 
