@@ -17,8 +17,8 @@ arr = np.array([center]).reshape(-1, 3)
 #arr = np.array(list(zip(x, y)))
 #print("right:", arr)
 
-def convexHull(peopleCentrum):
-    combinations = generate_OspaceCombinations.oSpaceCombinations(len(peopleCentrum))
+def convexHull(peopleCentrum, combinations):
+    #combinations = generate_OspaceCombinations.oSpaceCombinations(len(peopleCentrum))
     #print("comb: ",combinations)
     array=[]
     arr=[]
@@ -74,4 +74,4 @@ def convexHull(peopleCentrum):
 
 #Test om inputlængde og output længde er det samme
 
-convexHull(arr)
+#convexHull(arr)

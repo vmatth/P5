@@ -74,7 +74,9 @@ def rayintersectseg(point, Line):
     # check if point y coordianate is equal to the lines y coordinates
     # Change the point y coordinate if this is true
     if point.y == a.y or point.y == b.y:
-        point.y = point.y + _eps
+        yy = point.y
+        point._replace(y=yy+_eps)
+        #point.y = point.y + _eps
     
     # Check if the point over b or below a, or if point is greater at the x-axis
     # if true - then no intersection can occur
