@@ -13,7 +13,8 @@ from sklearn.linear_model import LinearRegression
 
 def Find_angle(persPointLeftHip, persPointLeftAnkle, persPointRightHip, persPointRightAnkle):
         PointNum = 4
-        print('Finding Angle...')
+        PersNormalAngle = 0
+#        print('Finding Angle...')
         persPointList = np.array([persPointLeftHip, persPointLeftAnkle, persPointRightHip, persPointRightAnkle])
         persx = np.array([None, None, None, None]).reshape(-1, 1)
         persy = np.array([None, None, None, None])
@@ -73,7 +74,7 @@ def Find_angle(persPointLeftHip, persPointLeftAnkle, persPointRightHip, persPoin
                 persAnkleDiff = (persPointLeftAnkle - persPointRightAnkle)/2
                 persCenter = persPointRightAnkle + persAnkleDiff
 #                print('Person center: ', persCenter)
-        FinalList = [persCenter, persNormalAngle]
+        FinalList = [persCenter[0], persCenter[1], PersNormalAngle]
         return FinalList
 
 # peopleNum = 2 #cols
@@ -109,5 +110,5 @@ pers4PointRightAnkle = np.array([2, 0])
 
 #Find_angle(pers1PointLeftHip, pers1PointLeftAnkle, pers1PointRightHip, pers1PointRightAnkle)
 
-persCenter, persNormalAngle = Find_angle(pers1PointLeftHip, pers1PointLeftAnkle, pers1PointRightHip, pers1PointRightAnkle)
-print('Person center is: ', persCenter, 'Person angle is: ', persNormalAngle)
+#persCenter, persNormalAngle = Find_angle(pers1PointLeftHip, pers1PointLeftAnkle, pers1PointRightHip, pers1PointRightAnkle)
+#print('Person center is: ', persCenter, 'Person angle is: ', persNormalAngle)

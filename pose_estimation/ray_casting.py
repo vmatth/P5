@@ -44,7 +44,7 @@ def Ray_casting(polyArr, point):
 #            print("Count up: ", count)
     if count == 0 or count > 1:
         Boolean = False
-        print("no intersect")
+        #print("no intersect")
     elif count == 1:
         Boolean = True
     else :
@@ -100,4 +100,4 @@ def rayintersectseg(point, Line):
     return intersect
 ########################################################################################
 #print("output: ",Line_constructor(array))
-print("Intersect: ",Ray_casting(polyarray, [1,3.2])) #3.46 is on line
+#print("Intersect: ",Ray_casting(polyarray, [1,3.2])) #3.46 is on line

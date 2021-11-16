@@ -10,7 +10,7 @@ center3 = [2,2, math.pi+math.pi/4] # 2,1.5
 center4 = [1.5,1] # 3,1
 center5 = [1,1.1] # 0,4
 
-center = [center1, center2, center3]
+center = [center1, center2, center3, center3]
 
 
 arr = np.array([center]).reshape(-1, 3)
@@ -40,7 +40,7 @@ def convexHull(peopleCentrum, combinations):
         #print("temp", tempNpArrayPeople, type(tempNpArrayPeople))
         #print("array", array, type(array))
         if len(tempNpArrayPeople) > 2:
-            #print("hulllll: ", tempNpArrayPeople[0][2])
+            #print("hulllll: ", tempNpArrayPeople[:,:2])
             hull = ConvexHull(tempNpArrayPeople[:,:2])
             for simplex in hull.simplices:
                 #plt.plot(tempArrayPeople[simplex, 0], tempArrayPeople[simplex, 1], 'k-')
