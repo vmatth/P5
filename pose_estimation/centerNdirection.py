@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 import math as math
 from sklearn.linear_model import LinearRegression
+import LinearRegression
 
 # plane = ax + by + cz = d
 
@@ -11,38 +12,39 @@ from sklearn.linear_model import LinearRegression
 
 ##SKIFT TIL 2D, for der er ingen grund til at gøre det i 3D. Skift fra plan til linje og fra 3 til 2 koordinater##
 
-def Find_angle(persPointLeftHip, persPointLeftAnkle, persPointRightHip, persPointRightAnkle):
+def get_xyorientation(persPointLeftHip, persPointLeftAnkle, persPointRightHip, persPointRightAnkle):
         PointNum = 4
         PersNormalAngle = 0
 #        print('Finding Angle...')
-        persPointList = np.array([persPointLeftHip, persPointLeftAnkle, persPointRightHip, persPointRightAnkle])
-        persx = np.array([None, None, None, None]).reshape(-1, 1)
-        persy = np.array([None, None, None, None])
+        # persPointList = np.array([persPointLeftHip, persPointLeftAnkle, persPointRightHip, persPointRightAnkle])
+        # persx = np.array([None, None, None, None]).reshape(-1, 1)
+        # persy = np.array([None, None, None, None])
 
-        #Seperate the x and y values and put them in their own array
-        for i in range(PointNum):
-                persx[i] = persPointList[i][0]
-                persy[i] = persPointList[i][1]
-
+        # #Seperate the x and y values and put them in their own array
+        # for i in range(PointNum):
+        #         persx[i] = persPointList[i][0]
+        #         persy[i] = persPointList[i][1]
+        inputList = [persPointLeftHip, persPointLeftAnkle, persPointRightHip, persPointRightAnkle]
         #Make linear regression of the x and y
-        persmodel = LinearRegression(). fit(persx, persy)
+        persmodelA, persmodelB = LinearRegression.LinearRegression(inputList)
+        #persmodel = LinearRegression(). fit(persx, persy)
 #        print('person intercept: ', persmodel.intercept_)
 #        print('person slope: ', persmodel.coef_)
 
         #Find two points on the line and make a vector on the line
         x1 = 0
         x2 = 1
-        persPoint1OnLine = persmodel.coef_*x1+persmodel.intercept_
-        persPoint2OnLine = persmodel.coef_*x2+persmodel.intercept_
+        persPoint1OnLine = persmodelA*x1+persmodelB
+        persPoint2OnLine = persmodelA*x2+persmodelB
 #        print('Person Point 1 on line: ', persPoint1OnLine[0])
 #        print('Person Point 2 on line: ', persPoint2OnLine[0])
 
-        persVectorOnLine = np.array([x2-x1, persPoint2OnLine[0]-persPoint1OnLine[0]])
+        persVectorOnLine = np.array([x2-x1, persPoint2OnLine-persPoint1OnLine])
 #        print('Person vector on line: ', persVectorOnLine)
 
         #Find difference in x and y
         dx = x2 - x1
-        persdy = persPoint2OnLine[0] - persPoint1OnLine[0]
+        persdy = persPoint2OnLine - persPoint1OnLine
 #        print('pers1dx: ', dx, 'pers1dy: ', persdy)
 
         #choose the normal vector that points the same way as the feet

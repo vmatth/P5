@@ -22,7 +22,7 @@ def lookingInto(array, margin): #This function determines if the person is looki
     for i in range(0, len(hull)):
         PointArray = []
         tempArray = []
-        print("len of hull[i]: ", len(hull[i]))
+        #print("len of hull[i]: ", len(hull[i]))
         if len(hull[i]) > 1:
             # her skal vi tjekke o-space ved personer over 2 personer
             for j in range(0, len(hull[i])):
@@ -36,10 +36,10 @@ def lookingInto(array, margin): #This function determines if the person is looki
                     tempArray.append(temparr)
                     tempNP = np.array(tempArray)
            
-           
+            #print("tempP", tempNP, type(tempNP))
             new_array = [tuple(row) for row in tempNP]
             uniques = np.unique(new_array, axis=0)
-
+            #print("Uniques:", uniques, type(uniques))
             for j in range(0, len(uniques)):
                 TempPointArray = np.array([uniques[j][2], uniques[j][3]])
                 PointArray.append(TempPointArray)
@@ -55,7 +55,7 @@ def lookingInto(array, margin): #This function determines if the person is looki
         elif len(hull[i]) == 1:
             # her skal vi tjekke o-space ved 2 personer
             # Calculate the vector between the two persons
-            print("two person check", hull[i])
+            #print("two person check", hull[i])
             x1=hull[i][0][0][0]
             y1=hull[i][0][0][1]
             x2=hull[i][0][1][0]
@@ -72,7 +72,7 @@ def lookingInto(array, margin): #This function determines if the person is looki
                     temparr = np.array([hull[i][j][k][0], hull[i][j][k][1], x, y])
                     tempArray.append(temparr)
                     tempNP = np.array(tempArray)
-            print("tempBP: ", tempNP)
+            #print("tempBP: ", tempNP)
             per1X1 = tempNP[0][0]
             per1y1 = tempNP[0][1]
             per1X2 = tempNP[0][2]
@@ -101,12 +101,12 @@ def lookingInto(array, margin): #This function determines if the person is looki
                 vinkel2 = atanvinkelPers2 - atanvinkelCommon2
             else:
                 vinkel2 = atanvinkelCommon2 - atanvinkelPers2
-            print("test vinkel med Atan2 - 1:", vinkel1)
-            print("test vinkel med Atan2 - 1, pers:", atanvinkelPers1)
-            print("test vinkel med Atan2 - 1 common:", atanvinkelCommon1)
+            #print("test vinkel med Atan2 - 1:", vinkel1)
+            #print("test vinkel med Atan2 - 1, pers:", atanvinkelPers1)
+            #print("test vinkel med Atan2 - 1 common:", atanvinkelCommon1)
 
-            print("vinkler1", vinkel1)
-            print("vinkler2", vinkel2)
+            #print("vinkler1", vinkel1)
+            #print("vinkler2", vinkel2)
             
             # checking if the persons is looking towards each other
             if vinkel1 > -margin and vinkel1 < margin and vinkel2 > -margin and vinkel2 < margin: 
@@ -114,7 +114,7 @@ def lookingInto(array, margin): #This function determines if the person is looki
         else:
             print('ERROR noobs')
 
-    print("o-space: ", Ospacearray)
+    #print("o-space: ", Ospacearray)
 
     return Ospacearray
 

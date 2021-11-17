@@ -5,20 +5,20 @@ from sympy.core.function import diff
 
 #Least Square
 
-def LinearRegression():
+def LinearRegression(inputList):
 
 #Input
-    pers1PointLeftHip = np.array([2.2, 1])
-    pers1PointLeftAnkle = np.array([2, 1])
-    pers1PointRightHip = np.array([2.8, 2])
-    pers1PointRightAnkle = np.array([3, 2])
+    #pers1PointLeftHip = np.array([2.2, 1])
+    #pers1PointLeftAnkle = np.array([2, 1])
+    #pers1PointRightHip = np.array([2.8, 2])
+    #pers1PointRightAnkle = np.array([3, 2])
 
 #Define a and b as symbol for calculations
     a = Symbol("a")
     b = Symbol("b")
 
 #Input gathered in List
-    inputList = [pers1PointLeftHip, pers1PointLeftAnkle, pers1PointRightHip, pers1PointRightAnkle]
+    #inputList = [pers1PointLeftHip, pers1PointLeftAnkle, pers1PointRightHip, pers1PointRightAnkle]
     #print("inputList", inputList)
 
     TotalPoints = []
@@ -44,5 +44,5 @@ def LinearRegression():
     solution = solve((eq1, eq2), (a, b))
     return solution[a],solution[b]
 
-Regression = LinearRegression()
-print(Regression)
+#Regression = LinearRegression()
+#print(Regression)

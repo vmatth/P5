@@ -58,6 +58,8 @@ RightHip = [pers1PointRightHip, pers2PointRightHip, pers3PointRightHip, pers4Poi
 LeftAnkle = [pers1PointLeftAnkle, pers2PointLeftAnkle, pers3PointLeftAnkle, pers4PointLeftAnkle, pers5PointLeftAnkle, pers6PointLeftAnkle, pers7PointLeftAnkle]
 RightAnkle = [pers1PointRightAnkle, pers2PointRightAnkle, pers3PointRightAnkle, pers4PointRightAnkle, pers5PointRightAnkle, pers6PointRightAnkle, pers7PointRightAnkle]
 
+
+
 # 1. Grab (x,y, orientation) of each person detected
 # 2. Contruct the data as a list inside a list
 # 3. Remove any person who is more than 3m away from anogther person
@@ -85,24 +87,24 @@ RightAnkle = [pers1PointRightAnkle, pers2PointRightAnkle, pers3PointRightAnkle, 
         # maybe a class structure or simple list in list ?
 #testdata = test_persons4.test_data()
 persons = []
-for i in range(0, 7):
-    data = centerNdirection.Find_angle(LeftHip[i], LeftAnkle[i], RightHip[i], RightAnkle[i])
+for i in range(0, len(LeftHip)):
+    data = centerNdirection.get_xyorientation(LeftHip[i], LeftAnkle[i], RightHip[i], RightAnkle[i])
     persons.append(data)
-print('Personés: ', persons)
+#print('Personés: ', persons)
 
-plt.plot(persons[0][0], persons[0][1], '+')
-plt.plot(persons[1][0], persons[1][1], 'o')
-plt.plot(persons[2][0], persons[2][1], 'x')
-plt.plot(persons[3][0], persons[3][1], '*')
-plt.plot(persons[4][0], persons[4][1], '*')
-plt.plot(persons[5][0], persons[5][1], '*')
-plt.plot(persons[6][0], persons[6][1], '*')
-plt.show()
+# plt.plot(persons[0][0], persons[0][1], '+')
+# plt.plot(persons[1][0], persons[1][1], 'o')
+# plt.plot(persons[2][0], persons[2][1], 'x')
+# plt.plot(persons[3][0], persons[3][1], '*')
+# plt.plot(persons[4][0], persons[4][1], '*')
+# plt.plot(persons[5][0], persons[5][1], '*')
+# plt.plot(persons[6][0], persons[6][1], '*')
+# plt.show()
 
 
 #3.
 Newtestdata = NEW_Distance_excluder.Distance_excluder(persons, 3)    
-print("test pers", Newtestdata)
+#print("test pers", Newtestdata)
 #4. input number of people detected
     # Calculate the posible combinations people can be arranged in
 combinations = oSpace_combinations = generate_OspaceCombinations.oSpaceCombinations(len(Newtestdata))
@@ -137,10 +139,52 @@ LineList = Construct_Ospaces.convexHull(arr, combinations)
             # point in polygon method
             # Ray casting algorithm
     #6.2    Remove O-space if one or more person is not looking into the O-space
-FinalOpspace = LookingInOut.lookingInto(LineList, 0.5)
-print("FInal Array",FinalOpspace)
+Opspace_looking = LookingInOut.lookingInto(LineList, 0.5)
+#print("FInal Array, after looking check: ",Opspace_looking)
             # point in polygon method, but here construct a point in the orientation axis
     #6.2.1    find a method for when only two persons form a o-space
+
+listarray = []
+for i in range(0,len(Opspace_looking)):
+    tempPeopleList = []
+    tempLineList = []
+    tempListMerged = []
+    for k in range(len(Newtestdata)):
+        temparray = np.array([Newtestdata[k][0], Newtestdata[k][1], Newtestdata[k][2]])
+        tempPeopleList.append(temparray)
+    for h in range(len(Opspace_looking[i])):
+        for g in range(len(Opspace_looking[i][h])):
+            tempLineList.append(Opspace_looking[i][h][g]) 
+    tempPeopleArray = np.array(tempPeopleList)
+    tempLineArray = np.array(tempLineList)
+    new_array_People = [tuple(row) for row in tempPeopleArray]
+    new_array_Line = [tuple(row) for row in tempLineArray]
+    uniques = np.unique(new_array_Line, axis=0)
+    new_array_uniques = [tuple(row) for row in uniques]
+#    print("new_arrA_uniques#",i,": ", new_array_uniques)
+#    print("Merged!!!!!!!!!!!!!!!!!:", new_array_People)
+    for t in range(len(new_array_uniques)):
+        new_array_People.remove(new_array_uniques[t])
+#    print('MEERGED AFTER REMOVE: ', new_array_People[0][0])
+    count = 0
+    check = False
+    #new_array = [tuple(row) for row in tempDataMerged]
+    #print("new array: ",tempListMerged)
+    #uniques = np.unique(new_array, axis=0)
+#    print("Linelist", i, ": ", Opspace_looking[i])
+    #print("uniques!!!!!!!!: ", uniques)
+    for j in range(0, len(new_array_People)):
+       #print("lineList i: ", Newtestdata[j][0])
+       if len(Opspace_looking[i]) > 1:
+#           print("linelist[i] over 1: i,j:", i, j)
+           check = ray_casting.Ray_casting(Opspace_looking[i], [new_array_People[j][0], new_array_People[j][1]])
+#           print("check: ",check)
+           if check == True:
+               count = count +1
+    if count == 0:
+       listarray.append(Opspace_looking[i])
+#print("6.1 check: ", Opspace_looking)       
+print("6.2 check: ", listarray)   
 
 #7. 
     # Construct a convexhull based of the valid O-spaces from #6
