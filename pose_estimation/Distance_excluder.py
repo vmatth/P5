@@ -11,7 +11,7 @@ person3 = [60,40,pi + pi/4]
 person4 = [1,8,3*pi/2]
 
 #array = [person1, person2, person3, person4]
-array = [person4, person1, person3, person2]
+array = [person4, person1, person3]
 print(array)
 
 maxDistance = 3

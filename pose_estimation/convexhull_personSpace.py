@@ -16,12 +16,11 @@ center5 = [0,4.6]
 center = [center1, center2, center3, center4, center5]
 print(center)
 
-
 def convexHull(peopleCentrum):
     x=[]
     y=[]
     array=[]
-    maxPoint = 2
+    maxPoint = 20
     radius = 0.8
 
 

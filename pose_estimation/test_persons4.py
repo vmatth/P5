@@ -1,17 +1,15 @@
-import math
-import numpy as np
+def test_data():
+    pers1 = [2.60,	2.40,	0]
+    pers2 =	[2.80,	2.40,	3.14159265358979]
+    pers3 = [3.60,	1.80,	4.18879020478639]
+    pers4 = [3.60,	1.60,	2.09439510239320]
+    pers5 = [3.20,	1.40,	5.49778714378214]
+    pers6 = [0.60,	2.80,	1.57079632679490]
+    pers7 = [1.20,	0.80,	4.71238898038469]
+    pers8 = [0.70,	1.70,	0.785398163397448]
+    pers9 = [1.20,	2.20,	0.785398163397448]
+    pers10 = [1.80,	2.60,	0.785398163397448]
 
-def test_data(arg):
-
-    pi = math.pi
-
-    person1 = [5,5.5, pi - pi/4]
-    person2 = [4,5,pi/4]
-    person3 = [6,4,pi + pi/4]
-    person4 = [1,8,3*pi/2]
-
-    array = [person1, person2, person3, person4]
-    if arg == "print" :
-        print(array)
+    array = [pers1, pers2, pers3, pers4, pers5, pers6, pers7, pers8, pers9]
     return array
 
