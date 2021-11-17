@@ -3,7 +3,7 @@
   <arg name="password" default="cah6vzdf2gqr" />
   <arg name="hostname" default="192.168.80.3" />
 
-  <include file="$(find spot_description)/launch/description.launch" />
+  <include file="$(find spot_pkg)/launch/includes/description.launch" />
   <include file="$(find spot_driver)/launch/control.launch" />
   <include file="$(find spot_driver)/launch/accessories.launch" />
 
@@ -28,8 +28,8 @@
   <node pkg="rosservice" type="rosservice" name="claimService" args="call --wait /spot/claim" />
 
 
-  <include file="$(find spot_pkg)/launch/depth_to_pointcloud.launch" />
-  <include file="$(find spot_pkg)/launch/pointcloud_to_laserscan.launch" />
+  <!-- <include file="$(find spot_pkg)/launch/depth_to_pointcloud.launch" />
+  <include file="$(find spot_pkg)/launch/pointcloud_to_laserscan.launch" /> -->
 
   <!--   <include file="$(find spot_pkg)/launch/includes/move_base.launch.xml"  -->
   />
