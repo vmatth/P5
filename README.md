@@ -13,6 +13,8 @@ rosdep install spot_pkg
 sudo apt-get install ros-melodic-map-server
 sudo apt-get install ros-melodic-amcl
 sudo apt-get install ros-melodic-slam-gmapping
+sudo apt-get install ros-melodic-move-base
+sudo apt-get install ros-melodic-move-base-msgs
 ```
 Build P5 (in P5 repo)
 
