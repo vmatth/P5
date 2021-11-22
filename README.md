@@ -35,12 +35,13 @@ To run the ROS nodes
 
 ```
 roslaunch spot_pkg boot.launch
-rosrun spot_pkg spot_pkg_node
+roslaunch spot_pkg lidar.launch
+roslaunch spot_pkg move_base.launch
 ```
 
 To open SPOT in rviz
 ```
-roslaunch spot_viz view_robot.launch
+roslaunch spot_pkg rviz.launch
 ```
 
 
