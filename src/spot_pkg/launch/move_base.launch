@@ -2,7 +2,7 @@
     
     <master auto="start"/>
  <!-- Run the map server --> 
-     <node name="map_server" pkg="map_server" type="map_server" args="$(find spot_pkg)/map.yaml"/>
+     <node name="map_server" pkg="map_server" type="map_server" args="$(find spot_pkg)/maps/map.yaml"/>
  
  <!--- Run AMCL --> 
     <include file="$(find amcl)/examples/amcl_omni.launch" />
@@ -13,6 +13,7 @@
     <rosparam file="$(find spot_pkg)/launch/yaml/local_costmap_params.yaml" command="load" />
     <rosparam file="$(find spot_pkg)/launch/yaml/global_costmap_params.yaml" command="load" /> 
     <rosparam file="$(find spot_pkg)/launch/yaml/base_local_planner_params.yaml" command="load" />
+    <rosparam file="$(find spot_pkg)/launch/yaml/minimal.yaml" command="load" ns="/costmap_node/costmap" />
  </node>
 
 </launch> 

@@ -264,7 +264,7 @@
     </joint>
 
     <!-- Standard accessories. -->
-    <xacro:include filename="$(find spot_pkg)/urdf/accessories.urdf.xacro" />
+    <xacro:include filename="$(find spot_pkg)/spot_description/urdf/accessories.urdf.xacro" />
 
     <!-- Optional custom includes. -->
     <xacro:include filename="$(optenv SPOT_URDF_EXTRAS empty.urdf)" />
