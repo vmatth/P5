@@ -90,7 +90,7 @@ persons = []
 for i in range(0, len(LeftHip)):
     data = centerNdirection.get_xyorientation(LeftHip[i], LeftAnkle[i], RightHip[i], RightAnkle[i])
     persons.append(data)
-#print('Personés: ', persons)
+#print('Persons: ', persons)
 
 # plt.plot(persons[0][0], persons[0][1], '+')
 # plt.plot(persons[1][0], persons[1][1], 'o')
