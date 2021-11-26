@@ -6,19 +6,6 @@ Install ros melodic: http://wiki.ros.org/melodic
 
 Install spot package: https://github.com/clearpathrobotics/spot_ros
 
-Build P5 (in P5 repo)
-
-```
-catkin_make
-```
-Source P5 (in P5 repo)
-
-```
-source devel/setup.bash
-```
-(This can also be added to .bashrc)
-(Remember to restart the terminal after adding to .bashrc)
-
 Install ros dependencies and packages
 
 ```
@@ -33,9 +20,20 @@ sudo apt-get install ros-melodic-twist-mux
 sudo apt-get install ros-melodic-teleop-twist-joy
 sudo apt-get install ros-melodic-joy
 sudo apt-get install ros-melodic-interactive-marker-twist-server
+```
 
+Build P5 (in P5 repo)
 
 ```
+catkin_make
+```
+Source P5 (in P5 repo)
+
+```
+source devel/setup.bash
+```
+(This can also be added to .bashrc)
+(Remember to restart the terminal after adding to .bashrc)
 
 ## Running the nodes on spot
 
