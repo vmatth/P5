@@ -72,8 +72,11 @@ bash ./Jetson_Convenience_Script/CMake/inst_CMake.sh
 change path of opencv4:
 
 ```
+gedit Jetson_Convenience_Script/OpenPose/inst_OpenPose.sh
 OpenCV_DIR=/usr/lib/aarch64-linux-gnu/cmake/opencv4
+```
 
+```
 bash ./Jetson_Convenience_Script/OpenPose/inst_OpenPose.sh
 
 pip3 install -U scikit-learn
