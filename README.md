@@ -39,7 +39,25 @@ sudo apt-get install ros-melodic-interactive-marker-twist-server
 
 ## Running the nodes on spot
 
-Remember to connect to SPOT's wifi
+WiFi
+
+Change ip address in boot.launch to 
+```
+192.168.80.3
+```
+Ethernet
+Change ip address in boot.launch to
+```
+192.168.50.3
+```
+In ubuntu's network settings change Ipv4 settings to manual and insert your address as
+```
+192.168.50.1
+```
+Insert Netmask as
+```
+24
+```
 
 To run the ROS nodes
 
