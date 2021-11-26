@@ -35,7 +35,7 @@ source devel/setup.bash
 (This can also be added to .bashrc)
 (Remember to restart the terminal after adding to .bashrc)
 
-## Running the nodes on spot
+## Network connection
 
 WiFi
 
@@ -56,6 +56,7 @@ Insert Netmask as
 ```
 24
 ```
+## Running the nodes on spot
 
 To run the ROS nodes
 
