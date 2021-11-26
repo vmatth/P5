@@ -36,7 +36,7 @@ def convexHull(peopleCentrum, combinations):
             tempNpArrayPeople = np.array(tempArrayPeople)
  #   print('Rigtig array: ', array)
  #   print('HIT!: ', tempArrayPeople)
-            plt.plot(array[:,0], array[:,1], '+')
+#            plt.plot(array[:,0], array[:,1], '+')
         #print("temp", tempNpArrayPeople, type(tempNpArrayPeople))
         #print("array", array, type(array))
         if len(tempNpArrayPeople) > 2:
