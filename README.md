@@ -66,11 +66,15 @@ rosrun map_server map_saver -f "name"
 
 ```
 git clone https://github.com/FREEWING-JP/Jetson_Convenience_Script#openpose-v170
+```
+```
 sudo apt-get remove cmake
+```
+```
 bash ./Jetson_Convenience_Script/CMake/inst_CMake.sh
 ```
-change path of opencv4:
 
+change path of opencv4:
 ```
 gedit Jetson_Convenience_Script/OpenPose/inst_OpenPose.sh
 OpenCV_DIR=/usr/lib/aarch64-linux-gnu/cmake/opencv4
@@ -78,7 +82,8 @@ OpenCV_DIR=/usr/lib/aarch64-linux-gnu/cmake/opencv4
 
 ```
 bash ./Jetson_Convenience_Script/OpenPose/inst_OpenPose.sh
-
+```
+```
 pip3 install -U scikit-learn
 pip3 install more-itertools
 ``` 
