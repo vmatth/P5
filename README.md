@@ -28,6 +28,13 @@ sudo apt-get install ros-melodic-amcl
 sudo apt-get install ros-melodic-slam-gmapping
 sudo apt-get install ros-melodic-move-base
 sudo apt-get install ros-melodic-move-base-msgs
+
+sudo apt-get install ros-melodic-twist-mux
+sudo apt-get install ros-melodic-teleop-twist-joy
+sudo apt-get install ros-melodic-joy
+sudo apt-get install ros-melodic-interactive-marker-twist-server
+
+
 ```
 
 ## Running the nodes on spot
