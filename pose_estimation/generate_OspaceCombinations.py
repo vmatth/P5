@@ -60,6 +60,7 @@ def set_partitions(iterable, k=None):
 def oSpaceCombinations(num):
     a=[]
     num = num+1
+    #num+1 er for at vi ikke får en person 0 når vi sætter alle personerne in i for-loopet nedenfor
     for i in range(1,num):
         a.append(i)
     newCombination=[]
