@@ -84,6 +84,7 @@ OpenCV_DIR=/usr/lib/aarch64-linux-gnu/cmake/opencv4
 bash ./Jetson_Convenience_Script/OpenPose/inst_OpenPose.sh
 ```
 ```
+sudo apt-get install ros-melodic-realsense2-camera
 pip3 install -U scikit-learn
 pip3 install more-itertools
 ``` 
