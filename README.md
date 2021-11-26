@@ -85,6 +85,9 @@ bash ./Jetson_Convenience_Script/OpenPose/inst_OpenPose.sh
 ```
 ```
 sudo apt-get install ros-melodic-realsense2-camera
-pip3 install -U scikit-learn
-pip3 install more-itertools
+sudo apt install libcanberra-gtk-module libcanberra-gtk3-module
+sudo pip3 uninstall scipy
+pip install -U scikit-learn
+pip3 install numpy==1.19.4
 ``` 
+remenber numpy version 1.19.4 and scipy version 1.14??
