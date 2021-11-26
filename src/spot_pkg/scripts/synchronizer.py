@@ -22,5 +22,5 @@ if __name__ == '__main__':
 
     ts = message_filters.ApproximateTimeSynchronizer([frontleft_sub, frontright_sub], 10, 0.1)
     ts.registerCallback(callback)
-
     rospy.spin()
+
