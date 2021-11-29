@@ -130,9 +130,15 @@ include_directories(
 
 
 ## Declare a C++ library
-add_library(${PROJECT_NAME}
-  src/simple_layer.cpp
-  src/grid_layer.cpp
+add_library(
+  simple_layer src/simple_layer.cpp
+)
+add_library(
+  grid_layer src/simple_layer.cpp
+)
+
+add_library(
+  polygon_plugins src/polygon_plugins.cpp
 )
 
 ## Add cmake target dependencies of the library
