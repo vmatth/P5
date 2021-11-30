@@ -24,9 +24,12 @@ class F_formation:
 
     def checkForPeople(self, msg): #Checks if there are people in BodyPoints
         if len(msg.LeftHip) > 0 and len(msg.LeftAnkle) > 0 and len(msg.RightHip) > 0 and len(msg.RightAnkle) > 0:
-            return True
+            return (self.checkForPoint(msg.LeftHip) and self.checkForPoint(msg.LeftAnkle) and self.checkForPoint(msg.RightHip) and self.checkForPoint(msg.RightAnkle))
         else:
             return False
+
+    def checkForPoint(self, point):
+        return (abs(point.x > 0.1) and abs(point.y > 0.1))
 
     def convertPointToArray(self, point):
         return np.array([point.x, point.y])
