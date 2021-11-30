@@ -9,7 +9,8 @@ import time
 import math
 from rospy.core import rospyinfo
 from sklearn.linear_model import LinearRegression
-from numpy.core.fromnumeric import squeeze
+from numpy.core.fromnumeric import reshape, squeeze
+from scipy.spatial import ConvexHull, convex_hull_plot_2d
 
 
 
@@ -21,11 +22,14 @@ class F_formation:
         if(self.checkForPeople(msg)):
             rospy.loginfo("There are people!")
             persons = self.getCenterAndAngle(msg)
-            rospy.loginfo("persons before 3 m %s", persons)
+            #rospy.loginfo("persons before 3 m %s", persons)
             persons = self.excludeDistance(persons, 0.5)
-            rospy.loginfo("persons after 3 m %s", persons)
+            #rospy.loginfo("persons after 3 m %s", persons)
             combinations = self.oSpaceCombinations(len(persons))
             rospy.loginfo("Combinations %s", combinations)
+            persons = reshape(persons)
+            oSpaces = self.constructOSpaces(persons, combinations)
+            rospy.loginfo("ospace lines %s", oSpaces)
         else:
             rospy.loginfo("There are no people")    
 
@@ -178,6 +182,40 @@ class F_formation:
                 if len(newnew[i][j]) != 1:
                     newCombination.append(newnew[i][j])
         return newCombination
+
+    def reshape(arr):
+         return np.array([arr]).reshape(-1, 3)
+
+    #Construct o-spaces from people's centrum and o-space-combinations
+    def constructOSpaces(self, peopleCentrum, combinations):
+        array=[]
+        arr=[]
+        returnList = []
+        array=peopleCentrum
+        tempArray = []
+        tempArrayPeople = []
+        for i in range(0,len(combinations)):
+            tempArrayPeople = []
+            tempArray = []
+            for j in range(0, len(combinations[i])):
+                tempArrayPeople.append(array[(combinations[i][j])-1])
+                tempNpArrayPeople = np.array(tempArrayPeople)
+            if len(tempNpArrayPeople) > 2:
+                hull = ConvexHull(tempNpArrayPeople[:,:2])
+                for simplex in hull.simplices:
+                    arr = np.array([[tempNpArrayPeople[simplex[0], 0], tempNpArrayPeople[simplex[0], 1], tempNpArrayPeople
+                    [simplex[0]][2]],[tempNpArrayPeople[simplex[1], 0],tempNpArrayPeople[simplex[1], 1], tempNpArrayPeople[simplex[1]][2]]]).reshape(-1, 3)
+                    tempArray.append(arr)
+            elif len(tempNpArrayPeople) == 2:
+                tempArray.append(tempNpArrayPeople)               
+            if len(tempArray) < len(tempNpArrayPeople):
+                if len(tempArray) == 1: # append to return list, if it is only two persons
+                    returnList.append(tempArray)
+                else:
+                    tempArray = []
+            else:
+                returnList.append(tempArray)
+        return returnList
 
 def main():
     rospy.init_node('F_Formation', anonymous=False)
