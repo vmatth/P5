@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 # import modules
-from ros_openpose.scripts.f_FormationDetector import LeftHip
 import rospy
 from ros_openpose.msg import BodyPoints
 from geometry_msgs.msg import Point
@@ -99,7 +98,8 @@ class F_formation:
     #                print('Person center: ', persCenter)
             FinalList = [persCenter[0], persCenter[1], PersNormalAngle]
             ########################################
-        persons.append(FinalList)
+            persons.append(FinalList)
+        rospy.loginfo("Person list %s",persons)
 
 
 

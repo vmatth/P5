@@ -28,7 +28,8 @@ class PersonData:
 
 
     def checkForPoint(self, point): #Returns true if a point is over 0.1
-        return (abs(point.x > 0.1) and abs(point.y > 0.1))
+
+        return (abs(point.x) > 0.0001 and abs(point.y) > 0.0001 and abs(point.x) < 20 and abs(point.y) < 20)
 
 
     def callback(self, msg):
@@ -42,12 +43,17 @@ class PersonData:
             i = i +1
             rospy.loginfo("Person: %d", i)
             text = [person.bodyParts[8].point, person.bodyParts[11].point, person.bodyParts[10].point, person.bodyParts[13].point]
-            rospy.loginfo('%s\n' % text)
+            #rospy.loginfo('%s\n' % text)
 
             leftHipPoint = Point(x = text[1].x, y = text[1].z)
             leftAnklePoint = Point(x = text[3].x, y = text[3].z)
             rightHipPoint = Point(x = text[0].x, y = text[0].z)
             rightAnklePoint = Point(x = text[2].x, y = text[2].z)
+
+            rospy.loginfo("left Hip %s", leftHipPoint)
+            rospy.loginfo("right Hip %s", rightHipPoint)
+            rospy.loginfo("left Ankle %s", leftAnklePoint)
+            rospy.loginfo("right Ankle %s", rightAnklePoint)
 
             #Add this person if all 4 body points exist (are not very small numbers)
             if (self.checkForPoint(leftHipPoint) and self.checkForPoint(leftAnklePoint) and self.checkForPoint(rightHipPoint) and self.checkForPoint(rightAnklePoint)): #Returns true all points are over 0.1
@@ -58,7 +64,7 @@ class PersonData:
                 rightAnkle.append(rightAnklePoint)
                 rospy.loginfo("This person exists!")
             else:
-                rospy.info("This person does not have all body parts")
+                rospy.loginfo("This person does not have all body parts")
 
         bodyPoints = BodyPoints()
         bodyPoints.LeftHip = leftHip
