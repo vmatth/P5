@@ -19,10 +19,11 @@ class F_formation:
         if(self.checkForPeople(msg)):
             rospy.loginfo("There are people!")
             self.getCenterAndAngle(msg)
-            
+        else:
+            rospy.loginfo("there is no people")    
 
     def checkForPeople(self, msg): #Checks if there are people in BodyPoints
-        if len(msg.LeftHip > 0 and msg.LeftAnkle > 0 and msg.RightHip > 0 and msg.RightAnkle > 0):
+        if len(msg.LeftHip) > 0 and len(msg.LeftAnkle) > 0 and len(msg.RightHip) > 0 and len(msg.RightAnkle) > 0:
             return True
         else:
             return False
@@ -59,7 +60,7 @@ class F_formation:
             x2 = 1
             persPoint1OnLine = persmodel.coef_*x1+persmodel.intercept_
             persPoint2OnLine = persmodel.coef_*x2+persmodel.intercept_
-            persVectorOnLine = np.array([x2-x1, persPoint2OnLine-persPoint1OnLine])
+           # persVectorOnLine = np.array([x2-x1, persPoint2OnLine-persPoint1OnLine])
             #Find difference in x and y
             dx = x2 - x1
             persdy = persPoint2OnLine - persPoint1OnLine
@@ -101,7 +102,8 @@ class F_formation:
 
 
 def main():
-    rospy.init_node('F-Formation', anonymous=False)
+    rospy.init_node('F_Formation', anonymous=False)
+    F_formation()
     rospy.spin()
 
 
