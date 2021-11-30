@@ -78,8 +78,6 @@
   <!-- The export tag contains other, unspecified, tags -->
   <export>
     <costmap_2d plugin="${prefix}/costmap_plugins.xml" />
-    <spot_pkg plugin="${prefix}/costmap_plugins.xml" />
-    <spot_pkg plugin="${prefix}/polygon_plugins.xml" />
   </export>
   
 </package>
