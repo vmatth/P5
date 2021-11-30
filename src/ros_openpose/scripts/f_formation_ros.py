@@ -24,17 +24,22 @@ class F_formation:
             persons = self.getCenterAndAngle(msg)
             #rospy.loginfo("persons before 3 m %s", persons)
             persons = self.excludeDistance(persons, 0.5)
-            #rospy.loginfo("persons after 3 m %s", persons)
-            combinations = self.oSpaceCombinations(len(persons))
-            rospy.loginfo("Combinations %s", combinations)
-            persons = self.reshape(persons)
-            oSpaces = self.constructOSpaces(persons, combinations)
-            rospy.loginfo("ospace lines %s", oSpaces)
+
+            if(self.checkForArray(persons)): #Check if there are people in a combinations
+                combinations = self.oSpaceCombinations(len(persons))
+                rospy.loginfo("Combinations %s", combinations)
+                persons = self.reshape(persons)
+                oSpaces = self.constructOSpaces(persons, combinations)
+                rospy.loginfo("ospace lines %s", oSpaces)
+
         else:
             rospy.loginfo("There are no people")    
 
     def checkForPeople(self, msg): #Checks if there are people in BodyPoints
         return (len(msg.LeftHip) > 0 and len(msg.LeftAnkle) > 0 and len(msg.RightHip) > 0 and len(msg.RightAnkle) > 0)
+
+    def checkForArray(self, _array): #Checks if an array exists
+        return (len(_array) > 0)
 
     def convertPointToArray(self, point): #Converts point from x,y to an array
         return np.array([point.x, point.y])
