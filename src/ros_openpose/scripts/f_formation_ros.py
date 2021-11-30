@@ -21,8 +21,9 @@ class F_formation:
         if(self.checkForPeople(msg)):
             rospy.loginfo("There are people!")
             persons = self.getCenterAndAngle(msg)
-            persons = self.excludeDistance(self, persons, 3)
-            rospy.logdebug("persons after 3 m %s", persons)
+            rospy.loginfo("persons before 3 m %s", persons)
+            persons = self.excludeDistance(persons, 0.5)
+            rospy.loginfo("persons after 3 m %s", persons)
         else:
             rospy.loginfo("There are no people")    
 
