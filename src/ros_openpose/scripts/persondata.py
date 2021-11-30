@@ -9,22 +9,23 @@
 import rospy
 from ros_openpose.msg import Frame
 from ros_openpose.msg import BodyPoints
-from geometry_msgs import Point
+from geometry_msgs.msg import Point
 import sys
 # insert at position 1 in the path, as 0 is the path of this file.
 #import f_FormationDetector
 #import test
 #import f_FormationDetector
 import numpy as np
-
-pub = None
+#pub=None
 
 def callback(msg):
+    pub = rospy.Publisher('BodyPoints', BodyPoints, queue_size=1)
     i = 0
     leftHip = []
     leftAnkle = []
     rightHip = []
     rightAnkle = []
+
     rospy.loginfo("Person")
     # for person in msg.persons: 
     #     t = [person.bodyParts]
@@ -46,11 +47,11 @@ def callback(msg):
 
         rightAnklePoint = Point(x = text[2].x, y = text[2].z)
 
-        #leftHip.append(leftHipPoint)
-        #leftAnkle.append(leftAnklePoint)
+        leftHip.append(leftHipPoint)
+        leftAnkle.append(leftAnklePoint)
 
-        #rightHip.append(rightHipPoint)
-        #rightAnkle.append(rightAnklePoint)
+        rightHip.append(rightHipPoint)
+        rightAnkle.append(rightAnklePoint)
         
         #leftAnkletemp = np.array([text[3].x, text[3].z]) # I think it is x and z (look at picture on desktop)
         #leftAnkle.append(leftAnkletemp)
@@ -62,10 +63,10 @@ def callback(msg):
         #rightAnkle.append(rightAnkletemp)
 
     bodyPoints = BodyPoints()
-    bodyPoints.LeftHip = leftHipPoint
-    bodyPoints.RightHip = rightHipPoint
-    bodyPoints.LeftAnkle = leftAnklePoint
-    bodyPoints.RightAnkle = rightAnklePoint
+    bodyPoints.LeftHip = leftHip
+    bodyPoints.RightHip = rightHip
+    bodyPoints.LeftAnkle = leftAnkle
+    bodyPoints.RightAnkle = rightAnkle
 
     pub.publish(bodyPoints)
 
@@ -78,8 +79,8 @@ def callback(msg):
 
 
 def main():
-    pub = rospy.Publisher('BodyPoints', BodyPoints, queue_size=1)
     rospy.init_node('persondata', anonymous=False)
+   
 
     # read the parameter from ROS parameter server
     #frame_topic = rospy.get_param('~pub_topic')
