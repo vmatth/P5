@@ -27,7 +27,7 @@ class F_formation:
             #rospy.loginfo("persons after 3 m %s", persons)
             combinations = self.oSpaceCombinations(len(persons))
             rospy.loginfo("Combinations %s", combinations)
-            persons = reshape(persons)
+            persons = self.reshape(persons)
             oSpaces = self.constructOSpaces(persons, combinations)
             rospy.loginfo("ospace lines %s", oSpaces)
         else:
@@ -183,7 +183,7 @@ class F_formation:
                     newCombination.append(newnew[i][j])
         return newCombination
 
-    def reshape(arr):
+    def reshape(self, arr):
          return np.array([arr]).reshape(-1, 3)
 
     #Construct o-spaces from people's centrum and o-space-combinations
