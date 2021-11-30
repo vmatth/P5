@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 # import modules
+from ros_openpose.scripts.f_FormationDetector import LeftHip
 import rospy
 from ros_openpose.msg import BodyPoints
 from geometry_msgs.msg import Point
@@ -7,6 +8,7 @@ import numpy as np
 import sys
 import time
 import math
+from rospy.core import rospyinfo
 from sklearn.linear_model import LinearRegression
 
 
@@ -14,22 +16,20 @@ from sklearn.linear_model import LinearRegression
 class F_formation:
     def __init__(self):
         rospy.Subscriber("/BodyPoints", BodyPoints, self.callback)
+        LeftHip = []
+        LeftAnkle = []
+        RightHip = []
+        RightAnkle = []
 
     def callback(self, msg): #Callback for new BodyPoint
         if(self.checkForPeople(msg)):
             rospy.loginfo("There are people!")
             self.getCenterAndAngle(msg)
         else:
-            rospy.loginfo("there is no people")    
+            rospy.loginfo("There are no people")    
 
     def checkForPeople(self, msg): #Checks if there are people in BodyPoints
-        if len(msg.LeftHip) > 0 and len(msg.LeftAnkle) > 0 and len(msg.RightHip) > 0 and len(msg.RightAnkle) > 0:
-            return (self.checkForPoint(msg.LeftHip) and self.checkForPoint(msg.LeftAnkle) and self.checkForPoint(msg.RightHip) and self.checkForPoint(msg.RightAnkle))
-        else:
-            return False
-
-    def checkForPoint(self, point):
-        return (abs(point.x > 0.1) and abs(point.y > 0.1))
+        return (len(msg.LeftHip) > 0 and len(msg.LeftAnkle) > 0 and len(msg.RightHip) > 0 and len(msg.RightAnkle) > 0)
 
     def convertPointToArray(self, point):
         return np.array([point.x, point.y])
