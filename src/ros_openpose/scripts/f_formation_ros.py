@@ -11,7 +11,7 @@ from rospy.core import rospyinfo
 from sklearn.linear_model import LinearRegression
 from numpy.core.fromnumeric import reshape, squeeze
 from scipy.spatial import ConvexHull, convex_hull_plot_2d
-
+from collections import namedtuple  
 
 
 class F_formation:
@@ -21,19 +21,25 @@ class F_formation:
     def callback(self, msg): #Callback for new BodyPoint
         if(self.checkForPeople(msg)):
             rospy.loginfo("There are people!")
-            persons = self.getCenterAndAngle(msg)
-            #rospy.loginfo("persons before 3 m %s", persons)
-            persons = self.excludeDistance(persons, 0.5)
-
-            if(self.checkForArray(persons)): #Check if there are people in a combinations
-                combinations = self.oSpaceCombinations(len(persons))
-                rospy.loginfo("Combinations %s", combinations)
-                persons = self.reshape(persons)
-                oSpaces = self.constructOSpaces(persons, combinations)
-                rospy.loginfo("ospace lines %s", oSpaces)
-
+            self.createFFormations(msg)
         else:
-            rospy.loginfo("There are no people")    
+            rospy.loginfo("There are no people") 
+
+    def createFFormations(self, msg):
+        persons = self.getCenterAndAngle(msg)
+        #rospy.loginfo("persons before 3 m %s", persons)
+        persons = self.excludeDistance(persons, 0.5)
+
+        if(self.checkForArray(persons)): #Check if there are people in a combinations
+            combinations = self.oSpaceCombinations(len(persons))
+            rospy.loginfo("Combinations %s", combinations)
+            persons = self.reshape(persons)
+            oSpaces = self.constructOSpaces(persons, combinations)
+            rospy.loginfo("ospace lines before %s", oSpaces)
+            oSpaces = self.constructOSpacesWithDirections(oSpaces, 0.5)
+            rospy.loginfo("ospace lines new %s", oSpaces)
+        else:
+            rospy.loginfo("There are no combinations")
 
     def checkForPeople(self, msg): #Checks if there are people in BodyPoints
         return (len(msg.LeftHip) > 0 and len(msg.LeftAnkle) > 0 and len(msg.RightHip) > 0 and len(msg.RightAnkle) > 0)
@@ -221,6 +227,176 @@ class F_formation:
             else:
                 returnList.append(tempArray)
         return returnList
+
+
+    #Returns o-space with only people looking into the o-space
+    def constructOSpacesWithDirections(self, array, margin):
+        Ospacearray = []
+        hull = array
+        for i in range(0, len(hull)):
+            PointArray = []
+            tempArray = []
+            if len(hull[i]) > 1:
+                # her skal vi tjekke o-space ved personer over 2 personer
+                for j in range(0, len(hull[i])):
+                    for k in range(0, len(hull[i][j])):
+                        r=0.2
+                        x = r*math.cos(hull[i][j][k][2]) + hull[i][j][k][0]
+                        y = r*math.sin(hull[i][j][k][2]) + hull[i][j][k][1]
+                        temparr = np.array([hull[i][j][k][0], hull[i][j][k][1], x, y])
+                        tempArray.append(temparr)
+                        tempNP = np.array(tempArray)
+                new_array = [tuple(row) for row in tempNP]
+                uniques = np.unique(new_array, axis=0)
+                for j in range(0, len(uniques)):
+                    TempPointArray = np.array([uniques[j][2], uniques[j][3]])
+                    PointArray.append(TempPointArray)
+                count = 0
+                for j in range(0, len(PointArray)):
+                    if self.rayCasting(hull[i], PointArray[j]) == True:
+                        count = count + 1
+                if count == len(PointArray):
+                    Ospacearray.append(hull[i])
+        
+            elif len(hull[i]) == 1:
+                # her skal vi tjekke o-space ved 2 personer
+                # Calculate the vector between the two persons
+                x1=hull[i][0][0][0]
+                y1=hull[i][0][0][1]
+                x2=hull[i][0][1][0]
+                y2=hull[i][0][1][1]
+                vectorCommon1 = [x2-x1 , y2-y1]
+                vectorCommon2 = [x1-x2 , y1-y2]
+
+                # Calculating the direction vector of each person
+                for j in range(0, len(hull[i])):
+                    for k in range(0, len(hull[i][j])):
+                        r=0.2
+                        x = r*math.cos(hull[i][j][k][2]) + hull[i][j][k][0]
+                        y = r*math.sin(hull[i][j][k][2]) + hull[i][j][k][1]
+                        temparr = np.array([hull[i][j][k][0], hull[i][j][k][1], x, y])
+                        tempArray.append(temparr)
+                        tempNP = np.array(tempArray)
+                per1X1 = tempNP[0][0]
+                per1y1 = tempNP[0][1]
+                per1X2 = tempNP[0][2]
+                per1y2 = tempNP[0][3]
+                vectorPers1 = [per1X2 - per1X1 , per1y2 - per1y1]
+
+                per2X1 = tempNP[1][0]
+                per2y1 = tempNP[1][1]
+                per2X2 = tempNP[1][2]
+                per2y2 = tempNP[1][3]
+                vectorPers2 = [per2X2 - per2X1 , per2y2 - per2y1]
+
+                # calculationg the angle of each vector starting from the positive x-axis
+                atanvinkelCommon1 = math.atan2(vectorCommon1[1], vectorCommon1[0])
+                atanvinkelCommon2 = math.atan2(vectorCommon2[1], vectorCommon2[0])
+                atanvinkelCommon = math.atan2(vectorCommon1[1], vectorCommon1[0])
+                atanvinkelPers1 = math.atan2(vectorPers1[1], vectorPers1[0])
+                atanvinkelPers2 = math.atan2(vectorPers2[1], vectorPers2[0])
+
+                if atanvinkelPers1 > atanvinkelCommon1:
+                    vinkel1 = atanvinkelPers1 - atanvinkelCommon1
+                else:
+                    vinkel1 = atanvinkelCommon1 - atanvinkelPers1
+
+                if atanvinkelPers2 > atanvinkelCommon2:
+                    vinkel2 = atanvinkelPers2 - atanvinkelCommon2
+                else:
+                    vinkel2 = atanvinkelCommon2 - atanvinkelPers2
+                # checking if the persons is looking towards each other
+                if vinkel1 > -margin and vinkel1 < margin and vinkel2 > -margin and vinkel2 < margin: 
+                    Ospacearray.append(hull[i])
+            else:
+                print('ERROR noobs')
+        return Ospacearray
+    
+
+    def lineConstructor(self, arr):
+    #Dan linjens ligning ud fra 
+        y1 = arr[0][1]
+        y2 = arr[1][1]
+        x1 = arr[0][0]
+        x2 = arr[1][0]
+
+        deltay = y2-y1
+        deltax = x2-x1
+        if deltax == 0:
+            #print('The line is vertical')
+            x1 = x1 + 0.000001
+            deltay = y2-y1
+            deltax = x2-x1
+        a = deltay/deltax
+        b = y1-a*x1
+        return a, b
+    
+    def rayCasting(self, polyArr, point):
+        count = 0
+        Boolean = False
+        for i in range(0,len(polyArr)):
+            # check if the point is on the Line
+            a,b = self.lineConstructor(polyArr[i])
+            dist = abs(a * point[0] + b - point[1]) / (math.sqrt(a*a+1))
+            if dist < 0.000001 and dist > 0:
+                return True
+                
+            if self.rayIntersectSeg(point, polyArr[i]):
+                count = count + 1
+        if count == 0 or count > 1:
+            Boolean = False
+        elif count == 1:
+            Boolean = True
+        else :
+            Boolean = False
+            print('Something is wrong')
+
+        return Boolean
+
+
+    def rayIntersectSeg(self, point, Line):
+        Point = namedtuple('Point', 'x, y')
+        _eps = 0.00001
+        _huge = sys.float_info.max
+        _tiny = sys.float_info.min
+        intersect = False
+        
+        a = Point(Line[0][0], Line[0][1])
+        b = Point(Line[1][0], Line[1][1])
+        point = Point(point[0], point[1])
+        # b has to be on top
+        if a.y > b.y:
+            a,b = b,a
+        
+        # check if point y coordianate is equal to the lines y coordinates
+        # Change the point y coordinate if this is true
+        if point.y == a.y or point.y == b.y:
+            yy = point.y
+            point._replace(y=yy+_eps)
+            #point.y = point.y + _eps
+        
+        # Check if the point over b or below a, or if point is greater at the x-axis
+        # if true - then no intersection can occur
+        if (point.y > b.y or point.y < a.y) or (
+            point.x > max(a.x, b.x)):
+            return False
+        
+        # Check if the point is on one side or the other of the edge presented by the points a and b
+        if point.x < min(a.x, b.x):
+            intersect = True
+        else:
+            if abs(a.x - b.x) > _tiny:
+                m_red = (b.y - a.y) / float(b.x - a.x)
+            else:
+                m_red = _huge
+            if abs(a.x - point.x) > _tiny:
+                m_blue = (point.y - a.y) / float(point.x - a.x)
+            else:
+                m_blue = _huge
+            intersect = m_blue >= m_red
+        return intersect
+
+
 
 def main():
     rospy.init_node('F_Formation', anonymous=False)
