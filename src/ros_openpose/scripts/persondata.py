@@ -10,7 +10,7 @@ import rospy
 from ros_openpose.msg import Frame
 import sys
 # insert at position 1 in the path, as 0 is the path of this file.
-#import f_FormationDetector
+import f_FormationDetector
 #import test
 #import f_FormationDetector
 import numpy as np
@@ -48,7 +48,7 @@ def callback(msg):
     rospy.loginfo(leftAnkle)
     rospy.loginfo(rightHip)
     rospy.loginfo(rightAnkle)
-    #rospy.logdebug(f_FormationDetector.formationDetector(leftHip, leftAnkle, rightHip, rightAnkle))
+    rospy.logdebug(f_FormationDetector.formationDetector(leftHip, leftAnkle, rightHip, rightAnkle))
 
 
 def main():
