@@ -24,6 +24,8 @@ class F_formation:
             rospy.loginfo("persons before 3 m %s", persons)
             persons = self.excludeDistance(persons, 0.5)
             rospy.loginfo("persons after 3 m %s", persons)
+            combinations = self.oSpaceCombinations(len(persons))
+            rospy.loginfo("Combinations %s", combinations)
         else:
             rospy.loginfo("There are no people")    
 
@@ -33,6 +35,7 @@ class F_formation:
     def convertPointToArray(self, point): #Converts point from x,y to an array
         return np.array([point.x, point.y])
 
+    #Returns Center point and angle for people
     def getCenterAndAngle(self, msg):
         persons = []
         for i in range(0, len(msg.LeftHip)): #Loop number of people
@@ -126,7 +129,55 @@ class F_formation:
         while 999 in peopleArray: #wtf is this
             peopleArray.remove(999)
         return peopleArray
+    
+    #Calculates partitions between people
+    def set_partitions(self, iterable, k=None):
+        L = list(iterable)
+        n = len(L)
+        if k is not None:
+            if k < 1:
+                raise ValueError(
+                    "Can't partition in a negative or zero number of groups"
+                )
+            elif k > n:
+                return
 
+        def set_partitions_helper(L, k):
+            n = len(L)
+            if k == 1:
+                yield [L]
+            elif n == k:
+                yield [[s] for s in L]
+            else:
+                e, *M = L
+                for p in set_partitions_helper(M, k - 1):
+                    yield [[e], *p]
+                for p in set_partitions_helper(M, k):
+                    for i in range(len(p)):
+                        yield p[:i] + [[e] + p[i]] + p[i + 1 :]
+        if k is None:
+            for k in range(1, n + 1):
+                yield from set_partitions_helper(L, k)
+        else:
+            yield from set_partitions_helper(L, k)
+
+    #Returns possible numbers of oSpaceCombinations from number of people
+    def oSpaceCombinations(self, num):
+        a=[]
+        num = num+1
+        for i in range(1,num):
+            a.append(i)
+        newCombination=[]
+        newnew = []
+        for k in 1, 2:
+            for groups in list(self.set_partitions(a,k)):
+                newnew.append(groups)
+        newCombination.append(newnew[0][0])
+        for i in range(1, len(newnew)):
+            for j in range(0,2):
+                if len(newnew[i][j]) != 1:
+                    newCombination.append(newnew[i][j])
+        return newCombination
 
 def main():
     rospy.init_node('F_Formation', anonymous=False)
