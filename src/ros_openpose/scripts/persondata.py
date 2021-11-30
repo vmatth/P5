@@ -18,75 +18,67 @@ import sys
 import numpy as np
 #pub=None
 
-def callback(msg):
-    pub = rospy.Publisher('BodyPoints', BodyPoints, queue_size=1)
-    i = 0
-    leftHip = []
-    leftAnkle = []
-    rightHip = []
-    rightAnkle = []
+class PersonData:
 
-    rospy.loginfo("Person")
-    # for person in msg.persons: 
-    #     t = [person.bodyParts]
-    # rospy.loginfo('%s\n' % t)
-    #text = [bodyPart.point for person in msg.persons for bodyPart in person.bodyParts]
-    for person in msg.persons:
-        i = i +1
-        #for bodyPart in person.bodyParts:
-        rospy.loginfo("nosejob, person: %d" ,i)
-        text = [person.bodyParts[8].point, person.bodyParts[11].point, person.bodyParts[10].point, person.bodyParts[13].point]
-        rospy.loginfo('%s\n' % text)
-        #leftHiptemp = np.array([text[1].x, text[1].z]) # I think it is x and z (look at picture on desktop)
+    def __init__(self):
+        self.pub = rospy.Publisher('BodyPoints', BodyPoints, queue_size=1)
+        rospy.Subscriber("/frame", Frame, self.callback)
 
-        leftHipPoint = Point(x = text[1].x, y = text[1].z)
+    def callback(self, msg):
+        i = 0
+        leftHip = []
+        leftAnkle = []
+        rightHip = []
+        rightAnkle = []
 
-        leftAnklePoint = Point(x = text[3].x, y = text[3].z)
+        rospy.loginfo("Person")
+        # for person in msg.persons: 
+        #     t = [person.bodyParts]
+        # rospy.loginfo('%s\n' % t)
+        #text = [bodyPart.point for person in msg.persons for bodyPart in person.bodyParts]
+        for person in msg.persons:
+            i = i +1
+            #for bodyPart in person.bodyParts:
+            rospy.loginfo("nosejob, person: %d" ,i)
+            text = [person.bodyParts[8].point, person.bodyParts[11].point, person.bodyParts[10].point, person.bodyParts[13].point]
+            rospy.loginfo('%s\n' % text)
+            #leftHiptemp = np.array([text[1].x, text[1].z]) # I think it is x and z (look at picture on desktop)
 
-        rightHipPoint = Point(x = text[0].x, y = text[0].z)
+            leftHipPoint = Point(x = text[1].x, y = text[1].z)
 
-        rightAnklePoint = Point(x = text[2].x, y = text[2].z)
+            leftAnklePoint = Point(x = text[3].x, y = text[3].z)
 
-        leftHip.append(leftHipPoint)
-        leftAnkle.append(leftAnklePoint)
+            rightHipPoint = Point(x = text[0].x, y = text[0].z)
 
-        rightHip.append(rightHipPoint)
-        rightAnkle.append(rightAnklePoint)
-        
-        #leftAnkletemp = np.array([text[3].x, text[3].z]) # I think it is x and z (look at picture on desktop)
-        #leftAnkle.append(leftAnkletemp)
+            rightAnklePoint = Point(x = text[2].x, y = text[2].z)
 
-        #rightHiptemp = np.array([text[0].x, text[0].z]) # I think it is x and z (look at picture on desktop)
-        #rightHip.append(rightHiptemp)
+            leftHip.append(leftHipPoint)
+            leftAnkle.append(leftAnklePoint)
 
-        #rightAnkletemp = np.array([text[2].x, text[2].z]) # I think it is x and z (look at picture on desktop)
-        #rightAnkle.append(rightAnkletemp)
+            rightHip.append(rightHipPoint)
+            rightAnkle.append(rightAnklePoint)
+            
+            #leftAnkletemp = np.array([text[3].x, text[3].z]) # I think it is x and z (look at picture on desktop)
+            #leftAnkle.append(leftAnkletemp)
 
-    bodyPoints = BodyPoints()
-    bodyPoints.LeftHip = leftHip
-    bodyPoints.RightHip = rightHip
-    bodyPoints.LeftAnkle = leftAnkle
-    bodyPoints.RightAnkle = rightAnkle
+            #rightHiptemp = np.array([text[0].x, text[0].z]) # I think it is x and z (look at picture on desktop)
+            #rightHip.append(rightHiptemp)
 
-    pub.publish(bodyPoints)
+            #rightAnkletemp = np.array([text[2].x, text[2].z]) # I think it is x and z (look at picture on desktop)
+            #rightAnkle.append(rightAnkletemp)
 
-    
-    #rospy.loginfo(leftHip)
-    #rospy.loginfo(leftAnkle)
-    #rospy.loginfo(rightHip)
-    #rospy.loginfo(rightAnkle)
-    #rospy.logdebug(f_FormationDetector.formationDetector(leftHip, leftAnkle, rightHip, rightAnkle))
+        bodyPoints = BodyPoints()
+        bodyPoints.LeftHip = leftHip
+        bodyPoints.RightHip = rightHip
+        bodyPoints.LeftAnkle = leftAnkle
+        bodyPoints.RightAnkle = rightAnkle
+
+        self.pub.publish(bodyPoints)
 
 
 def main():
     rospy.init_node('persondata', anonymous=False)
-   
-
-    # read the parameter from ROS parameter server
-    #frame_topic = rospy.get_param('~pub_topic')
-
-    rospy.Subscriber("/frame", Frame, callback)
-
+    PersonData()
     rospy.spin()
 
 
