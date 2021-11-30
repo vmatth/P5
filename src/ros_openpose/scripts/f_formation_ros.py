@@ -33,11 +33,13 @@ class F_formation:
         if(self.checkForArray(persons)): #Check if there are people in a combinations
             combinations = self.oSpaceCombinations(len(persons))
             rospy.loginfo("Combinations %s", combinations)
-            persons = self.reshape(persons)
-            oSpaces = self.constructOSpaces(persons, combinations)
+            personsArray = self.reshape(persons) #List to Array
+            oSpaces = self.constructOSpaces(personsArray, combinations)
             rospy.loginfo("ospace lines before %s", oSpaces)
             oSpaces = self.constructOSpacesWithDirections(oSpaces, 0.5)
             rospy.loginfo("ospace lines new %s", oSpaces)
+            oSpaces = self.removeUnvalidOspaces(oSpaces, personsArray)
+            rospy.loginfo("Final OSpace! %s", oSpaces)
         else:
             rospy.loginfo("There are no combinations")
 
@@ -194,7 +196,7 @@ class F_formation:
                     newCombination.append(newnew[i][j])
         return newCombination
 
-    def reshape(self, arr):
+    def reshape(self, arr): #List to Array
          return np.array([arr]).reshape(-1, 3)
 
     #Construct o-spaces from people's centrum and o-space-combinations
@@ -396,7 +398,37 @@ class F_formation:
             intersect = m_blue >= m_red
         return intersect
 
+    def removeUnvalidOspaces(self, oSpace, persons):
+        listarray = []
+        for i in range(0,len(oSpace)):
+            tempPeopleList = []
+            tempLineList = []
+            tempListMerged = []
+            for k in range(len(persons)):
+                temparray = np.array([persons[k][0], persons[k][1], persons[k][2]])
+                tempPeopleList.append(temparray)
+            for h in range(len(oSpace[i])):
+                for g in range(len(oSpace[i][h])):
+                    tempLineList.append(oSpace[i][h][g]) 
+            tempPeopleArray = np.array(tempPeopleList)
+            tempLineArray = np.array(tempLineList)
+            new_array_People = [tuple(row) for row in tempPeopleArray]
+            new_array_Line = [tuple(row) for row in tempLineArray]
+            uniques = np.unique(new_array_Line, axis=0)
+            new_array_uniques = [tuple(row) for row in uniques]
 
+            for t in range(len(new_array_uniques)):
+                new_array_People.remove(new_array_uniques[t])
+            count = 0
+            check = False
+            for j in range(0, len(new_array_People)):
+                if len(oSpace[i]) > 1:
+                    check = self.ray_casting.Ray_casting(oSpace[i], [new_array_People[j][0], new_array_People[j][1]])
+                    if check == True:
+                        count = count +1
+            if count == 0:
+                listarray.append(oSpace[i])    
+        return listarray
 
 def main():
     rospy.init_node('F_Formation', anonymous=False)
