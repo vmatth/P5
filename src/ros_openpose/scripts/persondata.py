@@ -53,6 +53,7 @@ def callback(msg):
 
 def main():
     rospy.init_node('persondata', anonymous=False)
+    
 
     # read the parameter from ROS parameter server
     #frame_topic = rospy.get_param('~pub_topic')

@@ -45,6 +45,7 @@ add_message_files(
   BodyPart.msg
   Person.msg
   Frame.msg
+  BodyPoints.msg
 )
 
 generate_messages(
