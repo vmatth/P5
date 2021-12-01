@@ -44,6 +44,7 @@ Change ip address in boot.launch to
 192.168.80.3
 ```
 Ethernet
+
 Change ip address in boot.launch to
 ```
 192.168.50.3
