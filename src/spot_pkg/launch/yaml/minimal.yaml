@@ -1,2 +1,0 @@
-plugins: 
-    - {name: simple_layer, type: "simple_layer_namespace::costmap_2d::Layer"}
