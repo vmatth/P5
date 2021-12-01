@@ -37,13 +37,13 @@ source devel/setup.bash
 
 ## Network connection
 
-WiFi
+### WiFi
 
 Change ip address in boot.launch to 
 ```
 192.168.80.3
 ```
-Ethernet
+### Ethernet
 
 Change ip address in boot.launch to
 ```
