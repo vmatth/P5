@@ -1,5 +1,10 @@
 #include <spot_pkg/simple_layer.h>
 #include <pluginlib/class_list_macros.h>
+#include <geometry_msgs/Point.h>
+#include<vector>
+
+using namespace std;
+
 
 PLUGINLIB_EXPORT_CLASS(simple_layer_namespace::SimpleLayer, costmap_2d::Layer)
 
@@ -10,15 +15,38 @@ namespace simple_layer_namespace
 
 SimpleLayer::SimpleLayer() {}
 
+vector<geometry_msgs::Point> costmapPoints;
+
+void SimpleLayer::formationCallback(const spot_pkg::formationPoints::ConstPtr& msg){
+  ROS_INFO("Receiving points from formation callback");
+  ROS_INFO("Amount of points: %d", msg->points.size());
+
+  //Loop all f-formation points
+  for(int i = 0; i < msg->points.size(); i++){
+
+    geometry_msgs::Point newPoint = geometry_msgs::Point();
+    newPoint.x = msg->points[i].x;
+    newPoint.y = msg->points[i].y;
+
+    costmapPoints.push_back(newPoint);
+  }
+
+
+
+}
+
 void SimpleLayer::onInitialize()
 {
   ros::NodeHandle nh("~/" + name_);
   current_ = true;
+  ros::Subscriber sub = nh.subscribe("chatter", 1000, &SimpleLayer::formationCallback, this);
 
   dsrv_ = new dynamic_reconfigure::Server<costmap_2d::GenericPluginConfig>(nh);
   dynamic_reconfigure::Server<costmap_2d::GenericPluginConfig>::CallbackType cb = boost::bind(
       &SimpleLayer::reconfigureCB, this, _1, _2);
   dsrv_->setCallback(cb);
+
+  ros::spin();
 }
 
 
@@ -33,8 +61,8 @@ void SimpleLayer::updateBounds(double robot_x, double robot_y, double robot_yaw,
   if (!enabled_)
     return;
 
-  mark_x_ = robot_x + cos(robot_yaw);
-  mark_y_ = robot_y + sin(robot_yaw);
+  mark_x_ = robot_x + 2 *cos(robot_yaw);
+  mark_y_ = robot_y + 2* sin(robot_yaw);
 
   *min_x = std::min(*min_x, mark_x_);
   *min_y = std::min(*min_y, mark_y_);
@@ -47,11 +75,18 @@ void SimpleLayer::updateCosts(costmap_2d::Costmap2D& master_grid, int min_i, int
 {
   if (!enabled_)
     return;
+
   unsigned int mx;
   unsigned int my;
-  if(master_grid.worldToMap(mark_x_, mark_y_, mx, my)){
-    master_grid.setCost(mx, my, LETHAL_OBSTACLE);
+
+  for(int i = 0; i < costmapPoints.size(); i++){
+    if(master_grid.worldToMap(costmapPoints[i].x, costmapPoints[i].y, mx, my)){
+      master_grid.setCost(mx, my, LETHAL_OBSTACLE);
+    }
   }
+
+
 }
+
 
 } // end namespace

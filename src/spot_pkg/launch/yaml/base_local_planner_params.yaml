@@ -1,4 +1,4 @@
-TrajectoryPlannerROS:
+TrajectoryPlannerROS: #http://www.ros.org/wiki/base_local_planner
   max_vel_x: 0.5 #The maximum forward velocity allowed for the base in meters/sec 
   min_vel_x: 0.2 #The minimum forward velocity allowed for the base in meters/sec. It is useful to specify this to guarantee that velocity commands sent to a mobile base are high enough to allow the base to overcome friction. 
   max_vel_theta: 1.0 #The maximum rotational velocity allowed for the base in radians/sec 
