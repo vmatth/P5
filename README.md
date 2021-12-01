@@ -57,9 +57,9 @@ Insert Netmask as
 ```
 24
 ```
-## Running the nodes on spot
+## Launching the nodes on SPOT
 
-To run the ROS nodes
+Launch the nodes to boot SPOT
 
 ```
 roslaunch spot_pkg boot.launch
@@ -72,7 +72,10 @@ To open SPOT in rviz
 ```
 roslaunch spot_pkg rviz.launch
 ```
+
 ## Gmapping
+
+To map your environment run gmapping
 
 ```
 rosrun gmapping slam_gmapping 
