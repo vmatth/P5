@@ -1,4 +1,4 @@
-#include <simple_layer.h>
+#include <spot_pkg/simple_layer.h>
 #include <pluginlib/class_list_macros.h>
 
 PLUGINLIB_EXPORT_CLASS(simple_layer_namespace::SimpleLayer, costmap_2d::Layer)

@@ -18,6 +18,8 @@ find_package(catkin REQUIRED COMPONENTS
   actionlib_msgs
   tf
   sensor_msgs
+  costmap_2d
+  dynamic_reconfigure
 )
 
 ## System dependencies are found with CMake's conventions
@@ -130,16 +132,10 @@ include_directories(
 
 
 ## Declare a C++ library
-add_library(
-  simple_layer src/simple_layer.cpp
-)
-add_library(
-  grid_layer src/simple_layer.cpp
+add_library(${PROJECT_NAME}
+  src/simple_layer.cpp
 )
 
-add_library(
-  polygon_plugins src/polygon_plugins.cpp
-)
 
 ## Add cmake target dependencies of the library
 ## as an example, code may need to be generated before libraries
