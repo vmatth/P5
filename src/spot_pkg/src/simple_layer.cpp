@@ -2,9 +2,6 @@
 #include <pluginlib/class_list_macros.h>
 #include <geometry_msgs/Point.h>
 #include<vector>
-#include <boost/bind.hpp>
-#include <boost/shared_ptr.hpp>
-#include <boost/function.hpp>
 
 
 using namespace std;
@@ -15,7 +12,7 @@ using costmap_2d::LETHAL_OBSTACLE;
 
 namespace simple_layer_namespace
 {
-  
+
 SimpleLayer::SimpleLayer() {}
 
 vector<geometry_msgs::Point> costmapPoints;
@@ -27,9 +24,9 @@ void SimpleLayer::formationCallback(const spot_pkg::formationPoints::ConstPtr& m
   //Loop all f-formation points
   for(int i = 0; i < size; i++){
 
-     geometry_msgs::Point newPoint = geometry_msgs::Point();
+    geometry_msgs::Point newPoint = geometry_msgs::Point();
     newPoint.x = msg->points[i].x;
-     newPoint.y = msg->points[i].y;
+    newPoint.y = msg->points[i].y;
 
     costmapPoints.push_back(newPoint);
   }
@@ -39,22 +36,11 @@ void SimpleLayer::onInitialize()
 {
   ros::NodeHandle nh("~/" + name_);
   current_ = true;
- // ros::Subscriber sub = nh.subscribe("/formations", 1000, &SimpleLayer::formationCallback, this);
+  ros::Subscriber sub = nh.subscribe("/formations", 1000, &SimpleLayer::formationCallback, this);
 
-  dsrv_ = new dynamic_reconfigure::Server<costmap_2d::GenericPluginConfig>(nh);
-  dynamic_reconfigure::Server<costmap_2d::GenericPluginConfig>::CallbackType cb = boost::bind(
-      &SimpleLayer::reconfigureCB, this, _1, _2);
-  dsrv_->setCallback(cb);
-
-
-
+  ros::spin();
 }
 
-
-void SimpleLayer::reconfigureCB(costmap_2d::GenericPluginConfig &config, uint32_t level)
-{
-  enabled_ = config.enabled;
-}
 
 void SimpleLayer::updateBounds(double robot_x, double robot_y, double robot_yaw, double* min_x,
                                            double* min_y, double* max_x, double* max_y)
