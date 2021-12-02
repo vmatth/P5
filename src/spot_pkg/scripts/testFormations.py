@@ -14,7 +14,7 @@ if __name__ == '__main__':
 
         formation = formationPoints()
 
-        for i in range(0, 10, 1):
+        for i in range(0, 100, 1):
             p = Point()
             p.x = i
             p.y = i
