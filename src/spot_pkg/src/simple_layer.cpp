@@ -24,7 +24,7 @@ SimpleLayer::SimpleLayer() {
 
 vector<geometry_msgs::Point> costmapPoints;
 
-void SimpleLayer::formationCallback(const boost::shared_ptr<spot_pkg::formationPoints const>, simple_layer_namespace::SimpleLayer &msg){
+void SimpleLayer::formationCallback(const boost::shared_ptr<spot_pkg::formationPoints const>,  &msg){
   ROS_INFO("boi");
 }
 // void SimpleLayer::formationCallback(const spot_pkg::formationPoints::ConstPtr& msg){
