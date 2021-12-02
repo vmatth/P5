@@ -2,6 +2,10 @@
 #include <pluginlib/class_list_macros.h>
 #include <geometry_msgs/Point.h>
 #include<vector>
+#include <boost/bind.hpp>
+#include <boost/shared_ptr.hpp>
+#include <boost/function.hpp>
+
 
 using namespace std;
 
@@ -23,9 +27,9 @@ void SimpleLayer::formationCallback(const spot_pkg::formationPoints::ConstPtr& m
   //Loop all f-formation points
   for(int i = 0; i < size; i++){
 
-    geometry_msgs::Point newPoint = geometry_msgs::Point();
+     geometry_msgs::Point newPoint = geometry_msgs::Point();
     newPoint.x = msg->points[i].x;
-    newPoint.y = msg->points[i].y;
+     newPoint.y = msg->points[i].y;
 
     costmapPoints.push_back(newPoint);
   }
@@ -35,7 +39,7 @@ void SimpleLayer::onInitialize()
 {
   ros::NodeHandle nh("~/" + name_);
   current_ = true;
-  ros::Subscriber sub = nh.subscribe("/formations", 1000, &SimpleLayer::formationCallback, this);
+ // ros::Subscriber sub = nh.subscribe("/formations", 1000, &SimpleLayer::formationCallback, this);
 
   dsrv_ = new dynamic_reconfigure::Server<costmap_2d::GenericPluginConfig>(nh);
   dynamic_reconfigure::Server<costmap_2d::GenericPluginConfig>::CallbackType cb = boost::bind(
