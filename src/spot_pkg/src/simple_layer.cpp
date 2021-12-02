@@ -19,10 +19,11 @@ vector<geometry_msgs::Point> costmapPoints;
 
 void SimpleLayer::formationCallback(const spot_pkg::formationPoints::ConstPtr& msg){
   ROS_INFO("Receiving points from formation callback");
-  ROS_INFO("Amount of points: %d", msg->points.size());
+  int size = msg->points.size();
+  ROS_INFO("Amount of points: %i", size);
 
   //Loop all f-formation points
-  for(int i = 0; i < msg->points.size(); i++){
+  for(int i = 0; i < size; i++){
 
     geometry_msgs::Point newPoint = geometry_msgs::Point();
     newPoint.x = msg->points[i].x;
@@ -39,7 +40,7 @@ void SimpleLayer::onInitialize()
 {
   ros::NodeHandle nh("~/" + name_);
   current_ = true;
-  ros::Subscriber sub = nh.subscribe("chatter", 1000, &SimpleLayer::formationCallback, this);
+  ros::Subscriber sub = nh.subscribe("/formations", 1000, &SimpleLayer::formationCallback, this);
 
   dsrv_ = new dynamic_reconfigure::Server<costmap_2d::GenericPluginConfig>(nh);
   dynamic_reconfigure::Server<costmap_2d::GenericPluginConfig>::CallbackType cb = boost::bind(
