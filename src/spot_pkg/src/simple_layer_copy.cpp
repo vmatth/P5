@@ -1,4 +1,4 @@
-#include <spot_pkg/simple_layer.h>
+#include <simple_layer.h>
 #include <pluginlib/class_list_macros.h>
 #include <geometry_msgs/Point.h>
 #include<vector>
@@ -17,10 +17,9 @@ SimpleLayer::SimpleLayer() {}
 vector<geometry_msgs::Point> costmapPoints;
 
 void SimpleLayer::formationCallback(const spot_pkg::formationPoints::ConstPtr& msg){
-  ROS_INFO("Receiving points from formation callback");
-  int size = msg->points.size();
-  ROS_INFO("Amount of points: %i", size);
-  //Loop all f-formation points
+  ROS_INFO("Receiving points from callback");
+    int size = msg->points.size();
+  //Loop all points
   for(int i = 0; i < size; i++){
 
     geometry_msgs::Point newPoint = geometry_msgs::Point();
@@ -35,36 +34,10 @@ void SimpleLayer::onInitialize()
 {
   ros::NodeHandle nh("~/" + name_);
   current_ = true;
+
   ros::Subscriber sub = nh.subscribe("/formations", 1000, &SimpleLayer::formationCallback, this);
 
-  dsrv_ = new dynamic_reconfigure::Server<costmap_2d::GenericPluginConfig>(nh);
-  dynamic_reconfigure::Server<costmap_2d::GenericPluginConfig>::CallbackType cb = boost::bind(
-      &SimpleLayer::reconfigureCB, this, _1, _2);
-  dsrv_->setCallback(cb);
-
-
-
-}
-
-
-void SimpleLayer::reconfigureCB(costmap_2d::GenericPluginConfig &config, uint32_t level)
-{
-  enabled_ = config.enabled;
-}
-
-void SimpleLayer::updateBounds(double robot_x, double robot_y, double robot_yaw, double* min_x,
-                                           double* min_y, double* max_x, double* max_y)
-{
-  if (!enabled_)
-    return;
-
-  mark_x_ = robot_x + 2 *cos(robot_yaw);
-  mark_y_ = robot_y + 2* sin(robot_yaw);
-
-  *min_x = std::min(*min_x, mark_x_);
-  *min_y = std::min(*min_y, mark_y_);
-  *max_x = std::max(*max_x, mark_x_);
-  *max_y = std::max(*max_y, mark_y_);
+  ros::spin();
 }
 
 void SimpleLayer::updateCosts(costmap_2d::Costmap2D& master_grid, int min_i, int min_j, int max_i,
@@ -76,6 +49,7 @@ void SimpleLayer::updateCosts(costmap_2d::Costmap2D& master_grid, int min_i, int
   unsigned int mx;
   unsigned int my;
 
+  //Add points to
   for(int i = 0; i < costmapPoints.size(); i++){
     if(master_grid.worldToMap(costmapPoints[i].x, costmapPoints[i].y, mx, my)){
       master_grid.setCost(mx, my, LETHAL_OBSTACLE);
