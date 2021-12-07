@@ -9,7 +9,7 @@ if __name__ == '__main__':
 
     pub = rospy.Publisher('/formations', formationPoints, queue_size=10)
 
-    rate = rospy.Rate(10) # 10hz
+    rate = rospy.Rate(0.5) # 10hz
     while not rospy.is_shutdown():
 
         formation = formationPoints()

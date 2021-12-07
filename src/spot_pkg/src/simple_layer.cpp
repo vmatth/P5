@@ -73,8 +73,6 @@ void SimpleLayer::updateBounds(double robot_x, double robot_y, double robot_yaw,
   if (!enabled_)
     return;
 
-  ROS_INFO("Updating bounds");
-
   mark_x_ = robot_x;
   mark_y_ = robot_y;
 
@@ -90,18 +88,25 @@ void SimpleLayer::updateBounds(double robot_x, double robot_y, double robot_yaw,
 }
 
 void SimpleLayer::removeCostmapPointsAfterSomeTime(){
-  for(int i = 0; i < timeToRemove.size(); i++){
-    //If time has passed - points will be removed
-    if(ros::Time::now().toSec() >= timeToRemove[i]){
-      ROS_INFO("Removing points. Time now: %f", ros::Time::now().toSec());  
-      //Remove specific AMOUNT of points from costmapPoints
-      costmapPoints.erase(costmapPoints.begin(), costmapPoints.begin() + pointsToRemove[i]);
-      ROS_INFO("Removing number of points: %d", pointsToRemove[i]);
-      //Remove time and number
-     // timeToRemove.erase(i);
-      //pointsToRemove.erase(i);
+    int i = 0;
+    while(i < timeToRemove.size()){
+        ROS_INFO("Index: %i", i);
+        //If time has passed - points will be removed
+        if(ros::Time::now().toSec() >= timeToRemove[i]){
+            ROS_INFO("Removing points index[%d] Time now: %f", i, ros::Time::now().toSec());  
+            //Remove specific AMOUNT of points from costmapPoints
+            costmapPoints.erase(costmapPoints.begin(), costmapPoints.begin() + pointsToRemove[i]);
+            ROS_INFO("Removing number of points: %d", pointsToRemove[i]);
+            //Remove time and number
+            timeToRemove.erase(timeToRemove.begin());
+            pointsToRemove.erase(pointsToRemove.begin());
+        }
+        else
+            i++;
     }
-  }
+    ROS_INFO("END");
+    int size = costmapPoints.size();
+    ROS_INFO("costmap size %i", size);
 }
 
 void SimpleLayer::updateCosts(costmap_2d::Costmap2D& master_grid, int min_i, int min_j, int max_i,
@@ -109,8 +114,6 @@ void SimpleLayer::updateCosts(costmap_2d::Costmap2D& master_grid, int min_i, int
 {
   if (!enabled_)
     return;
-
-  ROS_INFO("Updating costs");
 
  //removeCostmapPointsAfterSomeTime();
 
