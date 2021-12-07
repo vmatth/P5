@@ -27,7 +27,9 @@ private:
 
   double mark_x_, mark_y_;
   dynamic_reconfigure::Server<costmap_2d::GenericPluginConfig> *dsrv_;
+  ros::NodeHandle nh;
   ros::Subscriber sub;
+  double xRobot, yRobot;
 };
 }
 #endif

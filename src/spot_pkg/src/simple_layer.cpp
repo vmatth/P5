@@ -22,6 +22,7 @@ void SimpleLayer::formationCallback(const spot_pkg::formationPoints::ConstPtr& m
   int size = msg->points.size();
   ROS_INFO("Amount of points: %i", size);
   //Loop all f-formation points
+  costmapPoints.clear();
   for(int i = 0; i < size; i++){
 
     geometry_msgs::Point newPoint = geometry_msgs::Point();
@@ -34,10 +35,8 @@ void SimpleLayer::formationCallback(const spot_pkg::formationPoints::ConstPtr& m
 
 void SimpleLayer::onInitialize()
 {
-  ros::NodeHandle nh("~/" + name_);
   current_ = true;
   sub = nh.subscribe("/formations", 1000, &SimpleLayer::formationCallback, this);
-
 
   dsrv_ = new dynamic_reconfigure::Server<costmap_2d::GenericPluginConfig>(nh);
   dynamic_reconfigure::Server<costmap_2d::GenericPluginConfig>::CallbackType cb = boost::bind(
@@ -62,6 +61,10 @@ void SimpleLayer::updateBounds(double robot_x, double robot_y, double robot_yaw,
   mark_x_ = robot_x + 2 *cos(robot_yaw);
   mark_y_ = robot_y + 2* sin(robot_yaw);
 
+  xRobot = robot_x;
+  yRobot = robot_y;
+
+
   *min_x = std::min(*min_x, mark_x_);
   *min_y = std::min(*min_y, mark_y_);
   *max_x = std::max(*max_x, mark_x_);
@@ -79,10 +82,17 @@ void SimpleLayer::updateCosts(costmap_2d::Costmap2D& master_grid, int min_i, int
   unsigned int mx;
   unsigned int my;
 
+  // for(int i = 0; i < 10; i++){
+  //   if(master_grid.worldToMap(mark_x_ * i, mark_y_ * i, mx, my)){
+  //     master_grid.setCost(mx, my, LETHAL_OBSTACLE);
+  //     ROS_INFO("mx : %d, my: %d", mx, my);
+  //   }
+  // }
 
   for(int i = 0; i < costmapPoints.size(); i++){
-    if(master_grid.worldToMap(costmapPoints[i].x, costmapPoints[i].y, mx, my)){
+    if(master_grid.worldToMap(xRobot + costmapPoints[i].x, yRobot + costmapPoints[i].y, mx, my)){
       master_grid.setCost(mx, my, LETHAL_OBSTACLE);
+      ROS_INFO("mx : %d, my: %d", mx, my);
     }
   }
 }
