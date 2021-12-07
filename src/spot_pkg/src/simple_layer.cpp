@@ -22,7 +22,7 @@ void SimpleLayer::formationCallback(const spot_pkg::formationPoints::ConstPtr& m
   int size = msg->points.size();
   ROS_INFO("Amount of points: %i", size);
   //Loop all f-formation points
-  costmapPoints.clear();
+  //costmapPoints.clear();
   for(int i = 0; i < size; i++){
 
     geometry_msgs::Point newPoint = geometry_msgs::Point();
@@ -58,11 +58,12 @@ void SimpleLayer::updateBounds(double robot_x, double robot_y, double robot_yaw,
 
   ROS_INFO("Updating bounds");
 
-  mark_x_ = robot_x + 2 *cos(robot_yaw);
-  mark_y_ = robot_y + 2* sin(robot_yaw);
+  mark_x_ = robot_x;
+  mark_y_ = robot_y;
 
   xRobot = robot_x;
   yRobot = robot_y;
+  yawRobot = robot_yaw;
 
 
   *min_x = std::min(*min_x, mark_x_);
@@ -90,9 +91,19 @@ void SimpleLayer::updateCosts(costmap_2d::Costmap2D& master_grid, int min_i, int
   // }
 
   for(int i = 0; i < costmapPoints.size(); i++){
-    if(master_grid.worldToMap(xRobot + costmapPoints[i].x, yRobot + costmapPoints[i].y, mx, my)){
+
+    //Caluclate the formation point relative to the robot's rotation
+    double xPoint = costmapPoints[i].x * cos(yawRobot) - costmapPoints[i].y * sin(yawRobot);
+    double yPoint = costmapPoints[i].x * sin(yawRobot) + costmapPoints[i].y * cos(yawRobot);
+
+    //Calculate the formation point relative to the robot's position
+
+    xPoint += xRobot;
+    yPoint += yRobot;
+
+    if(master_grid.worldToMap(xPoint, yPoint, mx, my)){
       master_grid.setCost(mx, my, LETHAL_OBSTACLE);
-      ROS_INFO("mx : %d, my: %d", mx, my);
+      ROS_INFO("RobotPoint: (%f, %f), formationPoint: (%f, %f), yaw: %f, FinalPoint: (%f, %f)", xRobot, yRobot, costmapPoints[i].x, costmapPoints[i].y, yawRobot, xPoint, yPoint);
     }
   }
 }

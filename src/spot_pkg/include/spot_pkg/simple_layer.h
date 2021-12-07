@@ -29,7 +29,7 @@ private:
   dynamic_reconfigure::Server<costmap_2d::GenericPluginConfig> *dsrv_;
   ros::NodeHandle nh;
   ros::Subscriber sub;
-  double xRobot, yRobot;
+  double xRobot, yRobot, yawRobot;
 };
 }
 #endif

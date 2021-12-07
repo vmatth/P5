@@ -14,10 +14,10 @@ if __name__ == '__main__':
 
         formation = formationPoints()
 
-        for i in range(0, 30, 1):
+        for i in range(0, 21, 1):
             p = Point()
-            p.x = i
-            p.y = i
+            p.x = 1
+            p.y = (i * 0.1) -1
             formation.points.append(p)
 
         pub.publish(formation)
