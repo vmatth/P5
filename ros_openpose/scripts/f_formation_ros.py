@@ -38,7 +38,7 @@ class F_formation:
             rospy.loginfo("ospace lines before %s", oSpaces)
             oSpaces = self.constructOSpacesWithDirections(oSpaces, 0.5)
             rospy.loginfo("ospace lines new %s", oSpaces)
-            oSpaces = self.removeUnvalidOspaces(oSpaces, personsArray)
+            oSpaces = self.removeInvalidOspaces(oSpaces, personsArray)
             rospy.loginfo("Final OSpace! %s", oSpaces)
         else:
             rospy.loginfo("There are no combinations")
@@ -398,7 +398,7 @@ class F_formation:
             intersect = m_blue >= m_red
         return intersect
 
-    def removeUnvalidOspaces(self, oSpace, persons):
+    def removeInvalidOspaces(self, oSpace, persons):
         listarray = []
         for i in range(0,len(oSpace)):
             tempPeopleList = []
