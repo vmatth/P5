@@ -34,4 +34,6 @@ def pointConstructor(point1, point2, dist):
 
     return LinePoints
 
-print("Points: ", pointConstructor(point1, point2, 25))
+m = pointConstructor(point1, point2, 25)
+
+print("Points: ", m)
