@@ -213,3 +213,6 @@ catkin_install_python(PROGRAMS scripts/testFormations.py
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)
 
+add_executable(timeRemove src/timeRemove.cpp)
+target_link_libraries(timeRemove ${catkin_LIBRARIES})
+

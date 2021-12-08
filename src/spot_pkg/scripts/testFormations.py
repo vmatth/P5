@@ -9,7 +9,7 @@ if __name__ == '__main__':
 
     pub = rospy.Publisher('/formations', formationPoints, queue_size=10)
 
-    rate = rospy.Rate(10) # 10hz
+    rate = rospy.Rate(0.5) # 10hz
     while not rospy.is_shutdown():
 
         formation = formationPoints()
@@ -17,7 +17,7 @@ if __name__ == '__main__':
         for i in range(0, 21, 1):
             p = Point()
             p.x = 1
-            p.y = (i * 0.1) -1
+            p.y = (i * -0.05) +1
             formation.points.append(p)
 
         pub.publish(formation)
