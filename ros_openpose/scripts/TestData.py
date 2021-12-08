@@ -1,5 +1,6 @@
 import scipy.io
-mat = scipy.io.loadmat('features.mat')
+import os
+mat = scipy.io.loadmat('ros_openpose/scripts/features.mat')
 synth = mat['features'][0]
 dataPerson = []
 for i in range(0,len(synth)):
@@ -18,3 +19,4 @@ print(dataPerson) # This indexing the whole test set (100 test groups)
 print(dataPerson[0]) # This indexing a test group e.g 8 people
 print(dataPerson[0][0]) # This indexing a test person
 print(dataPerson[0][0][0]) # This indexing the x coordinate of testperson 1
+
