@@ -16,6 +16,4 @@ obstacle_2d_layer:
 plugins: 
     - {name: static_map, type: "costmap_2d::StaticLayer"}
     - {name: obstacle_2d_layer, type: "costmap_2d::ObstacleLayer"}
-    - {name: inflation, type: "costmap_2d::InflationLayer"}
     - {name: simple_layer, type: "simple_layer_namespace::SimpleLayer"}
-
