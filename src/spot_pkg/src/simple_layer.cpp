@@ -28,26 +28,31 @@ void SimpleLayer::formationCallback(const spot_pkg::formationPoints::ConstPtr& m
     newPoint.y = msg->points[i].y;
 
     costmapPoints.push_back(calculatePointRelativeToRobot(newPoint));
+    //ROS_INFO("newPoint (%f, %f)", newPoint.x, newPoint.y);    
+    //ROS_INFO("calculatedPoint (%f, %f)", calculatePointRelativeToRobot(newPoint).x, calculatePointRelativeToRobot(newPoint).y);  
+    //formationPoints.push_back(newPoint); //Kan fjernes
+  }
+
     ROS_INFO("Time Now: %f", ros::Time::now().toSec());
     timeToRemove.push_back(ros::Time::now().toSec() + 5.0);
     ROS_INFO("Time After 5 Seconds: %f", ros::Time::now().toSec() + 5.0);
     pointsToRemove.push_back(size);
-    ROS_INFO("Points to remove: %d", size);
+    //ROS_INFO("Points to remove: %d", size);
 
-    //formationPoints.push_back(newPoint); //Kan fjernes
-  }
 }
 
 
 geometry_msgs::Point SimpleLayer::calculatePointRelativeToRobot(geometry_msgs::Point point){
   geometry_msgs::Point newPoint = geometry_msgs::Point();
-    //Caluclate the formation point relative to the robot's rotation
-    newPoint.x = point.x * cos(yawRobot) - point.y * sin(yawRobot);
-    newPoint.y = point.x * sin(yawRobot) + point.y * cos(yawRobot);
+  //Caluclate the formation point relative to the robot's rotation
+  newPoint.x = point.x * cos(yawRobot) - point.y * sin(yawRobot);
+  newPoint.y = point.x * sin(yawRobot) + point.y * cos(yawRobot);
 
-    //Calculate the formation point relative to the robot's position
-    newPoint.x += xRobot;
-    newPoint.y += yRobot;
+  //Calculate the formation point relative to the robot's position
+  newPoint.x += xRobot;
+  newPoint.y += yRobot;
+  //ROS_INFO("Calculating poont relativve ro robot, yawRobot: %f, xRobot; %f, yRobot: %f, inputPoint(%f, %f", yawRobot, xRobot, yRobot, point.x, point.y);
+  return newPoint;
 }
 
 void SimpleLayer::onInitialize()
@@ -90,7 +95,7 @@ void SimpleLayer::updateBounds(double robot_x, double robot_y, double robot_yaw,
 void SimpleLayer::removeCostmapPointsAfterSomeTime(){
     int i = 0;
     while(i < timeToRemove.size()){
-        ROS_INFO("Index: %i", i);
+        //ROS_INFO("Index: %i", i);
         //If time has passed - points will be removed
         if(ros::Time::now().toSec() >= timeToRemove[i]){
             ROS_INFO("Removing points index[%d] Time now: %f", i, ros::Time::now().toSec());  
@@ -104,9 +109,9 @@ void SimpleLayer::removeCostmapPointsAfterSomeTime(){
         else
             i++;
     }
-    ROS_INFO("END");
-    int size = costmapPoints.size();
-    ROS_INFO("costmap size %i", size);
+    //ROS_INFO("END");
+    //int size = costmapPoints.size();
+    //ROS_INFO("costmap size %i", size);
 }
 
 void SimpleLayer::updateCosts(costmap_2d::Costmap2D& master_grid, int min_i, int min_j, int max_i,
@@ -115,15 +120,16 @@ void SimpleLayer::updateCosts(costmap_2d::Costmap2D& master_grid, int min_i, int
   if (!enabled_)
     return;
 
- //removeCostmapPointsAfterSomeTime();
+  //removeCostmapPointsAfterSomeTime();
 
   unsigned int mx;
   unsigned int my;
 
   for(int i = 0; i < costmapPoints.size(); i++){
+    
     if(master_grid.worldToMap(costmapPoints[i].x, costmapPoints[i].y, mx, my)){
       master_grid.setCost(mx, my, LETHAL_OBSTACLE);
-      ROS_INFO("RobotPoint: (%f, %f), formationPoint: (%f, %f), yaw: %f", xRobot, yRobot, costmapPoints[i].x, costmapPoints[i].y, yawRobot);
+      //ROS_INFO("RobotPoint: (%f, %f), formationPoint: (%f, %f), yaw: %f", xRobot, yRobot, costmapPoints[i].x, costmapPoints[i].y, yawRobot);
     }
   }
 }
