@@ -1,5 +1,8 @@
 <library path="lib/libspot_pkg">
-    <class type="simple_layer_namespace::SimpleLayer" base_class_type="costmap_2d::Layer">
-        <description>Demo Layer that adds a point 1 meter in front of the robot</description>
+    <class type="formation_layer_namespace::FormationLayer" base_class_type="costmap_2d::Layer">
+        <description>Adds points that form a formation</description>
+    </class>
+    <class type="proxemics_layer_namespace::ProxemicsLayer" base_class_type="costmap_2d::Layer">
+        <description>Adds radius around people</description>
     </class>
 </library>

@@ -3,8 +3,7 @@ Panels:
     Help Height: 0
     Name: Displays
     Property Tree Widget:
-      Expanded:
-        - /Global Options1
+      Expanded: ~
       Splitter Ratio: 0.5
     Tree Height: 291
   - Class: rviz/Selection
@@ -25,7 +24,7 @@ Panels:
     Experimental: false
     Name: Time
     SyncMode: 0
-    SyncSource: LaserScan
+    SyncSource: RightDepthCloud
   - Class: spot_viz/SpotControlPanel
     Name: SpotControlPanel
 Preferences:
@@ -53,460 +52,614 @@ Visualization Manager:
       Plane Cell Count: 10
       Reference Frame: <Fixed Frame>
       Value: true
-    - Alpha: 1
-      Class: rviz/RobotModel
-      Collision Enabled: false
-      Enabled: true
-      Links:
-        All Links Enabled: true
-        Expand Joint Details: false
-        Expand Link Details: false
-        Expand Tree: false
-        Link Tree Style: Links in Alphabetic Order
-        base_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        body:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        front_left_hip:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        front_left_lower_leg:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        front_left_upper_leg:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        front_rail:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        front_right_hip:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        front_right_lower_leg:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        front_right_upper_leg:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        lidar_mount_back:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        lidar_mount_forward:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        rear_left_hip:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        rear_left_lower_leg:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        rear_left_upper_leg:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        rear_rail:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        rear_right_hip:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        rear_right_lower_leg:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        rear_right_upper_leg:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        sick_tim:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-      Name: RobotModel
-      Robot Description: robot_description
-      TF Prefix: ""
-      Update Interval: 0
-      Value: true
-      Visual Enabled: true
-    - Class: rviz/TF
-      Enabled: true
-      Frame Timeout: 15
-      Frames:
-        All Enabled: true
-        back:
-          Value: true
-        back_fisheye:
-          Value: true
-        base_link:
-          Value: true
-        body:
-          Value: true
-        flat_body:
-          Value: true
-        front_left_hip:
-          Value: true
-        front_left_lower_leg:
-          Value: true
-        front_left_upper_leg:
-          Value: true
-        front_rail:
-          Value: true
-        front_right_hip:
-          Value: true
-        front_right_lower_leg:
-          Value: true
-        front_right_upper_leg:
-          Value: true
-        frontleft:
-          Value: true
-        frontleft_fisheye:
-          Value: true
-        frontright:
-          Value: true
-        frontright_fisheye:
-          Value: true
-        gpe:
-          Value: true
-        head:
-          Value: true
-        left:
-          Value: true
-        left_fisheye:
-          Value: true
-        lidar_mount_back:
-          Value: true
-        lidar_mount_forward:
-          Value: true
-        map:
-          Value: true
-        odom:
-          Value: true
-        rear_left_hip:
-          Value: true
-        rear_left_lower_leg:
-          Value: true
-        rear_left_upper_leg:
-          Value: true
-        rear_rail:
-          Value: true
-        rear_right_hip:
-          Value: true
-        rear_right_lower_leg:
-          Value: true
-        rear_right_upper_leg:
-          Value: true
-        right:
-          Value: true
-        right_fisheye:
-          Value: true
-        sick_tim:
-          Value: true
-        vision:
-          Value: true
-      Marker Scale: 0.25
-      Name: TF
-      Show Arrows: true
-      Show Axes: true
-      Show Names: true
-      Tree:
-        map:
-          odom:
+    - Class: rviz/Group
+      Displays:
+        - Class: rviz/TF
+          Enabled: false
+          Frame Timeout: 15
+          Frames:
+            All Enabled: true
+          Marker Scale: 1
+          Name: TF
+          Show Arrows: true
+          Show Axes: true
+          Show Names: true
+          Tree:
+            {}
+          Update Interval: 0
+          Value: false
+        - Class: rviz/Group
+          Displays:
+            - Alpha: 1
+              Auto Size:
+                Auto Size Factor: 1
+                Value: true
+              Autocompute Intensity Bounds: true
+              Autocompute Value Bounds:
+                Max Value: 2.8643248081207275
+                Min Value: -10.0076322555542
+                Value: true
+              Axis: Z
+              Channel Name: intensity
+              Class: rviz/DepthCloud
+              Color: 255; 255; 255
+              Color Image Topic: ""
+              Color Transformer: AxisColor
+              Color Transport Hint: raw
+              Decay Time: 0
+              Depth Map Topic: /spot/depth/frontleft/image
+              Depth Map Transport Hint: raw
+              Enabled: true
+              Invert Rainbow: false
+              Max Color: 255; 255; 255
+              Min Color: 0; 0; 0
+              Name: FrontLeftDepthCloud
+              Occlusion Compensation:
+                Occlusion Time-Out: 30
+                Value: false
+              Position Transformer: XYZ
+              Queue Size: 5
+              Selectable: true
+              Size (Pixels): 3
+              Style: Flat Squares
+              Topic Filter: true
+              Use Fixed Frame: true
+              Use rainbow: true
+              Value: true
+            - Alpha: 1
+              Auto Size:
+                Auto Size Factor: 1
+                Value: true
+              Autocompute Intensity Bounds: true
+              Autocompute Value Bounds:
+                Max Value: 1.323214054107666
+                Min Value: -9.369149208068848
+                Value: true
+              Axis: Z
+              Channel Name: intensity
+              Class: rviz/DepthCloud
+              Color: 255; 255; 255
+              Color Image Topic: ""
+              Color Transformer: AxisColor
+              Color Transport Hint: raw
+              Decay Time: 0
+              Depth Map Topic: /spot/depth/frontright/image
+              Depth Map Transport Hint: raw
+              Enabled: true
+              Invert Rainbow: false
+              Max Color: 255; 255; 255
+              Min Color: 0; 0; 0
+              Name: FrontRightDepthCloud
+              Occlusion Compensation:
+                Occlusion Time-Out: 30
+                Value: false
+              Position Transformer: XYZ
+              Queue Size: 5
+              Selectable: true
+              Size (Pixels): 3
+              Style: Flat Squares
+              Topic Filter: true
+              Use Fixed Frame: true
+              Use rainbow: true
+              Value: true
+            - Alpha: 1
+              Auto Size:
+                Auto Size Factor: 1
+                Value: true
+              Autocompute Intensity Bounds: true
+              Autocompute Value Bounds:
+                Max Value: 0.42643851041793823
+                Min Value: -3.44570255279541
+                Value: true
+              Axis: Z
+              Channel Name: intensity
+              Class: rviz/DepthCloud
+              Color: 255; 255; 255
+              Color Image Topic: ""
+              Color Transformer: AxisColor
+              Color Transport Hint: raw
+              Decay Time: 0
+              Depth Map Topic: /spot/depth/left/image
+              Depth Map Transport Hint: raw
+              Enabled: true
+              Invert Rainbow: false
+              Max Color: 255; 255; 255
+              Min Color: 0; 0; 0
+              Name: LeftDepthCloud
+              Occlusion Compensation:
+                Occlusion Time-Out: 30
+                Value: false
+              Position Transformer: XYZ
+              Queue Size: 5
+              Selectable: true
+              Size (Pixels): 3
+              Style: Flat Squares
+              Topic Filter: true
+              Use Fixed Frame: true
+              Use rainbow: true
+              Value: true
+            - Alpha: 1
+              Auto Size:
+                Auto Size Factor: 1
+                Value: true
+              Autocompute Intensity Bounds: true
+              Autocompute Value Bounds:
+                Max Value: -9999
+                Min Value: 9999
+                Value: true
+              Axis: Z
+              Channel Name: intensity
+              Class: rviz/DepthCloud
+              Color: 255; 255; 255
+              Color Image Topic: ""
+              Color Transformer: AxisColor
+              Color Transport Hint: raw
+              Decay Time: 0
+              Depth Map Topic: /spot/depth/right/image
+              Depth Map Transport Hint: raw
+              Enabled: true
+              Invert Rainbow: false
+              Max Color: 255; 255; 255
+              Min Color: 0; 0; 0
+              Name: RightDepthCloud
+              Occlusion Compensation:
+                Occlusion Time-Out: 30
+                Value: false
+              Position Transformer: XYZ
+              Queue Size: 5
+              Selectable: true
+              Size (Pixels): 3
+              Style: Flat Squares
+              Topic Filter: true
+              Use Fixed Frame: true
+              Use rainbow: true
+              Value: true
+            - Alpha: 1
+              Auto Size:
+                Auto Size Factor: 1
+                Value: true
+              Autocompute Intensity Bounds: true
+              Autocompute Value Bounds:
+                Max Value: 0.5473099946975708
+                Min Value: -9.864078521728516
+                Value: true
+              Axis: Z
+              Channel Name: intensity
+              Class: rviz/DepthCloud
+              Color: 255; 255; 255
+              Color Image Topic: ""
+              Color Transformer: AxisColor
+              Color Transport Hint: raw
+              Decay Time: 0
+              Depth Map Topic: /spot/depth/back/image
+              Depth Map Transport Hint: raw
+              Enabled: true
+              Invert Rainbow: false
+              Max Color: 255; 255; 255
+              Min Color: 0; 0; 0
+              Name: RearDepthCloud
+              Occlusion Compensation:
+                Occlusion Time-Out: 30
+                Value: false
+              Position Transformer: XYZ
+              Queue Size: 5
+              Selectable: true
+              Size (Pixels): 3
+              Style: Flat Squares
+              Topic Filter: true
+              Use Fixed Frame: true
+              Use rainbow: true
+              Value: true
+          Enabled: false
+          Name: DepthClouds
+        - Class: rviz/TF
+          Enabled: true
+          Frame Timeout: 15
+          Frames:
+            All Enabled: true
+            back:
+              Value: true
+            back_fisheye:
+              Value: true
+            base_link:
+              Value: true
             body:
-              base_link:
-                lidar_mount_back:
-                  {}
-                lidar_mount_forward:
-                  sick_tim:
-                    {}
-              flat_body:
-                {}
-              front_left_hip:
-                front_left_upper_leg:
-                  front_left_lower_leg:
-                    {}
-              front_rail:
-                {}
-              front_right_hip:
-                front_right_upper_leg:
-                  front_right_lower_leg:
-                    {}
-              head:
-                back:
-                  back_fisheye:
-                    {}
-                frontleft:
-                  frontleft_fisheye:
-                    {}
-                frontright:
-                  frontright_fisheye:
-                    {}
-                left:
-                  left_fisheye:
-                    {}
-                right:
-                  right_fisheye:
-                    {}
-              rear_left_hip:
-                rear_left_upper_leg:
-                  rear_left_lower_leg:
-                    {}
-              rear_rail:
-                {}
-              rear_right_hip:
-                rear_right_upper_leg:
-                  rear_right_lower_leg:
-                    {}
-              vision:
-                {}
+              Value: true
+            flat_body:
+              Value: true
+            front_left_hip:
+              Value: true
+            front_left_lower_leg:
+              Value: true
+            front_left_upper_leg:
+              Value: true
+            front_rail:
+              Value: true
+            front_right_hip:
+              Value: true
+            front_right_lower_leg:
+              Value: true
+            front_right_upper_leg:
+              Value: true
+            frontleft:
+              Value: true
+            frontleft_fisheye:
+              Value: true
+            frontright:
+              Value: true
+            frontright_fisheye:
+              Value: true
             gpe:
-              {}
-      Update Interval: 0
-      Value: true
+              Value: true
+            head:
+              Value: true
+            left:
+              Value: true
+            left_fisheye:
+              Value: true
+            lidar_mount_back:
+              Value: true
+            lidar_mount_forward:
+              Value: true
+            map:
+              Value: true
+            odom:
+              Value: true
+            rear_left_hip:
+              Value: true
+            rear_left_lower_leg:
+              Value: true
+            rear_left_upper_leg:
+              Value: true
+            rear_rail:
+              Value: true
+            rear_right_hip:
+              Value: true
+            rear_right_lower_leg:
+              Value: true
+            rear_right_upper_leg:
+              Value: true
+            right:
+              Value: true
+            right_fisheye:
+              Value: true
+            sick_tim:
+              Value: true
+            vision:
+              Value: true
+          Marker Scale: 0.25
+          Name: TF
+          Show Arrows: true
+          Show Axes: true
+          Show Names: true
+          Tree:
+            map:
+              odom:
+                body:
+                  base_link:
+                    lidar_mount_back:
+                      {}
+                    lidar_mount_forward:
+                      sick_tim:
+                        {}
+                  flat_body:
+                    {}
+                  front_left_hip:
+                    front_left_upper_leg:
+                      front_left_lower_leg:
+                        {}
+                  front_rail:
+                    {}
+                  front_right_hip:
+                    front_right_upper_leg:
+                      front_right_lower_leg:
+                        {}
+                  head:
+                    back:
+                      back_fisheye:
+                        {}
+                    frontleft:
+                      frontleft_fisheye:
+                        {}
+                    frontright:
+                      frontright_fisheye:
+                        {}
+                    left:
+                      left_fisheye:
+                        {}
+                    right:
+                      right_fisheye:
+                        {}
+                  rear_left_hip:
+                    rear_left_upper_leg:
+                      rear_left_lower_leg:
+                        {}
+                  rear_rail:
+                    {}
+                  rear_right_hip:
+                    rear_right_upper_leg:
+                      rear_right_lower_leg:
+                        {}
+                  vision:
+                    {}
+                gpe:
+                  {}
+          Update Interval: 0
+          Value: true
+        - Alpha: 1
+          Class: rviz/RobotModel
+          Collision Enabled: false
+          Enabled: true
+          Links:
+            All Links Enabled: true
+            Expand Joint Details: false
+            Expand Link Details: false
+            Expand Tree: false
+            Link Tree Style: Links in Alphabetic Order
+            base_link:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+            body:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+              Value: true
+            front_left_hip:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+              Value: true
+            front_left_lower_leg:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+              Value: true
+            front_left_upper_leg:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+              Value: true
+            front_rail:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+            front_right_hip:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+              Value: true
+            front_right_lower_leg:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+              Value: true
+            front_right_upper_leg:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+              Value: true
+            lidar_mount_back:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+              Value: true
+            lidar_mount_forward:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+              Value: true
+            rear_left_hip:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+              Value: true
+            rear_left_lower_leg:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+              Value: true
+            rear_left_upper_leg:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+              Value: true
+            rear_rail:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+            rear_right_hip:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+              Value: true
+            rear_right_lower_leg:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+              Value: true
+            rear_right_upper_leg:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+              Value: true
+            sick_tim:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+              Value: true
+          Name: RobotModel
+          Robot Description: robot_description
+          TF Prefix: ""
+          Update Interval: 0
+          Value: true
+          Visual Enabled: true
+        - Class: rviz/InteractiveMarkers
+          Enable Transparency: true
+          Enabled: false
+          Name: InteractiveMarkers
+          Show Axes: false
+          Show Descriptions: true
+          Show Visual Aids: false
+          Update Topic: /twist_marker_server/update
+          Value: false
+      Enabled: true
+      Name: Spot
     - Class: rviz/Group
       Displays:
         - Alpha: 1
-          Auto Size:
-            Auto Size Factor: 1
-            Value: true
-          Autocompute Intensity Bounds: true
-          Autocompute Value Bounds:
-            Max Value: 1.5871800184249878
-            Min Value: -9.733819007873535
-            Value: true
-          Axis: Z
-          Channel Name: intensity
-          Class: rviz/DepthCloud
-          Color: 255; 255; 255
-          Color Image Topic: ""
-          Color Transformer: AxisColor
-          Color Transport Hint: raw
-          Decay Time: 0
-          Depth Map Topic: /spot/depth/frontleft/image
-          Depth Map Transport Hint: raw
+          Buffer Length: 1
+          Class: rviz/Path
+          Color: 25; 255; 0
           Enabled: true
-          Invert Rainbow: false
-          Max Color: 255; 255; 255
-          Min Color: 0; 0; 0
-          Name: FrontLeftDepthCloud
-          Occlusion Compensation:
-            Occlusion Time-Out: 30
-            Value: false
-          Position Transformer: XYZ
-          Queue Size: 5
-          Selectable: true
-          Size (Pixels): 3
-          Style: Flat Squares
-          Topic Filter: true
-          Use Fixed Frame: true
-          Use rainbow: true
+          Head Diameter: 0.30000001192092896
+          Head Length: 0.20000000298023224
+          Length: 0.30000001192092896
+          Line Style: Lines
+          Line Width: 0.029999999329447746
+          Name: Global Plan
+          Offset:
+            X: 0
+            Y: 0
+            Z: 0
+          Pose Color: 255; 85; 255
+          Pose Style: None
+          Radius: 0.029999999329447746
+          Shaft Diameter: 0.10000000149011612
+          Shaft Length: 0.10000000149011612
+          Topic: /move_base/TrajectoryPlannerROS/global_plan
+          Unreliable: false
           Value: true
         - Alpha: 1
-          Auto Size:
-            Auto Size Factor: 1
-            Value: true
-          Autocompute Intensity Bounds: true
-          Autocompute Value Bounds:
-            Max Value: 1.005956768989563
-            Min Value: -6.0159430503845215
-            Value: true
-          Axis: Z
-          Channel Name: intensity
-          Class: rviz/DepthCloud
-          Color: 255; 255; 255
-          Color Image Topic: ""
-          Color Transformer: AxisColor
-          Color Transport Hint: raw
-          Decay Time: 0
-          Depth Map Topic: /spot/depth/frontright/image
-          Depth Map Transport Hint: raw
+          Buffer Length: 1
+          Class: rviz/Path
+          Color: 25; 255; 0
           Enabled: true
-          Invert Rainbow: false
-          Max Color: 255; 255; 255
-          Min Color: 0; 0; 0
-          Name: FrontRightDepthCloud
-          Occlusion Compensation:
-            Occlusion Time-Out: 30
-            Value: false
-          Position Transformer: XYZ
-          Queue Size: 5
-          Selectable: true
-          Size (Pixels): 3
-          Style: Flat Squares
-          Topic Filter: true
-          Use Fixed Frame: true
-          Use rainbow: true
+          Head Diameter: 0.30000001192092896
+          Head Length: 0.20000000298023224
+          Length: 0.30000001192092896
+          Line Style: Lines
+          Line Width: 0.029999999329447746
+          Name: Local Plan
+          Offset:
+            X: 0
+            Y: 0
+            Z: 0
+          Pose Color: 255; 85; 255
+          Pose Style: None
+          Radius: 0.029999999329447746
+          Shaft Diameter: 0.10000000149011612
+          Shaft Length: 0.10000000149011612
+          Topic: /move_base/TrajectoryPlannerROS/local_plan
+          Unreliable: false
           Value: true
         - Alpha: 1
-          Auto Size:
-            Auto Size Factor: 1
-            Value: true
-          Autocompute Intensity Bounds: true
-          Autocompute Value Bounds:
-            Max Value: 0.7817525863647461
-            Min Value: -4.9502153396606445
-            Value: true
-          Axis: Z
-          Channel Name: intensity
-          Class: rviz/DepthCloud
-          Color: 255; 255; 255
-          Color Image Topic: ""
-          Color Transformer: AxisColor
-          Color Transport Hint: raw
-          Decay Time: 0
-          Depth Map Topic: /spot/depth/left/image
-          Depth Map Transport Hint: raw
+          Buffer Length: 1
+          Class: rviz/Path
+          Color: 25; 255; 0
           Enabled: true
-          Invert Rainbow: false
-          Max Color: 255; 255; 255
-          Min Color: 0; 0; 0
-          Name: LeftDepthCloud
-          Occlusion Compensation:
-            Occlusion Time-Out: 30
-            Value: false
-          Position Transformer: XYZ
-          Queue Size: 5
-          Selectable: true
-          Size (Pixels): 3
-          Style: Flat Squares
-          Topic Filter: true
-          Use Fixed Frame: true
-          Use rainbow: true
+          Head Diameter: 0.30000001192092896
+          Head Length: 0.20000000298023224
+          Length: 0.30000001192092896
+          Line Style: Lines
+          Line Width: 0.029999999329447746
+          Name: Planner Plan
+          Offset:
+            X: 0
+            Y: 0
+            Z: 0
+          Pose Color: 255; 85; 255
+          Pose Style: None
+          Radius: 0.029999999329447746
+          Shaft Diameter: 0.10000000149011612
+          Shaft Length: 0.10000000149011612
+          Topic: /move_base/NavfnROS/plan
+          Unreliable: false
           Value: true
         - Alpha: 1
-          Auto Size:
-            Auto Size Factor: 1
-            Value: true
-          Autocompute Intensity Bounds: true
-          Autocompute Value Bounds:
-            Max Value: 0.5018455386161804
-            Min Value: -2.1351723670959473
-            Value: true
-          Axis: Z
-          Channel Name: intensity
-          Class: rviz/DepthCloud
-          Color: 255; 255; 255
-          Color Image Topic: ""
-          Color Transformer: AxisColor
-          Color Transport Hint: raw
-          Decay Time: 0
-          Depth Map Topic: /spot/depth/right/image
-          Depth Map Transport Hint: raw
+          Axes Length: 1
+          Axes Radius: 0.10000000149011612
+          Class: rviz/Pose
+          Color: 255; 25; 0
           Enabled: true
-          Invert Rainbow: false
-          Max Color: 255; 255; 255
-          Min Color: 0; 0; 0
-          Name: RightDepthCloud
-          Occlusion Compensation:
-            Occlusion Time-Out: 30
-            Value: false
-          Position Transformer: XYZ
-          Queue Size: 5
-          Selectable: true
-          Size (Pixels): 3
-          Style: Flat Squares
-          Topic Filter: true
-          Use Fixed Frame: true
-          Use rainbow: true
+          Head Length: 0.30000001192092896
+          Head Radius: 0.10000000149011612
+          Name: Current Goal
+          Shaft Length: 1
+          Shaft Radius: 0.05000000074505806
+          Shape: Arrow
+          Topic: /move_base_simple/goal
+          Unreliable: false
           Value: true
         - Alpha: 1
-          Auto Size:
-            Auto Size Factor: 1
-            Value: true
-          Autocompute Intensity Bounds: true
-          Autocompute Value Bounds:
-            Max Value: 0.4912349283695221
-            Min Value: -3.5806891918182373
-            Value: true
-          Axis: Z
-          Channel Name: intensity
-          Class: rviz/DepthCloud
-          Color: 255; 255; 255
-          Color Image Topic: ""
-          Color Transformer: AxisColor
-          Color Transport Hint: raw
-          Decay Time: 0
-          Depth Map Topic: /spot/depth/back/image
-          Depth Map Transport Hint: raw
-          Enabled: true
-          Invert Rainbow: false
-          Max Color: 255; 255; 255
-          Min Color: 0; 0; 0
-          Name: RearDepthCloud
-          Occlusion Compensation:
-            Occlusion Time-Out: 30
-            Value: false
-          Position Transformer: XYZ
-          Queue Size: 5
-          Selectable: true
-          Size (Pixels): 3
-          Style: Flat Squares
-          Topic Filter: true
-          Use Fixed Frame: true
-          Use rainbow: true
-          Value: true
-      Enabled: false
-      Name: DepthClouds
-    - Class: rviz/InteractiveMarkers
-      Enable Transparency: true
+          Arrow Length: 0.30000001192092896
+          Axes Length: 0.30000001192092896
+          Axes Radius: 0.009999999776482582
+          Class: rviz/PoseArray
+          Color: 255; 25; 0
+          Enabled: false
+          Head Length: 0.07000000029802322
+          Head Radius: 0.029999999329447746
+          Name: Particle Cloud
+          Shaft Length: 0.23000000417232513
+          Shaft Radius: 0.009999999776482582
+          Shape: Arrow (Flat)
+          Topic: /particlecloud
+          Unreliable: false
+          Value: false
       Enabled: true
-      Name: InteractiveMarkers
-      Show Axes: false
-      Show Descriptions: true
-      Show Visual Aids: false
-      Update Topic: /twist_marker_server/update
-      Value: true
-    - Class: rviz/TF
-      Enabled: false
-      Frame Timeout: 15
-      Frames:
-        All Enabled: true
-      Marker Scale: 1
-      Name: TF
-      Show Arrows: true
-      Show Axes: true
-      Show Names: true
-      Tree:
-        {}
-      Update Interval: 0
-      Value: false
+      Name: Planners
+    - Class: rviz/Group
+      Displays:
+        - Alpha: 1
+          Class: rviz/Polygon
+          Color: 255; 25; 0
+          Enabled: true
+          Name: Robot Footprint
+          Topic: /move_base/local_costmap/footprint
+          Unreliable: false
+          Value: true
+      Enabled: true
+      Name: Robot Geometry
+    - Class: rviz/Group
+      Displays:
+        - Alpha: 0.699999988079071
+          Class: rviz/Map
+          Color Scheme: map
+          Draw Behind: false
+          Enabled: true
+          Name: Static Map
+          Topic: /map
+          Unreliable: false
+          Use Timestamp: false
+          Value: true
+        - Alpha: 0.699999988079071
+          Class: rviz/Map
+          Color Scheme: map
+          Draw Behind: false
+          Enabled: true
+          Name: Global costmap
+          Topic: /move_base/global_costmap/costmap
+          Unreliable: false
+          Use Timestamp: false
+          Value: true
+        - Alpha: 0.699999988079071
+          Class: rviz/Map
+          Color Scheme: costmap
+          Draw Behind: false
+          Enabled: true
+          Name: Local costmap
+          Topic: /move_base/local_costmap/costmap
+          Unreliable: false
+          Use Timestamp: false
+          Value: true
+      Enabled: true
+      Name: Maps
     - Alpha: 1
       Autocompute Intensity Bounds: true
       Autocompute Value Bounds:
-        Max Value: 0.21221299469470978
-        Min Value: 0.200823113322258
+        Max Value: 0.34658288955688477
+        Min Value: 0.3424312472343445
         Value: true
       Axis: Z
       Channel Name: intensity
@@ -530,147 +683,9 @@ Visualization Manager:
       Use Fixed Frame: true
       Use rainbow: true
       Value: true
-    - Alpha: 0.699999988079071
-      Class: rviz/Map
-      Color Scheme: map
-      Draw Behind: false
-      Enabled: true
-      Name: Static Map
-      Topic: /map
-      Unreliable: false
-      Use Timestamp: false
-      Value: true
-    - Alpha: 1
-      Arrow Length: 0.30000001192092896
-      Axes Length: 0.30000001192092896
-      Axes Radius: 0.009999999776482582
-      Class: rviz/PoseArray
-      Color: 255; 25; 0
-      Enabled: false
-      Head Length: 0.07000000029802322
-      Head Radius: 0.029999999329447746
-      Name: Particle Cloud
-      Shaft Length: 0.23000000417232513
-      Shaft Radius: 0.009999999776482582
-      Shape: Arrow (Flat)
-      Topic: /particlecloud
-      Unreliable: false
-      Value: false
-    - Alpha: 1
-      Class: rviz/Polygon
-      Color: 255; 25; 0
-      Enabled: true
-      Name: Robot Footprint
-      Topic: /move_base/local_costmap/footprint
-      Unreliable: false
-      Value: true
-    - Alpha: 1
-      Buffer Length: 1
-      Class: rviz/Path
-      Color: 25; 255; 0
-      Enabled: true
-      Head Diameter: 0.30000001192092896
-      Head Length: 0.20000000298023224
-      Length: 0.30000001192092896
-      Line Style: Lines
-      Line Width: 0.029999999329447746
-      Name: Global Plan
-      Offset:
-        X: 0
-        Y: 0
-        Z: 0
-      Pose Color: 255; 85; 255
-      Pose Style: None
-      Radius: 0.029999999329447746
-      Shaft Diameter: 0.10000000149011612
-      Shaft Length: 0.10000000149011612
-      Topic: /move_base/TrajectoryPlannerROS/global_plan
-      Unreliable: false
-      Value: true
-    - Alpha: 1
-      Buffer Length: 1
-      Class: rviz/Path
-      Color: 25; 255; 0
-      Enabled: true
-      Head Diameter: 0.30000001192092896
-      Head Length: 0.20000000298023224
-      Length: 0.30000001192092896
-      Line Style: Lines
-      Line Width: 0.029999999329447746
-      Name: Local Plan
-      Offset:
-        X: 0
-        Y: 0
-        Z: 0
-      Pose Color: 255; 85; 255
-      Pose Style: None
-      Radius: 0.029999999329447746
-      Shaft Diameter: 0.10000000149011612
-      Shaft Length: 0.10000000149011612
-      Topic: /move_base/TrajectoryPlannerROS/local_plan
-      Unreliable: false
-      Value: true
-    - Alpha: 1
-      Buffer Length: 1
-      Class: rviz/Path
-      Color: 25; 255; 0
-      Enabled: true
-      Head Diameter: 0.30000001192092896
-      Head Length: 0.20000000298023224
-      Length: 0.30000001192092896
-      Line Style: Lines
-      Line Width: 0.029999999329447746
-      Name: Planner Plan
-      Offset:
-        X: 0
-        Y: 0
-        Z: 0
-      Pose Color: 255; 85; 255
-      Pose Style: None
-      Radius: 0.029999999329447746
-      Shaft Diameter: 0.10000000149011612
-      Shaft Length: 0.10000000149011612
-      Topic: /move_base/NavfnROS/plan
-      Unreliable: false
-      Value: true
-    - Alpha: 1
-      Axes Length: 1
-      Axes Radius: 0.10000000149011612
-      Class: rviz/Pose
-      Color: 255; 25; 0
-      Enabled: true
-      Head Length: 0.30000001192092896
-      Head Radius: 0.10000000149011612
-      Name: Current Goal
-      Shaft Length: 1
-      Shaft Radius: 0.05000000074505806
-      Shape: Arrow
-      Topic: /move_base_simple/goal
-      Unreliable: false
-      Value: true
-    - Alpha: 0.699999988079071
-      Class: rviz/Map
-      Color Scheme: map
-      Draw Behind: false
-      Enabled: true
-      Name: Global costmap
-      Topic: /move_base/global_costmap/costmap
-      Unreliable: false
-      Use Timestamp: false
-      Value: true
-    - Alpha: 0.699999988079071
-      Class: rviz/Map
-      Color Scheme: map
-      Draw Behind: false
-      Enabled: true
-      Name: Local costmap
-      Topic: /move_base/local_costmap/costmap
-      Unreliable: false
-      Use Timestamp: false
-      Value: true
   Enabled: true
   Global Options:
-    Background Color: 48; 48; 48
+    Background Color: 114; 159; 207
     Default Light: true
     Fixed Frame: map
     Frame Rate: 30
@@ -696,7 +711,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 6.927251815795898
+      Distance: 8.386870384216309
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -711,10 +726,10 @@ Visualization Manager:
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 1.4797970056533813
+      Pitch: 1.0097973346710205
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 4.087100982666016
+      Yaw: 4.242094039916992
     Saved: ~
 Window Geometry:
   Displays:

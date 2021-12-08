@@ -1,4 +1,4 @@
-#include <spot_pkg/simple_layer.h>
+#include <spot_pkg/formation_layer.h>
 #include <pluginlib/class_list_macros.h>
 #include <geometry_msgs/Point.h>
 #include <vector>
@@ -6,21 +6,20 @@
 
 using namespace std;
 
-PLUGINLIB_EXPORT_CLASS(simple_layer_namespace::SimpleLayer, costmap_2d::Layer)
+PLUGINLIB_EXPORT_CLASS(formation_layer_namespace::FormationLayer, costmap_2d::Layer)
 
 using costmap_2d::LETHAL_OBSTACLE;
 
-namespace simple_layer_namespace
+namespace formation_layer_namespace
 {
 
-SimpleLayer::SimpleLayer() {}   
+FormationLayer::FormationLayer() {}   
 
-void SimpleLayer::formationCallback(const spot_pkg::formationPoints::ConstPtr& msg){
+void FormationLayer::formationCallback(const spot_pkg::formationPoints::ConstPtr& msg){
   ROS_INFO("Receiving points from formation callback");
   int size = msg->points.size();
   ROS_INFO("Amount of points: %i", size);
   //Loop all f-formation points
-  //formationPoints.clear(); //Kan fjernes
   for(int i = 0; i < size; i++){
 
     geometry_msgs::Point newPoint = geometry_msgs::Point();
@@ -30,19 +29,18 @@ void SimpleLayer::formationCallback(const spot_pkg::formationPoints::ConstPtr& m
     costmapPoints.push_back(calculatePointRelativeToRobot(newPoint));
     //ROS_INFO("newPoint (%f, %f)", newPoint.x, newPoint.y);    
     //ROS_INFO("calculatedPoint (%f, %f)", calculatePointRelativeToRobot(newPoint).x, calculatePointRelativeToRobot(newPoint).y);  
-    //formationPoints.push_back(newPoint); //Kan fjernes
   }
 
-    ROS_INFO("Time Now: %f", ros::Time::now().toSec());
-    timeToRemove.push_back(ros::Time::now().toSec() + 5.0);
-    ROS_INFO("Time After 5 Seconds: %f", ros::Time::now().toSec() + 5.0);
+   // ROS_INFO("Time Now: %f", ros::Time::now().toSec());
+    timeToRemove.push_back(ros::Time::now().toSec() + pointTimer);
+   // ROS_INFO("Time After 5 Seconds: %f", ros::Time::now().toSec() + pointTimer);
     pointsToRemove.push_back(size);
     //ROS_INFO("Points to remove: %d", size);
 
 }
 
 
-geometry_msgs::Point SimpleLayer::calculatePointRelativeToRobot(geometry_msgs::Point point){
+geometry_msgs::Point FormationLayer::calculatePointRelativeToRobot(geometry_msgs::Point point){
   geometry_msgs::Point newPoint = geometry_msgs::Point();
   //Caluclate the formation point relative to the robot's rotation
   newPoint.x = point.x * cos(yawRobot) - point.y * sin(yawRobot);
@@ -55,24 +53,24 @@ geometry_msgs::Point SimpleLayer::calculatePointRelativeToRobot(geometry_msgs::P
   return newPoint;
 }
 
-void SimpleLayer::onInitialize()
+void FormationLayer::onInitialize()
 {
   current_ = true;
-  sub = nh.subscribe("/formations", 1000, &SimpleLayer::formationCallback, this);
+  sub = nh.subscribe("/formations", 1000, &FormationLayer::formationCallback, this);
 
   dsrv_ = new dynamic_reconfigure::Server<costmap_2d::GenericPluginConfig>(nh);
   dynamic_reconfigure::Server<costmap_2d::GenericPluginConfig>::CallbackType cb = boost::bind(
-      &SimpleLayer::reconfigureCB, this, _1, _2);
+      &FormationLayer::reconfigureCB, this, _1, _2);
   dsrv_->setCallback(cb);
 
 }
 
-void SimpleLayer::reconfigureCB(costmap_2d::GenericPluginConfig &config, uint32_t level)
+void FormationLayer::reconfigureCB(costmap_2d::GenericPluginConfig &config, uint32_t level)
 {
   enabled_ = config.enabled;
 }
 
-void SimpleLayer::updateBounds(double robot_x, double robot_y, double robot_yaw, double* min_x,
+void FormationLayer::updateBounds(double robot_x, double robot_y, double robot_yaw, double* min_x,
                                            double* min_y, double* max_x, double* max_y)
 {
   if (!enabled_)
@@ -92,7 +90,7 @@ void SimpleLayer::updateBounds(double robot_x, double robot_y, double robot_yaw,
   *max_y = std::max(*max_y, mark_y_);
 }
 
-void SimpleLayer::removeCostmapPointsAfterSomeTime(){
+void FormationLayer::removeCostmapPointsAfterSomeTime(){
     int i = 0;
     while(i < timeToRemove.size()){
         //ROS_INFO("Index: %i", i);
@@ -114,7 +112,7 @@ void SimpleLayer::removeCostmapPointsAfterSomeTime(){
     //ROS_INFO("costmap size %i", size);
 }
 
-void SimpleLayer::updateCosts(costmap_2d::Costmap2D& master_grid, int min_i, int min_j, int max_i,
+void FormationLayer::updateCosts(costmap_2d::Costmap2D& master_grid, int min_i, int min_j, int max_i,
                                           int max_j)
 {
   if (!enabled_)

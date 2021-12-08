@@ -1,0 +1,1 @@
+spot_pkg/person[] people

@@ -1,5 +1,5 @@
-#ifndef SIMPLE_LAYER_H_
-#define SIMPLE_LAYER_H_
+#ifndef FORMATION_LAYER_H_
+#define FORMATION_LAYER_H_
 #include <ros/ros.h>
 #include <costmap_2d/layer.h>
 #include <costmap_2d/layered_costmap.h>
@@ -11,13 +11,13 @@
 
 using namespace std;
 
-namespace simple_layer_namespace
+namespace formation_layer_namespace
 {
 
-class SimpleLayer : public costmap_2d::Layer
+class FormationLayer : public costmap_2d::Layer
 {
 public:
-  SimpleLayer();
+  FormationLayer();
 
   virtual void onInitialize();
   virtual void updateBounds(double robot_x, double robot_y, double robot_yaw, double* min_x, double* min_y, double* max_x,
@@ -32,6 +32,7 @@ private:
 
   void removeCostmapPointsAfterSomeTime(); //Removes points after some time has passed
 
+  double pointTimer = 5.0; //Amount of seconds the points are active in the costmap
 
 
   double mark_x_, mark_y_;
@@ -39,7 +40,6 @@ private:
   ros::NodeHandle nh;
   ros::Subscriber sub;
   double xRobot, yRobot, yawRobot;
-  vector<geometry_msgs::Point> formationPoints; //Points received from the formations topic
   vector<geometry_msgs::Point> costmapPoints; //Points stored in the costmap. Points here will be removed after 1 second.
   vector<double> timeToRemove; //Each index contains the TIME when to remove points from costmapPoints
   vector<int> pointsToRemove; //Each index contains the AMOUNT of points to remove from costmapPoints

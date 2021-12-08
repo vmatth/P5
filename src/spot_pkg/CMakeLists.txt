@@ -60,6 +60,8 @@ find_package(catkin REQUIRED COMPONENTS
 add_message_files(
   FILES
   formationPoints.msg
+  person.msg
+  people.msg
 )
 
 ## Generate services in the 'srv' folder
@@ -80,6 +82,7 @@ add_message_files(
 generate_messages(
   DEPENDENCIES
   geometry_msgs
+  std_msgs
 )
 
 ################################################
@@ -133,7 +136,8 @@ include_directories(
 
 ## Declare a C++ library
 add_library(${PROJECT_NAME}
-  src/simple_layer.cpp
+  src/formation_layer.cpp
+  src/proxemics_layer.cpp
 )
 
 ## Add cmake target dependencies of the library
