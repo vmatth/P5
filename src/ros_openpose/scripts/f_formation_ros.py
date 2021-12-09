@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 # import modules
+#from ros_openpose.scripts.LineDot import pointConstructor
 import rospy
 from ros_openpose.msg import BodyPoints
 from geometry_msgs.msg import Point
@@ -429,6 +430,60 @@ class F_formation:
             if count == 0:
                 listarray.append(oSpace[i])    
         return listarray
+
+    def pointConstructor(self, point1, point2, dist):
+        distance = math.sqrt((point2[0]-point1[0])**2+(point2[1]-point1[1])**2)
+        print("distance", distance)
+
+        distance = distance * 100
+        NumberOfPoints = distance // dist
+        NumberOfPoints = int(NumberOfPoints)
+        print("number",NumberOfPoints)
+
+        deltax = point2[0] - point1[0]
+        deltay = point2[1] - point1[1]
+
+        xslope = deltax/(NumberOfPoints-1)
+        print(xslope)
+        yslope = deltay/(NumberOfPoints-1)
+        print(yslope)
+
+        xCalc = point1[0] + xslope
+        yCalc = point1[1] + yslope
+
+        LinePoints = []
+        for x in range(1, NumberOfPoints-1, 1):
+            temp1 = xCalc
+            temp2 = yCalc
+            LinePoints.append(np.array([temp1,temp2]))
+            xCalc = xCalc + xslope
+            yCalc = yCalc + yslope
+
+        return LinePoints
+
+    #Uses the oSpace list and get convert all lines to points
+    def convertFormationToPoints(self, oSpaces):
+        points = [] #Points that construct all oSpaces
+        for oSpace in oSpaces: #Loop all oSpaces
+            for line in oSpace: #Loop all lines
+                point1 = []
+                point1.append(line[0][0])
+                point1.append(line[0][1]) 
+                point2 = []
+                point2.append(line[1][0])
+                point2.append(line[1][1])
+
+                tempPoints = self.pointConstructor(point1, point2, 10)
+
+                for p in tempPoints:
+                    points.append(Point(p[0], p[1], 0))
+                    
+        rospy.loginfo("Points for the oSpaces: %s", points)
+        return points
+
+
+
+
 
 def main():
     rospy.init_node('F_Formation', anonymous=False)
