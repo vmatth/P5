@@ -31,7 +31,7 @@ class F_formation:
     def createFFormations(self, msg):
         persons = self.getCenterAndAngle(msg)
         #rospy.loginfo("persons before 3 m %s", persons)
-        persons = self.excludeDistance(persons, 0.5)
+        persons = self.excludeDistance(persons, 3)
 
         if(self.checkForArray(persons)): #Check if there are people in a combinations
             combinations = self.oSpaceCombinations(len(persons))
@@ -39,7 +39,7 @@ class F_formation:
             personsArray = self.reshape(persons) #List to Array
             oSpaces = self.constructOSpaces(personsArray, combinations)
             #rospy.loginfo("ospace lines before %s", oSpaces)
-            oSpaces = self.constructOSpacesWithDirections(oSpaces, 0.5)
+            oSpaces = self.constructOSpacesWithDirections(oSpaces, 0.78)
             #rospy.loginfo("ospace lines new %s", oSpaces)
             oSpaces = self.removeInvalidOspaces(oSpaces, personsArray)
             #rospy.loginfo("Final OSpace! %s", oSpaces)
@@ -306,6 +306,8 @@ class F_formation:
                 atanvinkelPers1 = math.atan2(vectorPers1[1], vectorPers1[0])
                 atanvinkelPers2 = math.atan2(vectorPers2[1], vectorPers2[0])
 
+                commonDistance =  math.sqrt(vectorCommon1[0]**2 + vectorCommon1[1]**2)
+
                 if atanvinkelPers1 > atanvinkelCommon1:
                     vinkel1 = atanvinkelPers1 - atanvinkelCommon1
                 else:
@@ -316,7 +318,7 @@ class F_formation:
                 else:
                     vinkel2 = atanvinkelCommon2 - atanvinkelPers2
                 # checking if the persons is looking towards each other
-                if vinkel1 > -margin and vinkel1 < margin and vinkel2 > -margin and vinkel2 < margin: 
+                if vinkel1 > -margin and vinkel1 < margin and vinkel2 > -margin and vinkel2 < margin and commonDistance < 3: 
                     Ospacearray.append(hull[i])
             else:
                 print('ERROR noobs')
