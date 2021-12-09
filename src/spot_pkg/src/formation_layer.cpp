@@ -118,7 +118,7 @@ void FormationLayer::updateCosts(costmap_2d::Costmap2D& master_grid, int min_i, 
   if (!enabled_)
     return;
 
-  //removeCostmapPointsAfterSomeTime();
+  removeCostmapPointsAfterSomeTime();
 
   unsigned int mx;
   unsigned int my;

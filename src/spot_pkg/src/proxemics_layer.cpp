@@ -141,7 +141,7 @@ void ProxemicsLayer::updateCosts(costmap_2d::Costmap2D& master_grid, int min_i, 
   if (!enabled_)
     return;
 
-  //removePeoplePointsAfterSomeTime();
+  removePeoplePointsAfterSomeTime();
 
   unsigned int mx;
   unsigned int my;

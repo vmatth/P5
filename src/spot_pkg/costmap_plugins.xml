@@ -5,7 +5,7 @@
     <class type="proxemics_layer_namespace::ProxemicsLayer" base_class_type="costmap_2d::Layer">
         <description>Adds radius around people</description>
     </class>
-    <class type="visualization_layer_namespace::VisulizationLayer" base_class_type="costmap_2d::Layer">
+    <class type="visualization_layer_namespace::VisualizationLayer" base_class_type="costmap_2d::Layer">
         <description>Visualizes hip and ankle points in Rviz</description>
     </class>
 </library>

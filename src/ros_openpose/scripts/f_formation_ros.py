@@ -45,10 +45,10 @@ class F_formation:
             personsArray = self.reshape(persons) #List to Array
             oSpaces = self.constructOSpaces(personsArray, combinations)
             #rospy.loginfo("ospace lines before %s", oSpaces)
-            oSpaces = self.constructOSpacesWithDirections(oSpaces, 0.78)
+            oSpaces = self.constructOSpacesWithDirections(oSpaces, 2)
             #rospy.loginfo("ospace lines new %s", oSpaces)
             oSpaces = self.removeInvalidOspaces(oSpaces, personsArray)
-            #rospy.loginfo("Final OSpace! %s", oSpaces)
+            rospy.loginfo("Final OSpace! %s", oSpaces)
             oPoints = self.convertFormationToPoints(oSpaces)
             #rospy.loginfo("Points for the oSpaces: %s", oPoints)
             self.publishFormationPoints(oPoints)
