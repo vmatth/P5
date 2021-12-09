@@ -18,7 +18,7 @@ FormationLayer::FormationLayer() {}
 void FormationLayer::formationCallback(const spot_pkg::formationPoints::ConstPtr& msg){
   ROS_INFO("Receiving points from formation callback");
   int size = msg->points.size();
-  ROS_INFO("Amount of points: %i", size);
+  //ROS_INFO("Amount of points: %i", size);
   //Loop all f-formation points
   for(int i = 0; i < size; i++){
 
@@ -96,10 +96,10 @@ void FormationLayer::removeCostmapPointsAfterSomeTime(){
         //ROS_INFO("Index: %i", i);
         //If time has passed - points will be removed
         if(ros::Time::now().toSec() >= timeToRemove[i]){
-            ROS_INFO("Removing points index[%d] Time now: %f", i, ros::Time::now().toSec());  
+            //ROS_INFO("Removing points index[%d] Time now: %f", i, ros::Time::now().toSec());  
             //Remove specific AMOUNT of points from costmapPoints
             costmapPoints.erase(costmapPoints.begin(), costmapPoints.begin() + pointsToRemove[i]);
-            ROS_INFO("Removing number of points: %d", pointsToRemove[i]);
+            //ROS_INFO("Removing number of points: %d", pointsToRemove[i]);
             //Remove time and number
             timeToRemove.erase(timeToRemove.begin());
             pointsToRemove.erase(pointsToRemove.begin());

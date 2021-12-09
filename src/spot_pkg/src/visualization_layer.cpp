@@ -15,73 +15,58 @@ using costmap_2d::LETHAL_OBSTACLE;
 namespace visualization_layer_namespace
 {
 
-VisualizationLayer::VisualizationLayer() {}   
+VisualizationLayer::VisualizationLayer() {} 
+
+geometry_msgs::Point VisualizationLayer::convertPointToRobotFrame(geometry_msgs::Point point){
+  geometry_msgs::Point newPoint = geometry_msgs::Point();
+  newPoint.x = point.y;
+  newPoint.y = point.x * -1;
+}
+
+//Convert from Point32 to Point for some reason
+geometry_msgs::Point getPoint(geometry_msgs::Point32 p){
+  geometry_msgs::Point newPoint = geometry_msgs::Point();
+  newPoint.x = p.x;
+  newPoint.y = p.y;
+}
 
 void VisualizationLayer::bodyPointsCallback(const ros_openpose::BodyPoints::ConstPtr& msg){
   ROS_INFO("Receiving bodyPoints callback");
   int size = msg->LeftHip.size();
 
+  //Loop each person
   int id = 0;
 
-  //Loop all leftHips 
   for(int i = 0; i < size; i++){
-    //Convert the point to the correct x,y frame (from camera frame to spots frame)
-    geometry_msgs::Point newPoint = geometry_msgs::Point();
-    newPoint.x = msg->LeftHip[i].y;
-    newPoint.y = msg->LeftHip[i].x * -1;
-    visualizarPoint(calculatePointRelativeToRobot(newPoint), id, 1.0);
-    id++;
-  }
-  //Loop all rightHips 
-  for(int i = 0; i < size; i++){
-    //Convert the point to the correct x,y frame (from camera frame to spots frame)
-    geometry_msgs::Point newPoint = geometry_msgs::Point();
-    newPoint.x = msg->RightHip[i].y;
-    newPoint.y = msg->RightHip[i].x * -1; 
-    visualizarPoint(calculatePointRelativeToRobot(newPoint), id, 1.0);
-    id++;
-  }
-  //Loop all leftAnkle 
-  for(int i = 0; i < size; i++){
-    //Convert the point to the correct x,y frame (from camera frame to spots frame)
-    geometry_msgs::Point newPoint = geometry_msgs::Point();
-    newPoint.x = msg->LeftAnkle[i].y;
-    newPoint.y = msg->LeftAnkle[i].x * -1;
-    visualizarPoint(calculatePointRelativeToRobot(newPoint), id, 0.5);
-    id++;
-  }
-  //Loop all rightAnkle 
-  for(int i = 0; i < size; i++){
-    //Convert the point to the correct x,y frame (from camera frame to spots frame)
-    geometry_msgs::Point newPoint = geometry_msgs::Point();
-    newPoint.x = msg->RightAnkle[i].y;
-    newPoint.y = msg->RightAnkle[i].x * -1;
-    visualizarPoint(calculatePointRelativeToRobot(newPoint), id, 0.5);
-    id++;
-  }
-    //Loop all leftKnee 
-  for(int i = 0; i < size; i++){
-    //Convert the point to the correct x,y frame (from camera frame to spots frame)
-    geometry_msgs::Point newPoint = geometry_msgs::Point();
-    newPoint.x = msg->LeftKnee[i].y;
-    newPoint.y = msg->LeftKnee[i].x * -1;
-    visualizarPoint(calculatePointRelativeToRobot(newPoint), id, 0.5);
-    id++;
-  }
-  //Loop all rightKnee
-  for(int i = 0; i < size; i++){
-    //Convert the point to the correct x,y frame (from camera frame to spots frame)
-    geometry_msgs::Point newPoint = geometry_msgs::Point();
-    newPoint.x = msg->RightKnee[i].y;
-    newPoint.y = msg->RightKnee[i].x * -1;
-    visualizarPoint(calculatePointRelativeToRobot(newPoint), id, 0.5);
-    id++;
+    //Body Points
+    visualizarPoint(getPoint(msg->LeftHip[i]), id + 0, 1.0);
+    visualizarPoint(getPoint(msg->RightHip[i]), id + 1, 1.0);
+    visualizarPoint(getPoint(msg->RightKnee[i]), id + 2, 0.5);
+    visualizarPoint(getPoint(msg->LeftHip[i]), id + 3, 0.5);
+    visualizarPoint(getPoint(msg->LeftAnkle[i]), id + 4, 0.1);
+    visualizarPoint(getPoint(msg->RightAnkle[i]), id + 5, 0.1);
+    //Lines
+    visualizarLine(getPoint(msg->LeftHip[i]), getPoint(msg->LeftKnee[i]), id + 6);
+    visualizarLine(getPoint(msg->LeftKnee[i]), getPoint(msg->LeftAnkle[i]), id + 7);    
+    visualizarLine(getPoint(msg->RightHip[i]), getPoint(msg->RightKnee[i]), id + 8);
+    visualizarLine(getPoint(msg->RightKnee[i]), getPoint(msg->RightAnkle[i]), id + 9);
+    int id = id + 10;
   }
 
 
 }
 
 void VisualizationLayer::visualizarPoint(geometry_msgs::Point point, int id, double z){
+  point = calculatePointRelativeToRobot(convertPointToRobotFrame(point));
+
+  //Color for each person
+  float r = 1.0, g = 0.0, b = 0.0;
+  if(id == 1){ r = 0.0; g = 1.0; b = 0.0;}
+  else if(id == 2){ r = 0.0; g = 0.0; b = 1.0;}
+  else if(id == 3){ r = 1.0; g = 1.0; b = 0.0;}
+  else if(id == 4){ r = 0.0; g = 1.0; b = 1.0;}
+  else if(id == 5){ r = 1.0; g = 0.0; b = 1.0;}
+
   visualization_msgs::Marker marker;
   marker.header.frame_id = "map";
   marker.header.stamp = ros::Time();
@@ -92,20 +77,43 @@ void VisualizationLayer::visualizarPoint(geometry_msgs::Point point, int id, dou
   marker.pose.position.x = point.x;
   marker.pose.position.y = point.y;
   marker.pose.position.z = z;
-  marker.pose.orientation.x = 0.0;
-  marker.pose.orientation.y = 0.0;
-  marker.pose.orientation.z = 0.0;
   marker.pose.orientation.w = 1.0;
-  marker.lifetime = ros::Duration(0.2);
-  marker.scale.x = 0.05;
-  marker.scale.y = 0.05;
-  marker.scale.z = 0.05;
+  marker.lifetime = ros::Duration(1);
+  marker.scale.x = 0.3;
+  marker.scale.y = 0.3;
+  marker.scale.z = 0.3;
   marker.color.a = 0.8; // Don't forget to set the alpha!
-  marker.color.r = 0.0;
-  marker.color.g = 1.0;
-  marker.color.b = 0.0;
+  marker.color.r = r;
+  marker.color.g = g;
+  marker.color.b = b;
   vis_pub.publish(marker);
+}
 
+void VisualizationLayer::visualizarLine(geometry_msgs::Point start, geometry_msgs::Point end, int id){
+  //Color for each person
+  float r = 1.0, g = 0.0, b = 0.0;
+  if(id == 1){ r = 0.0; g = 1.0; b = 0.0;}
+  else if(id == 2){ r = 0.0; g = 0.0; b = 1.0;}
+  else if(id == 3){ r = 1.0; g = 1.0; b = 0.0;}
+  else if(id == 4){ r = 0.0; g = 1.0; b = 1.0;}
+  else if(id == 5){ r = 1.0; g = 0.0; b = 1.0;}
+  visualization_msgs::Marker marker;
+  marker.header.frame_id = "map";
+  marker.header.stamp = ros::Time();
+  marker.ns = "my_namespace";
+  marker.id = id;
+  marker.type = visualization_msgs::Marker::LINE_STRIP;
+  marker.action = visualization_msgs::Marker::ADD;
+  marker.pose.orientation.w = 1.0;
+  marker.lifetime = ros::Duration(1);
+  marker.scale.x = 0.1;
+  marker.color.a = 0.8; // Don't forget to set the alpha!
+  marker.color.r = r;
+  marker.color.g = g;
+  marker.color.b = b;
+  marker.points.push_back(start);
+  marker.points.push_back(end);
+  vis_pub.publish(marker);  
 }
 
 

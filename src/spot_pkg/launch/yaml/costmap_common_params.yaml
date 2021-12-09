@@ -6,13 +6,8 @@ footprint: [[-0.4, -0.2], [-0.4, 0.2], [0.4, 0.2], [0.4, -0.2]]
 transform_tolerance: 1.0
 
 inflation_layer:
-  inflation_radius: 0.08 #0.1
+  inflation_radius: 0.1 #0.1
   cost_scaling_factor: 15  # exponential rate at which the obstacle cost drops off (default 10)
-
-inflation_layer_proxemics:
-  inflation_radius: 1.2 #0.1
-  cost_scaling_factor: 15  # exponential rate at which the obstacle cost drops off (default 10)
-
 
 obstacle_2d_layer:
     observation_sources: scan
@@ -20,7 +15,6 @@ obstacle_2d_layer:
 
 plugins: 
     - {name: proxemics_layer, type: "proxemics_layer_namespace::ProxemicsLayer"}
-    - {name: inflation_layer_proxemics, type: "costmap_2d::InflationLayer"}
     - {name: static_map, type: "costmap_2d::StaticLayer"}
     - {name: obstacle_2d_layer, type: "costmap_2d::ObstacleLayer"}
     - {name: formation_layer, type: "formation_layer_namespace::FormationLayer"}

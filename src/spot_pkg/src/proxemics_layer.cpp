@@ -19,7 +19,7 @@ ProxemicsLayer::ProxemicsLayer() {}
 void ProxemicsLayer::peopleCallback(const spot_pkg::people::ConstPtr& msg){
   ROS_INFO("Receiving points from people callback");
   int size = msg->people.size();
-  ROS_INFO("Amount of people: %i", size);
+  //ROS_INFO("Amount of people: %i", size);
 
   //Loop all people 
   for(int i = 0; i < size; i++){
@@ -29,15 +29,10 @@ void ProxemicsLayer::peopleCallback(const spot_pkg::people::ConstPtr& msg){
     newPoint.y = msg->people[i].position.y;
 
     peoplePoints.push_back(calculatePointRelativeToRobot(newPoint));
-    //ROS_INFO("newPoint (%f, %f)", newPoint.x, newPoint.y);    
-    //ROS_INFO("calculatedPoint (%f, %f)", calculatePointRelativeToRobot(newPoint).x, calculatePointRelativeToRobot(newPoint).y);  
   }
 
-    //ROS_INFO("Time Now: %f", ros::Time::now().toSec());
     timeToRemove.push_back(ros::Time::now().toSec() + pointTimer);
-   // ROS_INFO("Time After 5 Seconds: %f", ros::Time::now().toSec() + pointTimer);
     pointsToRemove.push_back(size);
-    //ROS_INFO("Points to remove: %d", size);
 
 }
 
@@ -95,23 +90,15 @@ void ProxemicsLayer::updateBounds(double robot_x, double robot_y, double robot_y
 void ProxemicsLayer::removePeoplePointsAfterSomeTime(){
     int i = 0;
     while(i < timeToRemove.size()){
-        //ROS_INFO("Index: %i", i);
         //If time has passed - points will be removed
         if(ros::Time::now().toSec() >= timeToRemove[i]){
-            ROS_INFO("Removing points index[%d] Time now: %f", i, ros::Time::now().toSec());  
-            //Remove specific AMOUNT of points from costmapPoints
             peoplePoints.erase(peoplePoints.begin(), peoplePoints.begin() + pointsToRemove[i]);
-            ROS_INFO("Removing number of points: %d", pointsToRemove[i]);
-            //Remove time and number
             timeToRemove.erase(timeToRemove.begin());
             pointsToRemove.erase(pointsToRemove.begin());
         }
         else
             i++;
     }
-    //ROS_INFO("END");
-    //int size = costmapPoints.size();
-    //ROS_INFO("costmap size %i", size);
 }
 
 //Use the person center point, and create 4 extra points that are slightly around the center (custom inflation)
@@ -128,6 +115,18 @@ vector<geometry_msgs::Point> ProxemicsLayer::calculateSurroundingPointsFromPerso
   points.push_back(newPoint);
 
   newPoint.x = center.x - personInflation; newPoint.y = center.y - personInflation;
+  points.push_back(newPoint);
+
+  newPoint.x = center.x + personInflation;
+  points.push_back(newPoint);
+
+  newPoint.x = center.x - personInflation;
+  points.push_back(newPoint);
+
+  newPoint.y = center.y + personInflation;
+  points.push_back(newPoint);
+
+  newPoint.y = center.y - personInflation;
   points.push_back(newPoint);
 
   points.push_back(center);
@@ -149,6 +148,7 @@ void ProxemicsLayer::updateCosts(costmap_2d::Costmap2D& master_grid, int min_i, 
   //Loop all people
   for(int i = 0; i < peoplePoints.size(); i++){
     //Create a small inflation around the person's center
+    ROS_INFO("Adding person center at (%f, %f)", peoplePoints[i].x, peoplePoints[i].y);
     vector<geometry_msgs::Point> points = calculateSurroundingPointsFromPersonCenter(peoplePoints[i]);
     int size = points.size();
     //Add these points to the costmap

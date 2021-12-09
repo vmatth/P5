@@ -27,8 +27,11 @@ private:
   void reconfigureCB(costmap_2d::GenericPluginConfig &config, uint32_t level);
   void bodyPointsCallback(const ros_openpose::BodyPoints::ConstPtr& msg);
 
+  void visualizarLine(geometry_msgs::Point start, geometry_msgs::Point end, int id);
   void visualizarPoint(geometry_msgs::Point point, int id, double z);
 
+
+  geometry_msgs::Point convertPointToRobotFrame(geometry_msgs::Point point);
   geometry_msgs::Point calculatePointRelativeToRobot(geometry_msgs::Point point);
 
   double mark_x_, mark_y_;
