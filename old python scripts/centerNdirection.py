@@ -6,7 +6,7 @@ import numpy as np
 #from mpl_toolkits.mplot3d import Axes3D
 import math as math
 from sklearn.linear_model import LinearRegression
-import LinearRegression
+#import LinearRegression
 
 # plane = ax + by + cz = d
 
@@ -18,26 +18,26 @@ def get_xyorientation(persPointLeftHip, persPointLeftAnkle, persPointRightHip, p
         PointNum = 4
         PersNormalAngle = 0
 #        print('Finding Angle...')
-        # persPointList = np.array([persPointLeftHip, persPointLeftAnkle, persPointRightHip, persPointRightAnkle])
-        # persx = np.array([None, None, None, None]).reshape(-1, 1)
-        # persy = np.array([None, None, None, None])
+        persPointList = np.array([persPointLeftHip, persPointLeftAnkle, persPointRightHip, persPointRightAnkle])
+        persx = np.array([None, None, None, None]).reshape(-1, 1)
+        persy = np.array([None, None, None, None])
 
         # #Seperate the x and y values and put them in their own array
-        # for i in range(PointNum):
-        #         persx[i] = persPointList[i][0]
-        #         persy[i] = persPointList[i][1]
+        for i in range(PointNum):
+                persx[i] = persPointList[i][0]
+                persy[i] = persPointList[i][1]
         inputList = [persPointLeftHip, persPointLeftAnkle, persPointRightHip, persPointRightAnkle]
         #Make linear regression of the x and y
-        persmodelA, persmodelB = LinearRegression.LinearRegression(inputList)
-        #persmodel = LinearRegression(). fit(persx, persy)
+        #persmodelA, persmodelB = LinearRegression.LinearRegression(inputList)
+        persmodel = LinearRegression(). fit(persx, persy)
 #        print('person intercept: ', persmodel.intercept_)
 #        print('person slope: ', persmodel.coef_)
 
         #Find two points on the line and make a vector on the line
         x1 = 0
         x2 = 1
-        persPoint1OnLine = persmodelA*x1+persmodelB
-        persPoint2OnLine = persmodelA*x2+persmodelB
+        persPoint1OnLine = persmodel.coef_*x1+persmodel.intercept_
+        persPoint2OnLine = persmodel.coef_*x2+persmodel.intercept_
 #        print('Person Point 1 on line: ', persPoint1OnLine[0])
 #        print('Person Point 2 on line: ', persPoint2OnLine[0])
 
@@ -112,6 +112,9 @@ pers4PointLeftAnkle = np.array([1, 1])
 pers4PointRightHip = np.array([1.8, 0])
 pers4PointRightAnkle = np.array([2, 0])
 
+
+hej = get_xyorientation(pers1PointLeftHip, pers1PointLeftAnkle, pers1PointRightHip, pers1PointRightAnkle)
+print(hej)
 #Find_angle(pers1PointLeftHip, pers1PointLeftAnkle, pers1PointRightHip, pers1PointRightAnkle)
 
 #persCenter, persNormalAngle = Find_angle(pers1PointLeftHip, pers1PointLeftAnkle, pers1PointRightHip, pers1PointRightAnkle)

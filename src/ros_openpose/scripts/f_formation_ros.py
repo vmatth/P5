@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 # import modules
 #from ros_openpose.scripts.LineDot import pointConstructor
+import queue
 import rospy
 from ros_openpose.msg import BodyPoints
 from spot_pkg.msg import formationPoints
@@ -13,12 +14,16 @@ from rospy.core import rospyinfo
 from sklearn.linear_model import LinearRegression
 from numpy.core.fromnumeric import reshape, squeeze
 from scipy.spatial import ConvexHull, convex_hull_plot_2d
-from collections import namedtuple  
+from collections import namedtuple 
+
+from spot_pkg.msg import people
+from spot_pkg.msg import person 
 
 
 class F_formation:
     def __init__(self):
-        self.pub = rospy.Publisher('formations', formationPoints, queue_size=1)
+        self.formations_pub = rospy.Publisher('formations', formationPoints, queue_size=10)
+        self.people_pub = rospy.Publisher('people', people, queue_size=10)
         rospy.Subscriber("/BodyPoints", BodyPoints, self.callback)
 
     def callback(self, msg): #Callback for new BodyPoint
@@ -30,6 +35,7 @@ class F_formation:
 
     def createFFormations(self, msg):
         persons = self.getCenterAndAngle(msg)
+        self.publishPeoplePoints(persons)
         #rospy.loginfo("persons before 3 m %s", persons)
         persons = self.excludeDistance(persons, 3)
 
@@ -500,7 +506,21 @@ class F_formation:
             p.y = point.x * -1
             formation.points.append(p)
 
-        self.pub.publish(formation)
+        self.formations_pub.publish(formation)
+
+    def publishPeoplePoints(self, points):
+        ppl = people()
+
+        for p in points: 
+            point = Point()
+            point.x = p[1]
+            point.y = p[0] * -1
+
+            pers = person()
+            pers.position = point
+            ppl.people.append(pers)
+
+        self.people_pub.publish(ppl)
 
 
 
