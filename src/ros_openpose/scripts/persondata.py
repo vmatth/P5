@@ -23,7 +23,7 @@ from rospy.core import rospyinfo
 class PersonData:
 
     def __init__(self):
-        self.pub = rospy.Publisher('BodyPoints', BodyPoints, queue_size=1)
+        self.pub = rospy.Publisher('BodyPoints', BodyPoints, queue_size=10)
         rospy.Subscriber("/frame", Frame, self.callback)
 
 

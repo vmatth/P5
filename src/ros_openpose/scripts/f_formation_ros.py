@@ -3,6 +3,7 @@
 #from ros_openpose.scripts.LineDot import pointConstructor
 import rospy
 from ros_openpose.msg import BodyPoints
+from spot_pkg.msg import formationPoints
 from geometry_msgs.msg import Point
 import numpy as np
 import sys
@@ -17,6 +18,7 @@ from collections import namedtuple
 
 class F_formation:
     def __init__(self):
+        self.pub = rospy.Publisher('formations', formationPoints, queue_size=1)
         rospy.Subscriber("/BodyPoints", BodyPoints, self.callback)
 
     def callback(self, msg): #Callback for new BodyPoint
@@ -36,11 +38,14 @@ class F_formation:
             rospy.loginfo("Combinations %s", combinations)
             personsArray = self.reshape(persons) #List to Array
             oSpaces = self.constructOSpaces(personsArray, combinations)
-            rospy.loginfo("ospace lines before %s", oSpaces)
+            #rospy.loginfo("ospace lines before %s", oSpaces)
             oSpaces = self.constructOSpacesWithDirections(oSpaces, 0.5)
-            rospy.loginfo("ospace lines new %s", oSpaces)
+            #rospy.loginfo("ospace lines new %s", oSpaces)
             oSpaces = self.removeInvalidOspaces(oSpaces, personsArray)
-            rospy.loginfo("Final OSpace! %s", oSpaces)
+            #rospy.loginfo("Final OSpace! %s", oSpaces)
+            oPoints = self.convertFormationToPoints(oSpaces)
+            #rospy.loginfo("Points for the oSpaces: %s", oPoints)
+            self.publishFormationPoints(oPoints)
         else:
             rospy.loginfo("There are no combinations")
 
@@ -433,20 +438,20 @@ class F_formation:
 
     def pointConstructor(self, point1, point2, dist):
         distance = math.sqrt((point2[0]-point1[0])**2+(point2[1]-point1[1])**2)
-        print("distance", distance)
+        #print("distance", distance)
 
         distance = distance * 100
         NumberOfPoints = distance // dist
         NumberOfPoints = int(NumberOfPoints)
-        print("number",NumberOfPoints)
+        #print("number",NumberOfPoints)
 
         deltax = point2[0] - point1[0]
         deltay = point2[1] - point1[1]
 
         xslope = deltax/(NumberOfPoints-1)
-        print(xslope)
+        #print(xslope)
         yslope = deltay/(NumberOfPoints-1)
-        print(yslope)
+        #print(yslope)
 
         xCalc = point1[0] + xslope
         yCalc = point1[1] + yslope
@@ -478,9 +483,20 @@ class F_formation:
                 for p in tempPoints:
                     points.append(Point(p[0], p[1], 0))
                     
-        rospy.loginfo("Points for the oSpaces: %s", points)
+        #rospy.loginfo("Points for the oSpaces: %s", points)
         return points
 
+    #Publish formation points to the formations topic
+    def publishFormationPoints(self, points):
+        formation = formationPoints()
+        #Change x and y to fit with spots coordinate frame
+        for point in points:
+            p = Point()
+            p.x = point.y
+            p.y = point.x * -1
+            formation.points.append(p)
+
+        self.pub.publish(formation)
 
 
 

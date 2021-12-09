@@ -28,6 +28,6 @@
   </node>
 
   <node pkg="rosservice" type="rosservice" name="claimService" args="call --wait /spot/claim" />
+  <node pkg="rosservice" type="rosservice" name="powerOnService" args="call --wait /spot/power_on" />
 
- <!--  <include file="$(find spot_pkg)/launch/move_base.launch" /> -->
 </launch>

@@ -1,0 +1,8 @@
+<launch>
+
+    <include file="$(find ros_openpose)/launch/run.launch" />
+    
+    <node name="persondata" pkg="ros_openpose" type="persondata.py"/>
+    <node name="f_formation_ros" pkg="ros_openpose" type="f_formation_ros.py"/>
+
+</launch> 
