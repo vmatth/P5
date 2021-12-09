@@ -62,17 +62,19 @@ class F_formation:
     def getCenterAndAngle(self, msg):
         persons = []
         for i in range(0, len(msg.LeftHip)): #Loop number of people
-            PointNum = 4 #2 hips and 2 ankles = 4 Points
+            PointNum = 6 #2 hips and 2 ankles and 2 knees = 6 Points
             PersNormalAngle = 0
           # print('Finding Angle...')
             persPointLeftHip = self.convertPointToArray(msg.LeftHip[i])
             persPointLeftAnkle = self.convertPointToArray(msg.LeftAnkle[i])
             persPointRightHip = self.convertPointToArray(msg.RightHip[i])
             persPointRightAnkle = self.convertPointToArray(msg.RightAnkle[i])
+            persPointRightKnee = self.convertPointToArray(msg.RightKnee[i])
+            persPointLeftKnee = self.convertPointToArray(msg.LeftKnee[i])
 
-            persPointList = np.array([persPointLeftHip, persPointLeftAnkle, persPointRightHip, persPointRightAnkle])
-            persx = np.array([None, None, None, None]).reshape(-1, 1)
-            persy = np.array([None, None, None, None])
+            persPointList = np.array([persPointLeftHip, persPointLeftAnkle, persPointRightHip, persPointRightAnkle, persPointLeftKnee, persPointRightKnee])
+            persx = np.array([None, None, None, None, None, None]).reshape(-1, 1)
+            persy = np.array([None, None, None, None, None, None])
 
         # #Seperate the x and y values and put them in their own array
             for i in range(PointNum):

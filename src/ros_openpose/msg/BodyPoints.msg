@@ -8,5 +8,7 @@ geometry_msgs/Point32[] LeftHip
 geometry_msgs/Point32[] RightHip
 geometry_msgs/Point32[] LeftAnkle
 geometry_msgs/Point32[] RightAnkle
+geometry_msgs/Point32[] RightKnee
+geometry_msgs/Point32[] LeftKnee
 
 

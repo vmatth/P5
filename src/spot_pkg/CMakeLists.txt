@@ -138,6 +138,7 @@ include_directories(
 add_library(${PROJECT_NAME}
   src/formation_layer.cpp
   src/proxemics_layer.cpp
+  src/visualization_layer.cpp
 )
 
 ## Add cmake target dependencies of the library
@@ -216,7 +217,4 @@ catkin_install_python(PROGRAMS scripts/testFormations.py
 
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)
-
-add_executable(timeRemove src/timeRemove.cpp)
-target_link_libraries(timeRemove ${catkin_LIBRARIES})
 

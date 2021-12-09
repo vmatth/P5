@@ -26,7 +26,6 @@ class PersonData:
         self.pub = rospy.Publisher('BodyPoints', BodyPoints, queue_size=10)
         rospy.Subscriber("/frame", Frame, self.callback)
 
-
     def checkForPoint(self, point): #Returns true if a point is over 0.1
 
         return (abs(point.x) > 0.0001 and abs(point.y) > 0.0001 and abs(point.x) < 20 and abs(point.y) < 20)
@@ -38,30 +37,39 @@ class PersonData:
         leftAnkle = []
         rightHip = []
         rightAnkle = []
+        leftKnee = []
+        rightKnee = []
 
         for person in msg.persons:
             i = i +1
             rospy.loginfo("Person: %d", i)
-            text = [person.bodyParts[8].point, person.bodyParts[11].point, person.bodyParts[10].point, person.bodyParts[13].point]
+            text = [person.bodyParts[8].point, person.bodyParts[11].point, person.bodyParts[10].point, person.bodyParts[13].point, person.bodyParts[9].point, person.bodyParts[12].point]
             #rospy.loginfo('%s\n' % text)
 
             leftHipPoint = Point(x = text[1].x, y = text[1].z)
             leftAnklePoint = Point(x = text[3].x, y = text[3].z)
             rightHipPoint = Point(x = text[0].x, y = text[0].z)
             rightAnklePoint = Point(x = text[2].x, y = text[2].z)
+            leftKneePoint = Point(x = text[5].x, y = text[5].y)
+            rightKneePoint = Point(x = text[4].x, y = text[4].y)
 
             rospy.loginfo("left Hip %s", leftHipPoint)
             rospy.loginfo("right Hip %s", rightHipPoint)
             rospy.loginfo("left Ankle %s", leftAnklePoint)
             rospy.loginfo("right Ankle %s", rightAnklePoint)
+            rospy.loginfo("left Knee %s", leftKneePoint)
+            rospy.loginfo("right Knee %s", rightKneePoint)
 
             #Add this person if all 4 body points exist (are not very small numbers)
-            if (self.checkForPoint(leftHipPoint) and self.checkForPoint(leftAnklePoint) and self.checkForPoint(rightHipPoint) and self.checkForPoint(rightAnklePoint)): #Returns true all points are over 0.1
+            if (self.checkForPoint(leftHipPoint) and self.checkForPoint(leftAnklePoint) and self.checkForPoint(rightHipPoint) and self.checkForPoint(rightAnklePoint) and self.checkForPoint(rightKneePoint) and self.checkForPoint(leftKneePoint)): #Returns true all points are over 0.1
                 leftHip.append(leftHipPoint)
                 leftAnkle.append(leftAnklePoint)
 
                 rightHip.append(rightHipPoint)
                 rightAnkle.append(rightAnklePoint)
+
+                leftKnee.append(leftKneePoint)
+                rightKnee.append(rightKneePoint)
                 rospy.loginfo("This person exists!")
             else:
                 rospy.loginfo("This person does not have all body parts")
@@ -71,6 +79,8 @@ class PersonData:
         bodyPoints.RightHip = rightHip
         bodyPoints.LeftAnkle = leftAnkle
         bodyPoints.RightAnkle = rightAnkle
+        bodyPoints.LeftKnee = leftKnee
+        bodyPoints.RightKnee = rightKnee
 
         self.pub.publish(bodyPoints)
 
