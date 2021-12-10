@@ -17,7 +17,7 @@ namespace proxemics_layer_namespace
 ProxemicsLayer::ProxemicsLayer() {}   
 
 void ProxemicsLayer::peopleCallback(const spot_pkg::people::ConstPtr& msg){
-  ROS_INFO("Receiving points from people callback");
+  //ROS_INFO("Receiving points from people callback");
   int size = msg->people.size();
   //ROS_INFO("Amount of people: %i", size);
 
@@ -148,7 +148,7 @@ void ProxemicsLayer::updateCosts(costmap_2d::Costmap2D& master_grid, int min_i, 
   //Loop all people
   for(int i = 0; i < peoplePoints.size(); i++){
     //Create a small inflation around the person's center
-    ROS_INFO("Adding person center at (%f, %f)", peoplePoints[i].x, peoplePoints[i].y);
+    //ROS_INFO("Adding person center at (%f, %f)", peoplePoints[i].x, peoplePoints[i].y);
     vector<geometry_msgs::Point> points = calculateSurroundingPointsFromPersonCenter(peoplePoints[i]);
     int size = points.size();
     //Add these points to the costmap

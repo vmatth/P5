@@ -24,7 +24,7 @@ Panels:
     Experimental: false
     Name: Time
     SyncMode: 0
-    SyncSource: RightDepthCloud
+    SyncSource: LaserScan
   - Class: spot_viz/SpotControlPanel
     Name: SpotControlPanel
 Preferences:
@@ -658,8 +658,8 @@ Visualization Manager:
     - Alpha: 1
       Autocompute Intensity Bounds: true
       Autocompute Value Bounds:
-        Max Value: 0.34658288955688477
-        Min Value: 0.3424312472343445
+        Max Value: 0.21751654148101807
+        Min Value: 0.20712412893772125
         Value: true
       Axis: Z
       Channel Name: intensity
@@ -682,6 +682,14 @@ Visualization Manager:
       Unreliable: false
       Use Fixed Frame: true
       Use rainbow: true
+      Value: true
+    - Class: rviz/Marker
+      Enabled: true
+      Marker Topic: /visualization_marker
+      Name: BodyPoints
+      Namespaces:
+        {}
+      Queue Size: 100
       Value: true
   Enabled: true
   Global Options:
@@ -711,7 +719,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 8.386870384216309
+      Distance: 10.333511352539062
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -726,10 +734,10 @@ Visualization Manager:
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 1.0097973346710205
+      Pitch: 1.3647969961166382
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 4.242094039916992
+      Yaw: 4.377091407775879
     Saved: ~
 Window Geometry:
   Displays:

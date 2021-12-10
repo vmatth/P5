@@ -27,7 +27,7 @@ private:
   void reconfigureCB(costmap_2d::GenericPluginConfig &config, uint32_t level);
   void bodyPointsCallback(const ros_openpose::BodyPoints::ConstPtr& msg);
 
-  void visualizarLine(geometry_msgs::Point start, geometry_msgs::Point end, int id);
+  void visualizarLine(geometry_msgs::Point start, geometry_msgs::Point end, int id, double, double);
   void visualizarPoint(geometry_msgs::Point point, int id, double z);
 
 
@@ -40,6 +40,7 @@ private:
   ros::Subscriber sub;
   ros::Publisher vis_pub; 
   double xRobot, yRobot, yawRobot;
+  int id = 0;
 };
 }
 #endif
