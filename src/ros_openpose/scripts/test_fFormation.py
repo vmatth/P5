@@ -61,13 +61,13 @@ class F_formation:
                     for j in range(0,len(oSpaces[i])):
                         points = self.pointConstructor(oSpaces[i][j][0], oSpaces[i][j][1], 10)
                         print("j:", j)
-                        str = f"src/ros_openpose/scripts/testFiles/test{index}.png"
+                        str = f"src/ros_openpose/scripts/testFiles/Frame{index}.png"
                         title = f"Frame {index}"
                         self.plotPoints(points, Path(str), title, data)
             else:
                 print("no persons detected")
                 for j in range(0, len(msg)):
-                    str = f"src/ros_openpose/scripts/testFiles/test{index}.png"
+                    str = f"src/ros_openpose/scripts/testFiles/Frame{index}.png"
                     title = f"Frame {index}"
                     # xAngle = 0.2 * math.cos(msg[j][2]) + msg[j][0]
                     # yAngle = 0.2 * math.sin(msg[j][2]) + msg[j][1]
@@ -676,7 +676,7 @@ class F_formation:
         p4210=[1.4,3.5,3]
         p4211=[2,3,2]
 
-        p431=[1,5,0.78]
+        p431=[1,5.001,0.78]
         p432=[1,6,5.18]
         p433=[2,6,3.92]
         p434=[2,4,2.18]
@@ -691,7 +691,7 @@ class F_formation:
         p4313=[5.5,7.5,5.18]
         p4314=[6.5,7.5,3.8]
         p4315=[8,8.1,4.7]
-        p4316=[7,1,1.57]
+        p4316=[5.67,4.9,1.57]
 
         p441=[0,1,1.047]
         p442=[0,2,5.75]
