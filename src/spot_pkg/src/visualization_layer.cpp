@@ -18,44 +18,53 @@ namespace visualization_layer_namespace
 VisualizationLayer::VisualizationLayer() {} 
 
 //Convert from Point32 to Point and convert to Robot Frame
-geometry_msgs::Point convertPoint(geometry_msgs::Point32 p){
+geometry_msgs::Point VisualizationLayer::convertPoint(geometry_msgs::Point32 p){
   geometry_msgs::Point newPoint = geometry_msgs::Point();
   newPoint.x = p.y;
   newPoint.y = p.x * -1;
+  newPoint.z = p.z * -1;
+  newPoint = calculatePointRelativeToRobot(newPoint);
+  //ROS_INFO("Point relative to spot: (%f, %f, %f)", newPoint.x, newPoint.y, newPoint.z);
   return newPoint;
 }
 
 void VisualizationLayer::bodyPointsCallback(const ros_openpose::BodyPoints::ConstPtr& msg){
-  ROS_INFO("Receiving bodyPoints callback");
+  //ROS_INFO("Receiving bodyPoints callback");
   int size = msg->LeftHip.size();
 
   //Loop each person
-  int id = 0;
+  id = 0;
 
   //ROS_INFO("Left hip: (%f, %f)", msg->LeftHip[0].x, msg->LeftHip[0].y);
   //ROS_INFO("Left hip converted: (%f, %f)", convertPoint(msg->LeftHip[0]).x, convertPoint(msg->LeftHip[0]).y);
 
   for(int i = 0; i < size; i++){
     //Body Points
-    visualizarPoint(convertPoint(msg->LeftHip[i]), i, 1.0);
-    visualizarPoint(convertPoint(msg->RightHip[i]), i, 1.0);
-    visualizarPoint(convertPoint(msg->RightKnee[i]), i, 0.5);
-    visualizarPoint(convertPoint(msg->LeftHip[i]), i, 0.5);
-    visualizarPoint(convertPoint(msg->LeftAnkle[i]), i, 0.1);
-    visualizarPoint(convertPoint(msg->RightAnkle[i]), i, 0.1);
+    //ROS_INFO("Right Hip");
+    visualizarPoint(convertPoint(msg->RightHip[i]), i);
+    //ROS_INFO("Left Hip");
+    visualizarPoint(convertPoint(msg->LeftHip[i]), i);
+    //ROS_INFO("Right knee");
+    visualizarPoint(convertPoint(msg->RightKnee[i]), i);
+    //ROS_INFO("Left knee");
+    visualizarPoint(convertPoint(msg->LeftKnee[i]), i);
+    //ROS_INFO("Right ankle");
+    visualizarPoint(convertPoint(msg->RightAnkle[i]), i);
+    //ROS_INFO("Left Ankle");
+    visualizarPoint(convertPoint(msg->LeftAnkle[i]), i);
+
     //Lines
-    // visualizarLine(convertPoint(msg->LeftHip[i]), convertPoint(msg->LeftKnee[i]), i, 1.0, 0.5);
-    // visualizarLine(convertPoint(msg->LeftKnee[i]), convertPoint(msg->LeftAnkle[i]), i, 1.0, 0.5);    
-    // visualizarLine(convertPoint(msg->RightHip[i]), convertPoint(msg->RightKnee[i]), i, 0.5, 0.1);
-    // visualizarLine(convertPoint(msg->RightKnee[i]), convertPoint(msg->RightAnkle[i]), i, 0.5, 0.1);
+    visualizarLine(convertPoint(msg->LeftHip[i]), convertPoint(msg->LeftKnee[i]), i);
+    visualizarLine(convertPoint(msg->LeftKnee[i]), convertPoint(msg->LeftAnkle[i]), i);    
+    visualizarLine(convertPoint(msg->RightHip[i]), convertPoint(msg->RightKnee[i]), i);
+    visualizarLine(convertPoint(msg->RightKnee[i]), convertPoint(msg->RightAnkle[i]), i);
 
   }
 
 
 }
 
-void VisualizationLayer::visualizarPoint(geometry_msgs::Point point, int color, double z){
-  point = calculatePointRelativeToRobot(point);
+void VisualizationLayer::visualizarPoint(geometry_msgs::Point point, int color){
   id++;
   //Color for each person
   float r = 1.0, g = 0.0, b = 0.0;
@@ -73,10 +82,10 @@ void VisualizationLayer::visualizarPoint(geometry_msgs::Point point, int color, 
   marker.type = visualization_msgs::Marker::SPHERE;
   marker.action = visualization_msgs::Marker::ADD;
   marker.pose.position.x = point.x;
-  marker.pose.position.y = point.y;
-  marker.pose.position.z = z;
+  marker.pose.position.y = point.y; 
+  marker.pose.position.z = point.z + 1.0;//+1.0 because we test while spot is on the ground
   marker.pose.orientation.w = 1.0;
-  marker.lifetime = ros::Duration(1);
+  marker.lifetime = ros::Duration(2);
   marker.scale.x = 0.1;
   marker.scale.y = 0.1;
   marker.scale.z = 0.1;
@@ -87,7 +96,7 @@ void VisualizationLayer::visualizarPoint(geometry_msgs::Point point, int color, 
   vis_pub.publish(marker);
 }
 
-void VisualizationLayer::visualizarLine(geometry_msgs::Point start, geometry_msgs::Point end, int color, double zStart, double zEnd){
+void VisualizationLayer::visualizarLine(geometry_msgs::Point start, geometry_msgs::Point end, int color){
   id++;
   //Color for each person
   float r = 1.0, g = 0.0, b = 0.0;
@@ -110,8 +119,8 @@ void VisualizationLayer::visualizarLine(geometry_msgs::Point start, geometry_msg
   marker.color.r = r;
   marker.color.g = g;
   marker.color.b = b;
-  start = calculatePointRelativeToRobot(start); start.z = zStart;
-  end = calculatePointRelativeToRobot(end); end.z = zEnd;
+  start.z = start.z + 1.0;
+  end.z = end.z + 1.0;
   marker.points.push_back(start);
   marker.points.push_back(end);
   vis_pub.publish(marker);  
@@ -127,6 +136,7 @@ geometry_msgs::Point VisualizationLayer::calculatePointRelativeToRobot(geometry_
   //Calculate the formation point relative to the robot's position
   newPoint.x += xRobot;
   newPoint.y += yRobot;
+  newPoint.z = point.z;
   //ROS_INFO("Calculating poont relativve ro robot, yawRobot: %f, xRobot; %f, yRobot: %f, inputPoint(%f, %f", yawRobot, xRobot, yRobot, point.x, point.y);
   return newPoint;
 }

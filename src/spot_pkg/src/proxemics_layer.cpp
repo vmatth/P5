@@ -17,12 +17,13 @@ namespace proxemics_layer_namespace
 ProxemicsLayer::ProxemicsLayer() {}   
 
 void ProxemicsLayer::peopleCallback(const spot_pkg::people::ConstPtr& msg){
-  //ROS_INFO("Receiving points from people callback");
+  ROS_INFO("Receiving points from people callback");
   int size = msg->people.size();
   //ROS_INFO("Amount of people: %i", size);
 
   //Loop all people 
   for(int i = 0; i < size; i++){
+    ROS_INFO("Receiving point: (%f, %f, %f)", msg->people[i].position.x, msg->people[i].position.y, msg->people[i].position.z);
 
     geometry_msgs::Point newPoint = geometry_msgs::Point();
     newPoint.x = msg->people[i].position.x;
@@ -47,6 +48,8 @@ geometry_msgs::Point ProxemicsLayer::calculatePointRelativeToRobot(geometry_msgs
   newPoint.x += xRobot;
   newPoint.y += yRobot;
   //ROS_INFO("Calculating poont relativve ro robot, yawRobot: %f, xRobot; %f, yRobot: %f, inputPoint(%f, %f", yawRobot, xRobot, yRobot, point.x, point.y);
+  ROS_INFO("relative point: (%f, %f, %f)", newPoint.x, newPoint.y, newPoint.z);
+
   return newPoint;
 }
 
@@ -104,35 +107,33 @@ void ProxemicsLayer::removePeoplePointsAfterSomeTime(){
 //Use the person center point, and create 4 extra points that are slightly around the center (custom inflation)
 vector<geometry_msgs::Point> ProxemicsLayer::calculateSurroundingPointsFromPersonCenter(geometry_msgs::Point center){
   vector<geometry_msgs::Point> points;
-  geometry_msgs::Point newPoint = geometry_msgs::Point();
-  newPoint.x = center.x + personInflation; newPoint.y = center.y + personInflation;
-  points.push_back(newPoint);
 
-  newPoint.x = center.x - personInflation; newPoint.y = center.y + personInflation;
-  points.push_back(newPoint);
+  vector<geometry_msgs::Point> circlePoints = createCircle(center, 0.15, 12); int size = circlePoints.size(); for(int i = 0; i < size; i++){points.push_back(circlePoints[i]);}
+  circlePoints = createCircle(center, 0.3, 18); size = circlePoints.size(); for(int i = 0; i < size; i++){points.push_back(circlePoints[i]);}
+  circlePoints = createCircle(center, 0.45, 24); size = circlePoints.size(); for(int i = 0; i < size; i++){points.push_back(circlePoints[i]);}
 
-  newPoint.x = center.x + personInflation; newPoint.y = center.y - personInflation;
-  points.push_back(newPoint);
 
-  newPoint.x = center.x - personInflation; newPoint.y = center.y - personInflation;
-  points.push_back(newPoint);
 
-  newPoint.x = center.x + personInflation;
-  points.push_back(newPoint);
 
-  newPoint.x = center.x - personInflation;
-  points.push_back(newPoint);
-
-  newPoint.y = center.y + personInflation;
-  points.push_back(newPoint);
-
-  newPoint.y = center.y - personInflation;
-  points.push_back(newPoint);
 
   points.push_back(center);
-
   return points;
 }
+
+vector<geometry_msgs::Point> ProxemicsLayer::createCircle(geometry_msgs::Point center, double radius, int amountOfPoints){
+  vector<geometry_msgs::Point> points;
+  geometry_msgs::Point newPoint = geometry_msgs::Point();
+  double angleIncrement = 6.28 / amountOfPoints;
+  double angle = 0;
+  for(int i = 0; i < amountOfPoints; i++){
+    newPoint.x = radius * cos(angle) + center.x;
+    newPoint.y = radius * sin(angle) + center.y;
+    angle = angle + angleIncrement; //Plus deg
+    points.push_back(newPoint);
+  }
+  return points;
+}
+
 
 void ProxemicsLayer::updateCosts(costmap_2d::Costmap2D& master_grid, int min_i, int min_j, int max_i,
                                           int max_j)
@@ -148,11 +149,12 @@ void ProxemicsLayer::updateCosts(costmap_2d::Costmap2D& master_grid, int min_i, 
   //Loop all people
   for(int i = 0; i < peoplePoints.size(); i++){
     //Create a small inflation around the person's center
-    //ROS_INFO("Adding person center at (%f, %f)", peoplePoints[i].x, peoplePoints[i].y);
+
     vector<geometry_msgs::Point> points = calculateSurroundingPointsFromPersonCenter(peoplePoints[i]);
     int size = points.size();
     //Add these points to the costmap
     for(int j = 0; j < size; j++){
+      ROS_INFO("Adding person point at (%f, %f)", points[j].x, points[j].y);
       if(master_grid.worldToMap(points[j].x, points[j].y, mx, my)){
         master_grid.setCost(mx, my, LETHAL_OBSTACLE);
       }

@@ -43,15 +43,15 @@ class PersonData:
         for person in msg.persons:
             i = i +1
             rospy.loginfo("Person: %d", i)
-            text = [person.bodyParts[8].point, person.bodyParts[11].point, person.bodyParts[10].point, person.bodyParts[13].point, person.bodyParts[9].point, person.bodyParts[12].point]
+            text = [person.bodyParts[9].point, person.bodyParts[12].point, person.bodyParts[11].point, person.bodyParts[14].point, person.bodyParts[10].point, person.bodyParts[13].point]
             #rospy.loginfo('%s\n' % text)
 
-            leftHipPoint = Point(x = text[1].x, y = text[1].z)
-            leftAnklePoint = Point(x = text[3].x, y = text[3].z)
-            rightHipPoint = Point(x = text[0].x, y = text[0].z)
-            rightAnklePoint = Point(x = text[2].x, y = text[2].z)
-            leftKneePoint = Point(x = text[5].x, y = text[5].y)
-            rightKneePoint = Point(x = text[4].x, y = text[4].y)
+            leftHipPoint = Point(x = text[1].x, y = text[1].z, z = text[1].y)
+            leftAnklePoint = Point(x = text[3].x, y = text[3].z, z = text[3].y)
+            rightHipPoint = Point(x = text[0].x, y = text[0].z, z = text[0].y)
+            rightAnklePoint = Point(x = text[2].x, y = text[2].z, z = text[2].y)
+            leftKneePoint = Point(x = text[5].x, y = text[5].z, z = text[5].y)
+            rightKneePoint = Point(x = text[4].x, y = text[4].z, z = text[4].y)
 
             rospy.loginfo("left Hip %s", leftHipPoint)
             rospy.loginfo("right Hip %s", rightHipPoint)
@@ -74,15 +74,17 @@ class PersonData:
             else:
                 rospy.loginfo("This person does not have all body parts")
 
-        bodyPoints = BodyPoints()
-        bodyPoints.LeftHip = leftHip
-        bodyPoints.RightHip = rightHip
-        bodyPoints.LeftAnkle = leftAnkle
-        bodyPoints.RightAnkle = rightAnkle
-        bodyPoints.LeftKnee = leftKnee
-        bodyPoints.RightKnee = rightKnee
+        if(len(leftHip) > 0): #Only publish points if there are any
 
-        self.pub.publish(bodyPoints)
+            bodyPoints = BodyPoints()
+            bodyPoints.LeftHip = leftHip
+            bodyPoints.RightHip = rightHip
+            bodyPoints.LeftAnkle = leftAnkle
+            bodyPoints.RightAnkle = rightAnkle
+            bodyPoints.LeftKnee = leftKnee
+            bodyPoints.RightKnee = rightKnee
+
+            self.pub.publish(bodyPoints)
 
 
 

@@ -30,10 +30,11 @@ private:
 
   geometry_msgs::Point calculatePointRelativeToRobot(geometry_msgs::Point point);
   vector<geometry_msgs::Point> calculateSurroundingPointsFromPersonCenter(geometry_msgs::Point center);
-
+  vector<geometry_msgs::Point> createCircle(geometry_msgs::Point center, double radius, int amountOfPoints);
+  
   void removePeoplePointsAfterSomeTime(); //Removes points after some time has passed
 
-  double personInflation = 0.1;
+  double inflationRadius = 0.1;
   double pointTimer = 5.0; //Amount of seconds the points are active in the costmap
 
   double mark_x_, mark_y_;
