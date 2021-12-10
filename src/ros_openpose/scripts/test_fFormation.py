@@ -22,6 +22,7 @@ class F_formation:
         for i in range(0, len(data)):
         #     self.createFFormations(data[i],i)
             plt.cla() 
+            print("picture index: ", i)
             for j in range(0, len(data[i])):
                 xAngle = 0.2 * math.cos(data[i][j][2]) + data[i][j][0]
                 yAngle = 0.2 * math.sin(data[i][j][2]) + data[i][j][1]
@@ -29,21 +30,19 @@ class F_formation:
                 y=[data[i][j][1], yAngle]
                 plt.plot(data[i][j][0], data[i][j][1],'o')
                 plt.plot(x,y, color='red')
-            self.createFFormations(data[i],i)
+            self.createFFormations(data[i],i+1)
 
     def getTestData(self):
-        mat = scipy.io.loadmat('ros_openpose/scripts/features.mat')
-        synth = mat['features'][0]
+        data = self.testData()
+        synth = data
         dataPerson = []
         for i in range(0,len(synth)):
         #for i in range(0,2):
             data = []
             for j in range(0, len(synth[i])):
-                x = synth[i][j][1]
-                x = x/100
-                y = synth[i][j][2]
-                y = y/100
-                o = synth[i][j][3]
+                x = synth[i][j][0]
+                y = synth[i][j][1]
+                o = synth[i][j][2]
                 tempPerson = [x,y,o]
                 data.append(tempPerson)
             dataPerson.append(data)
@@ -51,25 +50,46 @@ class F_formation:
 
     def createFFormations(self, msg, index):
         persons = self.excludeDistance(msg, 3)
-        color = ['blue', 'orange', 'red', 'green', 'purple', 'brown', 'pink', 'gray', 'olive', 'cyan','blue', 'orange', 'red', 'green', 'purple', 'brown', 'pink', 'gray', 'olive', 'cyan']
-        symbol = ['1','2','3','4','+','x','*','1','2','3','4','+','x','*']
+        color = ['blue', 'orange', 'red', 'green', 'purple', 'brown', 'pink', 'gray', 'olive', 'cyan','blue', 'orange', 'red', 'green', 'purple', 'brown', 'pink', 'gray', 'olive', 'cyan','blue', 'orange', 'red', 'green', 'purple', 'brown', 'pink', 'gray', 'olive', 'cyan']
+        symbol = ['1','2','3','4','+','x','*','1','2','3','4','+','x','*','1','2','3','4','+','x','*','1','2','3','4','+','x','*','1','2','3','4','+','x','*','1','2','3','4','+','x','*','1','2','3','4','+','x','*','1','2','3','4','+','x','*','1','2','3','4','+','x','*','1','2','3','4','+','x','*','1','2','3','4','+','x','*','1','2','3','4','+','x','*','1','2','3','4','+','x','*','1','2','3','4','+','x','*','1','2','3','4','+','x','*','1','2','3','4','+','x','*','1','2','3','4','+','x','*','1','2','3','4','+','x','*','1','2','3','4','+','x','*','1','2','3','4','+','x','*','1','2','3','4','+','x','*','1','2','3','4','+','x','*','1','2','3','4','+','x','*','1','2','3','4','+','x','*','1','2','3','4','+','x','*','1','2','3','4','+','x','*']
         if(self.checkForArray(persons)): #Check if there are people in a combinations
+            print("Persons detected")
             combinations = self.oSpaceCombinations(len(persons))
             #rospy.loginfo("Combinations %s", combinations)
             personsArray = self.reshape(persons) #List to Array
             oSpaces = self.constructOSpaces(personsArray, combinations)
             #rospy.loginfo("ospace lines before %s", oSpaces)
-            oSpaces = self.constructOSpacesWithDirections(oSpaces, 0.785)
+            oSpaces = self.constructOSpacesWithDirections(oSpaces, 0.80)
             #rospy.loginfo("ospace lines new %s", oSpaces)
             oSpaces = self.removeInvalidOspaces(oSpaces, personsArray)
             #rospy.loginfo("Final OSpace! %s", oSpaces)
-            print("Final OSpace!: ", oSpaces)
-            for i in range(0, len(oSpaces)):
-                for j in range(0,len(oSpaces[i])):
-                    points = self.pointConstructor(oSpaces[i][j][0], oSpaces[i][j][1], 10)
-                    print("points:", points)
-                    str = f"ros_openpose/scripts/testFiles/test{index}.png"
-                    self.plotPoints(points, Path(str), color[i],symbol[i])
+            #print("Final OSpace!: ", oSpaces)
+            if len(oSpaces)>0:
+                for i in range(0, len(oSpaces)):
+                    print("index i:", i)
+                    for j in range(0,len(oSpaces[i])):
+                        points = self.pointConstructor(oSpaces[i][j][0], oSpaces[i][j][1], 10)
+                        print("j:", j)
+                        str = f"src/ros_openpose/scripts/testFiles/test{index}.png"
+                        title = f"Frame {index}"
+                        self.plotPoints(points, Path(str), title)
+            else:
+                print("no persons detected")
+                for j in range(0, len(msg)):
+                    str = f"src/ros_openpose/scripts/testFiles/test{index}.png"
+                    title = f"Frame {index}"
+                    # xAngle = 0.2 * math.cos(msg[j][2]) + msg[j][0]
+                    # yAngle = 0.2 * math.sin(msg[j][2]) + msg[j][1]
+                    # x=[msg[j][0], xAngle]
+                    # y=[msg[j][1], yAngle]
+                    # plt.plot(msg[j][0], msg[j][1],'o')
+                    # plt.plot(x,y, color='red')
+                    plt.title(title)
+                    plt.xlim([-10, 10])
+                    plt.ylim([-5, 10])
+                    plt.xlabel("distance [m]")
+                    plt.ylabel("distance [m]")
+                    plt.savefig(str)
         else:
             #rospy.loginfo("There are no combinations")
             pass
@@ -493,14 +513,220 @@ class F_formation:
 
         return LinePoints
     
-    def plotPoints(self, msg, str, color, symbol):
+    def plotPoints(self, msg, str, title):
         x = []
         y = []
         for i in range(0,len(msg)):
             x.append(msg[i][0])
             y.append(msg[i][1])
-        plt.plot(x, y, symbol, color=color, alpha=0.8)
+        plt.plot(x, y, 'x', alpha=0.8)
+        plt.title(title)
+        plt.xlim([-10, 10])
+        plt.ylim([-5, 10])
+        plt.xlabel("distance [m]")
+        plt.ylabel("distance [m]")
         plt.savefig(str)
+
+
+
+
+    def testData(self):
+        p1 = [2.2, 3.2, -0.8]
+        p2 = [3.1, 2.5, 2.8]
+
+        p3 = [0.2, 3.2, 4.8]
+        p4 = [1.1, 3.1, 4.7]
+
+        p5 = [2.7, 4.2, 0.2]
+        p6=[4, 4.1, 3]
+
+        p7=[1.7, 2.8, 0.4]
+        p8=[2.4, 2.3, 2]
+
+        p9=[1.7, 2.8, -0.1]
+        p10=[2.4, 2, 1.7]
+
+        frame11 = [p1, p2]
+        frame12 = [p3, p4]
+        frame13 = [p5, p6]
+        frame14 = [p7,p8]
+        frame15 = [p9,p10] 
+
+        ################################################3
+        p211=[-2, 3.8, 4.2]
+        p212=[-3, 2.4, 1]
+        p213=[-1, 1.6, 1.6]
+        p214=[0, 5.5, 4.7]
+        p215=[1,4.5,3]
+        p216=[1.1,1.5,5]
+
+        p221=[-1.5,4.2,4.1]
+        p222=[-2.6,3,0.9]
+        p223=[-2,0.5,1.4]
+        p224=[-1.9,2.4,4.7]
+        p225=[3,4,4.9]
+        p226=[3.8,2.5,2]
+        p227=[-4,0.1,0.8]
+
+        p231=[-2,6.3,4.7]
+        p232=[-2.8,5.4,0.1]
+        p233=[-2,2,0.3]
+        p234=[-0.9,2.5,4]
+        p235=[2.2,4,2.6]
+        p236=[1.3,5,5.6]
+        p237=[2,1,2.6]
+        p238=[1,2,5]
+        p239=[-3.3,4,4]
+
+        p241=[-1.2,2,1.1]
+        p242=[-1,5,-0.1]
+        p243=[0,3,3.2]
+        p244=[0.5,5.6,4]
+        p245=[-0.4,1,1.4]
+
+        p251=[0,3,-0.5]
+        p252=[1,1.8,2]
+        p253=[-1,2.8,4.67]
+        p254=[-1.1,1.4,1.578]
+        p255=[-1.1,4,0.8]
+        p256=[1,5,3.9]
+        p257=[2,3.6,1.56]
+
+
+        frame21=[p211,p212,p213,p214,p215,p216]
+        frame22=[p221,p222,p223,p224,p225,p226,p227]
+        frame23=[p231,p232,p233,p234,p235,p236,p237,p238,p239]
+        frame24=[p241,p242,p243,p244,p245]
+        frame25=[p251,p252,p253,p254,p255,p256, p257]
+
+        ########################################################
+
+        p311=[1,3,0]
+        p312=[2,2,1.57]
+        p313=[3,2.5,2.35]
+        p314=[2,4,5]
+        p315=[-2,-2,0.785]
+        p316=[4,-1,5.5]
+        p317=[4,3.6,1]
+
+        p321=[1,1,0.392]
+        p322=[2.5,0,2.35]
+        p323=[2,4,4.71]
+        p324=[4.5,-0.5,1.96]
+
+        p331=[1,1,5.49]
+        p332=[1,-0.5,0.78]
+        p333=[2,-2,0.78]
+        p334=[4,-2,1.96]
+        p335=[5.5,-1,2.35]
+        p336=[5.5,1,3.14]
+        p337=[4.5,1.5,3.92]
+        p338=[3,2,4.71]
+        p339=[0,-3.5,0.78]
+        p3310=[2,4,3.92]
+
+        p341=[1,1,0.78]
+        p342=[3.5,1.5,3.14]
+        p343=[2.75,2.5,4.71]
+        p344=[1.5,2,5.10]
+        p345=[0,-2,5.49]
+        p346=[-0.5,-1,1.17]
+
+        p351=[1,1.5,0.7]
+        p352=[1.8,3,-0.8]
+        p353=[2.9,3.2,4.6]
+        p354=[3.7,2.7,3.5]
+        p355=[2.2,0.1,0.3]
+
+        frame31=[p311,p312,p313,p314,p315,p316,p317]
+        frame32=[p321,p322,p323,p324]
+        frame33=[p331,p332,p333,p334,p335,p336,p337,p338,p339,p3310]
+        frame34=[p341,p342,p343,p344,p345,p346]
+        frame35=[p351,p352,p353,p354,p355]
+
+
+        ##############################
+
+
+        p411=[-2,5,1]
+        p412=[-1,6,4]
+        p413=[-1.7,6.5,5]
+        p414=[-1,7,5.8]
+        p415=[0,5.5,1.6]
+        p416=[0.1,7.5,4.7]
+        p417=[1,7.5,4.3]
+        p418=[0,3,1.6]
+        p419=[1,3.5,4.5]
+        p4110=[2,5,1.6]
+
+        p421=[-3,3,0.7]
+        p422=[-2.5,4.5,4.8]
+        p423=[-1.7,4,3.4]
+        p424=[1,5,0.6]
+        p425=[0.9,5.8,5.8]
+        p426=[1.2,6.6,5]
+        p427=[1.7,6.6,4.5]
+        p428=[2,6,4.2]
+        p429=[-2,2.7,0]
+        p4210=[1.4,3.5,3]
+        p4211=[2,3,2]
+
+        p431=[1,5,0.78]
+        p432=[1,6,5.18]
+        p433=[2,6,3.92]
+        p434=[2,4,2.18]
+        p435=[1.5,1,0.78]
+        p436=[4.1,3,0]
+        p437=[3,8,4.71]
+        p438=[6,51,1.57]
+        p439=[5,51.5,0.78]
+        p4310=[5,6.5,0]
+        p4311=[7,5.5,1.57]
+        p4312=[7.01,6.5,3.14]
+        p4313=[5.5,7.5,5.18]
+        p4314=[6.5,7.5,3.8]
+        p4315=[8,8.1,4.7]
+        p4316=[7,1,1.57]
+
+        p441=[0,1,1.047]
+        p442=[0,2,5.75]
+        p443=[1,0.502,1.57]
+        p444=[2,1,2.35]
+        p445=[3.001,5,1.57]
+        p446=[2.003,6,0]
+        p447=[3.5,6.25,3.92]
+        p448=[5.002,4.5,0.78]
+        p449=[6.1,4,1.57]
+        p4410=[5,6,5.49]
+        p4411=[6.02,6.1,4,71]
+        p4412=[4,0.501,0.78]
+        p4413=[4,1.5,5.49]
+        p4414=[5,0.5,1.57]
+        p4415=[5.5,1.25,3.14]
+        #p4416=[7,2,5.49]
+        #p4417=[7.25,1.01,2.35]
+        #p4418=[8,1.25,2.35]
+        p4419=[1,4,3.14]
+        p4420=[3,3,0]
+
+        p451=[1,1,1.57]
+        p452=[1,3,-1.57]
+        p453=[0,2,0]
+        p454=[2,2.01,3.14]
+        p455=[3,2.001,0]
+        p456=[5,2,3.14]
+        p457=[4,1,1.57]
+        p458=[4,3,-1.57]
+
+        frame51=[p411,p412,p413,p414,p415,p416,p417,p418,p419,p4110]
+        frame52=[p421,p422,p423,p424,p425,p426,p427,p428,p429,p4210,p4211]
+        frame53=[p431,p432,p433,p434,p435,p436,p437,p438,p439,p4310,p4311,p4312,p4313,p4314,p4315,p4316]
+        frame54=[p441,p442,p443,p444,p445,p446,p447,p448,p449,p4410,p4411,p4412,p4413,p4414,p4415,p4419,p4420]
+        frame55=[p451,p452,p453,p454,p455,p456,p457,p458]
+
+        data = [frame11, frame12,  frame13, frame14, frame15, frame21,frame22,frame23,frame24,frame25,frame31,frame32,frame33,frame34,frame35,frame51,frame52,frame53,frame54,frame55]
+
+        return data
 
 def main():
     F_formation()
