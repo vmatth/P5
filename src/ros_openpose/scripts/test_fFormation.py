@@ -23,14 +23,7 @@ class F_formation:
         #     self.createFFormations(data[i],i)
             plt.cla() 
             print("picture index: ", i)
-            for j in range(0, len(data[i])):
-                xAngle = 0.2 * math.cos(data[i][j][2]) + data[i][j][0]
-                yAngle = 0.2 * math.sin(data[i][j][2]) + data[i][j][1]
-                x=[data[i][j][0], xAngle]
-                y=[data[i][j][1], yAngle]
-                plt.plot(data[i][j][0], data[i][j][1],'o')
-                plt.plot(x,y, color='red')
-            self.createFFormations(data[i],i+1)
+            self.createFFormations(data[i],i+1, data[i])
 
     def getTestData(self):
         data = self.testData()
@@ -48,10 +41,8 @@ class F_formation:
             dataPerson.append(data)
         return dataPerson
 
-    def createFFormations(self, msg, index):
+    def createFFormations(self, msg, index, data):
         persons = self.excludeDistance(msg, 3)
-        color = ['blue', 'orange', 'red', 'green', 'purple', 'brown', 'pink', 'gray', 'olive', 'cyan','blue', 'orange', 'red', 'green', 'purple', 'brown', 'pink', 'gray', 'olive', 'cyan','blue', 'orange', 'red', 'green', 'purple', 'brown', 'pink', 'gray', 'olive', 'cyan']
-        symbol = ['1','2','3','4','+','x','*','1','2','3','4','+','x','*','1','2','3','4','+','x','*','1','2','3','4','+','x','*','1','2','3','4','+','x','*','1','2','3','4','+','x','*','1','2','3','4','+','x','*','1','2','3','4','+','x','*','1','2','3','4','+','x','*','1','2','3','4','+','x','*','1','2','3','4','+','x','*','1','2','3','4','+','x','*','1','2','3','4','+','x','*','1','2','3','4','+','x','*','1','2','3','4','+','x','*','1','2','3','4','+','x','*','1','2','3','4','+','x','*','1','2','3','4','+','x','*','1','2','3','4','+','x','*','1','2','3','4','+','x','*','1','2','3','4','+','x','*','1','2','3','4','+','x','*','1','2','3','4','+','x','*','1','2','3','4','+','x','*','1','2','3','4','+','x','*','1','2','3','4','+','x','*']
         if(self.checkForArray(persons)): #Check if there are people in a combinations
             print("Persons detected")
             combinations = self.oSpaceCombinations(len(persons))
@@ -72,7 +63,7 @@ class F_formation:
                         print("j:", j)
                         str = f"src/ros_openpose/scripts/testFiles/test{index}.png"
                         title = f"Frame {index}"
-                        self.plotPoints(points, Path(str), title)
+                        self.plotPoints(points, Path(str), title, data)
             else:
                 print("no persons detected")
                 for j in range(0, len(msg)):
@@ -85,10 +76,17 @@ class F_formation:
                     # plt.plot(msg[j][0], msg[j][1],'o')
                     # plt.plot(x,y, color='red')
                     plt.title(title)
-                    plt.xlim([-10, 10])
-                    plt.ylim([-5, 10])
+                    plt.xlim([-5, 9])
+                    plt.ylim([-4, 9])
                     plt.xlabel("distance [m]")
                     plt.ylabel("distance [m]")
+                    for j in range(0, len(data)):
+                        xAngle = 0.4 * math.cos(data[j][2]) + data[j][0]
+                        yAngle = 0.4 * math.sin(data[j][2]) + data[j][1]
+                        x=[data[j][0], xAngle]
+                        y=[data[j][1], yAngle]
+                        plt.plot(data[j][0], data[j][1],'o')
+                        plt.plot(x,y, color='red')
                     plt.savefig(str)
         else:
             #rospy.loginfo("There are no combinations")
@@ -513,7 +511,7 @@ class F_formation:
 
         return LinePoints
     
-    def plotPoints(self, msg, str, title):
+    def plotPoints(self, msg, str, title,data):
         x = []
         y = []
         for i in range(0,len(msg)):
@@ -521,10 +519,17 @@ class F_formation:
             y.append(msg[i][1])
         plt.plot(x, y, 'x', alpha=0.8)
         plt.title(title)
-        plt.xlim([-10, 10])
-        plt.ylim([-5, 10])
+        plt.xlim([-5, 9])
+        plt.ylim([-4, 9])
         plt.xlabel("distance [m]")
         plt.ylabel("distance [m]")
+        for j in range(0, len(data)):
+            xAngle = 0.4 * math.cos(data[j][2]) + data[j][0]
+            yAngle = 0.4 * math.sin(data[j][2]) + data[j][1]
+            x=[data[j][0], xAngle]
+            y=[data[j][1], yAngle]
+            plt.plot(data[j][0], data[j][1],'o')
+            plt.plot(x,y, color='red')
         plt.savefig(str)
 
 
