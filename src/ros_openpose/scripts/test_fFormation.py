@@ -45,17 +45,18 @@ class F_formation:
         persons = self.excludeDistance(msg, 3)
         if(self.checkForArray(persons)): #Check if there are people in a combinations
             print("Persons detected")
-            combinations = self.oSpaceCombinations(len(persons))
+        #    combinations = self.oSpaceCombinations(len(persons))
             #rospy.loginfo("Combinations %s", combinations)
-            personsArray = self.reshape(persons) #List to Array
-            oSpaces = self.constructOSpaces(personsArray, combinations)
+        #    personsArray = self.reshape(persons) #List to Array
+        #    oSpaces = self.constructOSpaces(personsArray, combinations)
             #rospy.loginfo("ospace lines before %s", oSpaces)
-            oSpaces = self.constructOSpacesWithDirections(oSpaces, 0.80)
+        #    oSpaces = self.constructOSpacesWithDirections(oSpaces, 0.80)
             #rospy.loginfo("ospace lines new %s", oSpaces)
-            oSpaces = self.removeInvalidOspaces(oSpaces, personsArray)
+        #    oSpaces = self.removeInvalidOspaces(oSpaces, personsArray)
             #rospy.loginfo("Final OSpace! %s", oSpaces)
             #print("Final OSpace!: ", oSpaces)
-            if len(oSpaces)>0:
+            #if len(oSpaces)>0:
+            if(False):
                 for i in range(0, len(oSpaces)):
                     print("index i:", i)
                     for j in range(0,len(oSpaces[i])):
@@ -67,7 +68,7 @@ class F_formation:
             else:
                 print("no persons detected")
                 for j in range(0, len(msg)):
-                    str = f"src/ros_openpose/scripts/testFiles/Frame{index}.png"
+                    str = f"src/ros_openpose/scripts/testFiles/Frame_ref{index}.png"
                     title = f"Frame {index}"
                     # xAngle = 0.2 * math.cos(msg[j][2]) + msg[j][0]
                     # yAngle = 0.2 * math.sin(msg[j][2]) + msg[j][1]
