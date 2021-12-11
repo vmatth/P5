@@ -21,9 +21,9 @@ def main():
     # read the parameter from ROS parameter server
     frame_topic = rospy.get_param('~pub_topic')
 
-    rospy.Subscriber(frame_topic, Frame, callback)
+    #rospy.Subscriber(frame_topic, Frame, callback)
 
-    rospy.spin()
+    #rospy.spin()
 
 
 if __name__ == '__main__':

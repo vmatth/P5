@@ -42,7 +42,7 @@ class PersonData:
 
         for person in msg.persons:
             i = i +1
-            rospy.loginfo("Person: %d", i)
+            #rospy.loginfo("Person: %d", i)
             text = [person.bodyParts[9].point, person.bodyParts[12].point, person.bodyParts[11].point, person.bodyParts[14].point, person.bodyParts[10].point, person.bodyParts[13].point]
             #rospy.loginfo('%s\n' % text)
 
@@ -53,12 +53,12 @@ class PersonData:
             leftKneePoint = Point(x = text[5].x, y = text[5].z, z = text[5].y)
             rightKneePoint = Point(x = text[4].x, y = text[4].z, z = text[4].y)
 
-            rospy.loginfo("left Hip %s", leftHipPoint)
-            rospy.loginfo("right Hip %s", rightHipPoint)
-            rospy.loginfo("left Ankle %s", leftAnklePoint)
-            rospy.loginfo("right Ankle %s", rightAnklePoint)
-            rospy.loginfo("left Knee %s", leftKneePoint)
-            rospy.loginfo("right Knee %s", rightKneePoint)
+            # rospy.loginfo("left Hip %s", leftHipPoint)
+            # rospy.loginfo("right Hip %s", rightHipPoint)
+            # rospy.loginfo("left Ankle %s", leftAnklePoint)
+            # rospy.loginfo("right Ankle %s", rightAnklePoint)
+            # rospy.loginfo("left Knee %s", leftKneePoint)
+            # rospy.loginfo("right Knee %s", rightKneePoint)
 
             #Add this person if all 4 body points exist (are not very small numbers)
             if (self.checkForPoint(leftHipPoint) and self.checkForPoint(leftAnklePoint) and self.checkForPoint(rightHipPoint) and self.checkForPoint(rightAnklePoint) and self.checkForPoint(rightKneePoint) and self.checkForPoint(leftKneePoint)): #Returns true all points are over 0.1
@@ -70,9 +70,9 @@ class PersonData:
 
                 leftKnee.append(leftKneePoint)
                 rightKnee.append(rightKneePoint)
-                rospy.loginfo("This person exists!")
-            else:
-                rospy.loginfo("This person does not have all body parts")
+                #rospy.loginfo("This person exists!")
+            # else:
+            #     rospy.loginfo("This person does not have all body parts")
 
         if(len(leftHip) > 0): #Only publish points if there are any
 

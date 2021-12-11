@@ -23,7 +23,7 @@ void ProxemicsLayer::peopleCallback(const spot_pkg::people::ConstPtr& msg){
 
   //Loop all people 
   for(int i = 0; i < size; i++){
-    ROS_INFO("Receiving point: (%f, %f, %f)", msg->people[i].position.x, msg->people[i].position.y, msg->people[i].position.z);
+    //ROS_INFO("Receiving point: (%f, %f, %f)", msg->people[i].position.x, msg->people[i].position.y, msg->people[i].position.z);
 
     geometry_msgs::Point newPoint = geometry_msgs::Point();
     newPoint.x = msg->people[i].position.x;
@@ -154,7 +154,7 @@ void ProxemicsLayer::updateCosts(costmap_2d::Costmap2D& master_grid, int min_i, 
     int size = points.size();
     //Add these points to the costmap
     for(int j = 0; j < size; j++){
-      ROS_INFO("Adding person point at (%f, %f)", points[j].x, points[j].y);
+      //ROS_INFO("Adding person point at (%f, %f)", points[j].x, points[j].y);
       if(master_grid.worldToMap(points[j].x, points[j].y, mx, my)){
         master_grid.setCost(mx, my, LETHAL_OBSTACLE);
       }

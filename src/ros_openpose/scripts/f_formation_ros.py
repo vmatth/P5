@@ -28,10 +28,8 @@ class F_formation:
 
     def callback(self, msg): #Callback for new BodyPoint
         if(self.checkForPeople(msg)):
-            rospy.loginfo("There are people!")
+            #rospy.loginfo("There are people!")
             self.createFFormations(msg)
-        else:
-            rospy.loginfo("There are no people") 
 
     def createFFormations(self, msg):
         persons = self.getCenterAndAngle(msg)
@@ -41,7 +39,7 @@ class F_formation:
 
         if(self.checkForArray(persons)): #Check if there are people in a combinations
             combinations = self.oSpaceCombinations(len(persons))
-            rospy.loginfo("Combinations %s", combinations)
+            #rospy.loginfo("Combinations %s", combinations)
             personsArray = self.reshape(persons) #List to Array
             oSpaces = self.constructOSpaces(personsArray, combinations)
             #rospy.loginfo("ospace lines before %s", oSpaces)
@@ -126,7 +124,7 @@ class F_formation:
             FinalList = [persCenter[0], persCenter[1], PersNormalAngle]
             ########################################
             persons.append(FinalList)
-        rospy.loginfo("Person list %s",persons)
+        #rospy.loginfo("Person list %s",persons)
         return persons
 
     def countIncidenceArray(self, arr, thredshold):
