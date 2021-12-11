@@ -6,27 +6,29 @@ Install ros melodic: http://wiki.ros.org/melodic
 
 Install spot package: https://github.com/clearpathrobotics/spot_ros
 
-Install ros dependencies and packages
-
-```
-rosdep install spot_pkg
-sudo apt-get install ros-melodic-map-server
-sudo apt-get install ros-melodic-amcl
-sudo apt-get install ros-melodic-slam-gmapping
-sudo apt-get install ros-melodic-move-base
-sudo apt-get install ros-melodic-move-base-msgs
-
-sudo apt-get install ros-melodic-twist-mux
-sudo apt-get install ros-melodic-teleop-twist-joy
-sudo apt-get install ros-melodic-joy
-sudo apt-get install ros-melodic-interactive-marker-twist-server
-```
-
 Build P5 (in P5 repo)
 
 ```
 catkin_make
 ```
+If catkin_make gives the error 
+```
+  Could not find a package configuration file provided by "move_base_msgs"
+  with any of the following names:
+
+    move_base_msgsConfig.cmake
+    move_base_msgs-config.cmake
+```
+Install the invididual package with:
+```
+sudo apt-get install ros-melodic-move-base-msgs
+```
+or install all dependencies for a package
+```
+rosdep install spot_pkg
+```
+
+
 Source P5 (in P5 repo)
 
 ```
@@ -72,6 +74,10 @@ To open SPOT in rviz
 ```
 roslaunch spot_pkg rviz.launch
 ```
+All of these launch files can be launched at once with
+```
+roslaunch spot_pkg all.launch
+```
 
 ## Gmapping
 
@@ -87,6 +93,13 @@ Save the map
 In a new terminal:
 ```
 rosrun map_server map_saver -f "name"
+```
+##Launching the camera and f-formation detection
+
+```
+roslaunch ros_openpose run.launch
+rosrun ros_openpose persondata.py
+rosrun ros_openpose f_formation_ros.py
 ```
 
 
