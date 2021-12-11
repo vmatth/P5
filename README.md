@@ -6,6 +6,11 @@ Install ros melodic: http://wiki.ros.org/melodic
 
 Install spot package: https://github.com/clearpathrobotics/spot_ros
 
+Install catkin-pkg:
+```
+sudo apt install python3-catkin-pkg
+```
+
 Build P5 (in P5 repo)
 
 Build with python3 for x86_64 processors
