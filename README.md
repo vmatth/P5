@@ -12,6 +12,9 @@ sudo apt install python3-catkin-pkg
 ```
 
 Build P5 (in P5 repo)
+```
+catkin_make
+```
 
 Build with python3 for x86_64 processors
 ```
