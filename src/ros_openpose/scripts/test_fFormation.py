@@ -23,14 +23,7 @@ class F_formation:
         #     self.createFFormations(data[i],i)
             plt.cla() 
             print("picture index: ", i)
-            for j in range(0, len(data[i])):
-                xAngle = 0.2 * math.cos(data[i][j][2]) + data[i][j][0]
-                yAngle = 0.2 * math.sin(data[i][j][2]) + data[i][j][1]
-                x=[data[i][j][0], xAngle]
-                y=[data[i][j][1], yAngle]
-                plt.plot(data[i][j][0], data[i][j][1],'o')
-                plt.plot(x,y, color='red')
-            self.createFFormations(data[i],i+1)
+            self.createFFormations(data[i],i+1, data[i])
 
     def getTestData(self):
         data = self.testData()
@@ -48,35 +41,34 @@ class F_formation:
             dataPerson.append(data)
         return dataPerson
 
-    def createFFormations(self, msg, index):
+    def createFFormations(self, msg, index, data):
         persons = self.excludeDistance(msg, 3)
-        color = ['blue', 'orange', 'red', 'green', 'purple', 'brown', 'pink', 'gray', 'olive', 'cyan','blue', 'orange', 'red', 'green', 'purple', 'brown', 'pink', 'gray', 'olive', 'cyan','blue', 'orange', 'red', 'green', 'purple', 'brown', 'pink', 'gray', 'olive', 'cyan']
-        symbol = ['1','2','3','4','+','x','*','1','2','3','4','+','x','*','1','2','3','4','+','x','*','1','2','3','4','+','x','*','1','2','3','4','+','x','*','1','2','3','4','+','x','*','1','2','3','4','+','x','*','1','2','3','4','+','x','*','1','2','3','4','+','x','*','1','2','3','4','+','x','*','1','2','3','4','+','x','*','1','2','3','4','+','x','*','1','2','3','4','+','x','*','1','2','3','4','+','x','*','1','2','3','4','+','x','*','1','2','3','4','+','x','*','1','2','3','4','+','x','*','1','2','3','4','+','x','*','1','2','3','4','+','x','*','1','2','3','4','+','x','*','1','2','3','4','+','x','*','1','2','3','4','+','x','*','1','2','3','4','+','x','*','1','2','3','4','+','x','*','1','2','3','4','+','x','*','1','2','3','4','+','x','*']
         if(self.checkForArray(persons)): #Check if there are people in a combinations
             print("Persons detected")
-            combinations = self.oSpaceCombinations(len(persons))
+        #    combinations = self.oSpaceCombinations(len(persons))
             #rospy.loginfo("Combinations %s", combinations)
-            personsArray = self.reshape(persons) #List to Array
-            oSpaces = self.constructOSpaces(personsArray, combinations)
+        #    personsArray = self.reshape(persons) #List to Array
+        #    oSpaces = self.constructOSpaces(personsArray, combinations)
             #rospy.loginfo("ospace lines before %s", oSpaces)
-            oSpaces = self.constructOSpacesWithDirections(oSpaces, 0.80)
+        #    oSpaces = self.constructOSpacesWithDirections(oSpaces, 0.80)
             #rospy.loginfo("ospace lines new %s", oSpaces)
-            oSpaces = self.removeInvalidOspaces(oSpaces, personsArray)
+        #    oSpaces = self.removeInvalidOspaces(oSpaces, personsArray)
             #rospy.loginfo("Final OSpace! %s", oSpaces)
             #print("Final OSpace!: ", oSpaces)
-            if len(oSpaces)>0:
+            #if len(oSpaces)>0:
+            if(False):
                 for i in range(0, len(oSpaces)):
                     print("index i:", i)
                     for j in range(0,len(oSpaces[i])):
                         points = self.pointConstructor(oSpaces[i][j][0], oSpaces[i][j][1], 10)
                         print("j:", j)
-                        str = f"src/ros_openpose/scripts/testFiles/test{index}.png"
+                        str = f"src/ros_openpose/scripts/testFiles/Frame{index}.png"
                         title = f"Frame {index}"
-                        self.plotPoints(points, Path(str), title)
+                        self.plotPoints(points, Path(str), title, data)
             else:
                 print("no persons detected")
                 for j in range(0, len(msg)):
-                    str = f"src/ros_openpose/scripts/testFiles/test{index}.png"
+                    str = f"src/ros_openpose/scripts/testFiles/Frame_ref{index}.png"
                     title = f"Frame {index}"
                     # xAngle = 0.2 * math.cos(msg[j][2]) + msg[j][0]
                     # yAngle = 0.2 * math.sin(msg[j][2]) + msg[j][1]
@@ -85,10 +77,17 @@ class F_formation:
                     # plt.plot(msg[j][0], msg[j][1],'o')
                     # plt.plot(x,y, color='red')
                     plt.title(title)
-                    plt.xlim([-10, 10])
-                    plt.ylim([-5, 10])
+                    plt.xlim([-5, 9])
+                    plt.ylim([-4, 9])
                     plt.xlabel("distance [m]")
                     plt.ylabel("distance [m]")
+                    for j in range(0, len(data)):
+                        xAngle = 0.4 * math.cos(data[j][2]) + data[j][0]
+                        yAngle = 0.4 * math.sin(data[j][2]) + data[j][1]
+                        x=[data[j][0], xAngle]
+                        y=[data[j][1], yAngle]
+                        plt.plot(data[j][0], data[j][1],'o')
+                        plt.plot(x,y, color='red')
                     plt.savefig(str)
         else:
             #rospy.loginfo("There are no combinations")
@@ -513,7 +512,7 @@ class F_formation:
 
         return LinePoints
     
-    def plotPoints(self, msg, str, title):
+    def plotPoints(self, msg, str, title,data):
         x = []
         y = []
         for i in range(0,len(msg)):
@@ -521,10 +520,17 @@ class F_formation:
             y.append(msg[i][1])
         plt.plot(x, y, 'x', alpha=0.8)
         plt.title(title)
-        plt.xlim([-10, 10])
-        plt.ylim([-5, 10])
+        plt.xlim([-5, 9])
+        plt.ylim([-4, 9])
         plt.xlabel("distance [m]")
         plt.ylabel("distance [m]")
+        for j in range(0, len(data)):
+            xAngle = 0.4 * math.cos(data[j][2]) + data[j][0]
+            yAngle = 0.4 * math.sin(data[j][2]) + data[j][1]
+            x=[data[j][0], xAngle]
+            y=[data[j][1], yAngle]
+            plt.plot(data[j][0], data[j][1],'o')
+            plt.plot(x,y, color='red')
         plt.savefig(str)
 
 
@@ -671,7 +677,7 @@ class F_formation:
         p4210=[1.4,3.5,3]
         p4211=[2,3,2]
 
-        p431=[1,5,0.78]
+        p431=[1,5.001,0.78]
         p432=[1,6,5.18]
         p433=[2,6,3.92]
         p434=[2,4,2.18]
@@ -686,7 +692,7 @@ class F_formation:
         p4313=[5.5,7.5,5.18]
         p4314=[6.5,7.5,3.8]
         p4315=[8,8.1,4.7]
-        p4316=[7,1,1.57]
+        p4316=[5.67,4.9,1.57]
 
         p441=[0,1,1.047]
         p442=[0,2,5.75]
