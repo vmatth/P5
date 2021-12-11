@@ -8,9 +8,15 @@ Install spot package: https://github.com/clearpathrobotics/spot_ros
 
 Build P5 (in P5 repo)
 
+Build with python3 for x86_64 processors
 ```
-catkin_make
+catkin_make --cmake-args -DCMAKE_BUILD_TYPE=Release -DPYTHON_EXECUTABLE=/usr/bin/python3 -DPYTHON_INCLUDE_DIR=/usr/include/python3.6m -DPYTHON_LIBRARY=/usr/lib/x86_64-linux-gnu/libpython3.6m.so
 ```
+Build wit python3 for arm processors
+```
+catkin_make --cmake-args -DCMAKE_BUILD_TYPE=Release -DPYTHON_EXECUTABLE=/usr/bin/python3 -DPYTHON_INCLUDE_DIR=/usr/include/python3.6m -DPYTHON_LIBRARY=/usr/lib/aarch64-linux-gnu/libpython3.6m.so
+```
+
 If catkin_make gives the error 
 ```
   Could not find a package configuration file provided by "move_base_msgs"
