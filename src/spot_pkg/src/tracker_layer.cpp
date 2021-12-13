@@ -117,7 +117,7 @@ void TrackerLayer::onInitialize()
 {
   current_ = true;
   vis_pub = nh.advertise<visualization_msgs::Marker>( "visualization_marker", 0 );
-  sub = nh.subscribe("/BodyPoints", 1000, &TrackerLayer::pathCallback, this);
+  sub = nh.subscribe("/move_base/TrajectoryPlannerROS/global_plan", 1000, &TrackerLayer::pathCallback, this);
 
   odomFile.open ("odometry.csv");
   odomFile << "SPOT Odometry Tracker\n";
@@ -157,6 +157,7 @@ void TrackerLayer::updateBounds(double robot_x, double robot_y, double robot_yaw
   geometry_msgs::Point p; p.x = xRobot; p.y = yRobot;
 
   if(startTracking){
+    ROS_INFO("robot pos: (%f, %f)", xRobot, yRobot);
     visualizarPoint(p);
     string sx = to_string(xRobot);
     string sy = to_string(yRobot);

@@ -16,7 +16,7 @@ namespace formation_layer_namespace
 FormationLayer::FormationLayer() {}   
 
 void FormationLayer::formationCallback(const spot_pkg::formationPoints::ConstPtr& msg){
-  ROS_INFO("Receiving points from formation callback");
+  //ROS_INFO("Receiving points from formation callback");
   int size = msg->points.size();
   //ROS_INFO("Amount of points: %i", size);
   //Loop all f-formation points

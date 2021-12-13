@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
 # echo.py: sample script to print ros message to terminal
@@ -11,7 +11,7 @@ from ros_openpose.msg import Frame
 
 
 def callback(msg):
-    text = [bodyPart.point for person in msg.persons for bodyPart in person.bodyParts]
+    text = [bodyPart.pixel for person in msg.persons for bodyPart in person.bodyParts]
     rospy.loginfo('%s\n' % text)
 
 
@@ -21,9 +21,9 @@ def main():
     # read the parameter from ROS parameter server
     frame_topic = rospy.get_param('~pub_topic')
 
-    #rospy.Subscriber(frame_topic, Frame, callback)
+    rospy.Subscriber(frame_topic, Frame, callback)
 
-    #rospy.spin()
+    rospy.spin()
 
 
 if __name__ == '__main__':
