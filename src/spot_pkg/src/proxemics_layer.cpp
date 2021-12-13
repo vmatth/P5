@@ -30,6 +30,7 @@ void ProxemicsLayer::peopleCallback(const spot_pkg::people::ConstPtr& msg){
     newPoint.y = msg->people[i].position.y;
 
     peoplePoints.push_back(calculatePointRelativeToRobot(newPoint));
+    ROS_INFO("Person at: (%f, %f) (Robot Frame)", newPoint.x, newPoint.y);
   }
 
     timeToRemove.push_back(ros::Time::now().toSec() + pointTimer);
