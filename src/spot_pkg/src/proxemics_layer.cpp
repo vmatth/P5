@@ -17,7 +17,7 @@ namespace proxemics_layer_namespace
 ProxemicsLayer::ProxemicsLayer() {}   
 
 void ProxemicsLayer::peopleCallback(const spot_pkg::people::ConstPtr& msg){
-  ROS_INFO("Receiving points from people callback");
+  //ROS_INFO("Receiving points from people callback");
   int size = msg->people.size();
   //ROS_INFO("Amount of people: %i", size);
 
@@ -48,7 +48,7 @@ geometry_msgs::Point ProxemicsLayer::calculatePointRelativeToRobot(geometry_msgs
   newPoint.x += xRobot;
   newPoint.y += yRobot;
   //ROS_INFO("Calculating poont relativve ro robot, yawRobot: %f, xRobot; %f, yRobot: %f, inputPoint(%f, %f", yawRobot, xRobot, yRobot, point.x, point.y);
-  ROS_INFO("relative point: (%f, %f, %f)", newPoint.x, newPoint.y, newPoint.z);
+  //ROS_INFO("relative point: (%f, %f, %f)", newPoint.x, newPoint.y, newPoint.z);
 
   return newPoint;
 }
@@ -108,9 +108,10 @@ void ProxemicsLayer::removePeoplePointsAfterSomeTime(){
 vector<geometry_msgs::Point> ProxemicsLayer::calculateSurroundingPointsFromPersonCenter(geometry_msgs::Point center){
   vector<geometry_msgs::Point> points;
 
-  vector<geometry_msgs::Point> circlePoints = createCircle(center, 0.15, 12); int size = circlePoints.size(); for(int i = 0; i < size; i++){points.push_back(circlePoints[i]);}
-  circlePoints = createCircle(center, 0.3, 18); size = circlePoints.size(); for(int i = 0; i < size; i++){points.push_back(circlePoints[i]);}
-  circlePoints = createCircle(center, 0.45, 24); size = circlePoints.size(); for(int i = 0; i < size; i++){points.push_back(circlePoints[i]);}
+  vector<geometry_msgs::Point> circlePoints;// = createCircle(center, 0.15, 12); int size = circlePoints.size(); for(int i = 0; i < size; i++){points.push_back(circlePoints[i]);}
+  //circlePoints = createCircle(center, 0.3, 18); size = circlePoints.size(); for(int i = 0; i < size; i++){points.push_back(circlePoints[i]);}
+  //circlePoints = createCircle(center, 0.45, 24); size = circlePoints.size(); for(int i = 0; i < size; i++){points.push_back(circlePoints[i]);}
+  circlePoints = createCircle(center, 1.1, 50); int size = circlePoints.size(); for(int i = 0; i < size; i++){points.push_back(circlePoints[i]);}
 
 
 

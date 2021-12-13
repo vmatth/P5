@@ -35,7 +35,7 @@ private:
   void removePeoplePointsAfterSomeTime(); //Removes points after some time has passed
 
   double inflationRadius = 0.1;
-  double pointTimer = 5.0; //Amount of seconds the points are active in the costmap
+  double pointTimer = 0.2; //Amount of seconds the points are active in the costmap
 
   double mark_x_, mark_y_;
   dynamic_reconfigure::Server<costmap_2d::GenericPluginConfig> *dsrv_;

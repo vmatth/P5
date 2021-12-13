@@ -61,9 +61,9 @@ Date: 2019/10/08
       <arg name="filters" value="pointcloud" />
     </include>
     <!-- invoke rviz -->
-    <!-- <group if="$(arg rviz)" >
+    <group if="$(arg rviz)" >
       <node pkg="rviz" type="rviz" respawn="false" required="true" name="rviz" args="-d $(find ros_openpose)/files/person_pointcloud_realsense.rviz" />
-    </group> -->
+    </group>
   </group>
 
   <!-- invoke realsense camera ros package -->
