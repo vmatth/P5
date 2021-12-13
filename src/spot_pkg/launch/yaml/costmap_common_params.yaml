@@ -20,3 +20,4 @@ plugins:
     - {name: proxemics_layer, type: "proxemics_layer_namespace::ProxemicsLayer"}
     - {name: inflation_layer, type: "costmap_2d::InflationLayer"}
     - {name: visualization_layer, type: "visualization_layer_namespace::VisualizationLayer"}
+    - {name: tracker_layer, type: "tracker_layer_namespace::TrackerLayer"}
