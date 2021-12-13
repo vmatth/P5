@@ -89,10 +89,10 @@ void TrackerLayer::pathCallback(const nav_msgs::Path::ConstPtr& msg){
   startTracking = true;
   ROS_INFO("Receiving Path Callback!");
 
-  std::ofstream pathFile;
-  pathFile.open ("path.csv");
-  pathFile << "Path tracker\n";
-  pathFile << "x,y\n";
+  // std::ofstream pathFile;
+  // pathFile.open ("path.csv");
+  // pathFile << "Path tracker\n";
+  // pathFile << "x,y\n";
   int size = msg->poses.size();
 
   double x = 0;
@@ -101,15 +101,15 @@ void TrackerLayer::pathCallback(const nav_msgs::Path::ConstPtr& msg){
   for(int i = 0; i < size; i++){
     x = msg->poses[i].pose.position.x;
     y = msg->poses[i].pose.position.y;
-    ROS_INFO("(%f, %f)", x, y);
+    ROS_INFO("%f, %f", x, y);
 
-    string sx = to_string(x);
-    string sy = to_string(y);
+    // string sx = to_string(x);
+    // string sy = to_string(y);
 
-    pathFile << sx << "," << sy << "\n";
+    // pathFile << sx << "," << sy << "\n";
   }
 
-  pathFile.close();
+  // pathFile.close();
 
 }
 
@@ -157,13 +157,13 @@ void TrackerLayer::updateBounds(double robot_x, double robot_y, double robot_yaw
   geometry_msgs::Point p; p.x = xRobot; p.y = yRobot;
 
   if(startTracking){
-    ROS_INFO("robot pos: (%f, %f)", xRobot, yRobot);
+    ROS_INFO("%f, %f", xRobot, yRobot);
     visualizarPoint(p);
-    string sx = to_string(xRobot);
-    string sy = to_string(yRobot);
-    odomFile.open ("odometry.csv");
-    odomFile << sx << "," << sy << "\n";
-    odomFile.close();
+    // string sx = to_string(xRobot);
+    // string sy = to_string(yRobot);
+    // odomFile.open ("odometry.csv");
+    // odomFile << sx << "," << sy << "\n";
+    // odomFile.close();
   }
 }
 
