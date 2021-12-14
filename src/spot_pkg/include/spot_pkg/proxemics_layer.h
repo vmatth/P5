@@ -7,6 +7,7 @@
 #include <dynamic_reconfigure/server.h>
 #include <spot_pkg/people.h>
 #include <geometry_msgs/Point.h>
+#include <nav_msgs/Path.h>
 #include <vector>
 
 using namespace std;
@@ -27,6 +28,7 @@ public:
 private:
   void reconfigureCB(costmap_2d::GenericPluginConfig &config, uint32_t level);
   void peopleCallback(const spot_pkg::people::ConstPtr& msg);
+  void pathCallback(const nav_msgs::Path::ConstPtr& msg);
 
   geometry_msgs::Point calculatePointRelativeToRobot(geometry_msgs::Point point);
   vector<geometry_msgs::Point> calculateSurroundingPointsFromPersonCenter(geometry_msgs::Point center);
@@ -35,16 +37,18 @@ private:
   void removePeoplePointsAfterSomeTime(); //Removes points after some time has passed
 
   double inflationRadius = 0.1;
-  double pointTimer = 0.2; //Amount of seconds the points are active in the costmap
+  double pointTimer = 1.0; //Amount of seconds the points are active in the costmap
 
   double mark_x_, mark_y_;
   dynamic_reconfigure::Server<costmap_2d::GenericPluginConfig> *dsrv_;
   ros::NodeHandle nh;
   ros::Subscriber sub;
+  ros::Subscriber path_sub;
   double xRobot, yRobot, yawRobot;
   vector<geometry_msgs::Point> peoplePoints; //Points stored in the costmap. Points here will be removed after 1 second.
   vector<double> timeToRemove; //Each index contains the TIME when to remove points from costmapPoints
   vector<int> pointsToRemove; //Each index contains the AMOUNT of points to remove from costmapPoints
+  bool robotMoving = false;
 };
 }
 #endif

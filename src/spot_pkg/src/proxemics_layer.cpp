@@ -4,7 +4,6 @@
 #include <spot_pkg/people.h>
 #include <vector>
 
-
 using namespace std;
 
 PLUGINLIB_EXPORT_CLASS(proxemics_layer_namespace::ProxemicsLayer, costmap_2d::Layer)
@@ -14,9 +13,11 @@ using costmap_2d::LETHAL_OBSTACLE;
 namespace proxemics_layer_namespace
 {
 
+
 ProxemicsLayer::ProxemicsLayer() {}   
 
 void ProxemicsLayer::peopleCallback(const spot_pkg::people::ConstPtr& msg){
+  if(robotMoving == true) return;
   //ROS_INFO("Receiving points from people callback");
   int size = msg->people.size();
   //ROS_INFO("Amount of people: %i", size);
@@ -30,12 +31,16 @@ void ProxemicsLayer::peopleCallback(const spot_pkg::people::ConstPtr& msg){
     newPoint.y = msg->people[i].position.y;
 
     peoplePoints.push_back(calculatePointRelativeToRobot(newPoint));
-    ROS_INFO("Person at: (%f, %f) (Robot Frame)", newPoint.x, newPoint.y);
   }
 
     timeToRemove.push_back(ros::Time::now().toSec() + pointTimer);
     pointsToRemove.push_back(size);
 
+}
+
+void ProxemicsLayer::pathCallback(const nav_msgs::Path::ConstPtr& msg){
+  ROS_INFO("ROBOT IS MOVING!!!!");
+  robotMoving = true;
 }
 
 
@@ -58,6 +63,7 @@ void ProxemicsLayer::onInitialize()
 {
   current_ = true;
   sub = nh.subscribe("/people", 1000, &ProxemicsLayer::peopleCallback, this);
+  path_sub = nh.subscribe("/move_base/TrajectoryPlannerROS/global_plan", 1000, &ProxemicsLayer::pathCallback, this);
 
   dsrv_ = new dynamic_reconfigure::Server<costmap_2d::GenericPluginConfig>(nh);
   dynamic_reconfigure::Server<costmap_2d::GenericPluginConfig>::CallbackType cb = boost::bind(
@@ -143,7 +149,8 @@ void ProxemicsLayer::updateCosts(costmap_2d::Costmap2D& master_grid, int min_i, 
   if (!enabled_)
     return;
 
-  removePeoplePointsAfterSomeTime();
+  if(robotMoving == false)
+    removePeoplePointsAfterSomeTime();
 
   unsigned int mx;
   unsigned int my;

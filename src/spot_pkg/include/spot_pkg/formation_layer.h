@@ -7,6 +7,7 @@
 #include <dynamic_reconfigure/server.h>
 #include <spot_pkg/formationPoints.h>
 #include <geometry_msgs/Point.h>
+#include <nav_msgs/Path.h>
 #include <vector>
 
 using namespace std;
@@ -27,6 +28,8 @@ public:
 private:
   void reconfigureCB(costmap_2d::GenericPluginConfig &config, uint32_t level);
   void formationCallback(const spot_pkg::formationPoints::ConstPtr& msg);
+    void pathCallback(const nav_msgs::Path::ConstPtr& msg);
+
 
   geometry_msgs::Point calculatePointRelativeToRobot(geometry_msgs::Point point);
 
@@ -39,10 +42,12 @@ private:
   dynamic_reconfigure::Server<costmap_2d::GenericPluginConfig> *dsrv_;
   ros::NodeHandle nh;
   ros::Subscriber sub;
+  ros::Subscriber path_sub;
   double xRobot, yRobot, yawRobot;
   vector<geometry_msgs::Point> costmapPoints; //Points stored in the costmap. Points here will be removed after 1 second.
   vector<double> timeToRemove; //Each index contains the TIME when to remove points from costmapPoints
   vector<int> pointsToRemove; //Each index contains the AMOUNT of points to remove from costmapPoints
+    bool robotMoving = false;
 };
 }
 #endif

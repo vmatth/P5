@@ -7,7 +7,7 @@ TrajectoryPlannerROS: #http://www.ros.org/wiki/base_local_planner
   escape_vel: -0.2 #Speed used for driving during escapes in meters/sec.
 
 
-  acc_lim_theta: 3.2 #The rotational acceleration limit of the robot in radians/sec^2 
+  acc_lim_theta: 3.5 #The rotational acceleration limit of the robot in radians/sec^2 
   acc_lim_x: 2.5 #The x acceleration limit of the robot in meters/sec^2 
   acc_lim_y: 2.5 #The y acceleration limit of the robot in meters/sec^2 
 
@@ -17,3 +17,23 @@ TrajectoryPlannerROS: #http://www.ros.org/wiki/base_local_planner
   xy_goal_tolerance: 0.3 #The tolerance in meters for the controller in the x & y distance when achieving a goal 
 
   meter_scoring: true
+
+# TrajectoryPlannerROS: #http://www.ros.org/wiki/base_local_planner
+#   max_vel_x: 0.8 #The maximum forward velocity allowed for the base in meters/sec 
+#   min_vel_x: 0.4 #The minimum forward velocity allowed for the base in meters/sec. It is useful to specify this to guarantee that velocity commands sent to a mobile base are high enough to allow the base to overcome friction. 
+#   max_vel_theta: 1.75 #The maximum rotational velocity allowed for the base in radians/sec 
+#   min_in_place_vel_theta: 1.75 #The minimum rotational velocity allowed for the base while performing in-place rotations in radians/sec 
+
+#   escape_vel: -0.2 #Speed used for driving during escapes in meters/sec.
+
+
+#   acc_lim_theta: 3.5 #The rotational acceleration limit of the robot in radians/sec^2 
+#   acc_lim_x: 2.5 #The x acceleration limit of the robot in meters/sec^2 
+#   acc_lim_y: 2.5 #The y acceleration limit of the robot in meters/sec^2 
+
+#   holonomic_robot: true #Determines whether velocity commands are generated for a holonomic or non-holonomic robot. For holonomic robots, strafing velocity commands may be issued to the base. For non-holonomic robots, no strafing velocity commands will be issued. 
+#   y_vels: [-0.8, -0.8, 0.8, 0.8] # The strafing velocities that a holonomic robot will consider in meters/sec 
+#   yaw_goal_tolerance: 0.2 # 11 deg. The tolerance in radians for the controller in yaw/rotation when achieving its goal 
+#   xy_goal_tolerance: 0.3 #The tolerance in meters for the controller in the x & y distance when achieving a goal 
+
+#   meter_scoring: true
