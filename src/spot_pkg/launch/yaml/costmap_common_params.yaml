@@ -16,7 +16,8 @@ obstacle_2d_layer:
 plugins: 
     - {name: static_map, type: "costmap_2d::StaticLayer"}
     - {name: obstacle_2d_layer, type: "costmap_2d::ObstacleLayer"}
-    - {name: formation_layer, type: "formation_layer_namespace::FormationLayer"}
-    - {name: proxemics_layer, type: "proxemics_layer_namespace::ProxemicsLayer"}
+    #- {name: formation_layer, type: "formation_layer_namespace::FormationLayer"}
+    #- {name: proxemics_layer, type: "proxemics_layer_namespace::ProxemicsLayer"}
     - {name: inflation_layer, type: "costmap_2d::InflationLayer"}
-    - {name: visualization_layer, type: "visualization_layer_namespace::VisualizationLayer"}
+    #- {name: visualization_layer, type: "visualization_layer_namespace::VisualizationLayer"}
+    - {name: tracker_layer, type: "tracker_layer_namespace::TrackerLayer"}

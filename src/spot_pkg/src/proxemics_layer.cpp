@@ -4,7 +4,6 @@
 #include <spot_pkg/people.h>
 #include <vector>
 
-
 using namespace std;
 
 PLUGINLIB_EXPORT_CLASS(proxemics_layer_namespace::ProxemicsLayer, costmap_2d::Layer)
@@ -14,10 +13,12 @@ using costmap_2d::LETHAL_OBSTACLE;
 namespace proxemics_layer_namespace
 {
 
+
 ProxemicsLayer::ProxemicsLayer() {}   
 
 void ProxemicsLayer::peopleCallback(const spot_pkg::people::ConstPtr& msg){
-  ROS_INFO("Receiving points from people callback");
+  if(robotMoving == true) return;
+  //ROS_INFO("Receiving points from people callback");
   int size = msg->people.size();
   //ROS_INFO("Amount of people: %i", size);
 
@@ -37,6 +38,11 @@ void ProxemicsLayer::peopleCallback(const spot_pkg::people::ConstPtr& msg){
 
 }
 
+void ProxemicsLayer::pathCallback(const nav_msgs::Path::ConstPtr& msg){
+  ROS_INFO("ROBOT IS MOVING!!!!");
+  robotMoving = true;
+}
+
 
 geometry_msgs::Point ProxemicsLayer::calculatePointRelativeToRobot(geometry_msgs::Point point){
   geometry_msgs::Point newPoint = geometry_msgs::Point();
@@ -48,7 +54,7 @@ geometry_msgs::Point ProxemicsLayer::calculatePointRelativeToRobot(geometry_msgs
   newPoint.x += xRobot;
   newPoint.y += yRobot;
   //ROS_INFO("Calculating poont relativve ro robot, yawRobot: %f, xRobot; %f, yRobot: %f, inputPoint(%f, %f", yawRobot, xRobot, yRobot, point.x, point.y);
-  ROS_INFO("relative point: (%f, %f, %f)", newPoint.x, newPoint.y, newPoint.z);
+  //ROS_INFO("relative point: (%f, %f, %f)", newPoint.x, newPoint.y, newPoint.z);
 
   return newPoint;
 }
@@ -57,6 +63,7 @@ void ProxemicsLayer::onInitialize()
 {
   current_ = true;
   sub = nh.subscribe("/people", 1000, &ProxemicsLayer::peopleCallback, this);
+  path_sub = nh.subscribe("/move_base/TrajectoryPlannerROS/global_plan", 1000, &ProxemicsLayer::pathCallback, this);
 
   dsrv_ = new dynamic_reconfigure::Server<costmap_2d::GenericPluginConfig>(nh);
   dynamic_reconfigure::Server<costmap_2d::GenericPluginConfig>::CallbackType cb = boost::bind(
@@ -108,9 +115,10 @@ void ProxemicsLayer::removePeoplePointsAfterSomeTime(){
 vector<geometry_msgs::Point> ProxemicsLayer::calculateSurroundingPointsFromPersonCenter(geometry_msgs::Point center){
   vector<geometry_msgs::Point> points;
 
-  vector<geometry_msgs::Point> circlePoints = createCircle(center, 0.15, 12); int size = circlePoints.size(); for(int i = 0; i < size; i++){points.push_back(circlePoints[i]);}
-  circlePoints = createCircle(center, 0.3, 18); size = circlePoints.size(); for(int i = 0; i < size; i++){points.push_back(circlePoints[i]);}
-  circlePoints = createCircle(center, 0.45, 24); size = circlePoints.size(); for(int i = 0; i < size; i++){points.push_back(circlePoints[i]);}
+  vector<geometry_msgs::Point> circlePoints;// = createCircle(center, 0.15, 12); int size = circlePoints.size(); for(int i = 0; i < size; i++){points.push_back(circlePoints[i]);}
+  //circlePoints = createCircle(center, 0.3, 18); size = circlePoints.size(); for(int i = 0; i < size; i++){points.push_back(circlePoints[i]);}
+  //circlePoints = createCircle(center, 0.45, 24); size = circlePoints.size(); for(int i = 0; i < size; i++){points.push_back(circlePoints[i]);}
+  circlePoints = createCircle(center, 1.1, 50); int size = circlePoints.size(); for(int i = 0; i < size; i++){points.push_back(circlePoints[i]);}
 
 
 
@@ -141,7 +149,8 @@ void ProxemicsLayer::updateCosts(costmap_2d::Costmap2D& master_grid, int min_i, 
   if (!enabled_)
     return;
 
-  removePeoplePointsAfterSomeTime();
+  if(robotMoving == false)
+    removePeoplePointsAfterSomeTime();
 
   unsigned int mx;
   unsigned int my;

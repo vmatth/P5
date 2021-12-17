@@ -139,6 +139,7 @@ add_library(${PROJECT_NAME}
   src/formation_layer.cpp
   src/proxemics_layer.cpp
   src/visualization_layer.cpp
+  src/tracker_layer.cpp
 )
 
 ## Add cmake target dependencies of the library

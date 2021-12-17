@@ -8,4 +8,7 @@
     <class type="visualization_layer_namespace::VisualizationLayer" base_class_type="costmap_2d::Layer">
         <description>Visualizes hip and ankle points in Rviz</description>
     </class>
+    <class type="tracker_layer_namespace::TrackerLayer" base_class_type="costmap_2d::Layer">
+        <description>Tracks odometry and visualizes it in RviZ</description>
+    </class>
 </library>

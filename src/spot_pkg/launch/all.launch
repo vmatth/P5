@@ -3,6 +3,6 @@
   <include file="$(find spot_pkg)/launch/boot.launch" />
   <include file="$(find spot_pkg)/launch/rviz.launch" />
   <include file="$(find spot_pkg)/launch/lidar.launch" />
-  <include file="$(find spot_pkg)/launch/move_base.launch" />
+  <!--<include file="$(find spot_pkg)/launch/move_base.launch" />-->
   
 </launch>

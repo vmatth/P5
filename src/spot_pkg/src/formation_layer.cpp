@@ -16,7 +16,8 @@ namespace formation_layer_namespace
 FormationLayer::FormationLayer() {}   
 
 void FormationLayer::formationCallback(const spot_pkg::formationPoints::ConstPtr& msg){
-  ROS_INFO("Receiving points from formation callback");
+  if(robotMoving) return;
+    //ROS_INFO("Receiving points from formation callback");
   int size = msg->points.size();
   //ROS_INFO("Amount of points: %i", size);
   //Loop all f-formation points
@@ -40,6 +41,12 @@ void FormationLayer::formationCallback(const spot_pkg::formationPoints::ConstPtr
 }
 
 
+void FormationLayer::pathCallback(const nav_msgs::Path::ConstPtr& msg){
+  ROS_INFO("ROBOT IS MOVING!!!!");
+  robotMoving = true;
+}
+
+
 geometry_msgs::Point FormationLayer::calculatePointRelativeToRobot(geometry_msgs::Point point){
   geometry_msgs::Point newPoint = geometry_msgs::Point();
   //Caluclate the formation point relative to the robot's rotation
@@ -57,6 +64,8 @@ void FormationLayer::onInitialize()
 {
   current_ = true;
   sub = nh.subscribe("/formations", 1000, &FormationLayer::formationCallback, this);
+  path_sub = nh.subscribe("/move_base/TrajectoryPlannerROS/global_plan", 1000, &FormationLayer::pathCallback, this);
+
 
   dsrv_ = new dynamic_reconfigure::Server<costmap_2d::GenericPluginConfig>(nh);
   dynamic_reconfigure::Server<costmap_2d::GenericPluginConfig>::CallbackType cb = boost::bind(
@@ -118,6 +127,7 @@ void FormationLayer::updateCosts(costmap_2d::Costmap2D& master_grid, int min_i, 
   if (!enabled_)
     return;
 
+  if(robotMoving == false)
   removeCostmapPointsAfterSomeTime();
 
   unsigned int mx;
